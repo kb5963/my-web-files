@@ -741,13 +741,13 @@ a.icon-wrapper:hover .icon-copy
 
 .rightNorth
 {
-  height: 60%;
+  height: 100%;
   width: 100%;
 }
 
 .rightSouth
 {
-  height: 40%;
+  height: 0%;
   width: 100%;
 }
 
