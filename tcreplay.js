@@ -1,387 +1,387 @@
 ﻿const	chess = true; 
 
-const r4u =
+const d5p =
 {
-	z0j    : 0,
-	f3a  : 1,
-	m1p  : 2,
-	l5x    : 3,
-  n3b   : 4,
-	w6p    : 5,
-	f1o    : 6,
-	s7h  : 7,
-	d5l  : 8,
-	t2o    : 9,
-	n8i   : 10,
-	n1f    : 11,
-	f7c        : 12,
+	x1p    : 0,
+	w1z  : 1,
+	b1p  : 2,
+	l1a    : 3,
+  i2l   : 4,
+	y3v    : 5,
+	x6h    : 6,
+	g6s  : 7,
+	f4r  : 8,
+	b3w    : 9,
+	f8i   : 10,
+	j1i    : 11,
+	g3d        : 12,
 };
 
-const v4q =
+const r1s =
 {
-	j1n        : 0,
-	f0n        : 1,
+	y1l        : 0,
+	n4i        : 1,
 };
 
 const	a1 = 0;
-const a3m = 1;
-const y7r = 2;
-const k0i = 3;
-const k7m = 4;
-const w9b = 5;
-const g0r = 6;
-const m0d = 7;
+const s3h = 1;
+const w2m = 2;
+const h3a = 3;
+const j6d = 4;
+const w0r = 5;
+const l5c = 6;
+const x7a = 7;
 const	a2 = 8;
-const t7z = 9;
-const g8i = 10;
-const h9i = 11;
-const t8r = 12;
-const t3o = 13;
-const l0c = 14;
-const h1g = 15;
+const y6g = 9;
+const y2b = 10;
+const x8i = 11;
+const s5b = 12;
+const u6z = 13;
+const c5v = 14;
+const z3c = 15;
 const	a3 = 16;
-const f4e = 17;
-const i1b = 18;
-const y1m = 19;
-const z0i = 20;
-const n0m = 21;
-const m4t = 22;
-const t3q = 23;
+const i6c = 17;
+const n8w = 18;
+const g8q = 19;
+const l2f = 20;
+const j8d = 21;
+const g2q = 22;
+const h3n = 23;
 const	a4 = 24;
-const l2c = 25;
-const p2b = 26;
-const m2g = 27;
-const r1r = 28;
-const o6w = 29;
-const g7w = 30;
-const b0j = 31;
+const r0s = 25;
+const w1u = 26;
+const n8v = 27;
+const m6b = 28;
+const n3g = 29;
+const s9s = 30;
+const o0w = 31;
 const	a5 = 32;
-const f3e = 33;
-const c0b = 34;
-const g7m = 35;
-const n5n = 36;
-const m2u = 37;
-const q4j = 38;
-const u1w = 39;
+const e1a = 33;
+const i9t = 34;
+const k8l = 35;
+const y1c = 36;
+const s8q = 37;
+const s6v = 38;
+const q6f = 39;
 const	a6 = 40;
-const r7o = 41;
-const j1c = 42;
-const d9p = 43;
-const a9e = 44;
-const m6v = 45;
-const d4z = 46;
-const h2f = 47;
+const f0d = 41;
+const r3q = 42;
+const t9o = 43;
+const v1j = 44;
+const d3e = 45;
+const c7z = 46;
+const x5q = 47;
 const	a7 = 48;
-const i6w = 49;
-const w2g = 50;
-const e2c = 51;
-const e2o = 52;
-const z9x = 53;
-const x4h = 54;
-const p1n = 55;
+const l4j = 49;
+const d2n = 50;
+const d9w = 51;
+const u8h = 52;
+const r5v = 53;
+const d7l = 54;
+const l4a = 55;
 const	a8 = 56;
-const b7g = 57;
-const i5x = 58;
-const a6e = 59;
-const j2k = 60;
-const j7j = 61;
-const r1l = 62;
-const e9f = 63;
-const f1k = 64;
+const b4v = 57;
+const u1k = 58;
+const u8r = 59;
+const w2h = 60;
+const f3s = 61;
+const r1k = 62;
+const g3r = 63;
+const d2w = 64;
 
-const c7e = 0;
-const u8b = 1;
-const g4i = 2;
-const y9o = 3;
-const j0n = 4;
-const r6l = 5;
-const f7r = 6;
-const a1m = 7;
-const a7j = 8;
+const e7g = 0;
+const a1k = 1;
+const n8x = 2;
+const h4u = 3;
+const n0u = 4;
+const j2o = 5;
+const a8h = 6;
+const h7r = 7;
+const b4p = 8;
 
 const	rank_1 = 0;
-const f3f = 1;
-const n1c = 2;
-const g2f = 3;
-const n2d = 4;
-const t7m = 5;
-const b9y = 6;
-const s6i = 7;
-const o6s = 8;
+const w6a = 1;
+const z4d = 2;
+const p1n = 3;
+const f3j = 4;
+const l3z = 5;
+const b2q = 6;
+const z2l = 7;
+const l4v = 8;
 
-const n3x        = 8;
-const u8t       = 64;
-const n7n      = 16;
+const j3r        = 8;
+const h7e       = 64;
+const o5x      = 16;
 
-const x2y =
+const z4b =
 [
-	r4u.l5x,    
-  r4u.f3a,  
-  r4u.m1p,  
-  r4u.n3b,   
-  r4u.w6p,    
-  r4u.m1p,  
-  r4u.f3a,  
-  r4u.l5x,    
-	r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-  r4u.z0j,    
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-  r4u.f1o,    
-	r4u.t2o,    
-  r4u.s7h,  
-  r4u.d5l,  
-  r4u.n8i,   
-  r4u.n1f,    
-  r4u.d5l,  
-  r4u.s7h,  
-  r4u.t2o,    
+	d5p.l1a,    
+  d5p.w1z,  
+  d5p.b1p,  
+  d5p.i2l,   
+  d5p.y3v,    
+  d5p.b1p,  
+  d5p.w1z,  
+  d5p.l1a,    
+	d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+  d5p.x1p,    
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+  d5p.x6h,    
+	d5p.b3w,    
+  d5p.g6s,  
+  d5p.f4r,  
+  d5p.f8i,   
+  d5p.j1i,    
+  d5p.f4r,  
+  d5p.g6s,  
+  d5p.b3w,    
 ];
 
-const b2y =
+const l8q =
 [
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-	r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
-  r4u.f7c,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+	d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
+  d5p.g3d,        
 ];
 
-const b7a =
+const x6a =
 [
-	a1, a3m, y7r, k0i, k7m, w9b, g0r, m0d,
-	a2, t7z, g8i, h9i, t8r, t3o, l0c, h1g,
-	a3, f4e, i1b, y1m, z0i, n0m, m4t, t3q,
-	a4, l2c, p2b, m2g, r1r, o6w, g7w, b0j,
-	a5, f3e, c0b, g7m, n5n, m2u, q4j, u1w,
-	a6, r7o, j1c, d9p, a9e, m6v, d4z, h2f,
-	a7, i6w, w2g, e2c, e2o, z9x, x4h, p1n,
-	a8, b7g, i5x, a6e, j2k, j7j, r1l, e9f,
+	a1, s3h, w2m, h3a, j6d, w0r, l5c, x7a,
+	a2, y6g, y2b, x8i, s5b, u6z, c5v, z3c,
+	a3, i6c, n8w, g8q, l2f, j8d, g2q, h3n,
+	a4, r0s, w1u, n8v, m6b, n3g, s9s, o0w,
+	a5, e1a, i9t, k8l, y1c, s8q, s6v, q6f,
+	a6, f0d, r3q, t9o, v1j, d3e, c7z, x5q,
+	a7, l4j, d2n, d9w, u8h, r5v, d7l, l4a,
+	a8, b4v, u1k, u8r, w2h, f3s, r1k, g3r,
 ];
 
-const h7h =
+const g3i =
 [
-	c7e,
-  u8b,
-  g4i,
-  y9o,
-  j0n,
-  r6l,
-  f7r,
-  a1m,
+	e7g,
+  a1k,
+  n8x,
+  h4u,
+  n0u,
+  j2o,
+  a8h,
+  h7r,
 ];
 
-const l8v =
+const v0p =
 [
 	rank_1,
-  f3f,
-  n1c,
-  g2f,
-  n2d,
-  t7m,
-  b9y,
-  s6i,
+  w6a,
+  z4d,
+  p1n,
+  f3j,
+  l3z,
+  b2q,
+  z2l,
 ];
 
-function a7b(h1e)
+function g0d(d8n)
 {
-	return h1e == r4u.f1o ||
-		h1e == r4u.s7h ||
-    h1e == r4u.d5l ||
-    h1e == r4u.t2o ||
-    h1e == r4u.n8i ||
-    h1e == r4u.n1f;
+	return d8n == d5p.x6h ||
+		d8n == d5p.g6s ||
+    d8n == d5p.f4r ||
+    d8n == d5p.b3w ||
+    d8n == d5p.f8i ||
+    d8n == d5p.j1i;
 }
 
-function c0t(h1e)
+function u1g(d8n)
 {
-	return h1e == r4u.z0j ||
-		h1e == r4u.f3a ||
-    h1e == r4u.m1p ||
-    h1e == r4u.l5x ||
-    h1e == r4u.n3b ||
-    h1e == r4u.w6p;
+	return d8n == d5p.x1p ||
+		d8n == d5p.w1z ||
+    d8n == d5p.b1p ||
+    d8n == d5p.l1a ||
+    d8n == d5p.i2l ||
+    d8n == d5p.y3v;
 }
 
-function w6s(h1e)
+function q3s(d8n)
 {
-	return h1e == r4u.z0j || h1e == r4u.f1o;
+	return d8n == d5p.x1p || d8n == d5p.x6h;
 }
 
-function c7a(h1e)
+function c4u(d8n)
 {
-	return h1e == r4u.f3a || h1e == r4u.s7h;
+	return d8n == d5p.w1z || d8n == d5p.g6s;
 }
 
-function t7b(h1e)
+function m9v(d8n)
 {
-	return h1e == r4u.m1p || h1e == r4u.d5l;
+	return d8n == d5p.b1p || d8n == d5p.f4r;
 }
 
-function t7n(h1e)
+function t5h(d8n)
 {
-	return h1e == r4u.l5x || h1e == r4u.t2o;
+	return d8n == d5p.l1a || d8n == d5p.b3w;
 }
 
-function k9l(h1e)
+function t3i(d8n)
 {
-	return h1e == r4u.n3b || h1e == r4u.n8i;
+	return d8n == d5p.i2l || d8n == d5p.f8i;
 }
 
-function b2u(h1e)
+function w6f(d8n)
 {
-	return h1e == r4u.w6p || h1e == r4u.n1f;
+	return d8n == d5p.y3v || d8n == d5p.j1i;
 }
 
-function m6j(k2d)
+function u0z(t0h)
 {
-	if (k2d == f1k)
+	if (t0h == d2w)
 	{
-		return f1k;
+		return d2w;
 	}
 	else
 	{
-		return u8t - k2d - 1;
+		return h7e - t0h - 1;
 	}
 }
 
-const r3u =
+const t8j =
 [
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
-	c7e, u8b, g4i, y9o, j0n, r6l, f7r, a1m,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
+	e7g, a1k, n8x, h4u, n0u, j2o, a8h, h7r,
 ];
 
-function z7g(k2d)
+function m9h(t0h)
 {
-	return r3u[k2d];
+	return t8j[t0h];
 }
 
-const s2c =
+const l1o =
 [
 	rank_1, rank_1, rank_1, rank_1, rank_1, rank_1, rank_1, rank_1,
-	f3f, f3f, f3f, f3f, f3f, f3f, f3f, f3f,
-	n1c, n1c, n1c, n1c, n1c, n1c, n1c, n1c,
-	g2f, g2f, g2f, g2f, g2f, g2f, g2f, g2f,
-	n2d, n2d, n2d, n2d, n2d, n2d, n2d, n2d,
-	t7m, t7m, t7m, t7m, t7m, t7m, t7m, t7m,
-	b9y, b9y, b9y, b9y, b9y, b9y, b9y, b9y,
-	s6i, s6i, s6i, s6i, s6i, s6i, s6i, s6i,
+	w6a, w6a, w6a, w6a, w6a, w6a, w6a, w6a,
+	z4d, z4d, z4d, z4d, z4d, z4d, z4d, z4d,
+	p1n, p1n, p1n, p1n, p1n, p1n, p1n, p1n,
+	f3j, f3j, f3j, f3j, f3j, f3j, f3j, f3j,
+	l3z, l3z, l3z, l3z, l3z, l3z, l3z, l3z,
+	b2q, b2q, b2q, b2q, b2q, b2q, b2q, b2q,
+	z2l, z2l, z2l, z2l, z2l, z2l, z2l, z2l,
 ];
 
-function a3p(k2d)
+function u4i(t0h)
 {
-	return s2c[k2d];
+	return l1o[t0h];
 }
 
-function g9s(a, b)
+function g4v(a, b)
 {
 	for (let i = 0; i < a.length; i++)
 	{
@@ -393,7 +393,7 @@ function g9s(a, b)
 	return true;
 }
 
-function v8t(a, b)
+function c1b(a, b)
 {
 	for (let i = 0; i < b.length; i++)
 	{
@@ -401,121 +401,121 @@ function v8t(a, b)
 	}
 }
 
-function q6r(f1l, h1e)
+function p9b(r2x, d8n)
 {
-	let s7n = 0;
-	for (const value of f1l)
+	let n6n = 0;
+	for (const value of r2x)
 	{
-		if (value == h1e)
+		if (value == d8n)
 		{
-			s7n++;
+			n6n++;
 		}
 	}
-	return s7n;
+	return n6n;
 }
 
 var stringToSquareMapInited = false;
-const e8c = new Map();
-function b4w()
+const o7i = new Map();
+function b8k()
 {
-  e8c.set("a1", a1);
-  e8c.set("a2", a2);
-  e8c.set("a3", a3);
-  e8c.set("a4", a4);
-  e8c.set("a5", a5);
-  e8c.set("a6", a6);
-  e8c.set("a7", a7);
-  e8c.set("a8", a8);
-  e8c.set("b1", a3m);
-  e8c.set("b2", t7z);
-  e8c.set("b3", f4e);
-  e8c.set("b4", l2c);
-  e8c.set("b5", f3e);
-  e8c.set("b6", r7o);
-  e8c.set("b7", i6w);
-  e8c.set("b8", b7g);
-  e8c.set("c1", y7r);
-  e8c.set("c2", g8i);
-  e8c.set("c3", i1b);
-  e8c.set("c4", p2b);
-  e8c.set("c5", c0b);
-  e8c.set("c6", j1c);
-  e8c.set("c7", w2g);
-  e8c.set("c8", i5x);
-  e8c.set("d1", k0i);
-  e8c.set("d2", h9i);
-  e8c.set("d3", y1m);
-  e8c.set("d4", m2g);
-  e8c.set("d5", g7m);
-  e8c.set("d6", d9p);
-  e8c.set("d7", e2c);
-  e8c.set("d8", a6e);
-  e8c.set("e1", k7m);
-  e8c.set("e2", t8r);
-  e8c.set("e3", z0i);
-  e8c.set("e4", r1r);
-  e8c.set("e5", n5n);
-  e8c.set("e6", a9e);
-  e8c.set("e7", e2o);
-  e8c.set("e8", j2k);
-  e8c.set("f1", w9b);
-  e8c.set("f2", t3o);
-  e8c.set("f3", n0m);
-  e8c.set("f4", o6w);
-  e8c.set("f5", m2u);
-  e8c.set("f6", m6v);
-  e8c.set("f7", z9x);
-  e8c.set("f8", j7j);
-  e8c.set("g1", g0r);
-  e8c.set("g2", l0c);
-  e8c.set("g3", m4t);
-  e8c.set("g4", g7w);
-  e8c.set("g5", q4j);
-  e8c.set("g6", d4z);
-  e8c.set("g7", x4h);
-  e8c.set("g8", r1l);
-  e8c.set("h1", m0d);
-  e8c.set("h2", h1g);
-  e8c.set("h3", t3q);
-  e8c.set("h4", b0j);
-  e8c.set("h5", u1w);
-  e8c.set("h6", h2f);
-  e8c.set("h7", p1n);
-  e8c.set("h8", e9f);
+  o7i.set("a1", a1);
+  o7i.set("a2", a2);
+  o7i.set("a3", a3);
+  o7i.set("a4", a4);
+  o7i.set("a5", a5);
+  o7i.set("a6", a6);
+  o7i.set("a7", a7);
+  o7i.set("a8", a8);
+  o7i.set("b1", s3h);
+  o7i.set("b2", y6g);
+  o7i.set("b3", i6c);
+  o7i.set("b4", r0s);
+  o7i.set("b5", e1a);
+  o7i.set("b6", f0d);
+  o7i.set("b7", l4j);
+  o7i.set("b8", b4v);
+  o7i.set("c1", w2m);
+  o7i.set("c2", y2b);
+  o7i.set("c3", n8w);
+  o7i.set("c4", w1u);
+  o7i.set("c5", i9t);
+  o7i.set("c6", r3q);
+  o7i.set("c7", d2n);
+  o7i.set("c8", u1k);
+  o7i.set("d1", h3a);
+  o7i.set("d2", x8i);
+  o7i.set("d3", g8q);
+  o7i.set("d4", n8v);
+  o7i.set("d5", k8l);
+  o7i.set("d6", t9o);
+  o7i.set("d7", d9w);
+  o7i.set("d8", u8r);
+  o7i.set("e1", j6d);
+  o7i.set("e2", s5b);
+  o7i.set("e3", l2f);
+  o7i.set("e4", m6b);
+  o7i.set("e5", y1c);
+  o7i.set("e6", v1j);
+  o7i.set("e7", u8h);
+  o7i.set("e8", w2h);
+  o7i.set("f1", w0r);
+  o7i.set("f2", u6z);
+  o7i.set("f3", j8d);
+  o7i.set("f4", n3g);
+  o7i.set("f5", s8q);
+  o7i.set("f6", d3e);
+  o7i.set("f7", r5v);
+  o7i.set("f8", f3s);
+  o7i.set("g1", l5c);
+  o7i.set("g2", c5v);
+  o7i.set("g3", g2q);
+  o7i.set("g4", s9s);
+  o7i.set("g5", s6v);
+  o7i.set("g6", c7z);
+  o7i.set("g7", d7l);
+  o7i.set("g8", r1k);
+  o7i.set("h1", x7a);
+  o7i.set("h2", z3c);
+  o7i.set("h3", h3n);
+  o7i.set("h4", o0w);
+  o7i.set("h5", q6f);
+  o7i.set("h6", x5q);
+  o7i.set("h7", l4a);
+  o7i.set("h8", g3r);
 }
 
-function z0q(c7b)
+function t2h(i7a)
 {
   if (!stringToSquareMapInited)
   {
-    b4w();
+    b8k();
     stringToSquareMapInited = true;
   }
-  if (e8c.has(c7b))
+  if (o7i.has(i7a))
   {
-    return e8c.get(c7b);
+    return o7i.get(i7a);
   }
   else
   {
-		return f1k;
+		return d2w;
   }
 }
 
-function u1k(k2d)
+function s4c(t0h)
 {
-  return m8y[k2d];
+  return e1h[t0h];
 }
 
-const s9p  = g0r;
-const b0h  = w9b;
-const s2j = y7r;
-const q3b = k0i;
-const z4j  = r1l;
-const w2r  = j7j;
-const h9y = i5x;
-const i0u = a6e;
+const j7x  = l5c;
+const u8j  = w0r;
+const w5i = w2m;
+const g3y = h3a;
+const z1s  = r1k;
+const w9o  = f3s;
+const s5q = u1k;
+const o4f = u8r;
 
-const m8y =
+const e1h =
 [
 	"a1",	"b1",	"c1",	"d1",	"e1", "f1", "g1", "h1",
 	"a2",	"b2",	"c2",	"d2",	"e2", "f2", "g2", "h2",
@@ -527,7 +527,7 @@ const m8y =
 	"a8",	"b8",	"c8",	"d8",	"e8", "f8", "g8", "h8",
 ];
 
-const c6t =
+const t6c =
 [
 	'1',
   '2',
@@ -539,7 +539,7 @@ const c6t =
   '8',
 ];
 
-const z1z =
+const t3k =
 [
 	'a',
   'b',
@@ -554,7 +554,7 @@ const z1z =
 
 
 
-const m6g =
+const s2z =
 [
 	true,  false,   true,  false, true, false,  true, false,
 	false,  true,  false, true, false, true, false, true,
@@ -566,9 +566,9 @@ const m6g =
 	false,  true,  false,  true, false,  true, false, true,
 ];
 
-function q3c(k2d)
+function h7z(t0h)
 {
-	return m6g[k2d];
+	return s2z[t0h];
 }
 
 
@@ -589,889 +589,889 @@ function q3c(k2d)
 
 
 
-function l0m(u1s)
+function n0r(p7i)
 {
-  if (u1s == '1')
+  if (p7i == '1')
   {
     return rank_1;
   }
-  else if (u1s == '2')
+  else if (p7i == '2')
   {
-    return f3f;
+    return w6a;
   }
-  else if (u1s == '3')
+  else if (p7i == '3')
   {
-    return n1c;
+    return z4d;
   }
-  else if (u1s == '4')
+  else if (p7i == '4')
   {
-    return g2f;
+    return p1n;
   }
-  else if (u1s == '5')
+  else if (p7i == '5')
   {
-    return n2d;
+    return f3j;
   }
-  else if (u1s == '6')
+  else if (p7i == '6')
   {
-    return t7m;
+    return l3z;
   }
-  else if (u1s == '7')
+  else if (p7i == '7')
   {
-    return b9y;
+    return b2q;
   }
-  else if (u1s == '8')
+  else if (p7i == '8')
   {
-    return s6i;
+    return z2l;
   }
 	else
 	{
-		return o6s;
+		return l4v;
 	}
 }
 
-function l2u(u1s)
+function f5h(p7i)
 {
-  if (u1s == 'a')
+  if (p7i == 'a')
   {
-    return c7e;
+    return e7g;
   }
-  else if (u1s == 'b')
+  else if (p7i == 'b')
   {
-    return u8b;
+    return a1k;
   }
-  else if (u1s == 'c')
+  else if (p7i == 'c')
   {
-    return g4i;
+    return n8x;
   }
-  else if (u1s == 'd')
+  else if (p7i == 'd')
   {
-    return y9o;
+    return h4u;
   }
-  else if (u1s == 'e')
+  else if (p7i == 'e')
   {
-    return j0n;
+    return n0u;
   }
-  else if (u1s == 'f')
+  else if (p7i == 'f')
   {
-    return r6l;
+    return j2o;
   }
-  else if (u1s == 'g')
+  else if (p7i == 'g')
   {
-    return f7r;
+    return a8h;
   }
-  else if (u1s == 'h')
+  else if (p7i == 'h')
   {
-    return a1m;
+    return h7r;
   }
   else
 	{
-		return a7j;
+		return b4p;
 	}
 }
 
-function i6f(a7c)
+function g4s(g4f)
 {
-  return z1z[a7c];
+  return t3k[g4f];
 }
 
-function h7n(u5h)
+function h0i(e4p)
 {
-  return c6t[u5h];
+  return t6c[e4p];
 }
 
 
-class m8h
+class l2d
 {
 
 constructor()
 {
-	this.u1y = false;
-	this.c4b = k7m;
-	this.a4l = j2k;
-	this.a0r = m0d;
-	this.x4q = a1;
-	this.l7r = e9f;
-	this.n7w = a8;
-	this.q1d = false;
-	this.a8t = false;
-	this.e1q = false;
-	this.d9z = false;
-	this.t7e = f1k;
+	this.i5w = false;
+	this.g1f = j6d;
+	this.s8j = w2h;
+	this.o9s = x7a;
+	this.x3z = a1;
+	this.l2n = g3r;
+	this.j0x = a8;
+	this.k0s = false;
+	this.i6i = false;
+	this.v4d = false;
+	this.c3u = false;
+	this.d7j = d2w;
 }
 
-z4e()
+r0c()
 {
-	let w9m = new m8h();
-  return Object.assign(w9m, this);
+	let z1o = new l2d();
+  return Object.assign(z1o, this);
 }
 
 }
 
 
-class b6u
+class i9r
 {
 
 constructor()
 {
-  this.w7y = Array(u8t).fill(r4u.f7c);
- 	this.d2x = v4q.j1n;
- 	this.l6c = new m8h();
- 	this.g3g();
+  this.h4w = Array(h7e).fill(d5p.g3d);
+ 	this.s7c = r1s.y1l;
+ 	this.r6f = new l2d();
+ 	this.b2m();
 }
 
-z4e()
+r0c()
 {
-	let y2r = new b6u();
-	v8t(y2r.w7y, this.w7y);
-	y2r.d2x = this.d2x;
-  y2r.l6c = this.l6c.z4e();
-  y2r.whiteKing_ = this.whiteKing_;
-	y2r.blackKing_ = this.blackKing_;
-	return y2r;
+	let u0b = new i9r();
+	c1b(u0b.h4w, this.h4w);
+	u0b.s7c = this.s7c;
+  u0b.r6f = this.r6f.r0c();
+  u0b.whiteKing_ = this.whiteKing_;
+	u0b.blackKing_ = this.blackKing_;
+	return u0b;
 }
 
-q0w(o8d)
+s4b(b5l)
 {
-	return this.d2x == o8d.d2x &&
-		g9s(this.w7y, o8d.w7y);
+	return this.s7c == b5l.s7c &&
+		g4v(this.h4w, b5l.h4w);
 }
 
-t5w(o8d)
+n1x(b5l)
 {
-	return !this.q0w(o8d);
+	return !this.s4b(b5l);
 }
 
-n9y()
+e7t()
 {
- 	v8t(this.w7y, x2y);
- 	this.d2x = v4q.j1n;
-  this.l6c.u1y = false;
-	this.l6c.c4b = k7m;
-	this.l6c.a4l = j2k;
-	this.l6c.a0r = m0d;
-	this.l6c.x4q = a1;
-	this.l6c.l7r = e9f;
-	this.l6c.n7w = a8;
-	this.l6c.t7e = f1k;
-	this.l6c.q1d = true;
-	this.l6c.a8t = true;
-	this.l6c.e1q = true;
-	this.l6c.d9z = true;
- 	this.whiteKing_ = k7m;
-	this.blackKing_ = j2k;
+ 	c1b(this.h4w, z4b);
+ 	this.s7c = r1s.y1l;
+  this.r6f.i5w = false;
+	this.r6f.g1f = j6d;
+	this.r6f.s8j = w2h;
+	this.r6f.o9s = x7a;
+	this.r6f.x3z = a1;
+	this.r6f.l2n = g3r;
+	this.r6f.j0x = a8;
+	this.r6f.d7j = d2w;
+	this.r6f.k0s = true;
+	this.r6f.i6i = true;
+	this.r6f.v4d = true;
+	this.r6f.c3u = true;
+ 	this.whiteKing_ = j6d;
+	this.blackKing_ = w2h;
 }
 
-l5f()
+n7j()
 {
-	return this.d2x == v4q.j1n && this.e2a();
+	return this.s7c == r1s.y1l && this.x1t();
 }
 
-e2a()
+x1t()
 {
-	return g9s(this.w7y, x2y);
+	return g4v(this.h4w, z4b);
 }
 
-g3g()
+b2m()
 {
-	this.w7y.fill(r4u.f7c);
-	this.d2x = v4q.j1n;
-	this.l6c.u1y = false;
-	this.l6c.c4b = k7m;
-	this.l6c.a4l = j2k;
-	this.l6c.a0r = m0d;
-	this.l6c.x4q = a1;
-	this.l6c.l7r = e9f;
-	this.l6c.n7w = a8;
-	this.l6c.t7e = f1k;
-	this.l6c.q1d = false;
-	this.l6c.a8t = false;
-	this.l6c.e1q = false;
-	this.l6c.d9z = false;
-  this.whiteKing_ = f1k;
-  this.blackKing_ = f1k;
+	this.h4w.fill(d5p.g3d);
+	this.s7c = r1s.y1l;
+	this.r6f.i5w = false;
+	this.r6f.g1f = j6d;
+	this.r6f.s8j = w2h;
+	this.r6f.o9s = x7a;
+	this.r6f.x3z = a1;
+	this.r6f.l2n = g3r;
+	this.r6f.j0x = a8;
+	this.r6f.d7j = d2w;
+	this.r6f.k0s = false;
+	this.r6f.i6i = false;
+	this.r6f.v4d = false;
+	this.r6f.c3u = false;
+  this.whiteKing_ = d2w;
+  this.blackKing_ = d2w;
 }
 
-p8r()
+z8n()
 {
-	return this.d2x == v4q.j1n && this.y5p();
+	return this.s7c == r1s.y1l && this.q4h();
 }
 
-y5p()
+q4h()
 {
-	return this.w7y.every(r4u.f7c);
+	return this.h4w.every(d5p.g3d);
 }
 
-f1l()
+r2x()
 {
-  return this.w7y.slice();
+  return this.h4w.slice();
 }
 
-j0s(k2d)
+j1a(t0h)
 {
-	return this.w7y[k2d];
+	return this.h4w[t0h];
 }
 
-t8a(k2d, h1e)
+z6q(t0h, d8n)
 {
-	if (this.w7y[k2d] == r4u.w6p)
+	if (this.h4w[t0h] == d5p.y3v)
 	{
-		this.whiteKing_ = f1k;
+		this.whiteKing_ = d2w;
 	}
-	else if (this.w7y[k2d] == r4u.n1f)
+	else if (this.h4w[t0h] == d5p.j1i)
 	{
-		this.blackKing_ = f1k;
+		this.blackKing_ = d2w;
 	}
-	if (h1e == r4u.w6p)
+	if (d8n == d5p.y3v)
 	{
-		this.whiteKing_ = k2d;
+		this.whiteKing_ = t0h;
 	}
-	else if (h1e == r4u.n1f)
+	else if (d8n == d5p.j1i)
 	{
-		this.blackKing_ = k2d;
+		this.blackKing_ = t0h;
 	}
-	this.w7y[k2d] = h1e;
+	this.h4w[t0h] = d8n;
 }
 
-b3t()
+b7c()
 {
-	this.d2x = v4q.j1n;
+	this.s7c = r1s.y1l;
 }
 
-l8s()
+g7y()
 {
-	this.d2x = v4q.f0n;
+	this.s7c = r1s.n4i;
 }
 
-i0x()
+h4t()
 {
-	if (this.d2x == v4q.j1n)
+	if (this.s7c == r1s.y1l)
 	{
-		this.d2x = v4q.f0n;
+		this.s7c = r1s.n4i;
 	}
 	else
 	{
-		this.d2x = v4q.j1n;
+		this.s7c = r1s.y1l;
 	}
 }
 
-q8y()
+k2b()
 {
-	return this.d2x == v4q.j1n;
+	return this.s7c == r1s.y1l;
 }
 
-a7q()
+b9z()
 {
-	return this.d2x == v4q.f0n;
+	return this.s7c == r1s.n4i;
 }
 
-l4f(k2d)
+c8p(t0h)
 {
-	return this.w7y[k2d] == r4u.f7c;
+	return this.h4w[t0h] == d5p.g3d;
 }
 
-c0t(k2d)
+u1g(t0h)
 {
-	let h1e = this.w7y[k2d];
-	return h1e == r4u.z0j ||
-		h1e == r4u.f3a ||
-    h1e == r4u.m1p ||
-    h1e == r4u.l5x ||
-    h1e == r4u.n3b ||
-    h1e == r4u.w6p;
+	let d8n = this.h4w[t0h];
+	return d8n == d5p.x1p ||
+		d8n == d5p.w1z ||
+    d8n == d5p.b1p ||
+    d8n == d5p.l1a ||
+    d8n == d5p.i2l ||
+    d8n == d5p.y3v;
 }
 
-a7b(k2d)
+g0d(t0h)
 {
-	let h1e = this.w7y[k2d];
-	return h1e == r4u.f1o ||
-		h1e == r4u.s7h ||
-    h1e == r4u.d5l ||
-    h1e == r4u.t2o ||
-    h1e == r4u.n8i ||
-    h1e == r4u.n1f;
+	let d8n = this.h4w[t0h];
+	return d8n == d5p.x6h ||
+		d8n == d5p.g6s ||
+    d8n == d5p.f4r ||
+    d8n == d5p.b3w ||
+    d8n == d5p.f8i ||
+    d8n == d5p.j1i;
 }
 
-m8u(k2d)
+w8g(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.z0j;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.x1p;
 }
 
-g2z(k2d)
+o2v(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.f3a;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.w1z;
 }
 
-v8k(k2d)
+e0b(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.m1p;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.b1p;
 }
 
-w7f(k2d)
+g2h(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.l5x;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.l1a;
 }
 
-e2x(k2d)
+c4c(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.n3b;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.i2l;
 }
 
-p3k(k2d)
+z3k(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.w6p;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.y3v;
 }
 
-j0l(k2d)
+s2b(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.f1o;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.x6h;
 }
 
-x6d(k2d)
+c2s(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.s7h;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.g6s;
 }
 
-b6q(k2d)
+a3p(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.d5l;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.f4r;
 }
 
-x4w(k2d)
+f0m(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.t2o;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.b3w;
 }
 
-c7z(k2d)
+u1b(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.n8i;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.f8i;
 }
 
-e2s(k2d)
+p4l(t0h)
 {
-  let h1e = this.w7y[k2d];
-	return h1e == r4u.n1f;
+  let d8n = this.h4w[t0h];
+	return d8n == d5p.j1i;
 }
 
-g4z()
+i4e()
 {
-  let s7n = 0;
-	for (const k2d of b7a)
+  let n6n = 0;
+	for (const t0h of x6a)
 	{
-    if (this.c0t(k2d))
+    if (this.u1g(t0h))
 		{
-			s7n++;
+			n6n++;
 		}
 	}
-	return s7n;
+	return n6n;
 }
 
-a1q()
+y2t()
 {
-  let s7n = 0;
-	for (const k2d of b7a)
+  let n6n = 0;
+	for (const t0h of x6a)
 	{
-    if (this.a7b(k2d))
+    if (this.g0d(t0h))
 		{
-			s7n++;
+			n6n++;
 		}
 	}
-	return s7n;
+	return n6n;
 }
 
-r9h(m7e)
+m5x(s5z)
 {
-  this.l6c = m7e.z4e();
+  this.r6f = s5z.r0c();
 }
 
-m7e()
+s5z()
 {
-  return this.l6c.z4e();
+  return this.r6f.r0c();
 }
 
-i8p(c7j)
+m4i(z1e)
 {
- 	this.l6c.t7e = f1k; 
-	if (c7j.l3z())
+ 	this.r6f.d7j = d2w; 
+	if (z1e.a9q())
 	{
-		this.i0x();
+		this.h4t();
 		return;
 	}
-	if (c7j.c0t())
+	if (z1e.u1g())
 	{
-		if (c7j.t7p())
+		if (z1e.w3x())
 		{
-			this.w7y[c7j.i9e] = r4u.f7c;
-			if (c7j.q1n == r4u.t2o)
+			this.h4w[z1e.v6z] = d5p.g3d;
+			if (z1e.h1u == d5p.b3w)
 			{
-				if (c7j.i9e == this.l6c.n7w)
+				if (z1e.v6z == this.r6f.j0x)
 				{
-					this.l6c.d9z = false;
+					this.r6f.c3u = false;
 				}
-				else if (c7j.i9e == this.l6c.l7r)
+				else if (z1e.v6z == this.r6f.l2n)
 				{
-					this.l6c.e1q = false;
+					this.r6f.v4d = false;
 				}
 			}
 		}
-		this.w7y[c7j.d4d] = r4u.f7c;
-		this.w7y[c7j.z4d] = c7j.o9x;
-		if (c7j.v5m == r4u.z0j)
+		this.h4w[z1e.i1o] = d5p.g3d;
+		this.h4w[z1e.p2v] = z1e.y6k;
+		if (z1e.x0m == d5p.x1p)
 		{
-			if ((c7j.z4d - c7j.d4d) == 16)
+			if ((z1e.p2v - z1e.i1o) == 16)
 			{
-				this.l6c.t7e = (c7j.d4d + 8);
+				this.r6f.d7j = (z1e.i1o + 8);
 			}
 		}
-		else if (c7j.v5m == r4u.l5x)
+		else if (z1e.x0m == d5p.l1a)
 		{
-			if (c7j.d4d == this.l6c.x4q)
+			if (z1e.i1o == this.r6f.x3z)
 			{
-				this.l6c.a8t = false;
+				this.r6f.i6i = false;
 			}
-			else if (c7j.d4d == this.l6c.a0r)
+			else if (z1e.i1o == this.r6f.o9s)
 			{
-				this.l6c.q1d = false;
+				this.r6f.k0s = false;
 			}
 		}
-		else if (c7j.v5m == r4u.w6p)
+		else if (z1e.x0m == d5p.y3v)
 		{
-			if (c7j.t2p())
+			if (z1e.i7q())
 			{
-				if (c7j.z4d == s2j)
+				if (z1e.p2v == w5i)
 				{
 					
-					if (this.l6c.x4q != c7j.z4d)
+					if (this.r6f.x3z != z1e.p2v)
 					{
-						this.w7y[this.l6c.x4q] = r4u.f7c;
+						this.h4w[this.r6f.x3z] = d5p.g3d;
 					}
-					this.w7y[q3b] = r4u.l5x;
+					this.h4w[g3y] = d5p.l1a;
 				}
-				else if (c7j.z4d == s9p)
+				else if (z1e.p2v == j7x)
 				{
 					
-					if (this.l6c.a0r != c7j.z4d)
+					if (this.r6f.o9s != z1e.p2v)
 					{
-						this.w7y[this.l6c.a0r] = r4u.f7c;
+						this.h4w[this.r6f.o9s] = d5p.g3d;
 					}
-					this.w7y[b0h] = r4u.l5x;
+					this.h4w[u8j] = d5p.l1a;
 				}
 			}
-			this.l6c.a8t = false;
-			this.l6c.q1d = false;
-			this.whiteKing_ = c7j.z4d;
+			this.r6f.i6i = false;
+			this.r6f.k0s = false;
+			this.whiteKing_ = z1e.p2v;
 		}
 	}
 	else
 	{
-		if (c7j.t7p())
+		if (z1e.w3x())
 		{
-			this.w7y[c7j.i9e] = r4u.f7c;
-			if (c7j.q1n == r4u.l5x)
+			this.h4w[z1e.v6z] = d5p.g3d;
+			if (z1e.h1u == d5p.l1a)
 			{
-				if (c7j.i9e == this.l6c.x4q)
+				if (z1e.v6z == this.r6f.x3z)
 				{
-					this.l6c.a8t = false;
+					this.r6f.i6i = false;
 				}
-				else if (c7j.i9e == this.l6c.a0r)
+				else if (z1e.v6z == this.r6f.o9s)
 				{
-					this.l6c.q1d = false;
+					this.r6f.k0s = false;
 				}
 			}
 		}
-		this.w7y[c7j.d4d] = r4u.f7c;
-		this.w7y[c7j.z4d] = c7j.o9x;
-		if (c7j.v5m == r4u.f1o)
+		this.h4w[z1e.i1o] = d5p.g3d;
+		this.h4w[z1e.p2v] = z1e.y6k;
+		if (z1e.x0m == d5p.x6h)
 		{
-			if ((c7j.z4d - c7j.d4d) == -16)
+			if ((z1e.p2v - z1e.i1o) == -16)
 			{
-				this.l6c.t7e = (c7j.d4d - 8);
+				this.r6f.d7j = (z1e.i1o - 8);
 			}
 		}
-		else if (c7j.v5m == r4u.t2o)
+		else if (z1e.x0m == d5p.b3w)
 		{
-			if (c7j.d4d == this.l6c.n7w)
+			if (z1e.i1o == this.r6f.j0x)
 			{
-				this.l6c.d9z = false;
+				this.r6f.c3u = false;
 			}
-			else if (c7j.d4d == this.l6c.l7r)
+			else if (z1e.i1o == this.r6f.l2n)
 			{
-				this.l6c.e1q = false;
+				this.r6f.v4d = false;
 			}
 		}
-		else if (c7j.v5m == r4u.n1f)
+		else if (z1e.x0m == d5p.j1i)
 		{
-			if (c7j.t2p())
+			if (z1e.i7q())
 			{
-				if (c7j.z4d == h9y)
+				if (z1e.p2v == s5q)
 				{
 					
-					if (this.l6c.n7w != c7j.z4d)
+					if (this.r6f.j0x != z1e.p2v)
 					{
-						this.w7y[this.l6c.n7w] = r4u.f7c;
+						this.h4w[this.r6f.j0x] = d5p.g3d;
 					}
-					this.w7y[i0u] = r4u.t2o;
+					this.h4w[o4f] = d5p.b3w;
 				}
-				else if (c7j.z4d == z4j)
+				else if (z1e.p2v == z1s)
 				{
 					
-					if (this.l6c.l7r != c7j.z4d)
+					if (this.r6f.l2n != z1e.p2v)
 					{
-						this.w7y[this.l6c.l7r] = r4u.f7c;
+						this.h4w[this.r6f.l2n] = d5p.g3d;
 					}
-					this.w7y[w2r] = r4u.t2o;
+					this.h4w[w9o] = d5p.b3w;
 				}
 			}
-			this.l6c.d9z = false;
-			this.l6c.e1q = false;
-			this.blackKing_ = c7j.z4d;
+			this.r6f.c3u = false;
+			this.r6f.v4d = false;
+			this.blackKing_ = z1e.p2v;
 		}
 	}
-	this.i0x();
+	this.h4t();
 }
 
-o1f(c7j)
+k4f(z1e)
 {
- 	if (c7j.l3z())
+ 	if (z1e.a9q())
 	{
-		this.i0x();
+		this.h4t();
 		return;
 	}
-	if (c7j.c0t())
+	if (z1e.u1g())
 	{
-		this.w7y[c7j.z4d] = r4u.f7c;
-		this.w7y[c7j.d4d] = c7j.v5m;
-		if (c7j.v5m == r4u.w6p)
+		this.h4w[z1e.p2v] = d5p.g3d;
+		this.h4w[z1e.i1o] = z1e.x0m;
+		if (z1e.x0m == d5p.y3v)
 		{
-			if (c7j.t2p())
+			if (z1e.i7q())
 			{
-				if (c7j.z4d == s2j)
+				if (z1e.p2v == w5i)
 				{
 					
-					if (q3b != c7j.d4d)
+					if (g3y != z1e.i1o)
 					{
-						this.w7y[q3b] = r4u.f7c;
+						this.h4w[g3y] = d5p.g3d;
 					}
-					this.w7y[this.l6c.x4q] = r4u.l5x;
+					this.h4w[this.r6f.x3z] = d5p.l1a;
 				}
-				else if (c7j.z4d == s9p)
+				else if (z1e.p2v == j7x)
 				{
 					
-					if (b0h != c7j.d4d)
+					if (u8j != z1e.i1o)
 					{
-						this.w7y[b0h] = r4u.f7c;
+						this.h4w[u8j] = d5p.g3d;
 					}
-					this.w7y[this.l6c.a0r] = r4u.l5x;
+					this.h4w[this.r6f.o9s] = d5p.l1a;
 				}
 			}
-			this.whiteKing_ = c7j.d4d;
+			this.whiteKing_ = z1e.i1o;
 		}
-		if (c7j.t7p())
+		if (z1e.w3x())
 		{
-			this.w7y[c7j.i9e] = c7j.q1n;
+			this.h4w[z1e.v6z] = z1e.h1u;
 		}
 	}
 	else
 	{
-		this.w7y[c7j.z4d] = r4u.f7c;
-		this.w7y[c7j.d4d] = c7j.v5m;
-		if (c7j.v5m == r4u.n1f)
+		this.h4w[z1e.p2v] = d5p.g3d;
+		this.h4w[z1e.i1o] = z1e.x0m;
+		if (z1e.x0m == d5p.j1i)
 		{
-			if (c7j.t2p())
+			if (z1e.i7q())
 			{
-				if (c7j.z4d == h9y)
+				if (z1e.p2v == s5q)
 				{
 					
-					if (i0u != c7j.d4d)
+					if (o4f != z1e.i1o)
 					{
-						this.w7y[i0u] = r4u.f7c;
+						this.h4w[o4f] = d5p.g3d;
 					}
-					this.w7y[this.l6c.n7w] = r4u.t2o;
+					this.h4w[this.r6f.j0x] = d5p.b3w;
 				}
-				else if (c7j.z4d == z4j)
+				else if (z1e.p2v == z1s)
 				{
 					
-					if (w2r != c7j.d4d)
+					if (w9o != z1e.i1o)
 					{
-						this.w7y[w2r] = r4u.f7c;
+						this.h4w[w9o] = d5p.g3d;
 					}
-					this.w7y[this.l6c.l7r] = r4u.t2o;
+					this.h4w[this.r6f.l2n] = d5p.b3w;
 				}
 			}
-			this.blackKing_ = c7j.d4d;
+			this.blackKing_ = z1e.i1o;
 		}
-		if (c7j.t7p())
+		if (z1e.w3x())
 		{
-			this.w7y[c7j.i9e] = c7j.q1n;
+			this.h4w[z1e.v6z] = z1e.h1u;
 		}
 	}
-	this.i0x();
+	this.h4t();
 }
 
-w6p()
+y3v()
 {
   return this.whiteKing_;
 }
 
-n1f()
+j1i()
 {
   return this.blackKing_;
 }
 
-x5u()
+c6a()
 {
-	return this.l6c.q1d;
+	return this.r6f.k0s;
 }
 
-l1o()
+u9m()
 {
-	return this.l6c.a8t;
+	return this.r6f.i6i;
 }
 
-m0z()
+i0q()
 {
-	return this.l6c.e1q;
+	return this.r6f.v4d;
 }
 
-h8l()
+p9x()
 {
-	return this.l6c.d9z;
+	return this.r6f.c3u;
 }
 
-c4b()
+g1f()
 {
-  return this.l6c.c4b;
+  return this.r6f.g1f;
 }
 
-a4l()
+s8j()
 {
-  return this.l6c.a4l;
+  return this.r6f.s8j;
 }
 
-a0r()
+o9s()
 {
-  return this.l6c.a0r;
+  return this.r6f.o9s;
 }
 
-x4q()
+x3z()
 {
-  return this.l6c.x4q;
+  return this.r6f.x3z;
 }
 
-l7r()
+l2n()
 {
-  return this.l6c.l7r;
+  return this.r6f.l2n;
 }
 
-n7w()
+j0x()
 {
-  return this.l6c.n7w;
+  return this.r6f.j0x;
 }
 
-t7e()
+d7j()
 {
-  return this.l6c.t7e;
+  return this.r6f.d7j;
 }
 
-d0a()
+v8j()
 {
-	return this.l6c.u1y;
+	return this.r6f.i5w;
 }
 
 }
-const m1w = 0;
-const u4u   = 1;
-const c8w  = m1w;
+const v0a = 0;
+const t1w   = 1;
+const l0j  = v0a;
 
-function z8h()
+function x4i()
 {
-  let f1w = [];
-	f1w.push("CBurnettt (Lichess)");
-	f1w.push("Merida (Lichess)");
-	return f1w;
+  let o8y = [];
+	o8y.push("CBurnettt (Lichess)");
+	o8y.push("Merida (Lichess)");
+	return o8y;
 }
 
-class m1z
+class y5p
 {
 
 constructor()
 {
-	this.p1d = new j7i();
-	this.s5p = null;
+	this.s2a = new b1y();
+	this.n6c = null;
 }
 
-z4e()
+r0c()
 {
-	let k0h = new m1z();
-	k0h.p1d = this.p1d.z4e();
-	k0h.s5p = null;
-	if (this.s5p)
+	let i3l = new y5p();
+	i3l.s2a = this.s2a.r0c();
+	i3l.n6c = null;
+	if (this.n6c)
 	{
-		k0h.s5p = this.s5p.z4e();
+		i3l.n6c = this.n6c.r0c();
 	}
-	return k0h;
+	return i3l;
 }
 
-q0w(o8d)
+s4b(b5l)
 {
-	if (this.p1d.t5w(o8d))
+	if (this.s2a.n1x(b5l))
 	{
 		return false;
 	}
 	return true;
 }
 
-t5w(o8d)
+n1x(b5l)
 {
-	return !this.q0w(o8d);
+	return !this.s4b(b5l);
 }
 
-f7c()
+g3d()
 {
-	return this.p1d.f7c();
+	return this.s2a.g3d();
 }
 
-d4d()
+i1o()
 {
-	return this.p1d.d4d;
+	return this.s2a.i1o;
 }
 
-z4d()
+p2v()
 {
-	return this.p1d.z4d;
+	return this.s2a.p2v;
 }
 
-v5m()
+x0m()
 {
-	return this.p1d.v5m;
+	return this.s2a.x0m;
 }
 
-o9x()
+y6k()
 {
-	return this.p1d.o9x;
+	return this.s2a.y6k;
 }
 
-i9e()
+v6z()
 {
-	return this.p1d.i9e;
+	return this.s2a.v6z;
 }
 
-q1n()
+h1u()
 {
-	return this.p1d.q1n;
+	return this.s2a.h1u;
 }
 
-g8c()
+r1z()
 {
-	return this.p1d.g8c();
+	return this.s2a.r1z();
 }
 
-c0t()
+u1g()
 {
-	return this.p1d.c0t();
+	return this.s2a.u1g();
 }
 
-a7b()
+g0d()
 {
-	return this.p1d.a7b();
+	return this.s2a.g0d();
 }
 
-t4b()
+m7o()
 {
-	return this.p1d.t4b();
+	return this.s2a.m7o();
 }
 
-l3z()
+a9q()
 {
-	return this.p1d.l3z();
+	return this.s2a.a9q();
 }
 
-t7p()
+w3x()
 {
-	return this.p1d.t7p();
+	return this.s2a.w3x();
 }
 
-l6r()
+x5w()
 {
-	if (this.s5p == null)
+	if (this.n6c == null)
 	{
-		this.s5p = new f6g();
+		this.n6c = new r0u();
 	}
 }
 
-r9f()
+r8k()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		if (this.s5p.f7c())
+		if (this.n6c.g3d())
 		{
-			this.a4u();
+			this.h3w();
 		}
 	}
 }
 
-o8m()
+x3r()
 {
-	return this.s5p != null;
+	return this.n6c != null;
 }
 
-a4u()
+h3w()
 {
-	this.s5p = null;
+	this.n6c = null;
 }
 
-q4s(r2w)
+h5l(r3s)
 {
-	this.l6r();
-	this.s5p = r2w.z4e();
+	this.x5w();
+	this.n6c = r3s.r0c();
 }
 
-m3s()
+d7f()
 {
-	return this.s5p;
+	return this.n6c;
 }
 
-n0i(o8d)
+p2i(b5l)
 {
-	if (this.s5p && !o8d.s5p)
+	if (this.n6c && !b5l.n6c)
 	{
 		return false;
 	}
-	if (!this.s5p && o8d.s5p)
+	if (!this.n6c && b5l.n6c)
 	{
 		return false;
 	}
-	if (!this.s5p && !o8d.s5p)
+	if (!this.n6c && !b5l.n6c)
 	{
 		return true;
 	}
-	return this.s5p.q0w(o8d.s5p);
+	return this.n6c.s4b(b5l.n6c);
 }
 
-n2u()
+d0d()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.u4n = '';
-		this.r9f();
+		this.n6c.f2r = '';
+		this.r8k();
 	}
 }
 
-f3o()
+c8b()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.u4n.length != 0;
+		return this.n6c.f2r.length != 0;
 	}
 	else
 	{
@@ -1479,11 +1479,11 @@ f3o()
 	}
 }
 
-u4n()
+f2r()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.u4n;
+		return this.n6c.f2r;
 	}
 	else
 	{
@@ -1491,27 +1491,27 @@ u4n()
 	}
 }
 
-q0s(m3t)
+l6q(m7i)
 {
-	this.l6r();
-	this.s5p.u4n = m3t;
-	this.r9f();
+	this.x5w();
+	this.n6c.f2r = m7i;
+	this.r8k();
 }
 
-i5y()
+p2p()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.k2c = '';
-		this.r9f();
+		this.n6c.i7r = '';
+		this.r8k();
 	}
 }
 
-j9u()
+k5p()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.k2c.length != 0;
+		return this.n6c.i7r.length != 0;
 	}
 	else
 	{
@@ -1519,11 +1519,11 @@ j9u()
 	}
 }
 
-k2c()
+i7r()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.k2c;
+		return this.n6c.i7r;
 	}
 	else
 	{
@@ -1531,27 +1531,27 @@ k2c()
 	}
 }
 
-g9m(m3t)
+p8c(m7i)
 {
-	this.l6r();
-	this.s5p.k2c = m3t;
-	this.r9f();
+	this.x5w();
+	this.n6c.i7r = m7i;
+	this.r8k();
 }
 
-v8w()
+z2r()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.s4h = z1r.i6p;
-		this.r9f();
+		this.n6c.o1b = t4p.f0x;
+		this.r8k();
 	}
 }
 
-f6c()
+s3k()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.s4h != z1r.i6p;
+		return this.n6c.o1b != t4p.f0x;
 	}
 	else
 	{
@@ -1559,39 +1559,39 @@ f6c()
 	}
 }
 
-s4h()
+o1b()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.s4h;
+		return this.n6c.o1b;
 	}
 	else
 	{
-		return z1r.i6p;
+		return t4p.f0x;
 	}
 }
 
-d0w(s4h)
+f2f(o1b)
 {
-	this.l6r();
-	this.s5p.s4h = s4h;
-	this.r9f();
+	this.x5w();
+	this.n6c.o1b = o1b;
+	this.r8k();
 }
 
-e8o()
+j4i()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.style = l9b.i6p;
-		this.r9f();
+		this.n6c.style = r2j.f0x;
+		this.r8k();
 	}
 }
 
-s2h()
+n6r()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.style != l9b.i6p;
+		return this.n6c.style != r2j.f0x;
 	}
 	else
 	{
@@ -1601,37 +1601,37 @@ s2h()
 
 style()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.style;
+		return this.n6c.style;
 	}
 	else
 	{
-		return l9b.i6p;
+		return r2j.f0x;
 	}
 }
 
-d7g(style)
+c4p(style)
 {
-	this.l6r();
-	this.s5p.style = style;
-	this.r9f();
+	this.x5w();
+	this.n6c.style = style;
+	this.r8k();
 }
 
-b1p()
+y8b()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.value = c3i.i6p;
-		this.r9f();
+		this.n6c.value = m0e.f0x;
+		this.r8k();
 	}
 }
 
-o8u()
+h2x()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.value != c3i.i6p;
+		return this.n6c.value != m0e.f0x;
 	}
 	else
 	{
@@ -1641,37 +1641,37 @@ o8u()
 
 value()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.value;
+		return this.n6c.value;
 	}
 	else
 	{
-		return c3i.i6p;
+		return m0e.f0x;
 	}
 }
 
-s0b(value)
+a0e(value)
 {
-	this.l6r();
-	this.s5p.value = value;
-	this.r9f();
+	this.x5w();
+	this.n6c.value = value;
+	this.r8k();
 }
 
-v4w()
+y8w()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.k2p = f7p.i6p;
-		this.r9f();
+		this.n6c.u6x = k9n.f0x;
+		this.r8k();
 	}
 }
 
-t9n()
+y7s()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.k2p != f7p.i6p;
+		return this.n6c.u6x != k9n.f0x;
 	}
 	else
 	{
@@ -1679,38 +1679,38 @@ t9n()
 	}
 }
 
-k2p()
+u6x()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.k2p;
+		return this.n6c.u6x;
 	}
 	else
 	{
-		return f7p.i6p;
+		return k9n.f0x;
 	}
 }
 
-h9r(k2p)
+b6k(u6x)
 {
-	this.l6r();
-	this.s5p.k2p = k2p;
-	this.r9f();
+	this.x5w();
+	this.n6c.u6x = u6x;
+	this.r8k();
 }
 
-n1w()
+n9a()
 {
   
 }
 
-q3h()
+y9o()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
- 		if (this.s5p.u4n.length != 0)
+ 		if (this.n6c.f2r.length != 0)
     {
-      let b9l = this.s5p.u4n.indexOf("[#]");
-      return b9l != -1;
+      let p6q = this.n6c.f2r.indexOf("[#]");
+      return p6q != -1;
 		}
 		else
 		{
@@ -1723,25 +1723,25 @@ q3h()
 	}
 }
 
-n8b()
+a8v()
 {
   
 }
 
-d8c()
+o3d()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.a5n = false;
-		this.r9f();
+		this.n6c.d0q = false;
+		this.r8k();
 	}
 }
 
-g5i()
+a8q()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.a5n;
+		return this.n6c.d0q;
 	}
 	else
 	{
@@ -1749,56 +1749,27 @@ g5i()
 	}
 }
 
-l9f()
+p7u()
 {
-	this.l6r();
-	this.s5p.a5n = true;
-	this.r9f();
+	this.x5w();
+	this.n6c.d0q = true;
+	this.r8k();
 }
 
-p6e()
+q0p()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.x8r = false;
-		this.r9f();
+		this.n6c.e8i = false;
+		this.r8k();
 	}
 }
 
-y5z()
+h4b()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.x8r;
-	}
-	else
-	{
-		return false;
-	}
-}
-
-s6r()
-{
-	this.l6r();
-	this.s5p.x8r = true;
-	this.r9f();
-}
-
-m5p()
-{
-	if (this.s5p)
-	{
-		this.s5p.c6n.p7a();
-		this.s5p.q7k.p7a();
-		this.r9f();
-	}
-}
-
-b3i()
-{
-	if (this.s5p)
-	{
-		return this.h2g() || this.l8w();
+		return this.n6c.e8i;
 	}
 	else
 	{
@@ -1806,60 +1777,28 @@ b3i()
 	}
 }
 
-y7b()
+j3x()
 {
-	if (this.s5p)
+	this.x5w();
+	this.n6c.e8i = true;
+	this.r8k();
+}
+
+v9f()
+{
+	if (this.n6c)
 	{
-		this.s5p.c6n.p7a();
-		this.r9f();
+		this.n6c.u5a.h9j();
+		this.n6c.z2x.h9j();
+		this.r8k();
 	}
 }
 
-h2g()
+f5x()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return !this.s5p.c6n.f7c();
-	}
-	else
-	{
-		return false;
-	}
-}
-
-c6n()
-{
-	if (this.s5p)
-	{
-		return this.s5p.c6n.z4e();
-	}
-	else
-	{
-		return new n3j();
-	}
-}
-
-f4h(c6n)
-{
-	this.l6r();
-	this.s5p.c6n = c6n.z4e();
-	this.r9f();
-}
-
-n3m()
-{
-	if (this.s5p)
-	{
-		this.s5p.q7k.p7a();
-		this.r9f();
-	}
-}
-
-l8w()
-{
-	if (this.s5p)
-	{
-		return !this.s5p.q7k.f7c();
+		return this.m9z() || this.j3d();
 	}
 	else
 	{
@@ -1867,39 +1806,20 @@ l8w()
 	}
 }
 
-q7k()
+s1q()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.q7k.z4e();
-	}
-	else
-	{
-		return new k4l();
+		this.n6c.u5a.h9j();
+		this.r8k();
 	}
 }
 
-j9q(q7k)
+m9z()
 {
-	this.l6r();
-	this.s5p.q7k = q7k.z4e();
-	this.r9f();
-}
-
-m0t()
-{
-	if (this.s5p)
+	if (this.n6c)
 	{
-		this.s5p.s8d.i9b();
-		this.r9f();
-	}
-}
-
-g1d()
-{
-	if (this.s5p)
-	{
-		return this.s5p.s8d.q0i();
+		return !this.n6c.u5a.g3d();
 	}
 	else
 	{
@@ -1907,82 +1827,162 @@ g1d()
 	}
 }
 
-s8d()
+u5a()
 {
-	if (this.s5p)
+	if (this.n6c)
 	{
-		return this.s5p.s8d.z4e();
+		return this.n6c.u5a.r0c();
 	}
 	else
 	{
-		return new f2p();
+		return new u6i();
 	}
 }
 
-n3q(s8d)
+r8y(u5a)
 {
-	this.l6r();
-	this.s5p.s8d = s8d.z4e();
-	this.r9f();
+	this.x5w();
+	this.n6c.u5a = u5a.r0c();
+	this.r8k();
 }
 
-a5a(x2v)
+r1b()
 {
-	this.p1d = x2v.z4e();
-	this.s5p = null;
+	if (this.n6c)
+	{
+		this.n6c.z2x.h9j();
+		this.r8k();
+	}
 }
 
-x2v()
+j3d()
 {
-	let b5k = new j7i();
-  return Object.assign(b5k, this.p1d);
+	if (this.n6c)
+	{
+		return !this.n6c.z2x.g3d();
+	}
+	else
+	{
+		return false;
+	}
+}
+
+z2x()
+{
+	if (this.n6c)
+	{
+		return this.n6c.z2x.r0c();
+	}
+	else
+	{
+		return new s2q();
+	}
+}
+
+v7d(z2x)
+{
+	this.x5w();
+	this.n6c.z2x = z2x.r0c();
+	this.r8k();
+}
+
+u1n()
+{
+	if (this.n6c)
+	{
+		this.n6c.r7v.o5s();
+		this.r8k();
+	}
+}
+
+x2m()
+{
+	if (this.n6c)
+	{
+		return this.n6c.r7v.v2j();
+	}
+	else
+	{
+		return false;
+	}
+}
+
+r7v()
+{
+	if (this.n6c)
+	{
+		return this.n6c.r7v.r0c();
+	}
+	else
+	{
+		return new i5q();
+	}
+}
+
+v2r(r7v)
+{
+	this.x5w();
+	this.n6c.r7v = r7v.r0c();
+	this.r8k();
+}
+
+n9k(i1j)
+{
+	this.s2a = i1j.r0c();
+	this.n6c = null;
+}
+
+i1j()
+{
+	let t3c = new b1y();
+  return Object.assign(t3c, this.s2a);
 }
 
 }
 
-function a7k(x2v)
+function h6w(i1j)
 {
-  let i2z = new m1z();
-  i2z.a5a(x2v);
-  return i2z;
+  let n5d = new y5p();
+  n5d.n9k(i1j);
+  return n5d;
 }
-class j7i
+class b1y
 {
 
 constructor()
 {
-	this.d4d = f1k;
-	this.v5m = r4u.f7c;
-	this.z4d = f1k;
-	this.o9x = r4u.f7c;
-	this.i9e = f1k;
-	this.v0f = r4u.f7c;
-	this.type = u5u.i6p;
+	this.i1o = d2w;
+	this.x0m = d5p.g3d;
+	this.p2v = d2w;
+	this.y6k = d5p.g3d;
+	this.v6z = d2w;
+	this.m9u = d5p.g3d;
+	this.type = a8g.f0x;
 }
 
-z4e()
+r0c()
 {
-	let b5k = new j7i();
-	b5k.d4d = this.d4d;
-	b5k.v5m = this.v5m;
-	b5k.z4d = this.z4d;
-	b5k.o9x = this.o9x;
-	b5k.i9e = this.i9e;
-	b5k.q1n = this.q1n;
-	b5k.type = this.type;
-	return b5k;
+	let t3c = new b1y();
+	t3c.i1o = this.i1o;
+	t3c.x0m = this.x0m;
+	t3c.p2v = this.p2v;
+	t3c.y6k = this.y6k;
+	t3c.v6z = this.v6z;
+	t3c.h1u = this.h1u;
+	t3c.type = this.type;
+	return t3c;
 }
 
-q0w(o8d)
+s4b(b5l)
 {
 	if (
-		this.d4d != o8d.d4d ||
-		this.v5m != o8d.v5m ||
-		this.z4d != o8d.z4d ||
-		this.o9x != o8d.o9x ||
-		this.i9e != o8d.i9e ||
-		this.q1n != o8d.q1n ||
-    this.type != o8d.type)
+		this.i1o != b5l.i1o ||
+		this.x0m != b5l.x0m ||
+		this.p2v != b5l.p2v ||
+		this.y6k != b5l.y6k ||
+		this.v6z != b5l.v6z ||
+		this.h1u != b5l.h1u ||
+    this.type != b5l.type)
 	{
 		return false;
 	}
@@ -1992,64 +1992,64 @@ q0w(o8d)
 	}
 }
 
-t5w(o8d)
+n1x(b5l)
 {
-	return !this.q0w(o8d);
+	return !this.s4b(b5l);
 }
 
-f7c()
+g3d()
 {
-	return this.type == u5u.i6p;
+	return this.type == a8g.f0x;
 }
 
-c0t()
+u1g()
 {
-	return this.v5m == r4u.z0j ||
-		this.v5m == r4u.f3a ||
-    this.v5m == r4u.m1p ||
-    this.v5m == r4u.l5x ||
-    this.v5m == r4u.n3b ||
-    this.v5m == r4u.w6p;
+	return this.x0m == d5p.x1p ||
+		this.x0m == d5p.w1z ||
+    this.x0m == d5p.b1p ||
+    this.x0m == d5p.l1a ||
+    this.x0m == d5p.i2l ||
+    this.x0m == d5p.y3v;
 }
 
-a7b()
+g0d()
 {
-	return this.v5m == r4u.f1o ||
-		this.v5m == r4u.s7h ||
-    this.v5m == r4u.d5l ||
-    this.v5m == r4u.t2o ||
-    this.v5m == r4u.n8i ||
-    this.v5m == r4u.n1f;
+	return this.x0m == d5p.x6h ||
+		this.x0m == d5p.g6s ||
+    this.x0m == d5p.f4r ||
+    this.x0m == d5p.b3w ||
+    this.x0m == d5p.f8i ||
+    this.x0m == d5p.j1i;
 }
 
-t7p()
+w3x()
 {
-	return this.i9e != f1k;
+	return this.v6z != d2w;
 }
 
-t4b()
+m7o()
 {
-	return this.v5m != this.o9x;
+	return this.x0m != this.y6k;
 }
 
-a0k()
+d0b()
 {
-  return this.type == u5u.a8n;
+  return this.type == a8g.g9h;
 }
 
-l3z()
+a9q()
 {
-	return this.type == u5u.i6p;
+	return this.type == a8g.f0x;
 }
 
-t2p()
+i7q()
 {
-	return this.type == u5u.g2x;
+	return this.type == a8g.k4m;
 }
 
-g8c()
+r1z()
 {
-	if (this.t7p())
+	if (this.w3x())
   {
     return 1;
   }
@@ -2082,1396 +2082,1396 @@ var knightSquares = [];
 
 var moveGeneratorInited = false;
 
-function y7q(f1l, x2v)
+function k4c(r2x, i1j)
 {
-	if (x2v.type == u5u.j5k)
+	if (i1j.type == a8g.j8g)
 	{
-		f1l[x2v.z4d] = f1l[x2v.d4d];
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = r2x[i1j.i1o];
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.a8n)
+	else if (i1j.type == a8g.g9h)
 	{
-		let i9e = (x2v.z4d - 8);
-		f1l[i9e] = r4u.f7c;
-		f1l[x2v.z4d] = r4u.z0j;
-		f1l[x2v.d4d] = r4u.f7c;
+		let v6z = (i1j.p2v - 8);
+		r2x[v6z] = d5p.g3d;
+		r2x[i1j.p2v] = d5p.x1p;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.z5d)
+	else if (i1j.type == a8g.b8v)
 	{
-		f1l[x2v.z4d] = r4u.n3b;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.i2l;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.h0w)
+	else if (i1j.type == a8g.q1x)
 	{
-		f1l[x2v.z4d] = r4u.l5x;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.l1a;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.k8w)
+	else if (i1j.type == a8g.q2q)
 	{
-		f1l[x2v.z4d] = r4u.m1p;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.b1p;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.f5e)
+	else if (i1j.type == a8g.a0g)
 	{
-		f1l[x2v.z4d] = r4u.f3a;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.w1z;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
 }
 
-function s7b(f1l, x2v)
+function o8h(r2x, i1j)
 {
-	if (x2v.type == u5u.j5k)
+	if (i1j.type == a8g.j8g)
 	{
-		f1l[x2v.z4d] = f1l[x2v.d4d];
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = r2x[i1j.i1o];
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.a8n)
+	else if (i1j.type == a8g.g9h)
 	{
-		let i9e = (x2v.z4d + 8);
-		f1l[i9e] = r4u.f7c;
-		f1l[x2v.z4d] = r4u.f1o;
-		f1l[x2v.d4d] = r4u.f7c;
+		let v6z = (i1j.p2v + 8);
+		r2x[v6z] = d5p.g3d;
+		r2x[i1j.p2v] = d5p.x6h;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.z5d)
+	else if (i1j.type == a8g.b8v)
 	{
-		f1l[x2v.z4d] = r4u.n8i;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.f8i;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.h0w)
+	else if (i1j.type == a8g.q1x)
 	{
-		f1l[x2v.z4d] = r4u.t2o;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.b3w;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.k8w)
+	else if (i1j.type == a8g.q2q)
 	{
-		f1l[x2v.z4d] = r4u.d5l;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.f4r;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
-	else if (x2v.type == u5u.f5e)
+	else if (i1j.type == a8g.a0g)
 	{
-		f1l[x2v.z4d] = r4u.s7h;
-		f1l[x2v.d4d] = r4u.f7c;
+		r2x[i1j.p2v] = d5p.g6s;
+		r2x[i1j.i1o] = d5p.g3d;
 	}
 }
 
-function j2f(f1l, x2v)
+function t1m(r2x, i1j)
 {
-	if (x2v.z4d == s2j)
+	if (i1j.p2v == w5i)
 	{
-		f1l[x2v.z4d] = r4u.w6p;
-		f1l[x2v.d4d] = r4u.f7c;
-		f1l[a1] = r4u.f7c; 
-		f1l[q3b] = r4u.l5x;
+		r2x[i1j.p2v] = d5p.y3v;
+		r2x[i1j.i1o] = d5p.g3d;
+		r2x[a1] = d5p.g3d; 
+		r2x[g3y] = d5p.l1a;
 	}
 	else
 	{
-		f1l[x2v.z4d] = r4u.w6p;
-		f1l[x2v.d4d] = r4u.f7c;
-		f1l[m0d] = r4u.f7c; 
-		f1l[b0h] = r4u.l5x;
+		r2x[i1j.p2v] = d5p.y3v;
+		r2x[i1j.i1o] = d5p.g3d;
+		r2x[x7a] = d5p.g3d; 
+		r2x[u8j] = d5p.l1a;
 	}
 }
 
-function x2w(f1l, x2v)
+function i5y(r2x, i1j)
 {
-	if (x2v.z4d == h9y)
+	if (i1j.p2v == s5q)
 	{
-		f1l[x2v.z4d] = r4u.n1f;
-		f1l[x2v.d4d] = r4u.f7c;
-		f1l[a8] = r4u.f7c; 
-		f1l[i0u] = r4u.t2o;
+		r2x[i1j.p2v] = d5p.j1i;
+		r2x[i1j.i1o] = d5p.g3d;
+		r2x[a8] = d5p.g3d; 
+		r2x[o4f] = d5p.b3w;
 	}
 	else
 	{
-		f1l[x2v.z4d] = r4u.n1f;
-		f1l[x2v.d4d] = r4u.f7c;
-		f1l[e9f] = r4u.f7c; 
-		f1l[w2r] = r4u.t2o;
+		r2x[i1j.p2v] = d5p.j1i;
+		r2x[i1j.i1o] = d5p.g3d;
+		r2x[g3r] = d5p.g3d; 
+		r2x[w9o] = d5p.b3w;
 	}
 }
 
-function d4j(f1l, x2v, m7e)
+function a5l(r2x, i1j, s5z)
 {
-	if (x2v.z4d == s2j)
+	if (i1j.p2v == w5i)
 	{
-		f1l[x2v.z4d] = r4u.w6p;
-		f1l[x2v.d4d] = r4u.f7c;
-		if (m7e.x4q != x2v.z4d)
+		r2x[i1j.p2v] = d5p.y3v;
+		r2x[i1j.i1o] = d5p.g3d;
+		if (s5z.x3z != i1j.p2v)
 		{
-			f1l[m7e.x4q] = r4u.f7c;
+			r2x[s5z.x3z] = d5p.g3d;
 		}
-		f1l[q3b] = r4u.l5x;
+		r2x[g3y] = d5p.l1a;
 	}
-	else if (x2v.z4d == s9p)
+	else if (i1j.p2v == j7x)
 	{
-		f1l[x2v.z4d] = r4u.w6p;
-		f1l[x2v.d4d] = r4u.f7c;
-		if (m7e.a0r != x2v.z4d)
+		r2x[i1j.p2v] = d5p.y3v;
+		r2x[i1j.i1o] = d5p.g3d;
+		if (s5z.o9s != i1j.p2v)
 		{
-			f1l[m7e.a0r] = r4u.f7c;
+			r2x[s5z.o9s] = d5p.g3d;
 		}
-		f1l[b0h] = r4u.l5x;
+		r2x[u8j] = d5p.l1a;
 	}
 }
 
-function h8d(f1l, x2v, m7e)
+function d0r(r2x, i1j, s5z)
 {
-	if (x2v.z4d == h9y)
+	if (i1j.p2v == s5q)
 	{
-		f1l[x2v.z4d] = r4u.n1f;
-		f1l[x2v.d4d] = r4u.f7c;
-		if (m7e.n7w != x2v.z4d)
+		r2x[i1j.p2v] = d5p.j1i;
+		r2x[i1j.i1o] = d5p.g3d;
+		if (s5z.j0x != i1j.p2v)
 		{
-			f1l[m7e.n7w] = r4u.f7c;
+			r2x[s5z.j0x] = d5p.g3d;
 		}
-		f1l[i0u] = r4u.t2o;
+		r2x[o4f] = d5p.b3w;
 	}
-	else if (x2v.z4d == z4j)
+	else if (i1j.p2v == z1s)
 	{
-		f1l[x2v.z4d] = r4u.n1f;
-		f1l[x2v.d4d] = r4u.f7c;
-		if (m7e.l7r != x2v.z4d)
+		r2x[i1j.p2v] = d5p.j1i;
+		r2x[i1j.i1o] = d5p.g3d;
+		if (s5z.l2n != i1j.p2v)
 		{
-			f1l[m7e.l7r] = r4u.f7c;
+			r2x[s5z.l2n] = d5p.g3d;
 		}
-		f1l[w2r] = r4u.t2o;
+		r2x[w9o] = d5p.b3w;
 	}
 }
 
-function y8w(e3i, x2v)
+function y5b(n2t, i1j)
 {
-	let g0u = e3i.w6p();
-	if (g0u == f1k) return true;
-	if (x2v.v5m == r4u.w6p)
+	let h0r = n2t.y3v();
+	if (h0r == d2w) return true;
+	if (i1j.x0m == d5p.y3v)
 	{
-		g0u = x2v.z4d;
+		h0r = i1j.p2v;
 	}
-	let f1l = e3i.f1l();
-	if (x2v.type == u5u.g2x)
+	let r2x = n2t.r2x();
+	if (i1j.type == a8g.k4m)
 	{
-		if (e3i.d0a())
+		if (n2t.v8j())
 		{
-			d4j(f1l, x2v, e3i.m7e());
+			a5l(r2x, i1j, n2t.s5z());
 		}
 		else
 		{
-			j2f(f1l, x2v);
+			t1m(r2x, i1j);
 		}
 	}
 	else
 	{
-		y7q(f1l, x2v);
+		k4c(r2x, i1j);
 	}
-	return !p6v(f1l, g0u);
+	return !r4c(r2x, h0r);
 }
 
-function p6b(e3i, x2v)
+function s4f(n2t, i1j)
 {
-	let g0u = e3i.n1f();
-	if (g0u == f1k) return true;
-	if (x2v.v5m == r4u.n1f)
+	let h0r = n2t.j1i();
+	if (h0r == d2w) return true;
+	if (i1j.x0m == d5p.j1i)
 	{
-		g0u = x2v.z4d;
+		h0r = i1j.p2v;
 	}
-	let f1l = e3i.f1l();
-	if (x2v.type == u5u.g2x)
+	let r2x = n2t.r2x();
+	if (i1j.type == a8g.k4m)
 	{
-		if (e3i.d0a())
+		if (n2t.v8j())
 		{
-			h8d(f1l, x2v, e3i.m7e());
+			d0r(r2x, i1j, n2t.s5z());
 		}
 		else
 		{
-			x2w(f1l, x2v);
+			i5y(r2x, i1j);
 		}
 	}
 	else
 	{
-		s7b(f1l, x2v);
+		o8h(r2x, i1j);
 	}
-	return !o1m(f1l, g0u);
+	return !a9g(r2x, h0r);
 }
 
-function e4m(z1l, e3i, d4d)
+function d7d(s3b, n2t, i1o)
 {
-	if (a3p(d4d) == s6i)
+	if (u4i(i1o) == z2l)
 	{
 		return;
 	}
-	e8t(z1l, e3i, d4d);
-	let z4d = northWestSquare[d4d];
-	if (z4d != f1k)
+	f7a(s3b, n2t, i1o);
+	let p2v = northWestSquare[i1o];
+	if (p2v != d2w)
 	{
-		r4v(z1l, e3i, d4d, z4d);
+		w4z(s3b, n2t, i1o, p2v);
 	}
-	z4d = northEastSquare[d4d];
-	if (z4d != f1k)
+	p2v = northEastSquare[i1o];
+	if (p2v != d2w)
 	{
-		r4v(z1l, e3i, d4d, z4d);
+		w4z(s3b, n2t, i1o, p2v);
 	}
 }
 
-function x3o(z1l, e3i, d4d)
+function e5s(s3b, n2t, i1o)
 {
-	if (a3p(d4d) == rank_1)
+	if (u4i(i1o) == rank_1)
 	{
 		return;
 	}
-	f3z(z1l, e3i, d4d);
-	let z4d = southEastSquare[d4d];
-	if (z4d != f1k)
+	s4a(s3b, n2t, i1o);
+	let p2v = southEastSquare[i1o];
+	if (p2v != d2w)
 	{
-		v5v(z1l, e3i, d4d, z4d);
+		p6e(s3b, n2t, i1o, p2v);
 	}
-	z4d = southWestSquare[d4d];
-	if (z4d != f1k)
+	p2v = southWestSquare[i1o];
+	if (p2v != d2w)
 	{
-		v5v(z1l, e3i, d4d, z4d);
+		p6e(s3b, n2t, i1o, p2v);
 	}
 }
 
-function e8t(z1l, e3i, d4d)
+function f7a(s3b, n2t, i1o)
 {
-	let z4d = (d4d + j5l);
-	if (e3i.l4f(z4d))
+	let p2v = (i1o + p9v);
+	if (n2t.c8p(p2v))
 	{
-		if (a3p(d4d) == b9y)
+		if (u4i(i1o) == b2q)
 		{
-			k7a(z1l, e3i, d4d, z4d);
+			w1p(s3b, n2t, i1o, p2v);
 		}
 		else
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
-			if (a3p(d4d) == f3f)
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
+			if (u4i(i1o) == w6a)
 			{
-				let z4d = (d4d + j5l + j5l);
-				if (e3i.l4f(z4d))
+				let p2v = (i1o + p9v + p9v);
+				if (n2t.c8p(p2v))
 				{
-					d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+					z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 }
 
-function f3z(z1l, e3i, d4d)
+function s4a(s3b, n2t, i1o)
 {
-	let z4d = (d4d + z2i);
-	if (e3i.l4f(z4d))
+	let p2v = (i1o + s6b);
+	if (n2t.c8p(p2v))
 	{
-		if (a3p(d4d) == f3f)
+		if (u4i(i1o) == w6a)
 		{
-			f6r(z1l, e3i, d4d, z4d);
+			h6o(s3b, n2t, i1o, p2v);
 		}
 		else
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
-			if (a3p(d4d) == b9y)
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
+			if (u4i(i1o) == b2q)
 			{
-				let z4d = (d4d + z2i + z2i);
-				if (e3i.l4f(z4d))
+				let p2v = (i1o + s6b + s6b);
+				if (n2t.c8p(p2v))
 				{
-					d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+					z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 }
 
-function r4v(z1l, e3i, d4d, z4d)
+function w4z(s3b, n2t, i1o, p2v)
 {
-	if (!e3i.a7b(z4d))
+	if (!n2t.g0d(p2v))
 	{
 		return;
 	}
-	if (a3p(d4d) == b9y)
+	if (u4i(i1o) == b2q)
 	{
-		a6u(z1l, e3i, d4d, z4d);
+		u5r(s3b, n2t, i1o, p2v);
 	}
 	else
 	{
-		r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+		i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 	}
 }
 
-function v5v(z1l, e3i, d4d, z4d)
+function p6e(s3b, n2t, i1o, p2v)
 {
-	if (!e3i.c0t(z4d))
+	if (!n2t.u1g(p2v))
 	{
 		return;
 	}
-	if (a3p(d4d) == f3f)
+	if (u4i(i1o) == w6a)
 	{
-		e0q(z1l, e3i, d4d, z4d);
+		y5a(s3b, n2t, i1o, p2v);
 	}
 	else
 	{
-		r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+		i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 	}
 }
 
-function w4x(z1l, e3i, d4d, e3c)
+function v3o(s3b, n2t, i1o, n6f)
 {
-	for (const z4d of e3c)
+	for (const p2v of n6f)
 	{
-		if (e3i.l4f(z4d))
+		if (n2t.c8p(p2v))
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
-		else if (e3i.a7b(z4d))
+		else if (n2t.g0d(p2v))
 		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
-		}
-	}
-}
-
-function a4v(z1l, e3i, d4d, e3c)
-{
-	for (const z4d of e3c)
-	{
-		if (e3i.l4f(z4d))
-		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
-		}
-		else if (e3i.c0t(z4d))
-		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
 	}
 }
 
-function o0l(z1l, e3i, d4d)
+function o4p(s3b, n2t, i1o, n6f)
 {
-	w4x(z1l, e3i, d4d, knightSquares[d4d]);
-}
-
-function y3x(z1l, e3i, d4d)
-{
-	a4v(z1l, e3i, d4d, knightSquares[d4d]);
-}
-
-function m2e(z1l, e3i, d4d)
-{
-	m5l(z1l, e3i, d4d, northEastSquares[d4d]);
-	m5l(z1l, e3i, d4d, southEastSquares[d4d]);
-	m5l(z1l, e3i, d4d, southWestSquares[d4d]);
-	m5l(z1l, e3i, d4d, northWestSquares[d4d]);
-}
-
-function g3o(z1l, e3i, d4d)
-{
-	w3n(z1l, e3i, d4d, northEastSquares[d4d]);
-	w3n(z1l, e3i, d4d, southEastSquares[d4d]);
-	w3n(z1l, e3i, d4d, southWestSquares[d4d]);
-	w3n(z1l, e3i, d4d, northWestSquares[d4d]);
-}
-
-function n8m(z1l, e3i, d4d)
-{
-	m5l(z1l, e3i, d4d, northSquares[d4d]);
-	m5l(z1l, e3i, d4d, eastSquares[d4d]);
-	m5l(z1l, e3i, d4d, southSquares[d4d]);
-	m5l(z1l, e3i, d4d, westSquares[d4d]);
-}
-
-function q5y(z1l, e3i, d4d)
-{
-	w3n(z1l, e3i, d4d, northSquares[d4d]);
-	w3n(z1l, e3i, d4d, eastSquares[d4d]);
-	w3n(z1l, e3i, d4d, southSquares[d4d]);
-	w3n(z1l, e3i, d4d, westSquares[d4d]);
-}
-
-function f0i(z1l, e3i, d4d)
-{
-	m5l(z1l, e3i, d4d, northSquares[d4d]);
-	m5l(z1l, e3i, d4d, northEastSquares[d4d]);
-	m5l(z1l, e3i, d4d, eastSquares[d4d]);
-	m5l(z1l, e3i, d4d, southEastSquares[d4d]);
-	m5l(z1l, e3i, d4d, southSquares[d4d]);
-	m5l(z1l, e3i, d4d, southWestSquares[d4d]);
-	m5l(z1l, e3i, d4d, westSquares[d4d]);
-	m5l(z1l, e3i, d4d, northWestSquares[d4d]);
-}
-
-function w9n(z1l, e3i, d4d)
-{
-	w3n(z1l, e3i, d4d, northSquares[d4d]);
-	w3n(z1l, e3i, d4d, northEastSquares[d4d]);
-	w3n(z1l, e3i, d4d, eastSquares[d4d]);
-	w3n(z1l, e3i, d4d, southEastSquares[d4d]);
-	w3n(z1l, e3i, d4d, southSquares[d4d]);
-	w3n(z1l, e3i, d4d, southWestSquares[d4d]);
-	w3n(z1l, e3i, d4d, westSquares[d4d]);
-	w3n(z1l, e3i, d4d, northWestSquares[d4d]);
-}
-
-function u5g(z1l, e3i, d4d)
-{
-	a6a(z1l, e3i, d4d, kingSquares[d4d]);
-}
-
-function u2v(z1l, e3i, d4d)
-{
-	t2c(z1l, e3i, d4d, kingSquares[d4d]);
-}
-
-function m5l(z1l, e3i, d4d, e3c)
-{
-	for (const z4d of e3c)
+	for (const p2v of n6f)
 	{
-		if (e3i.l4f(z4d))
+		if (n2t.c8p(p2v))
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
-		else if (e3i.c0t(z4d))
+		else if (n2t.u1g(p2v))
+		{
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
+		}
+	}
+}
+
+function x9k(s3b, n2t, i1o)
+{
+	v3o(s3b, n2t, i1o, knightSquares[i1o]);
+}
+
+function h4r(s3b, n2t, i1o)
+{
+	o4p(s3b, n2t, i1o, knightSquares[i1o]);
+}
+
+function x8a(s3b, n2t, i1o)
+{
+	m0h(s3b, n2t, i1o, northEastSquares[i1o]);
+	m0h(s3b, n2t, i1o, southEastSquares[i1o]);
+	m0h(s3b, n2t, i1o, southWestSquares[i1o]);
+	m0h(s3b, n2t, i1o, northWestSquares[i1o]);
+}
+
+function n5x(s3b, n2t, i1o)
+{
+	z7x(s3b, n2t, i1o, northEastSquares[i1o]);
+	z7x(s3b, n2t, i1o, southEastSquares[i1o]);
+	z7x(s3b, n2t, i1o, southWestSquares[i1o]);
+	z7x(s3b, n2t, i1o, northWestSquares[i1o]);
+}
+
+function f0t(s3b, n2t, i1o)
+{
+	m0h(s3b, n2t, i1o, northSquares[i1o]);
+	m0h(s3b, n2t, i1o, eastSquares[i1o]);
+	m0h(s3b, n2t, i1o, southSquares[i1o]);
+	m0h(s3b, n2t, i1o, westSquares[i1o]);
+}
+
+function g8n(s3b, n2t, i1o)
+{
+	z7x(s3b, n2t, i1o, northSquares[i1o]);
+	z7x(s3b, n2t, i1o, eastSquares[i1o]);
+	z7x(s3b, n2t, i1o, southSquares[i1o]);
+	z7x(s3b, n2t, i1o, westSquares[i1o]);
+}
+
+function v6w(s3b, n2t, i1o)
+{
+	m0h(s3b, n2t, i1o, northSquares[i1o]);
+	m0h(s3b, n2t, i1o, northEastSquares[i1o]);
+	m0h(s3b, n2t, i1o, eastSquares[i1o]);
+	m0h(s3b, n2t, i1o, southEastSquares[i1o]);
+	m0h(s3b, n2t, i1o, southSquares[i1o]);
+	m0h(s3b, n2t, i1o, southWestSquares[i1o]);
+	m0h(s3b, n2t, i1o, westSquares[i1o]);
+	m0h(s3b, n2t, i1o, northWestSquares[i1o]);
+}
+
+function p6x(s3b, n2t, i1o)
+{
+	z7x(s3b, n2t, i1o, northSquares[i1o]);
+	z7x(s3b, n2t, i1o, northEastSquares[i1o]);
+	z7x(s3b, n2t, i1o, eastSquares[i1o]);
+	z7x(s3b, n2t, i1o, southEastSquares[i1o]);
+	z7x(s3b, n2t, i1o, southSquares[i1o]);
+	z7x(s3b, n2t, i1o, southWestSquares[i1o]);
+	z7x(s3b, n2t, i1o, westSquares[i1o]);
+	z7x(s3b, n2t, i1o, northWestSquares[i1o]);
+}
+
+function i7p(s3b, n2t, i1o)
+{
+	o2k(s3b, n2t, i1o, kingSquares[i1o]);
+}
+
+function t1p(s3b, n2t, i1o)
+{
+	z0b(s3b, n2t, i1o, kingSquares[i1o]);
+}
+
+function m0h(s3b, n2t, i1o, n6f)
+{
+	for (const p2v of n6f)
+	{
+		if (n2t.c8p(p2v))
+		{
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
+		}
+		else if (n2t.u1g(p2v))
 		{
 			break;
 		}
 		else
 		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 			break;
 		}
 	}
 }
 
-function w3n(z1l, e3i, d4d, e3c)
+function z7x(s3b, n2t, i1o, n6f)
 {
-	for (const z4d of e3c)
+	for (const p2v of n6f)
 	{
-		if (e3i.l4f(z4d))
+		if (n2t.c8p(p2v))
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
-		else if (e3i.a7b(z4d))
+		else if (n2t.g0d(p2v))
 		{
 			break;
 		}
 		else
 		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 			break;
 		}
 	}
 }
 
-function a6a(z1l, e3i, d4d, e3c)
+function o2k(s3b, n2t, i1o, n6f)
 {
-	for (const z4d of e3c)
+	for (const p2v of n6f)
 	{
-		if (e3i.l4f(z4d))
+		if (n2t.c8p(p2v))
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
-		else if (e3i.a7b(z4d))
+		else if (n2t.g0d(p2v))
 		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
-		}
-	}
-}
-
-function t2c(z1l, e3i, d4d, e3c)
-{
-	for (const z4d of e3c)
-	{
-		if (e3i.l4f(z4d))
-		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
-		}
-		else if (e3i.c0t(z4d))
-		{
-			r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
 	}
 }
 
-function w9i(left, a9r)
+function z0b(s3b, n2t, i1o, n6f)
 {
-	let s6n = [];
-	if (left > a9r)
+	for (const p2v of n6f)
 	{
-    let i1u = left;
-    left = a9r;
-    a9r = i1u;
+		if (n2t.c8p(p2v))
+		{
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
+		}
+		else if (n2t.u1g(p2v))
+		{
+			i0p(s3b, n2t, i1o, p2v, a8g.j8g);
+		}
 	}
-	for (let i = left + 1; i < a9r; i++)
-	{
-		s6n.push(i);
-	}
-	return s6n;
 }
 
-function h2u(z1l, e3i)
+function s3p(left, n1g)
 {
-	if (!e3i.p3k(e3i.c4b()))
+	let z8o = [];
+	if (left > n1g)
+	{
+    let k9c = left;
+    left = n1g;
+    n1g = k9c;
+	}
+	for (let i = left + 1; i < n1g; i++)
+	{
+		z8o.push(i);
+	}
+	return z8o;
+}
+
+function l3s(s3b, n2t)
+{
+	if (!n2t.z3k(n2t.g1f()))
 	{
 		return;
 	}
-	if (!e3i.w7f(e3i.x4q()))
+	if (!n2t.g2h(n2t.x3z()))
 	{
 		return;
 	}
-	let h0p = w9i(e3i.x4q(), q3b);
-  for (const k2d of h0p)
+	let k8n = s3p(n2t.x3z(), g3y);
+  for (const t0h of k8n)
 	{
-		if (k2d != e3i.c4b())
+		if (t0h != n2t.g1f())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-	let g5b = w9i(e3i.c4b(), s2j);
-  for (const k2d of g5b)
+	let m7n = s3p(n2t.g1f(), w5i);
+  for (const t0h of m7n)
 	{
-		if (k2d != e3i.x4q())
+		if (t0h != n2t.x3z())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-  for (const k2d of g5b)
+  for (const t0h of m7n)
 	{
-		if (y8l(e3i, k2d))
+		if (n8b(n2t, t0h))
 		{
 			return;
 		}
 	}
-	if (y8l(e3i, e3i.c4b()))
+	if (n8b(n2t, n2t.g1f()))
 	{
 		return;
 	}
-	if (e3i.c4b() != s2j)
+	if (n2t.g1f() != w5i)
 	{
-		if (!e3i.l4f(s2j))
+		if (!n2t.c8p(w5i))
 		{
-			if (s2j != e3i.x4q())
+			if (w5i != n2t.x3z())
 			{
 				return;
 			}
 		}
 	}
-	if (e3i.x4q() != q3b)
+	if (n2t.x3z() != g3y)
 	{
-		if (!e3i.l4f(q3b))
+		if (!n2t.c8p(g3y))
 		{
-			if (q3b != e3i.c4b())
+			if (g3y != n2t.g1f())
 			{
 				return;
 			}
 		}
 	}
-	d4y(z1l, e3i, e3i.c4b(), s2j, u5u.g2x);
+	z7v(s3b, n2t, n2t.g1f(), w5i, a8g.k4m);
 }
 
-function u7j(z1l, e3i)
+function c7m(s3b, n2t)
 {
-	if (!e3i.p3k(e3i.c4b()))
+	if (!n2t.z3k(n2t.g1f()))
 	{
 		return;
 	}
-	if (!e3i.w7f(e3i.a0r()))
+	if (!n2t.g2h(n2t.o9s()))
 	{
 		return;
 	}
-	let h0p = w9i(e3i.a0r(), b0h);
-  for (const k2d of h0p)
+	let k8n = s3p(n2t.o9s(), u8j);
+  for (const t0h of k8n)
 	{
-		if (k2d != e3i.c4b())
+		if (t0h != n2t.g1f())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-	let g5b = w9i(e3i.c4b(), s9p);
-  for (const k2d of g5b)
+	let m7n = s3p(n2t.g1f(), j7x);
+  for (const t0h of m7n)
 	{
-		if (k2d != e3i.a0r())
+		if (t0h != n2t.o9s())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-  for (const k2d of g5b)
+  for (const t0h of m7n)
 	{
-		if (y8l(e3i, k2d))
+		if (n8b(n2t, t0h))
 		{
 			return;
 		}
 	}
-	if (y8l(e3i, e3i.c4b()))
+	if (n8b(n2t, n2t.g1f()))
 	{
 		return;
 	}
-	if (e3i.c4b() != s9p)
+	if (n2t.g1f() != j7x)
 	{
-		if (!e3i.l4f(s9p))
+		if (!n2t.c8p(j7x))
 		{
-			if (s9p != e3i.a0r())
+			if (j7x != n2t.o9s())
 			{
 				return;
 			}
 		}
 	}
-	if (e3i.a0r() != b0h)
+	if (n2t.o9s() != u8j)
 	{
-		if (!e3i.l4f(b0h))
+		if (!n2t.c8p(u8j))
 		{
-			if (b0h != e3i.c4b())
+			if (u8j != n2t.g1f())
 			{
 				return;
 			}
 		}
 	}
-	d4y(z1l, e3i, e3i.c4b(), s9p, u5u.g2x);
+	z7v(s3b, n2t, n2t.g1f(), j7x, a8g.k4m);
 }
 
-function c7h(z1l, e3i)
+function l7i(s3b, n2t)
 {
-	if (!e3i.e2s(e3i.a4l()))
+	if (!n2t.p4l(n2t.s8j()))
 	{
 		return;
 	}
-	if (!e3i.x4w(e3i.l7r()))
+	if (!n2t.f0m(n2t.l2n()))
 	{
 		return;
 	}
-	let h0p = w9i(e3i.l7r(), w2r);
-  for (const k2d of h0p)
+	let k8n = s3p(n2t.l2n(), w9o);
+  for (const t0h of k8n)
 	{
-		if (k2d != e3i.a4l())
+		if (t0h != n2t.s8j())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-	let g5b = w9i(e3i.a4l(), z4j);
-  for (const k2d of g5b)
+	let m7n = s3p(n2t.s8j(), z1s);
+  for (const t0h of m7n)
 	{
-		if (k2d != e3i.l7r())
+		if (t0h != n2t.l2n())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-  for (const k2d of g5b)
+  for (const t0h of m7n)
 	{
-		if (g1r(e3i, k2d))
+		if (r1v(n2t, t0h))
 		{
 			return;
 		}
 	}
-	if (g1r(e3i, e3i.a4l()))
+	if (r1v(n2t, n2t.s8j()))
 	{
 		return;
 	}
-	if (e3i.a4l() != z4j)
+	if (n2t.s8j() != z1s)
 	{
-		if (!e3i.l4f(z4j))
+		if (!n2t.c8p(z1s))
 		{
-			if (z4j != e3i.l7r())
+			if (z1s != n2t.l2n())
 			{
 				return;
 			}
 		}
 	}
-	if (e3i.l7r() != w2r)
+	if (n2t.l2n() != w9o)
 	{
-		if (!e3i.l4f(w2r))
+		if (!n2t.c8p(w9o))
 		{
-			if (w2r != e3i.a4l())
+			if (w9o != n2t.s8j())
 			{
 				return;
 			}
 		}
 	}
-	d4y(z1l, e3i, e3i.a4l(), z4j, u5u.g2x);
+	z7v(s3b, n2t, n2t.s8j(), z1s, a8g.k4m);
 }
 
-function m1a(z1l, e3i)
+function r6e(s3b, n2t)
 {
-	if (!e3i.e2s(e3i.a4l()))
+	if (!n2t.p4l(n2t.s8j()))
 	{
 		return;
 	}
-	if (!e3i.x4w(e3i.n7w()))
+	if (!n2t.f0m(n2t.j0x()))
 	{
 		return;
 	}
-	let h0p = w9i(e3i.n7w(), i0u);
-  for (const k2d of h0p)
+	let k8n = s3p(n2t.j0x(), o4f);
+  for (const t0h of k8n)
 	{
-		if (k2d != e3i.a4l())
+		if (t0h != n2t.s8j())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-	let g5b = w9i(e3i.a4l(), h9y);
-  for (const k2d of g5b)
+	let m7n = s3p(n2t.s8j(), s5q);
+  for (const t0h of m7n)
 	{
-		if (k2d != e3i.n7w())
+		if (t0h != n2t.j0x())
 		{
-			if (!e3i.l4f(k2d))
+			if (!n2t.c8p(t0h))
 			{
 				return;
 			}
 		}
 	}
-  for (const k2d of g5b)
+  for (const t0h of m7n)
 	{
-		if (g1r(e3i, k2d))
+		if (r1v(n2t, t0h))
 		{
 			return;
 		}
 	}
-	if (g1r(e3i, e3i.a4l()))
+	if (r1v(n2t, n2t.s8j()))
 	{
 		return;
 	}
-	if (e3i.a4l() != h9y)
+	if (n2t.s8j() != s5q)
 	{
-		if (!e3i.l4f(h9y))
+		if (!n2t.c8p(s5q))
 		{
-			if (h9y != e3i.n7w())
+			if (s5q != n2t.j0x())
 			{
 				return;
 			}
 		}
 	}
-	if (e3i.n7w() != i0u)
+	if (n2t.j0x() != o4f)
 	{
-		if (!e3i.l4f(i0u))
+		if (!n2t.c8p(o4f))
 		{
-			if (i0u != e3i.a4l())
+			if (o4f != n2t.s8j())
 			{
 				return;
 			}
 		}
 	}
-	d4y(z1l, e3i, e3i.a4l(), h9y, u5u.g2x);
+	z7v(s3b, n2t, n2t.s8j(), s5q, a8g.k4m);
 }
 
-function b2j(z1l, e3i)
+function x8x(s3b, n2t)
 {
-	if (!e3i.p3k(e3i.c4b()))
+	if (!n2t.z3k(n2t.g1f()))
 	{
 		return;
 	}
-	if (!e3i.w7f(e3i.x4q()))
+	if (!n2t.g2h(n2t.x3z()))
 	{
 		return;
 	}
-	if (!e3i.l4f(a3m))
+	if (!n2t.c8p(s3h))
 	{
 		return;
 	}
-	if (!e3i.l4f(y7r))
+	if (!n2t.c8p(w2m))
 	{
 		return;
 	}
-	if (!e3i.l4f(k0i))
+	if (!n2t.c8p(h3a))
 	{
 		return;
 	}
-	if (y8l(e3i, e3i.c4b()))
+	if (n8b(n2t, n2t.g1f()))
 	{
 		return;
 	}
-	if (y8l(e3i, k0i))
+	if (n8b(n2t, h3a))
 	{
 		return;
 	}
-	d4y(z1l, e3i, e3i.c4b(), s2j, u5u.g2x);
+	z7v(s3b, n2t, n2t.g1f(), w5i, a8g.k4m);
 }
 
-function g8p(z1l, e3i)
+function x5r(s3b, n2t)
 {
-	if (!e3i.p3k(e3i.c4b()))
+	if (!n2t.z3k(n2t.g1f()))
 	{
 		return;
 	}
-	if (!e3i.w7f(e3i.a0r()))
+	if (!n2t.g2h(n2t.o9s()))
 	{
 		return;
 	}
-	if (!e3i.l4f(w9b))
+	if (!n2t.c8p(w0r))
 	{
 		return;
 	}
-	if (!e3i.l4f(g0r))
+	if (!n2t.c8p(l5c))
 	{
 		return;
 	}
-	if (y8l(e3i, e3i.c4b()))
+	if (n8b(n2t, n2t.g1f()))
 	{
 		return;
 	}
-	if (y8l(e3i, w9b))
+	if (n8b(n2t, w0r))
 	{
 		return;
 	}
-	d4y(z1l, e3i, e3i.c4b(), s9p, u5u.g2x);
+	z7v(s3b, n2t, n2t.g1f(), j7x, a8g.k4m);
 }
 
-function q0l(z1l, e3i)
+function w2p(s3b, n2t)
 {
-	if (!e3i.e2s(e3i.a4l()))
+	if (!n2t.p4l(n2t.s8j()))
 	{
 		return;
 	}
-	if (!e3i.x4w(e3i.n7w()))
+	if (!n2t.f0m(n2t.j0x()))
 	{
 		return;
 	}
-	if (!e3i.l4f(b7g))
+	if (!n2t.c8p(b4v))
 	{
 		return;
 	}
-	if (!e3i.l4f(i5x))
+	if (!n2t.c8p(u1k))
 	{
 		return;
 	}
-	if (!e3i.l4f(a6e))
+	if (!n2t.c8p(u8r))
 	{
 		return;
 	}
-	if (g1r(e3i, e3i.a4l()))
+	if (r1v(n2t, n2t.s8j()))
 	{
 		return;
 	}
-	if (g1r(e3i, a6e))
+	if (r1v(n2t, u8r))
 	{
 		return;
 	}
-	d4y(z1l, e3i, e3i.a4l(), h9y, u5u.g2x);
+	z7v(s3b, n2t, n2t.s8j(), s5q, a8g.k4m);
 }
 
-function s0h(z1l, e3i)
+function x6w(s3b, n2t)
 {
-	if (!e3i.e2s(e3i.a4l()))
+	if (!n2t.p4l(n2t.s8j()))
 	{
 		return;
 	}
-	if (!e3i.x4w(e3i.l7r()))
+	if (!n2t.f0m(n2t.l2n()))
 	{
 		return;
 	}
-	if (!e3i.l4f(j7j))
+	if (!n2t.c8p(f3s))
 	{
 		return;
 	}
-	if (!e3i.l4f(r1l))
+	if (!n2t.c8p(r1k))
 	{
 		return;
 	}
-	if (g1r(e3i, e3i.a4l()))
+	if (r1v(n2t, n2t.s8j()))
 	{
 		return;
 	}
-	if (g1r(e3i, j7j))
+	if (r1v(n2t, f3s))
 	{
 		return;
 	}
-	d4y(z1l, e3i, e3i.a4l(), z4j, u5u.g2x);
+	z7v(s3b, n2t, n2t.s8j(), z1s, a8g.k4m);
 }
 
-function e6d(z1l, e3i)
+function t9z(s3b, n2t)
 {
-	if (e3i.d0a())
+	if (n2t.v8j())
 	{
-		h2u(z1l, e3i);
+		l3s(s3b, n2t);
 	}
 	else
 	{
-		b2j(z1l, e3i);
+		x8x(s3b, n2t);
 	}
 }
 
-function n6b(z1l, e3i)
+function h0m(s3b, n2t)
 {
-	if (e3i.d0a())
+	if (n2t.v8j())
 	{
-		u7j(z1l, e3i);
+		c7m(s3b, n2t);
 	}
 	else
 	{
-		g8p(z1l, e3i);
+		x5r(s3b, n2t);
 	}
 }
 
-function c8s(z1l, e3i)
+function m7u(s3b, n2t)
 {
-	if (e3i.l1o())
+	if (n2t.u9m())
 	{
-		e6d(z1l, e3i);
+		t9z(s3b, n2t);
 	}
-	if (e3i.x5u())
+	if (n2t.c6a())
 	{
-		n6b(z1l, e3i);
+		h0m(s3b, n2t);
 	}
 }
 
-function i8m(z1l, e3i)
+function b0w(s3b, n2t)
 {
-	if (e3i.d0a())
+	if (n2t.v8j())
 	{
-		m1a(z1l, e3i);
+		r6e(s3b, n2t);
 	}
 	else
 	{
-		q0l(z1l, e3i);
+		w2p(s3b, n2t);
 	}
 }
 
-function x2j(z1l, e3i)
+function d9i(s3b, n2t)
 {
-	if (e3i.d0a())
+	if (n2t.v8j())
 	{
-		c7h(z1l, e3i);
+		l7i(s3b, n2t);
 	}
 	else
 	{
-		s0h(z1l, e3i);
+		x6w(s3b, n2t);
 	}
 }
 
-function e6u(z1l, e3i)
+function v8x(s3b, n2t)
 {
-	if (e3i.h8l())
+	if (n2t.p9x())
 	{
-		i8m(z1l, e3i);
+		b0w(s3b, n2t);
 	}
-	if (e3i.m0z())
+	if (n2t.i0q())
 	{
-		x2j(z1l, e3i);
+		d9i(s3b, n2t);
 	}
 }
 
-function l8q(z1l, e3i)
+function w6p(s3b, n2t)
 {
-	if (e3i.t7e() == f1k)
+	if (n2t.d7j() == d2w)
 	{
 		return;
 	}
-	if (a3p(e3i.t7e()) != t7m)
+	if (u4i(n2t.d7j()) != l3z)
 	{
 		return;
 	}
-	if (!e3i.l4f(e3i.t7e()))
+	if (!n2t.c8p(n2t.d7j()))
 	{
 		return;
 	}
-	let p2o = (e3i.t7e() + 8);
-	if (!e3i.l4f(p2o))
+	let o5w = (n2t.d7j() + 8);
+	if (!n2t.c8p(o5w))
 	{
 		return;
 	}
-	let l8e = (e3i.t7e() - 8);
-	if (!e3i.j0l(l8e))
+	let r7x = (n2t.d7j() - 8);
+	if (!n2t.s2b(r7x))
 	{
 		return;
 	}
-	let c3m = westSquare[l8e];
-	if (c3m != f1k)
+	let k5g = westSquare[r7x];
+	if (k5g != d2w)
 	{
-		if (e3i.m8u(c3m))
+		if (n2t.w8g(k5g))
 		{
-			g1c(z1l, e3i, c3m, r4u.z0j, e3i.t7e(),
-				r4u.z0j, l8e, r4u.f1o, u5u.a8n);
+			l0g(s3b, n2t, k5g, d5p.x1p, n2t.d7j(),
+				d5p.x1p, r7x, d5p.x6h, a8g.g9h);
 		}
 	}
-	c3m = eastSquare[l8e];
-	if (c3m != f1k)
+	k5g = eastSquare[r7x];
+	if (k5g != d2w)
 	{
-		if (e3i.m8u(c3m))
+		if (n2t.w8g(k5g))
 		{
-			g1c(z1l, e3i, c3m, r4u.z0j, e3i.t7e(),
-				r4u.z0j, l8e, r4u.f1o, u5u.a8n);
-		}
-	}
-}
-
-function y3v(z1l, e3i)
-{
-	if (e3i.t7e() == f1k)
-	{
-		return;
-	}
-	if (a3p(e3i.t7e()) != n1c)
-	{
-		return;
-	}
-	if (!e3i.l4f(e3i.t7e()))
-	{
-		return;
-	}
-	let p2o = (e3i.t7e() - 8);
-	if (!e3i.l4f(p2o))
-	{
-		return;
-	}
-	let l8e = (e3i.t7e() + 8);
-	if (!e3i.m8u(l8e))
-	{
-		return;
-	}
-	let c3m = westSquare[l8e];
-	if (c3m != f1k)
-	{
-		if (e3i.j0l(c3m))
-		{
-			g1c(z1l, e3i, c3m, r4u.f1o, e3i.t7e(),
-				r4u.f1o, l8e, r4u.z0j, u5u.a8n);
-		}
-	}
-	c3m = eastSquare[l8e];
-	if (c3m != f1k)
-	{
-		if (e3i.j0l(c3m))
-		{
-			g1c(z1l, e3i, c3m, r4u.f1o, e3i.t7e(),
-				r4u.f1o, l8e, r4u.z0j, u5u.a8n);
+			l0g(s3b, n2t, k5g, d5p.x1p, n2t.d7j(),
+				d5p.x1p, r7x, d5p.x6h, a8g.g9h);
 		}
 	}
 }
 
-function g1c(z1l, e3i, d4d, v5m, z4d, o9x, i9e, q1n, type)
+function a1f(s3b, n2t)
 {
-  let c7j = new j7i();
-	c7j.d4d = d4d;
-	c7j.v5m = v5m;
-	c7j.z4d = z4d;
-	c7j.o9x = o9x;
-	c7j.i9e = i9e;
-	c7j.q1n = q1n;
-	c7j.type = type;
-	if (c0t(v5m))
+	if (n2t.d7j() == d2w)
 	{
-		if (y8w(e3i, c7j))
+		return;
+	}
+	if (u4i(n2t.d7j()) != z4d)
+	{
+		return;
+	}
+	if (!n2t.c8p(n2t.d7j()))
+	{
+		return;
+	}
+	let o5w = (n2t.d7j() - 8);
+	if (!n2t.c8p(o5w))
+	{
+		return;
+	}
+	let r7x = (n2t.d7j() + 8);
+	if (!n2t.w8g(r7x))
+	{
+		return;
+	}
+	let k5g = westSquare[r7x];
+	if (k5g != d2w)
+	{
+		if (n2t.s2b(k5g))
 		{
-			z1l.push(c7j);
+			l0g(s3b, n2t, k5g, d5p.x6h, n2t.d7j(),
+				d5p.x6h, r7x, d5p.x1p, a8g.g9h);
+		}
+	}
+	k5g = eastSquare[r7x];
+	if (k5g != d2w)
+	{
+		if (n2t.s2b(k5g))
+		{
+			l0g(s3b, n2t, k5g, d5p.x6h, n2t.d7j(),
+				d5p.x6h, r7x, d5p.x1p, a8g.g9h);
+		}
+	}
+}
+
+function l0g(s3b, n2t, i1o, x0m, p2v, y6k, v6z, h1u, type)
+{
+  let z1e = new b1y();
+	z1e.i1o = i1o;
+	z1e.x0m = x0m;
+	z1e.p2v = p2v;
+	z1e.y6k = y6k;
+	z1e.v6z = v6z;
+	z1e.h1u = h1u;
+	z1e.type = type;
+	if (u1g(x0m))
+	{
+		if (y5b(n2t, z1e))
+		{
+			s3b.push(z1e);
 		}
 	}
 	else
 	{
-		if (p6b(e3i, c7j))
+		if (s4f(n2t, z1e))
 		{
-			z1l.push(c7j);
+			s3b.push(z1e);
 		}
 	}
 }
 
-function d4y(z1l, e3i, d4d, z4d, type)
+function z7v(s3b, n2t, i1o, p2v, type)
 {
-	let h1e = e3i.j0s(d4d);
-	g1c(z1l, e3i, d4d, h1e, z4d, h1e, f1k, r4u.f7c, type);
+	let d8n = n2t.j1a(i1o);
+	l0g(s3b, n2t, i1o, d8n, p2v, d8n, d2w, d5p.g3d, type);
 }
 
-function r1e(z1l, e3i, d4d, z4d, type)
+function i0p(s3b, n2t, i1o, p2v, type)
 {
-	let h1e = e3i.j0s(d4d);
-	let q1n = e3i.j0s(z4d);
-	g1c(z1l, e3i, d4d, h1e, z4d, h1e, z4d, q1n, type);
+	let d8n = n2t.j1a(i1o);
+	let h1u = n2t.j1a(p2v);
+	l0g(s3b, n2t, i1o, d8n, p2v, d8n, p2v, h1u, type);
 }
 
-function k7a(z1l, e3i, d4d, z4d)
+function w1p(s3b, n2t, i1o, p2v)
 {
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.f3a, f1k, r4u.f7c, u5u.f5e);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.m1p, f1k, r4u.f7c, u5u.k8w);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.l5x, f1k, r4u.f7c, u5u.h0w);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.n3b, f1k, r4u.f7c, u5u.z5d);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.w1z, d2w, d5p.g3d, a8g.a0g);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.b1p, d2w, d5p.g3d, a8g.q2q);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.l1a, d2w, d5p.g3d, a8g.q1x);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.i2l, d2w, d5p.g3d, a8g.b8v);
 }
 
-function f6r(z1l, e3i, d4d, z4d)
+function h6o(s3b, n2t, i1o, p2v)
 {
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.s7h, f1k, r4u.f7c, u5u.f5e);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.d5l, f1k, r4u.f7c, u5u.k8w);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.t2o, f1k, r4u.f7c, u5u.h0w);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.n8i, f1k, r4u.f7c, u5u.z5d);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.g6s, d2w, d5p.g3d, a8g.a0g);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.f4r, d2w, d5p.g3d, a8g.q2q);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.b3w, d2w, d5p.g3d, a8g.q1x);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.f8i, d2w, d5p.g3d, a8g.b8v);
 }
 
-function a6u(z1l, e3i, d4d, z4d)
+function u5r(s3b, n2t, i1o, p2v)
 {
-	let q1n = e3i.j0s(z4d);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.f3a, z4d, q1n, u5u.f5e);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.m1p, z4d, q1n, u5u.k8w);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.l5x, z4d, q1n, u5u.h0w);
-	g1c(z1l, e3i, d4d, r4u.z0j, z4d, r4u.n3b, z4d, q1n, u5u.z5d);
+	let h1u = n2t.j1a(p2v);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.w1z, p2v, h1u, a8g.a0g);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.b1p, p2v, h1u, a8g.q2q);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.l1a, p2v, h1u, a8g.q1x);
+	l0g(s3b, n2t, i1o, d5p.x1p, p2v, d5p.i2l, p2v, h1u, a8g.b8v);
 }
 
-function e0q(z1l, e3i, d4d, z4d)
+function y5a(s3b, n2t, i1o, p2v)
 {
-	let q1n = e3i.j0s(z4d);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.s7h, z4d, q1n, u5u.f5e);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.d5l, z4d, q1n, u5u.k8w);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.t2o, z4d, q1n, u5u.h0w);
-	g1c(z1l, e3i, d4d, r4u.f1o, z4d, r4u.n8i, z4d, q1n, u5u.z5d);
+	let h1u = n2t.j1a(p2v);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.g6s, p2v, h1u, a8g.a0g);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.f4r, p2v, h1u, a8g.q2q);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.b3w, p2v, h1u, a8g.q1x);
+	l0g(s3b, n2t, i1o, d5p.x6h, p2v, d5p.f8i, p2v, h1u, a8g.b8v);
 }
 
-function n3p(z1l, e3i, z4d)
+function t9f(s3b, n2t, p2v)
 {
-	let d4d = (z4d - j5l);
-	if (e3i.m8u(d4d))
+	let i1o = (p2v - p9v);
+	if (n2t.w8g(i1o))
 	{
-		if (a3p(d4d) == b9y)
+		if (u4i(i1o) == b2q)
 		{
-			k7a(z1l, e3i, d4d, z4d);
+			w1p(s3b, n2t, i1o, p2v);
 		}
 		else
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
 	}
 	else
 	{
-		if (e3i.l4f(d4d))
+		if (n2t.c8p(i1o))
 		{
-			if (a3p(z4d) == g2f)
+			if (u4i(p2v) == p1n)
 			{
-				d4d = (z4d - j5l - j5l);
-				if (e3i.m8u(d4d))
+				i1o = (p2v - p9v - p9v);
+				if (n2t.w8g(i1o))
 				{
-					d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+					z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 
-	if (e3i.a7b(z4d))
+	if (n2t.g0d(p2v))
 	{
-		let d4d = southWestSquare[z4d];
-		if (d4d != f1k)
+		let i1o = southWestSquare[p2v];
+		if (i1o != d2w)
 		{
-			if (e3i.m8u(d4d))
+			if (n2t.w8g(i1o))
 			{
-				if (a3p(d4d) == b9y)
+				if (u4i(i1o) == b2q)
 				{
-					a6u(z1l, e3i, d4d, z4d);
+					u5r(s3b, n2t, i1o, p2v);
 				}
 				else
 				{
-					r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+					i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
-		d4d = southEastSquare[z4d];
-		if (d4d != f1k)
+		i1o = southEastSquare[p2v];
+		if (i1o != d2w)
 		{
-			if (e3i.m8u(d4d))
+			if (n2t.w8g(i1o))
 			{
-				if (a3p(d4d) == b9y)
+				if (u4i(i1o) == b2q)
 				{
-					a6u(z1l, e3i, d4d, z4d);
+					u5r(s3b, n2t, i1o, p2v);
 				}
 				else
 				{
-					r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+					i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 
-	if (e3i.t7e() == z4d)
+	if (n2t.d7j() == p2v)
 	{
-		let p2o = (e3i.t7e() + 8);
-		if (!e3i.l4f(p2o))
+		let o5w = (n2t.d7j() + 8);
+		if (!n2t.c8p(o5w))
 		{
 			return;
 		}
-		let l8e = (e3i.t7e() - 8);
-		if (!e3i.j0l(l8e))
+		let r7x = (n2t.d7j() - 8);
+		if (!n2t.s2b(r7x))
 		{
 			return;
 		}
-		let c3m = westSquare[l8e];
-		if (c3m != f1k)
+		let k5g = westSquare[r7x];
+		if (k5g != d2w)
 		{
-			if (e3i.m8u(c3m))
+			if (n2t.w8g(k5g))
 			{
-				g1c(z1l, e3i, c3m, r4u.z0j, e3i.t7e(),
-					r4u.z0j, l8e, r4u.f1o, u5u.a8n);
+				l0g(s3b, n2t, k5g, d5p.x1p, n2t.d7j(),
+					d5p.x1p, r7x, d5p.x6h, a8g.g9h);
 			}
 		}
-		c3m = eastSquare[l8e];
-		if (c3m != f1k)
+		k5g = eastSquare[r7x];
+		if (k5g != d2w)
 		{
-			if (e3i.m8u(c3m))
+			if (n2t.w8g(k5g))
 			{
-				g1c(z1l, e3i, c3m, r4u.z0j, e3i.t7e(),
-					r4u.z0j, l8e, r4u.f1o, u5u.a8n);
+				l0g(s3b, n2t, k5g, d5p.x1p, n2t.d7j(),
+					d5p.x1p, r7x, d5p.x6h, a8g.g9h);
 			}
 		}
 	}
 }
 
-function y2e(z1l, e3i, z4d)
+function v8u(s3b, n2t, p2v)
 {
-	let d4d = (z4d - z2i);
-	if (e3i.j0l(d4d))
+	let i1o = (p2v - s6b);
+	if (n2t.s2b(i1o))
 	{
-		if (a3p(d4d) == f3f)
+		if (u4i(i1o) == w6a)
 		{
-			f6r(z1l, e3i, d4d, z4d);
+			h6o(s3b, n2t, i1o, p2v);
 		}
 		else
 		{
-			d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+			z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 		}
 	}
 	else
 	{
-		if (e3i.l4f(d4d))
+		if (n2t.c8p(i1o))
 		{
-			if (a3p(z4d) == n2d)
+			if (u4i(p2v) == f3j)
 			{
-				d4d = (z4d - z2i - z2i);
-				if (e3i.j0l(d4d))
+				i1o = (p2v - s6b - s6b);
+				if (n2t.s2b(i1o))
 				{
-					d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+					z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 
-	if (e3i.c0t(z4d))
+	if (n2t.u1g(p2v))
 	{
-		let d4d = northWestSquare[z4d];
-		if (d4d != f1k)
+		let i1o = northWestSquare[p2v];
+		if (i1o != d2w)
 		{
-			if (e3i.j0l(d4d))
+			if (n2t.s2b(i1o))
 			{
-				if (a3p(d4d) == f3f)
+				if (u4i(i1o) == w6a)
 				{
-					e0q(z1l, e3i, d4d, z4d);
+					y5a(s3b, n2t, i1o, p2v);
 				}
 				else
 				{
-					r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+					i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
-		d4d = northEastSquare[z4d];
-		if (d4d != f1k)
+		i1o = northEastSquare[p2v];
+		if (i1o != d2w)
 		{
-			if (e3i.j0l(d4d))
+			if (n2t.s2b(i1o))
 			{
-				if (a3p(d4d) == f3f)
+				if (u4i(i1o) == w6a)
 				{
-					e0q(z1l, e3i, d4d, z4d);
+					y5a(s3b, n2t, i1o, p2v);
 				}
 				else
 				{
-					r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+					i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				}
 			}
 		}
 	}
 
-	if (e3i.t7e() == z4d)
+	if (n2t.d7j() == p2v)
 	{
-		let p2o = (e3i.t7e() - 8);
-		if (!e3i.l4f(p2o))
+		let o5w = (n2t.d7j() - 8);
+		if (!n2t.c8p(o5w))
 		{
 			return;
 		}
-		let l8e = (e3i.t7e() + 8);
-		if (!e3i.m8u(l8e))
+		let r7x = (n2t.d7j() + 8);
+		if (!n2t.w8g(r7x))
 		{
 			return;
 		}
-		let c3m = westSquare[l8e];
-		if (c3m != f1k)
+		let k5g = westSquare[r7x];
+		if (k5g != d2w)
 		{
-			if (e3i.j0l(c3m))
+			if (n2t.s2b(k5g))
 			{
-				g1c(z1l, e3i, c3m, r4u.f1o, e3i.t7e(),
-					r4u.f1o, l8e, r4u.z0j, u5u.a8n);
+				l0g(s3b, n2t, k5g, d5p.x6h, n2t.d7j(),
+					d5p.x6h, r7x, d5p.x1p, a8g.g9h);
 			}
 		}
-		c3m = eastSquare[l8e];
-		if (c3m != f1k)
+		k5g = eastSquare[r7x];
+		if (k5g != d2w)
 		{
-			if (e3i.j0l(c3m))
+			if (n2t.s2b(k5g))
 			{
-				g1c(z1l, e3i, c3m, r4u.f1o, e3i.t7e(),
-					r4u.f1o, l8e, r4u.z0j, u5u.a8n);
+				l0g(s3b, n2t, k5g, d5p.x6h, n2t.d7j(),
+					d5p.x6h, r7x, d5p.x1p, a8g.g9h);
 			}
 		}
 	}
 }
 
-function m6p(z1l, e3i, z4d, h1e)
+function m8z(s3b, n2t, p2v, d8n)
 {
-	h3a(z1l, e3i, z4d, knightSquares[z4d], h1e);
+	p3f(s3b, n2t, p2v, knightSquares[p2v], d8n);
 }
 
-function o1y(z1l, e3i, z4d, h1e)
+function f4y(s3b, n2t, p2v, d8n)
 {
-	y9s(z1l, e3i, z4d, northEastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southEastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southWestSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, northWestSquares[z4d], h1e);
+	z8t(s3b, n2t, p2v, northEastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southEastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southWestSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, northWestSquares[p2v], d8n);
 }
 
-function b0o(z1l, e3i, z4d, h1e)
+function y6e(s3b, n2t, p2v, d8n)
 {
-	y9s(z1l, e3i, z4d, northSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, eastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, westSquares[z4d], h1e);
+	z8t(s3b, n2t, p2v, northSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, eastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, westSquares[p2v], d8n);
 }
 
-function m4l(z1l, e3i, z4d, h1e)
+function c0w(s3b, n2t, p2v, d8n)
 {
-	y9s(z1l, e3i, z4d, northSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, northEastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, eastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southEastSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, southWestSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, westSquares[z4d], h1e);
-	y9s(z1l, e3i, z4d, northWestSquares[z4d], h1e);
+	z8t(s3b, n2t, p2v, northSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, northEastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, eastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southEastSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, southWestSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, westSquares[p2v], d8n);
+	z8t(s3b, n2t, p2v, northWestSquares[p2v], d8n);
 }
 
-function i8n(z1l, e3i, z4d, h1e)
+function h8n(s3b, n2t, p2v, d8n)
 {
-	k9t(z1l, e3i, z4d, kingSquares[z4d], h1e);
+	x6f(s3b, n2t, p2v, kingSquares[p2v], d8n);
 }
 
-function y9s(z1l, e3i, z4d, r7z, h1e)
+function z8t(s3b, n2t, p2v, b3r, d8n)
 {
-  for (const d4d of r7z)
+  for (const i1o of b3r)
 	{
-		if (e3i.j0s(d4d) == h1e)
+		if (n2t.j1a(i1o) == d8n)
 		{
-			if (e3i.l4f(z4d))
+			if (n2t.c8p(p2v))
 			{
-				d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+				z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 			}
 			else
 			{
-				r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+				i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 			}
 			break;
 		}
 		else
 		{
-			if (!e3i.l4f(d4d))
+			if (!n2t.c8p(i1o))
 			{
 				break;
 			}
@@ -3479,59 +3479,59 @@ function y9s(z1l, e3i, z4d, r7z, h1e)
 	}
 }
 
-function k9t(z1l, e3i, z4d, r7z, h1e)
+function x6f(s3b, n2t, p2v, b3r, d8n)
 {
-  for (const d4d of r7z)
+  for (const i1o of b3r)
 	{
-		if (e3i.j0s(d4d) == h1e)
+		if (n2t.j1a(i1o) == d8n)
 		{
-			if (e3i.l4f(z4d))
+			if (n2t.c8p(p2v))
 			{
-				d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+				z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				break;
 			}
 			else
 			{
-				r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+				i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				break;
 			}
 		}
 	}
 }
 
-function h3a(z1l, e3i, z4d, r7z, h1e)
+function p3f(s3b, n2t, p2v, b3r, d8n)
 {
-  for (const d4d of r7z)
+  for (const i1o of b3r)
 	{
-		if (e3i.j0s(d4d) == h1e)
+		if (n2t.j1a(i1o) == d8n)
 		{
-			if (e3i.l4f(z4d))
+			if (n2t.c8p(p2v))
 			{
-				d4y(z1l, e3i, d4d, z4d, u5u.j5k);
+				z7v(s3b, n2t, i1o, p2v, a8g.j8g);
 				
 			}
 			else
 			{
-				r1e(z1l, e3i, d4d, z4d, u5u.j5k);
+				i0p(s3b, n2t, i1o, p2v, a8g.j8g);
 				
 			}
 		}
 	}
 }
 
-function v0t(f1l, e3c)
+function q5s(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (a7b(f1l[z4d]))
+			if (g0d(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.m1p || f1l[z4d] == r4u.n3b)
+				if (r2x[p2v] == d5p.b1p || r2x[p2v] == d5p.i2l)
 				{
 					return true;
 				}
@@ -3542,19 +3542,19 @@ function v0t(f1l, e3c)
 	return false;
 }
 
-function m9a(f1l, e3c)
+function w3o(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (a7b(f1l[z4d]))
+			if (g0d(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.l5x || f1l[z4d] == r4u.n3b)
+				if (r2x[p2v] == d5p.l1a || r2x[p2v] == d5p.i2l)
 				{
 					return true;
 				}
@@ -3565,19 +3565,19 @@ function m9a(f1l, e3c)
 	return false;
 }
 
-function j4r(f1l, e3c)
+function z5y(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (a7b(f1l[z4d]))
+			if (g0d(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.l5x || f1l[z4d] == r4u.n3b)
+				if (r2x[p2v] == d5p.l1a || r2x[p2v] == d5p.i2l)
 				{
 					return true;
 				}
@@ -3588,24 +3588,24 @@ function j4r(f1l, e3c)
 	return false;
 }
 
-function x3j(f1l, z4d)
+function u7d(r2x, p2v)
 {
-	if (z4d == f1k)
+	if (p2v == d2w)
 	{
 		return false;
 	}
-	if (f1l[z4d] == r4u.z0j)
+	if (r2x[p2v] == d5p.x1p)
 	{
 		return true;
 	}
 	return false;
 }
 
-function z8p(f1l, e3c)
+function u6c(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] == r4u.f3a)
+		if (r2x[p2v] == d5p.w1z)
 		{
 			return true;
 		}
@@ -3613,11 +3613,11 @@ function z8p(f1l, e3c)
 	return false;
 }
 
-function m9z(f1l, e3c)
+function v3l(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] == r4u.w6p)
+		if (r2x[p2v] == d5p.y3v)
 		{
 			return true;
 		}
@@ -3625,19 +3625,19 @@ function m9z(f1l, e3c)
 	return false;
 }
 
-function j9d(f1l, e3c)
+function q6i(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (c0t(f1l[z4d]))
+			if (u1g(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.d5l || f1l[z4d] == r4u.n8i)
+				if (r2x[p2v] == d5p.f4r || r2x[p2v] == d5p.f8i)
 				{
 					return true;
 				}
@@ -3648,19 +3648,19 @@ function j9d(f1l, e3c)
 	return false;
 }
 
-function g3n(f1l, e3c)
+function s7m(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (c0t(f1l[z4d]))
+			if (u1g(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.t2o || f1l[z4d] == r4u.n8i)
+				if (r2x[p2v] == d5p.b3w || r2x[p2v] == d5p.f8i)
 				{
 					return true;
 				}
@@ -3671,19 +3671,19 @@ function g3n(f1l, e3c)
 	return false;
 }
 
-function j5q(f1l, e3c)
+function v4i(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] != r4u.f7c)
+		if (r2x[p2v] != d5p.g3d)
 		{
-			if (c0t(f1l[z4d]))
+			if (u1g(r2x[p2v]))
 			{
 				return false;
 			}
 			else
 			{
-				if (f1l[z4d] == r4u.t2o || f1l[z4d] == r4u.n8i)
+				if (r2x[p2v] == d5p.b3w || r2x[p2v] == d5p.f8i)
 				{
 					return true;
 				}
@@ -3694,24 +3694,24 @@ function j5q(f1l, e3c)
 	return false;
 }
 
-function g6i(f1l, z4d)
+function s3z(r2x, p2v)
 {
-	if (z4d == f1k)
+	if (p2v == d2w)
 	{
 		return false;
 	}
-	if (f1l[z4d] == r4u.f1o)
+	if (r2x[p2v] == d5p.x6h)
 	{
 		return true;
 	}
 	return false;
 }
 
-function h7x(f1l, e3c)
+function e2x(r2x, n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] == r4u.s7h)
+		if (r2x[p2v] == d5p.g6s)
 		{
 			return true;
 		}
@@ -3719,11 +3719,11 @@ function h7x(f1l, e3c)
 	return false;
 }
 
-function f9u(f1l,  e3c)
+function e5e(r2x,  n6f)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (f1l[z4d] == r4u.n1f)
+		if (r2x[p2v] == d5p.j1i)
 		{
 			return true;
 		}
@@ -3731,21 +3731,21 @@ function f9u(f1l,  e3c)
 	return false;
 }
 
-function x4d(e3i, e3c, t1k)
+function x2t(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.a7b(z4d))
+			if (n2t.g0d(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.v8k(z4d) || e3i.e2x(z4d))
+				if (n2t.e0b(p2v) || n2t.c4c(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3755,21 +3755,21 @@ function x4d(e3i, e3c, t1k)
 	return false;
 }
 
-function h6d(e3i, e3c, t1k)
+function v6v(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.c0t(z4d))
+			if (n2t.u1g(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.b6q(z4d) || e3i.c7z(z4d))
+				if (n2t.a3p(p2v) || n2t.u1b(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3779,21 +3779,21 @@ function h6d(e3i, e3c, t1k)
 	return false;
 }
 
-function t8h(e3i, e3c, t1k)
+function f7b(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.a7b(z4d))
+			if (n2t.g0d(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.w7f(z4d) || e3i.e2x(z4d))
+				if (n2t.g2h(p2v) || n2t.c4c(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3803,21 +3803,21 @@ function t8h(e3i, e3c, t1k)
 	return false;
 }
 
-function y1b(e3i, e3c, t1k)
+function x9q(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.c0t(z4d))
+			if (n2t.u1g(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.x4w(z4d) || e3i.c7z(z4d))
+				if (n2t.f0m(p2v) || n2t.u1b(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3827,21 +3827,21 @@ function y1b(e3i, e3c, t1k)
 	return false;
 }
 
-function n6f(e3i, e3c, t1k)
+function z7h(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.a7b(z4d))
+			if (n2t.g0d(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.w7f(z4d) || e3i.e2x(z4d))
+				if (n2t.g2h(p2v) || n2t.c4c(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3851,21 +3851,21 @@ function n6f(e3i, e3c, t1k)
 	return false;
 }
 
-function m3g(e3i, e3c, t1k)
+function n7n(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (!e3i.l4f(z4d))
+		if (!n2t.c8p(p2v))
 		{
-			if (e3i.c0t(z4d))
+			if (n2t.u1g(p2v))
 			{
 				return false;
 			}
 			else
 			{
-				if (e3i.x4w(z4d) || e3i.c7z(z4d))
+				if (n2t.f0m(p2v) || n2t.u1b(p2v))
 				{
-					t1k = z4d;
+					d8o = p2v;
 					return true;
 				}
 				return false;
@@ -3875,39 +3875,39 @@ function m3g(e3i, e3c, t1k)
 	return false;
 }
 
-function y3o(e3i, z4d)
+function z1d(n2t, p2v)
 {
-	if (z4d == f1k)
+	if (p2v == d2w)
 	{
 		return false;
 	}
-	if (e3i.m8u(z4d))
+	if (n2t.w8g(p2v))
 	{
 		return true;
 	}
 	return false;
 }
 
-function r8y(e3i, z4d)
+function g0b(n2t, p2v)
 {
-	if (z4d == f1k)
+	if (p2v == d2w)
 	{
 		return false;
 	}
-	if (e3i.j0l(z4d))
+	if (n2t.s2b(p2v))
 	{
 		return true;
 	}
 	return false;
 }
 
-function x2e(e3i, e3c, t1k)
+function j6r(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (e3i.g2z(z4d))
+		if (n2t.o2v(p2v))
 		{
-			t1k = z4d;
+			d8o = p2v;
 			return true;
 		}
 	}
@@ -3916,542 +3916,542 @@ function x2e(e3i, e3c, t1k)
 
 
 
-function h0z(e3i, e3c, t1k)
+function j5g(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (e3i.x6d(z4d))
+		if (n2t.c2s(p2v))
 		{
-			t1k = z4d;
+			d8o = p2v;
 			return true;
 		}
 	}
 	return false;
 }
 
-function f3x(e3i, e3c, t1k)
+function u0w(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (e3i.p3k(z4d))
+		if (n2t.z3k(p2v))
 		{
-			t1k = z4d;
+			d8o = p2v;
 			return true;
 		}
 	}
 	return false;
 }
 
-function s8b(e3i, e3c, t1k)
+function j7q(n2t, n6f, d8o)
 {
-  for (const z4d of e3c)
+  for (const p2v of n6f)
 	{
-		if (e3i.e2s(z4d))
+		if (n2t.p4l(p2v))
 		{
-			t1k = z4d;
+			d8o = p2v;
 			return true;
 		}
 	}
 	return false;
 }
 
-function o1m(f1l, k2d)
+function a9g(r2x, t0h)
 {
-	if (v0t(f1l, northEastSquares[k2d])) return true;
-	if (v0t(f1l, southEastSquares[k2d])) return true;
-	if (v0t(f1l, southWestSquares[k2d])) return true;
-	if (v0t(f1l, northWestSquares[k2d])) return true;
-	if (m9a(f1l, northSquares[k2d])) return true;
-	if (j4r(f1l, eastSquares[k2d])) return true;
-	if (m9a(f1l, southSquares[k2d])) return true;
-	if (j4r(f1l, westSquares[k2d])) return true;
-	if (x3j(f1l, southEastSquare[k2d])) return true;
-	if (x3j(f1l, southWestSquare[k2d])) return true;
-	if (z8p(f1l, knightSquares[k2d])) return true;
-	if (m9z(f1l, kingSquares[k2d])) return true;
+	if (q5s(r2x, northEastSquares[t0h])) return true;
+	if (q5s(r2x, southEastSquares[t0h])) return true;
+	if (q5s(r2x, southWestSquares[t0h])) return true;
+	if (q5s(r2x, northWestSquares[t0h])) return true;
+	if (w3o(r2x, northSquares[t0h])) return true;
+	if (z5y(r2x, eastSquares[t0h])) return true;
+	if (w3o(r2x, southSquares[t0h])) return true;
+	if (z5y(r2x, westSquares[t0h])) return true;
+	if (u7d(r2x, southEastSquare[t0h])) return true;
+	if (u7d(r2x, southWestSquare[t0h])) return true;
+	if (u6c(r2x, knightSquares[t0h])) return true;
+	if (v3l(r2x, kingSquares[t0h])) return true;
 	return false;
 }
 
-function p6v(f1l, k2d)
+function r4c(r2x, t0h)
 {
-	if (j9d(f1l, northEastSquares[k2d])) return true;
-	if (j9d(f1l, southEastSquares[k2d])) return true;
-	if (j9d(f1l, southWestSquares[k2d])) return true;
-	if (j9d(f1l, northWestSquares[k2d])) return true;
-	if (g3n(f1l, northSquares[k2d])) return true;
-	if (j5q(f1l, eastSquares[k2d])) return true;
-	if (g3n(f1l, southSquares[k2d])) return true;
-	if (j5q(f1l, westSquares[k2d])) return true;
-	if (g6i(f1l, northEastSquare[k2d])) return true;
-	if (g6i(f1l, northWestSquare[k2d])) return true;
-	if (h7x(f1l, knightSquares[k2d])) return true;
-	if (f9u(f1l, kingSquares[k2d])) return true;
+	if (q6i(r2x, northEastSquares[t0h])) return true;
+	if (q6i(r2x, southEastSquares[t0h])) return true;
+	if (q6i(r2x, southWestSquares[t0h])) return true;
+	if (q6i(r2x, northWestSquares[t0h])) return true;
+	if (s7m(r2x, northSquares[t0h])) return true;
+	if (v4i(r2x, eastSquares[t0h])) return true;
+	if (s7m(r2x, southSquares[t0h])) return true;
+	if (v4i(r2x, westSquares[t0h])) return true;
+	if (s3z(r2x, northEastSquare[t0h])) return true;
+	if (s3z(r2x, northWestSquare[t0h])) return true;
+	if (e2x(r2x, knightSquares[t0h])) return true;
+	if (e5e(r2x, kingSquares[t0h])) return true;
 	return false;
 }
 
-function g1r(e3i, k2d)
+function r1v(n2t, t0h)
 {
-	let t1k = f1k;
-	if (x4d(e3i, northEastSquares[k2d], t1k)) return true;
-	if (x4d(e3i, southEastSquares[k2d], t1k)) return true;
-	if (x4d(e3i, southWestSquares[k2d], t1k)) return true;
-	if (x4d(e3i, northWestSquares[k2d], t1k)) return true;
-	if (t8h(e3i, northSquares[k2d], t1k)) return true;
-	if (n6f(e3i, eastSquares[k2d], t1k)) return true;
-	if (t8h(e3i, southSquares[k2d], t1k)) return true;
-	if (n6f(e3i, westSquares[k2d], t1k)) return true;
-	if (y3o(e3i, southEastSquare[k2d])) return true;
-	if (y3o(e3i, southWestSquare[k2d])) return true;
-	if (x2e(e3i, knightSquares[k2d], t1k)) return true;
-	if (f3x(e3i, kingSquares[k2d], t1k)) return true;
+	let d8o = d2w;
+	if (x2t(n2t, northEastSquares[t0h], d8o)) return true;
+	if (x2t(n2t, southEastSquares[t0h], d8o)) return true;
+	if (x2t(n2t, southWestSquares[t0h], d8o)) return true;
+	if (x2t(n2t, northWestSquares[t0h], d8o)) return true;
+	if (f7b(n2t, northSquares[t0h], d8o)) return true;
+	if (z7h(n2t, eastSquares[t0h], d8o)) return true;
+	if (f7b(n2t, southSquares[t0h], d8o)) return true;
+	if (z7h(n2t, westSquares[t0h], d8o)) return true;
+	if (z1d(n2t, southEastSquare[t0h])) return true;
+	if (z1d(n2t, southWestSquare[t0h])) return true;
+	if (j6r(n2t, knightSquares[t0h], d8o)) return true;
+	if (u0w(n2t, kingSquares[t0h], d8o)) return true;
 	return false;
 }
 
-function y8l(e3i, k2d)
+function n8b(n2t, t0h)
 {
-	let t1k = f1k;
-	if (h6d(e3i, northEastSquares[k2d], t1k)) return true;
-	if (h6d(e3i, southEastSquares[k2d], t1k)) return true;
-	if (h6d(e3i, southWestSquares[k2d], t1k)) return true;
-	if (h6d(e3i, northWestSquares[k2d], t1k)) return true;
-	if (y1b(e3i, northSquares[k2d], t1k)) return true;
-	if (m3g(e3i, eastSquares[k2d], t1k)) return true;
-	if (y1b(e3i, southSquares[k2d], t1k)) return true;
-	if (m3g(e3i, westSquares[k2d], t1k)) return true;
-	if (r8y(e3i, northEastSquare[k2d])) return true;
-	if (r8y(e3i, northWestSquare[k2d])) return true;
-	if (h0z(e3i, knightSquares[k2d], t1k)) return true;
-	if (s8b(e3i, kingSquares[k2d], t1k)) return true;
+	let d8o = d2w;
+	if (v6v(n2t, northEastSquares[t0h], d8o)) return true;
+	if (v6v(n2t, southEastSquares[t0h], d8o)) return true;
+	if (v6v(n2t, southWestSquares[t0h], d8o)) return true;
+	if (v6v(n2t, northWestSquares[t0h], d8o)) return true;
+	if (x9q(n2t, northSquares[t0h], d8o)) return true;
+	if (n7n(n2t, eastSquares[t0h], d8o)) return true;
+	if (x9q(n2t, southSquares[t0h], d8o)) return true;
+	if (n7n(n2t, westSquares[t0h], d8o)) return true;
+	if (g0b(n2t, northEastSquare[t0h])) return true;
+	if (g0b(n2t, northWestSquare[t0h])) return true;
+	if (j5g(n2t, knightSquares[t0h], d8o)) return true;
+	if (j7q(n2t, kingSquares[t0h], d8o)) return true;
 	return false;
 }
 
-function b3n()
+function k6h()
 {
 	if (moveGeneratorInited) return;
 	moveGeneratorInited = true;
- 	for (const k2d of b7a)
+ 	for (const t0h of x6a)
 	{
- 		if (a3p(k2d) <= b9y && z7g(k2d) <= f7r)
+ 		if (u4i(t0h) <= b2q && m9h(t0h) <= a8h)
 		{
-			let z4d = k2d + h7c;
-			northEastSquare.push(z4d);
+			let p2v = t0h + x0k;
+			northEastSquare.push(p2v);
 		}
 		else
 		{
-			northEastSquare.push(f1k);
+			northEastSquare.push(d2w);
 		}
-		if (z7g(k2d) <= f7r)
+		if (m9h(t0h) <= a8h)
 		{
-			let z4d = k2d + m2o;
-			eastSquare.push(z4d);
-		}
-		else
-		{
-			eastSquare.push(f1k);
-		}
-		if (a3p(k2d) >= f3f && z7g(k2d) <= f7r)
-		{
-			let z4d = k2d + o7w;
-			southEastSquare.push(z4d);
+			let p2v = t0h + e7b;
+			eastSquare.push(p2v);
 		}
 		else
 		{
-			southEastSquare.push(f1k);
+			eastSquare.push(d2w);
 		}
-		if (a3p(k2d) >= f3f && z7g(k2d) >= u8b)
+		if (u4i(t0h) >= w6a && m9h(t0h) <= a8h)
 		{
-			let z4d = k2d + g4b;
-			southWestSquare.push(z4d);
-		}
-		else
-		{
-			southWestSquare.push(f1k);
-		}
-		if (z7g(k2d) >= u8b)
-		{
-			let z4d = k2d + c0r;
-			westSquare.push(z4d);
+			let p2v = t0h + a0d;
+			southEastSquare.push(p2v);
 		}
 		else
 		{
-			westSquare.push(f1k);
+			southEastSquare.push(d2w);
 		}
-		if (a3p(k2d) <= b9y && z7g(k2d) >= u8b)
+		if (u4i(t0h) >= w6a && m9h(t0h) >= a1k)
 		{
-			let z4d = k2d + o4z;
-			northWestSquare.push(z4d);
+			let p2v = t0h + x2h;
+			southWestSquare.push(p2v);
 		}
 		else
 		{
-			northWestSquare.push(f1k);
+			southWestSquare.push(d2w);
+		}
+		if (m9h(t0h) >= a1k)
+		{
+			let p2v = t0h + u9h;
+			westSquare.push(p2v);
+		}
+		else
+		{
+			westSquare.push(d2w);
+		}
+		if (u4i(t0h) <= b2q && m9h(t0h) >= a1k)
+		{
+			let p2v = t0h + o9d;
+			northWestSquare.push(p2v);
+		}
+		else
+		{
+			northWestSquare.push(d2w);
 		}
 	}
 
-  for (const k2d of b7a)
+  for (const t0h of x6a)
 	{
-  	northSquares.push(t1n(k2d));
-		northEastSquares.push(h2w(k2d));
-		eastSquares.push(v5e(k2d));
-		southEastSquares.push(h1c(k2d));
-		southSquares.push(a7g(k2d));
-		southWestSquares.push(i9a(k2d));
-		westSquares.push(j0b(k2d));
-		northWestSquares.push(d7y(k2d));
-		kingSquares.push(s9b(k2d));
-		knightSquares.push(f2j(k2d));
+  	northSquares.push(x8m(t0h));
+		northEastSquares.push(x6i(t0h));
+		eastSquares.push(b1z(t0h));
+		southEastSquares.push(f1p(t0h));
+		southSquares.push(d1e(t0h));
+		southWestSquares.push(p3s(t0h));
+		westSquares.push(a4q(t0h));
+		northWestSquares.push(v3k(t0h));
+		kingSquares.push(u8f(t0h));
+		knightSquares.push(j4c(t0h));
 	}
 }
 
-function y1w(e3i)
+function c6r(n2t)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		let g4z = e3i.g4z();
-    for (const k2d of b7a)
+		let i4e = n2t.i4e();
+    for (const t0h of x6a)
 		{
-			if (!g4z) break;
-			if (e3i.c0t(k2d))
+			if (!i4e) break;
+			if (n2t.u1g(t0h))
 			{
-				switch (e3i.j0s(k2d))
+				switch (n2t.j1a(t0h))
 				{
-					case r4u.z0j:
-						e4m(z1l, e3i, k2d);
-						g4z--;
+					case d5p.x1p:
+						d7d(s3b, n2t, t0h);
+						i4e--;
 						break;
-					case r4u.f3a:
-						o0l(z1l, e3i, k2d);
-						g4z--;
+					case d5p.w1z:
+						x9k(s3b, n2t, t0h);
+						i4e--;
 						break;
-					case r4u.m1p:
-						m2e(z1l, e3i, k2d);
-						g4z--;
+					case d5p.b1p:
+						x8a(s3b, n2t, t0h);
+						i4e--;
 						break;
-					case r4u.l5x:
-						n8m(z1l, e3i, k2d);
-						g4z--;
+					case d5p.l1a:
+						f0t(s3b, n2t, t0h);
+						i4e--;
 						break;
-					case r4u.n3b:
-						f0i(z1l, e3i, k2d);
-						g4z--;
+					case d5p.i2l:
+						v6w(s3b, n2t, t0h);
+						i4e--;
 						break;
-					case r4u.w6p:
-						u5g(z1l, e3i, k2d);
-						g4z--;
+					case d5p.y3v:
+						i7p(s3b, n2t, t0h);
+						i4e--;
 						break;
 					default:
 						break;
 				}
 			}
 		}
-		l8q(z1l, e3i);
-		c8s(z1l, e3i);
+		w6p(s3b, n2t);
+		m7u(s3b, n2t);
 	}
 	else
 	{
-		let a1q = e3i.a1q();
-    for (const k2d of b7a)
+		let y2t = n2t.y2t();
+    for (const t0h of x6a)
 		{
-			if (!a1q) break;
-			if (e3i.a7b(k2d))
+			if (!y2t) break;
+			if (n2t.g0d(t0h))
 			{
-				switch (e3i.j0s(k2d))
+				switch (n2t.j1a(t0h))
 				{
-					case r4u.f1o:
-						x3o(z1l, e3i, k2d);
-						a1q--;
+					case d5p.x6h:
+						e5s(s3b, n2t, t0h);
+						y2t--;
 						break;
-					case r4u.s7h:
-						y3x(z1l, e3i, k2d);
-						a1q--;
+					case d5p.g6s:
+						h4r(s3b, n2t, t0h);
+						y2t--;
 						break;
-					case r4u.d5l:
-						g3o(z1l, e3i, k2d);
-						a1q--;
+					case d5p.f4r:
+						n5x(s3b, n2t, t0h);
+						y2t--;
 						break;
-					case r4u.t2o:
-						q5y(z1l, e3i, k2d);
-						a1q--;
+					case d5p.b3w:
+						g8n(s3b, n2t, t0h);
+						y2t--;
 						break;
-					case r4u.n8i:
-						w9n(z1l, e3i, k2d);
-						a1q--;
+					case d5p.f8i:
+						p6x(s3b, n2t, t0h);
+						y2t--;
 						break;
-					case r4u.n1f:
-						u2v(z1l, e3i, k2d);
-						a1q--;
+					case d5p.j1i:
+						t1p(s3b, n2t, t0h);
+						y2t--;
 						break;
 					default:
 						break;
 				}
 			}
 		}
-		y3v(z1l, e3i);
-		e6u(z1l, e3i);
+		a1f(s3b, n2t);
+		v8x(s3b, n2t);
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function q5e(e3i, a1i)
+function b7m(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			n3p(z1l, e3i, a1i);
+			t9f(s3b, n2t, j1b);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			y2e(z1l, e3i, a1i);
+			v8u(s3b, n2t, j1b);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function c5k(e3i, a1i)
+function j4f(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			m6p(z1l, e3i, a1i, r4u.f3a);
+			m8z(s3b, n2t, j1b, d5p.w1z);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			m6p(z1l, e3i, a1i, r4u.s7h);
+			m8z(s3b, n2t, j1b, d5p.g6s);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function g2y(e3i, a1i)
+function y6v(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			o1y(z1l, e3i, a1i, r4u.m1p);
+			f4y(s3b, n2t, j1b, d5p.b1p);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			o1y(z1l, e3i, a1i, r4u.d5l);
+			f4y(s3b, n2t, j1b, d5p.f4r);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function q8t(e3i, a1i)
+function w2l(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			b0o(z1l, e3i, a1i, r4u.l5x);
+			y6e(s3b, n2t, j1b, d5p.l1a);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			b0o(z1l, e3i, a1i, r4u.t2o);
+			y6e(s3b, n2t, j1b, d5p.b3w);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function e8l(e3i, a1i)
+function k9f(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			m4l(z1l, e3i, a1i, r4u.n3b);
+			c0w(s3b, n2t, j1b, d5p.i2l);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			m4l(z1l, e3i, a1i, r4u.n8i);
+			c0w(s3b, n2t, j1b, d5p.f8i);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function m5t(e3i, a1i)
+function f7z(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	let g0u = f1k;
-	if (e3i.q8y())
+	let h0r = d2w;
+	if (n2t.k2b())
 	{
-		g0u = e3i.w6p();
+		h0r = n2t.y3v();
 	}
 	else
 	{
-		g0u = e3i.n1f();
+		h0r = n2t.j1i();
 	}
 
-	if (g0u == f1k)
+	if (h0r == d2w)
 	{
-		return z1l;
+		return s3b;
 	}
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		u5g(z1l, e3i, g0u);
-		c8s(z1l, e3i);
+		i7p(s3b, n2t, h0r);
+		m7u(s3b, n2t);
 	}
 	else
 	{
-		u2v(z1l, e3i, g0u);
-		e6u(z1l, e3i);
+		t1p(s3b, n2t, h0r);
+		v8x(s3b, n2t);
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function p2y(e3i, a1i)
+function y0k(n2t, j1b)
 {
-	let z1l = [];
+	let s3b = [];
 
-	let g0u = f1k;
-	if (e3i.q8y())
+	let h0r = d2w;
+	if (n2t.k2b())
 	{
-		g0u = e3i.w6p();
+		h0r = n2t.y3v();
 	}
 	else
 	{
-		g0u = e3i.n1f();
+		h0r = n2t.j1i();
 	}
 
-	if (g0u == f1k)
+	if (h0r == d2w)
 	{
-		return z1l;
+		return s3b;
 	}
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.c0t(a1i))
+		if (!n2t.u1g(j1b))
 		{
-			i8n(z1l, e3i, a1i, r4u.w6p);
+			h8n(s3b, n2t, j1b, d5p.y3v);
 		}
 	}
 	else
 	{
-		if (!e3i.a7b(a1i))
+		if (!n2t.g0d(j1b))
 		{
-			i8n(z1l, e3i, a1i, r4u.n1f);
+			h8n(s3b, n2t, j1b, d5p.j1i);
 		}
 	}
 
-	return z1l;
+	return s3b;
 }
 
-function o4o(e3i)
+function t5a(n2t)
 {
-	let z1l = [];
+	let s3b = [];
 
-	if (e3i.q8y())
+	if (n2t.k2b())
 	{
-		if (!e3i.p3k(e3i.c4b()))
+		if (!n2t.z3k(n2t.g1f()))
 		{
-			return z1l;
+			return s3b;
 		}
-		if (!e3i.l1o())
+		if (!n2t.u9m())
 		{
-			return z1l;
+			return s3b;
 		}
-		e6d(z1l, e3i);
-		return z1l;
+		t9z(s3b, n2t);
+		return s3b;
 	}
 	else
 	{
-		if (!e3i.e2s(e3i.a4l()))
+		if (!n2t.p4l(n2t.s8j()))
 		{
-			return z1l;
+			return s3b;
 		}
-		if (!e3i.h8l())
+		if (!n2t.p9x())
 		{
-			return z1l;
+			return s3b;
 		}
-		i8m(z1l, e3i);
-		return z1l;
-	}
-}
-
-function i1j(e3i)
-{
-	let z1l = [];
-
-	if (e3i.q8y())
-	{
-		if (!e3i.p3k(e3i.c4b()))
-		{
-			return z1l;
-		}
-		if (!e3i.x5u())
-		{
-			return z1l;
-		}
-		n6b(z1l, e3i);
-		return z1l;
-	}
-	else
-	{
-		if (!e3i.e2s(e3i.a4l()))
-		{
-			return z1l;
-		}
-		if (!e3i.m0z())
-		{
-			return z1l;
-		}
-		x2j(z1l, e3i);
-		return z1l;
+		b0w(s3b, n2t);
+		return s3b;
 	}
 }
 
-function l3n(e3i)
+function j3m(n2t)
 {
-	if (e3i.q8y())
+	let s3b = [];
+
+	if (n2t.k2b())
 	{
-		if (e3i.w6p() != f1k)
+		if (!n2t.z3k(n2t.g1f()))
 		{
-			return y8l(e3i, e3i.w6p());
+			return s3b;
+		}
+		if (!n2t.c6a())
+		{
+			return s3b;
+		}
+		h0m(s3b, n2t);
+		return s3b;
+	}
+	else
+	{
+		if (!n2t.p4l(n2t.s8j()))
+		{
+			return s3b;
+		}
+		if (!n2t.i0q())
+		{
+			return s3b;
+		}
+		d9i(s3b, n2t);
+		return s3b;
+	}
+}
+
+function x1i(n2t)
+{
+	if (n2t.k2b())
+	{
+		if (n2t.y3v() != d2w)
+		{
+			return n8b(n2t, n2t.y3v());
 		}
 	}
 	else
 	{
-		if (e3i.n1f() != f1k)
+		if (n2t.j1i() != d2w)
 		{
-			return g1r(e3i, e3i.n1f());
+			return r1v(n2t, n2t.j1i());
 		}
 	}
 	return false;
@@ -4460,687 +4460,687 @@ function l3n(e3i)
 
 
 
-function l9i(e3i, d4d)
+function b1o(n2t, i1o)
 {
-	let f2c = y1w(e3i);
-	let j4z = [];
-  for (const x2v of f2c)
+	let f6i = c6r(n2t);
+	let k2j = [];
+  for (const i1j of f6i)
 	{
-		if (x2v.d4d == d4d)
+		if (i1j.i1o == i1o)
 		{
-			j4z.push(x2v);
+			k2j.push(i1j);
 		}
 	}
-	return j4z;
+	return k2j;
 }
 
-function u5y(e3i, z4d)
+function a6b(n2t, p2v)
 {
-	let f2c = y1w(e3i);
-	let u1f = [];
-  for (const x2v of f2c)
+	let f6i = c6r(n2t);
+	let l6i = [];
+  for (const i1j of f6i)
 	{
-		if (x2v.z4d == z4d)
+		if (i1j.p2v == p2v)
 		{
-			u1f.push(x2v);
+			l6i.push(i1j);
 		}
 	}
-	return u1f;
+	return l6i;
 }
 
-function x9q(e3i, d4d, z4d)
+function y4j(n2t, i1o, p2v)
 {
-	let f2c = y1w(e3i);
-	let c1t = [];
-  for (const x2v of f2c)
+	let f6i = c6r(n2t);
+	let b1v = [];
+  for (const i1j of f6i)
 	{
-		if (x2v.d4d == d4d && x2v.z4d == z4d)
+		if (i1j.i1o == i1o && i1j.p2v == p2v)
 		{
-			c1t.push(x2v);
+			b1v.push(i1j);
 		}
 	}
-	return c1t;
+	return b1v;
 }
 
-function p4z(e3i, d4d, z4d, type)
+function f2c(n2t, i1o, p2v, type)
 {
-	let c7j = new j7i();
-	if (type == u5u.null)
+	let z1e = new b1y();
+	if (type == a8g.null)
 	{
-		return c7j;
+		return z1e;
 	}
 
-	c7j.d4d = d4d;
-	c7j.z4d = z4d;
-	c7j.type = type;
-	if (type == u5u.j5k)
+	z1e.i1o = i1o;
+	z1e.p2v = p2v;
+	z1e.type = type;
+	if (type == a8g.j8g)
 	{
-		if (e3i.j0s(c7j.z4d) != r4u.f7c)
+		if (n2t.j1a(z1e.p2v) != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = e3i.j0s(c7j.z4d);
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = n2t.j1a(z1e.p2v);
 		}
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		c7j.o9x = c7j.v5m;
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		z1e.y6k = z1e.x0m;
 	}
-	else if (type == u5u.g2x)
+	else if (type == a8g.k4m)
 	{
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		c7j.o9x = c7j.v5m;
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		z1e.y6k = z1e.x0m;
 	}
-	else if (type == u5u.a8n)
+	else if (type == a8g.g9h)
 	{
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		c7j.o9x = c7j.v5m;
-		if (c0t(c7j.v5m))
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		z1e.y6k = z1e.x0m;
+		if (u1g(z1e.x0m))
 		{
-			c7j.i9e = (c7j.z4d - 8);
-			c7j.q1n = r4u.f1o;
+			z1e.v6z = (z1e.p2v - 8);
+			z1e.h1u = d5p.x6h;
 		}
 		else
 		{
-			c7j.i9e = (c7j.z4d + 8);
-			c7j.q1n = r4u.z0j;
+			z1e.v6z = (z1e.p2v + 8);
+			z1e.h1u = d5p.x1p;
 		}
 	}
-	else if (type == u5u.z5d)
+	else if (type == a8g.b8v)
 	{
-		if (e3i.j0s(c7j.z4d) != r4u.f7c)
+		if (n2t.j1a(z1e.p2v) != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = e3i.j0s(c7j.z4d);
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = n2t.j1a(z1e.p2v);
 		}
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		if (c0t(c7j.v5m))
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.n3b;
+			z1e.y6k = d5p.i2l;
 		}
 		else
 		{
-			c7j.o9x = r4u.n8i;
+			z1e.y6k = d5p.f8i;
 		}
 	}
-	else if (type == u5u.h0w)
+	else if (type == a8g.q1x)
 	{
-		if (e3i.j0s(c7j.z4d) != r4u.f7c)
+		if (n2t.j1a(z1e.p2v) != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = e3i.j0s(c7j.z4d);
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = n2t.j1a(z1e.p2v);
 		}
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		if (c0t(c7j.v5m))
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.l5x;
+			z1e.y6k = d5p.l1a;
 		}
 		else
 		{
-			c7j.o9x = r4u.t2o;
+			z1e.y6k = d5p.b3w;
 		}
 	}
-	else if (type == u5u.k8w)
+	else if (type == a8g.q2q)
 	{
-		if (e3i.j0s(c7j.z4d) != r4u.f7c)
+		if (n2t.j1a(z1e.p2v) != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = e3i.j0s(c7j.z4d);
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = n2t.j1a(z1e.p2v);
 		}
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		if (c0t(c7j.v5m))
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.m1p;
+			z1e.y6k = d5p.b1p;
 		}
 		else
 		{
-			c7j.o9x = r4u.d5l;
+			z1e.y6k = d5p.f4r;
 		}
 	}
-	else if (type == u5u.f5e)
+	else if (type == a8g.a0g)
 	{
-		if (e3i.j0s(c7j.z4d) != r4u.f7c)
+		if (n2t.j1a(z1e.p2v) != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = e3i.j0s(c7j.z4d);
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = n2t.j1a(z1e.p2v);
 		}
-		c7j.v5m = e3i.j0s(c7j.d4d);
-		if (c0t(c7j.v5m))
+		z1e.x0m = n2t.j1a(z1e.i1o);
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.f3a;
+			z1e.y6k = d5p.w1z;
 		}
 		else
 		{
-			c7j.o9x = r4u.s7h;
+			z1e.y6k = d5p.g6s;
 		}
 	}
-	return c7j;
+	return z1e;
 }
 
-function p4z(f1l, d4d, z4d, type)
+function f2c(r2x, i1o, p2v, type)
 {
-	let c7j = new j7i();
-	if (type == u5u.null)
+	let z1e = new b1y();
+	if (type == a8g.null)
 	{
-		return c7j;
+		return z1e;
 	}
 
-	c7j.d4d = d4d;
-	c7j.z4d = z4d;
-	c7j.type = type;
-	if (type == u5u.j5k)
+	z1e.i1o = i1o;
+	z1e.p2v = p2v;
+	z1e.type = type;
+	if (type == a8g.j8g)
 	{
-		if (f1l[c7j.z4d] != r4u.f7c)
+		if (r2x[z1e.p2v] != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = f1l[c7j.z4d];
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = r2x[z1e.p2v];
 		}
-		c7j.v5m = f1l[c7j.d4d];
-		c7j.o9x = c7j.v5m;
+		z1e.x0m = r2x[z1e.i1o];
+		z1e.y6k = z1e.x0m;
 	}
-	else if (type == u5u.g2x)
+	else if (type == a8g.k4m)
 	{
-		c7j.v5m = f1l[c7j.d4d];
-		c7j.o9x = c7j.v5m;
+		z1e.x0m = r2x[z1e.i1o];
+		z1e.y6k = z1e.x0m;
 	}
-	else if (type == u5u.a8n)
+	else if (type == a8g.g9h)
 	{
-		c7j.v5m = f1l[c7j.d4d];
-		c7j.o9x = c7j.v5m;
-		if (c0t(c7j.v5m))
+		z1e.x0m = r2x[z1e.i1o];
+		z1e.y6k = z1e.x0m;
+		if (u1g(z1e.x0m))
 		{
-			c7j.i9e = (c7j.z4d - 8);
-			c7j.q1n = r4u.f1o;
+			z1e.v6z = (z1e.p2v - 8);
+			z1e.h1u = d5p.x6h;
 		}
 		else
 		{
-			c7j.i9e = (c7j.z4d + 8);
-			c7j.q1n = r4u.z0j;
+			z1e.v6z = (z1e.p2v + 8);
+			z1e.h1u = d5p.x1p;
 		}
 	}
-	else if (type == u5u.z5d)
+	else if (type == a8g.b8v)
 	{
-		if (f1l[c7j.z4d] != r4u.f7c)
+		if (r2x[z1e.p2v] != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = f1l[c7j.z4d];
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = r2x[z1e.p2v];
 		}
-		c7j.v5m = f1l[c7j.d4d];
-		if (c0t(c7j.v5m))
+		z1e.x0m = r2x[z1e.i1o];
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.n3b;
+			z1e.y6k = d5p.i2l;
 		}
 		else
 		{
-			c7j.o9x = r4u.n8i;
+			z1e.y6k = d5p.f8i;
 		}
 	}
-	else if (type == u5u.h0w)
+	else if (type == a8g.q1x)
 	{
-		if (f1l[c7j.z4d] != r4u.f7c)
+		if (r2x[z1e.p2v] != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = f1l[c7j.z4d];
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = r2x[z1e.p2v];
 		}
-		c7j.v5m = f1l[c7j.d4d];
-		if (c0t(c7j.v5m))
+		z1e.x0m = r2x[z1e.i1o];
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.l5x;
+			z1e.y6k = d5p.l1a;
 		}
 		else
 		{
-			c7j.o9x = r4u.t2o;
+			z1e.y6k = d5p.b3w;
 		}
 	}
-	else if (type == u5u.k8w)
+	else if (type == a8g.q2q)
 	{
-		if (f1l[c7j.z4d] != r4u.f7c)
+		if (r2x[z1e.p2v] != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = f1l[c7j.z4d];
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = r2x[z1e.p2v];
 		}
-		c7j.v5m = f1l[c7j.d4d];
-		if (c0t(c7j.v5m))
+		z1e.x0m = r2x[z1e.i1o];
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.m1p;
+			z1e.y6k = d5p.b1p;
 		}
 		else
 		{
-			c7j.o9x = r4u.d5l;
+			z1e.y6k = d5p.f4r;
 		}
 	}
-	else if (type == u5u.f5e)
+	else if (type == a8g.a0g)
 	{
-		if (f1l[c7j.z4d] != r4u.f7c)
+		if (r2x[z1e.p2v] != d5p.g3d)
 		{
-			c7j.i9e = c7j.z4d;
-			c7j.q1n = f1l[c7j.z4d];
+			z1e.v6z = z1e.p2v;
+			z1e.h1u = r2x[z1e.p2v];
 		}
-		c7j.v5m = f1l[c7j.d4d];
-		if (c0t(c7j.v5m))
+		z1e.x0m = r2x[z1e.i1o];
+		if (u1g(z1e.x0m))
 		{
-			c7j.o9x = r4u.f3a;
+			z1e.y6k = d5p.w1z;
 		}
 		else
 		{
-			c7j.o9x = r4u.s7h;
+			z1e.y6k = d5p.g6s;
 		}
 	}
-	return c7j;
+	return z1e;
 }
 
-const j5l 						=   8; 
-const z2i 						=  -8; 
-const m2o 	      			=   1; 
-const c0r 	      			=  -1; 
-const c2o 		=  17; 
-const a5h 		=  10; 
-const h7c 				=   9; 
-const e7o 		=   6; 
-const u1g 		=  15; 
-const o4z 				=   7; 
-const l1r 		= -17; 
-const l2j 		= -10; 
-const g4b 				=  -9; 
-const u1e 		=  -6; 
-const h6t 		= -15; 
-const o7w 				=  -7; 
+const p9v 						=   8; 
+const s6b 						=  -8; 
+const e7b 	      			=   1; 
+const u9h 	      			=  -1; 
+const y8a 		=  17; 
+const d4b 		=  10; 
+const x0k 				=   9; 
+const n2c 		=   6; 
+const e1n 		=  15; 
+const o9d 				=   7; 
+const x2s 		= -17; 
+const s0u 		= -10; 
+const x2h 				=  -9; 
+const w0t 		=  -6; 
+const e3l 		= -15; 
+const a0d 				=  -7; 
 
-function t1n(k2d)
+function x8m(t0h)
 {
-	let s6n = [];
-	let a8g = j5l;
-	let z4d = k2d;
-	while (a3p(z4d) <= b9y)
+	let z8o = [];
+	let p1v = p9v;
+	let p2v = t0h;
+	while (u4i(p2v) <= b2q)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function h2w(k2d)
+function x6i(t0h)
 {
-	let s6n = [];
-	let a8g = h7c;
-	let z4d = k2d;
-	while (a3p(z4d) <= b9y && z7g(z4d) <= f7r)
+	let z8o = [];
+	let p1v = x0k;
+	let p2v = t0h;
+	while (u4i(p2v) <= b2q && m9h(p2v) <= a8h)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function v5e(k2d)
+function b1z(t0h)
 {
-	let s6n = [];
-	let a8g = m2o;
-	let z4d = k2d;
-	while (z7g(z4d) <= f7r)
+	let z8o = [];
+	let p1v = e7b;
+	let p2v = t0h;
+	while (m9h(p2v) <= a8h)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function h1c(k2d)
+function f1p(t0h)
 {
-	let s6n = [];
-	let a8g = o7w;
-	let z4d = k2d;
-	while (a3p(z4d) >= f3f && z7g(z4d) <= f7r)
+	let z8o = [];
+	let p1v = a0d;
+	let p2v = t0h;
+	while (u4i(p2v) >= w6a && m9h(p2v) <= a8h)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function a7g(k2d)
+function d1e(t0h)
 {
-	let s6n = [];
-	let a8g = z2i;
-	let z4d = k2d;
-	while (a3p(z4d) >= f3f)
+	let z8o = [];
+	let p1v = s6b;
+	let p2v = t0h;
+	while (u4i(p2v) >= w6a)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function i9a(k2d)
+function p3s(t0h)
 {
-	let s6n = [];
-	let a8g = g4b;
-	let z4d = k2d;
-	while (a3p(z4d) >= f3f && z7g(z4d) >= u8b)
+	let z8o = [];
+	let p1v = x2h;
+	let p2v = t0h;
+	while (u4i(p2v) >= w6a && m9h(p2v) >= a1k)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function j0b(k2d)
+function a4q(t0h)
 {
-	let s6n = [];
-	let a8g = c0r;
-	let z4d = k2d;
-	while (z7g(z4d) >= u8b)
+	let z8o = [];
+	let p1v = u9h;
+	let p2v = t0h;
+	while (m9h(p2v) >= a1k)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function d7y(k2d)
+function v3k(t0h)
 {
-	let s6n = [];
-	let a8g = o4z;
-	let z4d = k2d;
-	while (a3p(z4d) <= b9y && z7g(z4d) >= u8b)
+	let z8o = [];
+	let p1v = o9d;
+	let p2v = t0h;
+	while (u4i(p2v) <= b2q && m9h(p2v) >= a1k)
 	{
-		z4d = z4d + a8g;
-		s6n.push(z4d);
+		p2v = p2v + p1v;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function f2j(k2d)
+function j4c(t0h)
 {
-	let s6n = [];
-	if (a3p(k2d) <= t7m && z7g(k2d) <= f7r)
+	let z8o = [];
+	if (u4i(t0h) <= l3z && m9h(t0h) <= a8h)
 	{
-		let z4d = k2d + c2o;
-		s6n.push(z4d);
+		let p2v = t0h + y8a;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) <= b9y && z7g(k2d) <= r6l)
+	if (u4i(t0h) <= b2q && m9h(t0h) <= j2o)
 	{
-		let z4d = k2d + a5h;
-		s6n.push(z4d);
+		let p2v = t0h + d4b;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= f3f && z7g(k2d) <= r6l)
+	if (u4i(t0h) >= w6a && m9h(t0h) <= j2o)
 	{
-		let z4d = k2d + u1e;
-		s6n.push(z4d);
+		let p2v = t0h + w0t;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= n1c && z7g(k2d) <= f7r)
+	if (u4i(t0h) >= z4d && m9h(t0h) <= a8h)
 	{
-		let z4d = k2d + h6t;
-		s6n.push(z4d);
+		let p2v = t0h + e3l;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= n1c && z7g(k2d) >= u8b)
+	if (u4i(t0h) >= z4d && m9h(t0h) >= a1k)
 	{
-		let z4d = k2d + l1r;
-		s6n.push(z4d);
+		let p2v = t0h + x2s;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= f3f && z7g(k2d) >= g4i)
+	if (u4i(t0h) >= w6a && m9h(t0h) >= n8x)
 	{
-		let z4d = k2d + l2j;
-		s6n.push(z4d);
+		let p2v = t0h + s0u;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) <= b9y && z7g(k2d) >= g4i)
+	if (u4i(t0h) <= b2q && m9h(t0h) >= n8x)
 	{
-		z4d = k2d + e7o;
-		s6n.push(z4d);
+		p2v = t0h + n2c;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) <= t7m && z7g(k2d) >= u8b)
+	if (u4i(t0h) <= l3z && m9h(t0h) >= a1k)
 	{
-		let z4d = k2d + u1g;
-		s6n.push(z4d);
+		let p2v = t0h + e1n;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-function s9b(k2d)
+function u8f(t0h)
 {
-	let s6n = [];
-	if (a3p(k2d) <= b9y)
+	let z8o = [];
+	if (u4i(t0h) <= b2q)
 	{
-		let z4d = k2d + j5l;
-		s6n.push(z4d);
+		let p2v = t0h + p9v;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) <= b9y && z7g(k2d) <= f7r)
+	if (u4i(t0h) <= b2q && m9h(t0h) <= a8h)
 	{
-		let z4d = k2d + h7c;
-		s6n.push(z4d);
+		let p2v = t0h + x0k;
+		z8o.push(p2v);
 	}
-	if (z7g(k2d) <= f7r)
+	if (m9h(t0h) <= a8h)
 	{
-		let z4d = k2d + m2o;
-		s6n.push(z4d);
+		let p2v = t0h + e7b;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= f3f && z7g(k2d) <= f7r)
+	if (u4i(t0h) >= w6a && m9h(t0h) <= a8h)
 	{
-		let z4d = k2d + o7w;
-		s6n.push(z4d);
+		let p2v = t0h + a0d;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= f3f)
+	if (u4i(t0h) >= w6a)
 	{
-		let z4d = k2d + z2i;
-		s6n.push(z4d);
+		let p2v = t0h + s6b;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) >= f3f && z7g(k2d) >= u8b)
+	if (u4i(t0h) >= w6a && m9h(t0h) >= a1k)
 	{
-		let z4d = k2d + g4b;
-		s6n.push(z4d);
+		let p2v = t0h + x2h;
+		z8o.push(p2v);
 	}
-	if (z7g(k2d) >= u8b)
+	if (m9h(t0h) >= a1k)
 	{
-		let z4d = k2d + c0r;
-		s6n.push(z4d);
+		let p2v = t0h + u9h;
+		z8o.push(p2v);
 	}
-	if (a3p(k2d) <= b9y && z7g(k2d) >= u8b)
+	if (u4i(t0h) <= b2q && m9h(t0h) >= a1k)
 	{
-		let z4d = k2d + o4z;
-		s6n.push(z4d);
+		let p2v = t0h + o9d;
+		z8o.push(p2v);
 	}
-	return s6n;
+	return z8o;
 }
 
-const u5u =
+const a8g =
 {
-  i6p : 0,  
-	j5k : 1,
-	g2x : 2,
-	a8n : 3,
-	f5e : 4,
-	k8w : 5,
-	h0w : 6,
-	z5d : 7
+  f0x : 0,  
+	j8g : 1,
+	k4m : 2,
+	g9h : 3,
+	a0g : 4,
+	q2q : 5,
+	q1x : 6,
+	b8v : 7
 };
 
-function c9s(h1e)
+function q1b(d8n)
 {
-	switch (h1e)
+	switch (d8n)
 	{
-		case r4u.z0j:
-		case r4u.f1o:
-			return j9n.f6v;
-		case r4u.f3a:
-		case r4u.s7h:
-			return j9n.g1f;
-		case r4u.m1p:
-		case r4u.d5l:
-			return j9n.j7q;
-		case r4u.l5x:
-		case r4u.t2o:
-			return j9n.i4s;
-		case r4u.n3b:
-		case r4u.n8i:
-			return j9n.t3j;
-		case r4u.w6p:
-		case r4u.n1f:
-			return j9n.king;
-		case r4u.f7c:
-			return j9n.f6v;
+		case d5p.x1p:
+		case d5p.x6h:
+			return g5i.f7t;
+		case d5p.w1z:
+		case d5p.g6s:
+			return g5i.x9b;
+		case d5p.b1p:
+		case d5p.f4r:
+			return g5i.y0u;
+		case d5p.l1a:
+		case d5p.b3w:
+			return g5i.y0l;
+		case d5p.i2l:
+		case d5p.f8i:
+			return g5i.n7o;
+		case d5p.y3v:
+		case d5p.j1i:
+			return g5i.king;
+		case d5p.g3d:
+			return g5i.f7t;
 	}
 }
 
-function a9d(e3i, c7j, t3u)
+function v2s(n2t, z1e, q2f)
 {
- 	let c7b = '';
-	if (c7j.f7c())
+ 	let i7a = '';
+	if (z1e.g3d())
 	{
-		c7b += "--";
+		i7a += "--";
 	}
-	else if (w6s(c7j.v5m))
+	else if (q3s(z1e.x0m))
 	{
-    if (c7j.t7p())
+    if (z1e.w3x())
     {
-			let y0l = z7g(c7j.d4d);
-			c7b = i6f(y0l) + "x" + u1k(c7j.z4d);
+			let g9b = m9h(z1e.i1o);
+			i7a = g4s(g9b) + "x" + s4c(z1e.p2v);
     }
     else
     {
- 			c7b = u1k(c7j.z4d);
+ 			i7a = s4c(z1e.p2v);
     }
-		if (c7j.t4b())
+		if (z1e.m7o())
 		{
-			c7b += "=";
-			c7b += s3n(c9s(c7j.o9x));
+			i7a += "=";
+			i7a += s7p(q1b(z1e.y6k));
 		}
 	}
-	else if (c7j.v5m == r4u.w6p && c7j.t2p())
+	else if (z1e.x0m == d5p.y3v && z1e.i7q())
 	{
-		if (c7j.z4d == s2j)
+		if (z1e.p2v == w5i)
 		{
-			c7b = "O-O-O";
+			i7a = "O-O-O";
 		}
 		else
 		{
-			c7b = "O-O";
+			i7a = "O-O";
 		}
 	}
-	else if (c7j.v5m == r4u.n1f && c7j.t2p())
+	else if (z1e.x0m == d5p.j1i && z1e.i7q())
 	{
-		if (c7j.z4d == h9y)
+		if (z1e.p2v == s5q)
 		{
-			c7b = "O-O-O";
+			i7a = "O-O-O";
 		}
 		else
 		{
-			c7b = "O-O";
+			i7a = "O-O";
 		}
 	}
 	else
 	{
-		c7b = s3n(c9s(c7j.v5m));
-    let f2c = [];
-    if (c0t(c7j.v5m))
+		i7a = s7p(q1b(z1e.x0m));
+    let f6i = [];
+    if (u1g(z1e.x0m))
     {
-      if (c7j.v5m == r4u.f3a)
+      if (z1e.x0m == d5p.w1z)
       {
-        f2c = c5k(e3i, c7j.z4d);
+        f6i = j4f(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.m1p)
+      else if (z1e.x0m == d5p.b1p)
       {
-        f2c = g2y(e3i, c7j.z4d);
+        f6i = y6v(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.l5x)
+      else if (z1e.x0m == d5p.l1a)
       {
-        f2c = q8t(e3i, c7j.z4d);
+        f6i = w2l(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.n3b)
+      else if (z1e.x0m == d5p.i2l)
       {
-        f2c = e8l(e3i, c7j.z4d);
+        f6i = k9f(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.w6p)
+      else if (z1e.x0m == d5p.y3v)
       {
-        f2c = p2y(e3i, c7j.z4d);
+        f6i = y0k(n2t, z1e.p2v);
       }
     }
     else
     {
-      if (c7j.v5m == r4u.s7h)
+      if (z1e.x0m == d5p.g6s)
       {
-        f2c = c5k(e3i, c7j.z4d);
+        f6i = j4f(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.d5l)
+      else if (z1e.x0m == d5p.f4r)
       {
-        f2c = g2y(e3i, c7j.z4d);
+        f6i = y6v(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.t2o)
+      else if (z1e.x0m == d5p.b3w)
       {
-        f2c = q8t(e3i, c7j.z4d);
+        f6i = w2l(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.n8i)
+      else if (z1e.x0m == d5p.f8i)
       {
-        f2c = e8l(e3i, c7j.z4d);
+        f6i = k9f(n2t, z1e.p2v);
       }
-      else if (c7j.v5m == r4u.n1f)
+      else if (z1e.x0m == d5p.j1i)
       {
-        f2c = p2y(e3i, c7j.z4d);
+        f6i = y0k(n2t, z1e.p2v);
       }
     }
-    if (f2c.length > 1)
+    if (f6i.length > 1)
     {
       
-      let z7m = 0;
-      let y0l = z7g(c7j.d4d);
-     	for (const x2v of f2c)
+      let i1b = 0;
+      let g9b = m9h(z1e.i1o);
+     	for (const i1j of f6i)
       {
-        if (z7g(x2v.d4d) == y0l)
+        if (m9h(i1j.i1o) == g9b)
         {
-          z7m++;
+          i1b++;
         }
       }
-      if (z7m == 1)
+      if (i1b == 1)
       {
         
- 				let y0l = z7g(c7j.d4d);
-				c7b += i6f(y0l);
+ 				let g9b = m9h(z1e.i1o);
+				i7a += g4s(g9b);
       }
       else
       {
-        z7m = 0;
-        let g3i = a3p(c7j.d4d);
-       	for (const x2v of f2c)
+        i1b = 0;
+        let n9e = u4i(z1e.i1o);
+       	for (const i1j of f6i)
         {
-          if (a3p(x2v.d4d) == g3i)
+          if (u4i(i1j.i1o) == n9e)
           {
-            z7m++;
+            i1b++;
           }
         }
-        if (z7m == 1)
+        if (i1b == 1)
         {
           
-          c7b += h7n(g3i);
+          i7a += h0i(n9e);
         }
         else
         {
           
- 					c7b += u1k(c7j.d4d);
+ 					i7a += s4c(z1e.i1o);
         }
       }
     }
-		if (c7j.t7p())
+		if (z1e.w3x())
 		{
-       c7b += "x";
+       i7a += "x";
 		}
-		c7b += u1k(c7j.z4d);
+		i7a += s4c(z1e.p2v);
 	}
-	if (!c7j.f7c())
+	if (!z1e.g3d())
 	{
-  	let z8b = e3i.z4e();
-    z8b.i8p(c7j);
-  	if (l3n(z8b))
+  	let a1u = n2t.r0c();
+    a1u.m4i(z1e);
+  	if (x1i(a1u))
 	  {
-  		let z1l = y1w(z8b);
-	  	if (z1l.length == 0)
+  		let s3b = c6r(a1u);
+	  	if (s3b.length == 0)
 		  {
-			  c7b += "#";
+			  i7a += "#";
   		}
 	  	else
 		  {
-			  c7b += "+";
+			  i7a += "+";
   		}
 	  }
 	}
-	return c7b;
+	return i7a;
 }
-class c9h
+class c1u
 {
 
 constructor()
@@ -5152,162 +5152,162 @@ constructor()
 
 }
 
-function a2t(x4i,
-  x9o,
-  x4e,
+function f4z(u3r,
+  d4z,
+  t6l,
   coordinate,
   coordinatesType,
-  s4o,
-  k1g,
+  c5g,
+  f0a,
   marginSize) 
 {
- 	let x8f = (coordinatesType == l7g.d1a ||
-		coordinatesType == l7g.b4t ||
-		coordinatesType == l7g.y7f);
-	let y0a = (coordinatesType == l7g.d1a ||
-		coordinatesType == l7g.b4t ||
-		coordinatesType == l7g.k1o);
-	let b3j =	(coordinatesType == l7g.d1a ||
-		coordinatesType == l7g.y7f ||
-		coordinatesType == l7g.n6s);
-	let f8a = (coordinatesType == l7g.d1a ||
-		coordinatesType == l7g.k1o ||
-		coordinatesType == l7g.n6s);
+ 	let e5n = (coordinatesType == c7x.m1f ||
+		coordinatesType == c7x.f3y ||
+		coordinatesType == c7x.o6e);
+	let f0v = (coordinatesType == c7x.m1f ||
+		coordinatesType == c7x.f3y ||
+		coordinatesType == c7x.k4b);
+	let e8p =	(coordinatesType == c7x.m1f ||
+		coordinatesType == c7x.o6e ||
+		coordinatesType == c7x.h0d);
+	let r2e = (coordinatesType == c7x.m1f ||
+		coordinatesType == c7x.k4b ||
+		coordinatesType == c7x.h0d);
 
-	x4i.font = (coordinate.fontSize).toString() + "px serif";
-	x4i.fillStyle = s4o;
-  let h5r = coordinate.height;
+	u3r.font = (coordinate.fontSize).toString() + "px serif";
+	u3r.fillStyle = c5g;
+  let i6w = coordinate.height;
 
-	if (y0a)
+	if (f0v)
 	{
-		let o2z = n3x;
-		if (k1g)
+		let v4g = j3r;
+		if (f0a)
 		{
-			o2z = 1;
+			v4g = 1;
 		}
-    for (let u5h = 0; u5h < n3x; u5h++)
+    for (let e4p = 0; e4p < j3r; e4p++)
 		{
-			let g2n = x4i.measureText(o2z).width;
-			let top = x9o.k7q + 1 + u5h * x4e.s0f;
-			top += (x4e.s0f - h5r) / 2 + h5r;
-			let e2r = x9o.o5d - marginSize + (marginSize - g2n) / 2;
-      x4i.fillText(o2z, e2r, top);
-			if (k1g)
+			let j3p = u3r.measureText(v4g).width;
+			let top = d4z.a2y + 1 + e4p * t6l.p0u;
+			top += (t6l.p0u - i6w) / 2 + i6w;
+			let b6q = d4z.i4f - marginSize + (marginSize - j3p) / 2;
+      u3r.fillText(v4g, b6q, top);
+			if (f0a)
 			{
-				o2z++;
+				v4g++;
 			}
 			else
 			{
-				o2z--;
+				v4g--;
 			}
 		}
 	}
 
-	if (b3j)
+	if (e8p)
 	{
-		let o2z = n3x;
-		if (k1g)
+		let v4g = j3r;
+		if (f0a)
 		{
-			o2z = 1;
+			v4g = 1;
 		}
-    for (let u5h = 0; u5h < n3x; u5h++)
+    for (let e4p = 0; e4p < j3r; e4p++)
 		{
-      let g2n = x4i.measureText(o2z).width;
-			let top = x9o.k7q + 1 + u5h * x4e.s0f;
-			top += (x4e.s0f - h5r) / 2 + h5r;
-			let e2r = x9o.o5d + x9o.h5k() +
-        (marginSize - g2n) / 2;
-      x4i.fillText(o2z, e2r, top);
-			if (k1g)
+      let j3p = u3r.measureText(v4g).width;
+			let top = d4z.a2y + 1 + e4p * t6l.p0u;
+			top += (t6l.p0u - i6w) / 2 + i6w;
+			let b6q = d4z.i4f + d4z.v1k() +
+        (marginSize - j3p) / 2;
+      u3r.fillText(v4g, b6q, top);
+			if (f0a)
 			{
-				o2z++;
+				v4g++;
 			}
 			else
 			{
-				o2z--;
+				v4g--;
 			}
 		}
 	}
 
-	if (x8f)
+	if (e5n)
 	{
-		let w4c = 'a';
-		if (k1g)
+		let y9u = 'a';
+		if (f0a)
 		{
-			w4c = 'h';
+			y9u = 'h';
 		}
-    for (let a7c = 0; a7c < n3x; a7c++)
+    for (let g4f = 0; g4f < j3r; g4f++)
 		{
-			let y0j = w4c;
-			let left = x9o.o5d + 1 + a7c * x4e.s0f;
-      let g2n = x4i.measureText(y0j).width;
-			let e2r = left + (x4e.s0f - g2n) / 2;
-			let k9f = x9o.k7q - (marginSize - h5r) / 2 - 2;
+			let o2b = y9u;
+			let left = d4z.i4f + 1 + g4f * t6l.p0u;
+      let j3p = u3r.measureText(o2b).width;
+			let b6q = left + (t6l.p0u - j3p) / 2;
+			let k7l = d4z.a2y - (marginSize - i6w) / 2 - 2;
       
-      if (w4c == 'g')
+      if (y9u == 'g')
       {
-        k9f -= 2; 
+        k7l -= 2; 
       }
-      x4i.fillText(y0j, e2r, k9f);
-			if (k1g)
+      u3r.fillText(o2b, b6q, k7l);
+			if (f0a)
 			{
-        let v2z = w4c.charCodeAt(0);
-        v2z--;
-        w4c = String.fromCharCode(v2z);
+        let q6m = y9u.charCodeAt(0);
+        q6m--;
+        y9u = String.fromCharCode(q6m);
 			}
 			else
 			{
-        let v2z = w4c.charCodeAt(0);
-        v2z++;
-        w4c = String.fromCharCode(v2z);
+        let q6m = y9u.charCodeAt(0);
+        q6m++;
+        y9u = String.fromCharCode(q6m);
 			}
 		}
 	}
 
-	if (f8a)
+	if (r2e)
 	{
-		let w4c = 'a';
-		if (k1g)
+		let y9u = 'a';
+		if (f0a)
 		{
-			w4c = 'h';
+			y9u = 'h';
 		}
-    for (let a7c = 0; a7c < n3x; a7c++)
+    for (let g4f = 0; g4f < j3r; g4f++)
 		{
-			let y0j = w4c;
-			let left = x9o.o5d + 1 + a7c * x4e.s0f;
-      let g2n = x4i.measureText(y0j).width;
-			let e2r = left + (x4e.s0f - g2n) / 2;
-			let k9f = x9o.k7q + x9o.c9o() +
-        (marginSize - h5r) / 2 + h5r - 2;
+			let o2b = y9u;
+			let left = d4z.i4f + 1 + g4f * t6l.p0u;
+      let j3p = u3r.measureText(o2b).width;
+			let b6q = left + (t6l.p0u - j3p) / 2;
+			let k7l = d4z.a2y + d4z.s2f() +
+        (marginSize - i6w) / 2 + i6w - 2;
       
-      if (w4c == 'g')
+      if (y9u == 'g')
       {
-        k9f -= 2; 
+        k7l -= 2; 
       }
-      x4i.fillText(y0j, e2r, k9f);
-			if (k1g)
+      u3r.fillText(o2b, b6q, k7l);
+			if (f0a)
 			{
-        let v2z = w4c.charCodeAt(0);
-        v2z--;
-        w4c = String.fromCharCode(v2z);
+        let q6m = y9u.charCodeAt(0);
+        q6m--;
+        y9u = String.fromCharCode(q6m);
 			}
 			else
 			{
-        let v2z = w4c.charCodeAt(0);
-        v2z++;
-        w4c = String.fromCharCode(v2z);
+        let q6m = y9u.charCodeAt(0);
+        q6m++;
+        y9u = String.fromCharCode(q6m);
 			}
 		}
 	}
 }
 
-function w8i(x4i, fontSize)
+function f0k(u3r, fontSize)
 {
-	let m0f = new c9h();
-	m0f.fontSize = fontSize;
-	m0f.height = fontSize;
-	m0f.width = fontSize;
-	return m0f;
+	let i7s = new c1u();
+	i7s.fontSize = fontSize;
+	i7s.height = fontSize;
+	i7s.width = fontSize;
+	return i7s;
 }
 var whitePawnBitmap = null;
 var whiteKnightBitmap = null;
@@ -5323,88 +5323,88 @@ var blackQueenBitmap = null;
 var blackKingBitmap = null;
 var pieceBitmapsInitialized = false;
 
-function g0m()
+function k8c()
 {
-  whitePawnBitmap = u5s.r3h("images/pieces/Merida/wP");
- 	whiteKnightBitmap = u5s.r3h("images/pieces/Merida/wN");
-  whiteBishopBitmap = u5s.r3h("images/pieces/Merida/wB");
- 	whiteRookBitmap = u5s.r3h("images/pieces/Merida/wR");
-  whiteQueenBitmap = u5s.r3h("images/pieces/Merida/wQ");
- 	whiteKingBitmap = u5s.r3h("images/pieces/Merida/wK");
-  blackPawnBitmap = u5s.r3h("images/pieces/Merida/bP");
- 	blackKnightBitmap = u5s.r3h("images/pieces/Merida/bN");
-  blackBishopBitmap = u5s.r3h("images/pieces/Merida/bB");
- 	blackRookBitmap = u5s.r3h("images/pieces/Merida/bR");
-  blackQueenBitmap = u5s.r3h("images/pieces/Merida/bQ");
- 	blackKingBitmap = u5s.r3h("images/pieces/Merida/bK");
+  whitePawnBitmap = o8v.u1v("images/pieces/Merida/wP");
+ 	whiteKnightBitmap = o8v.u1v("images/pieces/Merida/wN");
+  whiteBishopBitmap = o8v.u1v("images/pieces/Merida/wB");
+ 	whiteRookBitmap = o8v.u1v("images/pieces/Merida/wR");
+  whiteQueenBitmap = o8v.u1v("images/pieces/Merida/wQ");
+ 	whiteKingBitmap = o8v.u1v("images/pieces/Merida/wK");
+  blackPawnBitmap = o8v.u1v("images/pieces/Merida/bP");
+ 	blackKnightBitmap = o8v.u1v("images/pieces/Merida/bN");
+  blackBishopBitmap = o8v.u1v("images/pieces/Merida/bB");
+ 	blackRookBitmap = o8v.u1v("images/pieces/Merida/bR");
+  blackQueenBitmap = o8v.u1v("images/pieces/Merida/bQ");
+ 	blackKingBitmap = o8v.u1v("images/pieces/Merida/bK");
 }
 
-function e9z()
+function p4z()
 {
-  whitePawnBitmap = u5s.r3h("images/pieces/CBurnett/wP");
- 	whiteKnightBitmap = u5s.r3h("images/pieces/CBurnett/wN");
-  whiteBishopBitmap = u5s.r3h("images/pieces/CBurnett/wB");
- 	whiteRookBitmap = u5s.r3h("images/pieces/CBurnett/wR");
-  whiteQueenBitmap = u5s.r3h("images/pieces/CBurnett/wQ");
- 	whiteKingBitmap = u5s.r3h("images/pieces/CBurnett/wK");
-  blackPawnBitmap = u5s.r3h("images/pieces/CBurnett/bP");
- 	blackKnightBitmap = u5s.r3h("images/pieces/CBurnett/bN");
-  blackBishopBitmap = u5s.r3h("images/pieces/CBurnett/bB");
- 	blackRookBitmap = u5s.r3h("images/pieces/CBurnett/bR");
-  blackQueenBitmap = u5s.r3h("images/pieces/CBurnett/bQ");
- 	blackKingBitmap = u5s.r3h("images/pieces/CBurnett/bK");
+  whitePawnBitmap = o8v.u1v("images/pieces/CBurnett/wP");
+ 	whiteKnightBitmap = o8v.u1v("images/pieces/CBurnett/wN");
+  whiteBishopBitmap = o8v.u1v("images/pieces/CBurnett/wB");
+ 	whiteRookBitmap = o8v.u1v("images/pieces/CBurnett/wR");
+  whiteQueenBitmap = o8v.u1v("images/pieces/CBurnett/wQ");
+ 	whiteKingBitmap = o8v.u1v("images/pieces/CBurnett/wK");
+  blackPawnBitmap = o8v.u1v("images/pieces/CBurnett/bP");
+ 	blackKnightBitmap = o8v.u1v("images/pieces/CBurnett/bN");
+  blackBishopBitmap = o8v.u1v("images/pieces/CBurnett/bB");
+ 	blackRookBitmap = o8v.u1v("images/pieces/CBurnett/bR");
+  blackQueenBitmap = o8v.u1v("images/pieces/CBurnett/bQ");
+ 	blackKingBitmap = o8v.u1v("images/pieces/CBurnett/bK");
 }
 
-function h7k(z7l)
+function c6z(y6o)
 {
-  if (z7l == 0)
+  if (y6o == 0)
   {
-    e9z();
+    p4z();
   }
   else
   {
-    g0m();
+    k8c();
   }
 }
 
-function f5g(h1e)
+function r1q(d8n)
 {
-  switch (h1e)
+  switch (d8n)
 	{
-    case r4u.z0j:
+    case d5p.x1p:
       return whitePawnBitmap;
       break;
-    case r4u.f3a:
+    case d5p.w1z:
       return whiteKnightBitmap;
       break;
-    case r4u.m1p:
+    case d5p.b1p:
       return whiteBishopBitmap;
       break;
-    case r4u.l5x:
+    case d5p.l1a:
       return whiteRookBitmap;
       break;
-    case r4u.n3b:
+    case d5p.i2l:
       return whiteQueenBitmap;
       break;
-    case r4u.w6p:
+    case d5p.y3v:
       return whiteKingBitmap;
       break;
-    case r4u.f1o:
+    case d5p.x6h:
       return blackPawnBitmap;
       break;
-    case r4u.s7h:
+    case d5p.g6s:
       return blackKnightBitmap;
       break;
-    case r4u.d5l:
+    case d5p.f4r:
       return blackBishopBitmap;
       break;
-    case r4u.t2o:
+    case d5p.b3w:
       return blackRookBitmap;
       break;
-    case r4u.n8i:
+    case d5p.f8i:
       return blackQueenBitmap;
       break;
-    case r4u.n1f:
+    case d5p.j1i:
       return blackKingBitmap;
       break;
     default:
@@ -5413,185 +5413,185 @@ function f5g(h1e)
   return null;
 }
 
-function c6p(x4i, rect, h1e)
+function p3a(u3r, rect, d8n)
 {
-  if (h1e == r4u.f7c) return;
-	let r3h = f5g(h1e);
-  x4i.drawImage(r3h, rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
+  if (d8n == d5p.g3d) return;
+	let u1v = r1q(d8n);
+  u3r.drawImage(u1v, rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
 }
-function i3k(q5l)
+function i8h(i0s)
 {
-	let e3i = new b6u();
-	let h1q = q5l.length;
+	let n2t = new i9r();
+	let r2g = i0s.length;
 
- 	let y2d = q5l.split(" ");
-	if (y2d.length < 2)
+ 	let o3g = i0s.split(" ");
+	if (o3g.length < 2)
 	{
-		return e3i;
+		return n2t;
 	}
 
-	let w7j = y2d[1];
-	if (w7j.length)
+	let h4l = o3g[1];
+	if (h4l.length)
 	{
-		if (w7j[0] == 'w')
+		if (h4l[0] == 'w')
 		{
-			e3i.b3t();
+			n2t.b7c();
 		}
-		else if (w7j[0] == 'b')
+		else if (h4l[0] == 'b')
 		{
-			e3i.l8s();
+			n2t.g7y();
 		}
 	}
 
- 	let m9l = y2d[0].split("/");
-	if (m9l.length != 8)
+ 	let g9l = o3g[0].split("/");
+	if (g9l.length != 8)
 	{
-		return e3i;
+		return n2t;
 	}
-	let v3q = a8;
-	for (const u5h of m9l)
+	let d4h = a8;
+	for (const e4p of g9l)
 	{
-		let k2d = v3q;
-		let h1q = u5h.length;
-		for (let i = 0; i < h1q; i++)
+		let t0h = d4h;
+		let r2g = e4p.length;
+		for (let i = 0; i < r2g; i++)
 		{
-			if (k2d == v3q + 8)
+			if (t0h == d4h + 8)
 			{
-				return e3i; 
+				return n2t; 
 			}
-			let v8f = true;
-			switch (u5h[i])
+			let o3e = true;
+			switch (e4p[i])
 			{
 				case 'p':
-					e3i.t8a(k2d, r4u.f1o);
+					n2t.z6q(t0h, d5p.x6h);
 					break;
 				case 'n':
-					e3i.t8a(k2d, r4u.s7h);
+					n2t.z6q(t0h, d5p.g6s);
 					break;
 				case 'b':
-					e3i.t8a(k2d, r4u.d5l);
+					n2t.z6q(t0h, d5p.f4r);
 					break;
 				case 'r':
-					e3i.t8a(k2d, r4u.t2o);
+					n2t.z6q(t0h, d5p.b3w);
 					break;
 				case 'q':
-					e3i.t8a(k2d, r4u.n8i);
+					n2t.z6q(t0h, d5p.f8i);
 					break;
 				case 'k':
-					e3i.t8a(k2d, r4u.n1f);
+					n2t.z6q(t0h, d5p.j1i);
 					break;
 				case 'P':
-					e3i.t8a(k2d, r4u.z0j);
+					n2t.z6q(t0h, d5p.x1p);
 					break;
 				case 'N':
-					e3i.t8a(k2d, r4u.f3a);
+					n2t.z6q(t0h, d5p.w1z);
 					break;
 				case 'B':
-					e3i.t8a(k2d, r4u.m1p);
+					n2t.z6q(t0h, d5p.b1p);
 					break;
 				case 'R':
-					e3i.t8a(k2d, r4u.l5x);
+					n2t.z6q(t0h, d5p.l1a);
 					break;
 				case 'Q':
-					e3i.t8a(k2d, r4u.n3b);
+					n2t.z6q(t0h, d5p.i2l);
 					break;
 				case 'K':
-					e3i.t8a(k2d, r4u.w6p);
+					n2t.z6q(t0h, d5p.y3v);
 					break;
 				default:
-					v8f = false;
+					o3e = false;
 					break;
 			}
-			if (v8f)
+			if (o3e)
 			{
-				k2d = k2d + 1;
+				t0h = t0h + 1;
 			}
 			else
 			{
-				if (!isNaN(u5h[i]))
+				if (!isNaN(e4p[i]))
 				{
-					k2d = k2d + y0d(u5h[i], 0);
+					t0h = t0h + a9w(e4p[i], 0);
 				}
 			}
 		}
-		v3q = v3q - 8;
+		d4h = d4h - 8;
 	}
 
- 	if (y2d.length >= 3)
+ 	if (o3g.length >= 3)
 	{
-		let n6y = new m8h(); 
-		let p5c = y2d[2];
-		if (p5c.length)
+		let x7l = new l2d(); 
+		let b1b = o3g[2];
+		if (b1b.length)
 		{
-			if (p5c[0] != '-')
+			if (b1b[0] != '-')
 			{
-				let h1q = p5c.length;
-				if (p5c[0] >= 'A' && p5c[0] <= 'H')
+				let r2g = b1b.length;
+				if (b1b[0] >= 'A' && b1b[0] <= 'H')
 				{
- 					n6y.u1y = true; 
+ 					x7l.i5w = true; 
           
-					n6y.c4b = e3i.w6p();
-					n6y.a4l = e3i.n1f();
-					if (h1q == 4)
+					x7l.g1f = n2t.y3v();
+					x7l.s8j = n2t.j1i();
+					if (r2g == 4)
 					{
-						let c7b = p5c.charAt(0).toLowerCase();
-						c7b += "1";
-						n6y.a0r = z0q(c7b);
-						if (e3i.w7f(n6y.a0r))
+						let i7a = b1b.charAt(0).toLowerCase();
+						i7a += "1";
+						x7l.o9s = t2h(i7a);
+						if (n2t.g2h(x7l.o9s))
 						{
-							n6y.q1d = true;
+							x7l.k0s = true;
 						}
-						c7b = p5c.charAt(1).toLowerCase();
-						c7b += "1";
-						n6y.x4q = z0q(c7b);
-						if (e3i.w7f(n6y.x4q))
+						i7a = b1b.charAt(1).toLowerCase();
+						i7a += "1";
+						x7l.x3z = t2h(i7a);
+						if (n2t.g2h(x7l.x3z))
 						{
-							n6y.a8t = true;
+							x7l.i6i = true;
 						}
-						c7b = p5c.charAt(2).toLowerCase();
-						c7b += "8";
-						n6y.l7r = z0q(c7b);
-						if (e3i.x4w(n6y.l7r))
+						i7a = b1b.charAt(2).toLowerCase();
+						i7a += "8";
+						x7l.l2n = t2h(i7a);
+						if (n2t.f0m(x7l.l2n))
 						{
-							n6y.e1q = true;
+							x7l.v4d = true;
 						}
-						c7b = p5c.charAt(3).toLowerCase();
-						c7b += "8";
-						n6y.n7w = z0q(c7b);
-						if (e3i.x4w(n6y.n7w))
+						i7a = b1b.charAt(3).toLowerCase();
+						i7a += "8";
+						x7l.j0x = t2h(i7a);
+						if (n2t.f0m(x7l.j0x))
 						{
-							n6y.d9z = true;
+							x7l.c3u = true;
 						}
           }
 				}
 				else
 				{
-					for (let i = 0; i < h1q; i++)
+					for (let i = 0; i < r2g; i++)
 					{
-						switch (p5c[i])
+						switch (b1b[i])
 						{
 							case 'K':
-								if (e3i.p3k(n6y.c4b) && e3i.w7f(n6y.a0r))
+								if (n2t.z3k(x7l.g1f) && n2t.g2h(x7l.o9s))
 								{
-									n6y.q1d = true;
+									x7l.k0s = true;
 								}
 								break;
 							case 'Q':
-								if (e3i.p3k(n6y.c4b) && e3i.w7f(n6y.x4q))
+								if (n2t.z3k(x7l.g1f) && n2t.g2h(x7l.x3z))
 								{
-									n6y.a8t = true;
+									x7l.i6i = true;
 								}
 								break;
 							case 'k':
-								if (e3i.e2s(n6y.a4l) && e3i.x4w(n6y.l7r))
+								if (n2t.p4l(x7l.s8j) && n2t.f0m(x7l.l2n))
 								{
-									n6y.e1q = true;
+									x7l.v4d = true;
 								}
 								break;
 							case 'q':
-								if (e3i.e2s(n6y.a4l) && e3i.x4w(n6y.n7w))
+								if (n2t.p4l(x7l.s8j) && n2t.f0m(x7l.j0x))
 								{
-									n6y.d9z = true;
+									x7l.c3u = true;
 								}
 								break;
 						}
@@ -5599,272 +5599,272 @@ function i3k(q5l)
 				}
 			}
 		}
-		if (y2d.length >= 4)
+		if (o3g.length >= 4)
 		{
-			let z9j = y2d[3];
-			if (z9j.length)
+			let a2u = o3g[3];
+			if (a2u.length)
 			{
-				if (z9j[0] != '-')
+				if (a2u[0] != '-')
 				{
-					n6y.t7e = z0q(z9j);
-					if (a3p(n6y.t7e) == t7m)
+					x7l.d7j = t2h(a2u);
+					if (u4i(x7l.d7j) == l3z)
 					{
-						let c4d = n6y.t7e + 8;
-						let a1i = n6y.t7e - 8;
-						if (!e3i.l4f(c4d) || !e3i.j0l(a1i))
+						let o1d = x7l.d7j + 8;
+						let j1b = x7l.d7j - 8;
+						if (!n2t.c8p(o1d) || !n2t.s2b(j1b))
 						{
-							n6y.t7e = f1k;
+							x7l.d7j = d2w;
 						}
 					}
-					else if (a3p(n6y.t7e) == n1c)
+					else if (u4i(x7l.d7j) == z4d)
 					{
-						let c4d = n6y.t7e - 8;
-						let a1i = n6y.t7e + 8;
-						if (!e3i.l4f(c4d) || !e3i.m8u(a1i))
+						let o1d = x7l.d7j - 8;
+						let j1b = x7l.d7j + 8;
+						if (!n2t.c8p(o1d) || !n2t.w8g(j1b))
 						{
-							n6y.t7e = f1k;
+							x7l.d7j = d2w;
 						}
 					}
 					else
 					{
-						n6y.t7e = f1k;
+						x7l.d7j = d2w;
 					}
 				}
 			}
 		}
-		e3i.r9h(n6y);
+		n2t.m5x(x7l);
 	}
-	return e3i;
+	return n2t;
 }
 
-function s4j(e3i)
+function m1e(n2t)
 {
-	let q5l = '';
-	let v3q = a8;
-	for (let u5h = 7; u5h >= 0; u5h--)
+	let i0s = '';
+	let d4h = a8;
+	for (let e4p = 7; e4p >= 0; e4p--)
 	{
-		let k2d = v3q;
-		let e4k = 0;
-		for (let a7c = 0; a7c < 8; a7c++)
+		let t0h = d4h;
+		let q7u = 0;
+		for (let g4f = 0; g4f < 8; g4f++)
 		{
-			if (e3i.l4f(k2d))
+			if (n2t.c8p(t0h))
 			{
-				e4k++;
+				q7u++;
 			}
 			else
 			{
-				if (e4k)
+				if (q7u)
 				{
-					q5l += e4k;
-					e4k = 0;
+					i0s += q7u;
+					q7u = 0;
 				}
-				switch (e3i.j0s(k2d))
+				switch (n2t.j1a(t0h))
 				{
-					case r4u.f7c:
+					case d5p.g3d:
 						break;
-					case r4u.z0j:
-						q5l += 'P';
+					case d5p.x1p:
+						i0s += 'P';
 						break;
-					case r4u.f3a:
-						q5l += 'N';
+					case d5p.w1z:
+						i0s += 'N';
 						break;
-					case r4u.m1p:
-						q5l += 'B';
+					case d5p.b1p:
+						i0s += 'B';
 						break;
-					case r4u.l5x:
-						q5l += 'R';
+					case d5p.l1a:
+						i0s += 'R';
 						break;
-					case r4u.n3b:
-						q5l += 'Q';
+					case d5p.i2l:
+						i0s += 'Q';
 						break;
-					case r4u.w6p:
-						q5l += 'K';
+					case d5p.y3v:
+						i0s += 'K';
 						break;
-					case r4u.f1o:
-						q5l += 'p';
+					case d5p.x6h:
+						i0s += 'p';
 						break;
-					case r4u.s7h:
-						q5l += 'n';
+					case d5p.g6s:
+						i0s += 'n';
 						break;
-					case r4u.d5l:
-						q5l += 'b';
+					case d5p.f4r:
+						i0s += 'b';
 						break;
-					case r4u.t2o:
-						q5l += 'r';
+					case d5p.b3w:
+						i0s += 'r';
 						break;
-					case r4u.n8i:
-						q5l += 'q';
+					case d5p.f8i:
+						i0s += 'q';
 						break;
-					case r4u.n1f:
-						q5l += 'k';
+					case d5p.j1i:
+						i0s += 'k';
 						break;
 				}
 			}
-			k2d = k2d + 1;
+			t0h = t0h + 1;
 		}
-		if (e4k)
+		if (q7u)
 		{
-			q5l += e4k;
+			i0s += q7u;
 		}
-		v3q = (v3q - 8);
-		if (u5h > 0)
+		d4h = (d4h - 8);
+		if (e4p > 0)
 		{
-			q5l += "/";
+			i0s += "/";
 		}
 	}
-	q5l += " ";
-	if (e3i.q8y())
+	i0s += " ";
+	if (n2t.k2b())
 	{
-		q5l += "w";
+		i0s += "w";
 	}
 	else
 	{
-		q5l += "b";
+		i0s += "b";
 	}
-	q5l += " ";
-	let n6y = e3i.m7e();
+	i0s += " ";
+	let x7l = n2t.s5z();
 	if (
-		!n6y.q1d &&
-		!n6y.a8t &&
-		!n6y.e1q &&
-		!n6y.d9z)
+		!x7l.k0s &&
+		!x7l.i6i &&
+		!x7l.v4d &&
+		!x7l.c3u)
 	{
-		q5l += "-";
+		i0s += "-";
 	}
 	else
 	{
-		if (n6y.u1y)
+		if (x7l.i5w)
 		{
-			if (n6y.q1d)
+			if (x7l.k0s)
 			{
-				q5l += i6f(z7g(n6y.a0r)).toUpperCase();
+				i0s += g4s(m9h(x7l.o9s)).toUpperCase();
 			}
-			if (n6y.a8t)
+			if (x7l.i6i)
 			{
-				q5l += i6f(z7g(n6y.x4q)).toUpperCase();
+				i0s += g4s(m9h(x7l.x3z)).toUpperCase();
 			}
-			if (n6y.e1q)
+			if (x7l.v4d)
 			{
-				q5l += i6f(z7g(n6y.l7r)).toUpperCase();
+				i0s += g4s(m9h(x7l.l2n)).toUpperCase();
 			}
-			if (n6y.d9z)
+			if (x7l.c3u)
 			{
-				q5l += i6f(z7g(n6y.n7w)).toUpperCase();
+				i0s += g4s(m9h(x7l.j0x)).toUpperCase();
 			}
 		}
 		else
 		{
-			if (n6y.q1d)
+			if (x7l.k0s)
 			{
-				q5l += "K";
+				i0s += "K";
 			}
-			if (n6y.a8t)
+			if (x7l.i6i)
 			{
-				q5l += "Q";
+				i0s += "Q";
 			}
-			if (n6y.e1q)
+			if (x7l.v4d)
 			{
-				q5l += "k";
+				i0s += "k";
 			}
-			if (n6y.d9z)
+			if (x7l.c3u)
 			{
-				q5l += "q";
+				i0s += "q";
 			}
 		}
 	}
-	q5l += " ";
-	if (n6y.t7e == f1k)
+	i0s += " ";
+	if (x7l.d7j == d2w)
 	{
-		q5l += "-";
+		i0s += "-";
 	}
 	else
 	{
-		q5l += u1k(n6y.t7e);
+		i0s += s4c(x7l.d7j);
 	}
-	return q5l;
+	return i0s;
 }
 
-function r9w(e3i, h9x)
+function c4m(n2t, w9i)
 {
 	
 	
 
-  let k1c = h9x.length;
-	if (k1c < 2 || k1c > 7)
+  let n7f = w9i.length;
+	if (n7f < 2 || n7f > 7)
 	{
 		return false;
 	}
 
 	
-	if (h9x[0] == 'Z' || (k1c == 2 && h9x == "--") || (k1c == 4 && h9x == "null"))
+	if (w9i[0] == 'Z' || (n7f == 2 && w9i == "--") || (n7f == 4 && w9i == "null"))
 	{
-		return new j7i();
+		return new b1y();
 	}
 
 	
-	let u1s = h9x[k1c-1];
-	if (u1s == '+' || u1s == '#')
+	let p7i = w9i[n7f-1];
+	if (p7i == '+' || p7i == '#')
 	{
-		k1c--;
-		if (k1c < 2)
+		n7f--;
+		if (n7f < 2)
 		{
    		return false;
 		}
 	}
 
 	
-	if (h9x[0] == 'O' || h9x[0] == '0')
+	if (w9i[0] == 'O' || w9i[0] == '0')
 	{
-		if (k1c == 3)
+		if (n7f == 3)
 		{
-			let f2c = i1j(e3i);
-			if (f2c.length != 1)
+			let f6i = j3m(n2t);
+			if (f6i.length != 1)
 			{
     		return false;
 			}
-			return f2c[0];
+			return f6i[0];
 		}
-		if (k1c == 5)
+		if (n7f == 5)
 		{
-			let f2c = o4o(e3i);
-			if (f2c.length != 1)
+			let f6i = t5a(n2t);
+			if (f6i.length != 1)
 			{
     		return false;
 			}
-			return f2c[0];
+			return f6i[0];
 		}
  		return false;
 	}
 
 	
-	let d6q = false;
-	let z1c = r4u.f7c;
-	if (h9x[k1c-2] == '=')
+	let q7b = false;
+	let t3j = d5p.g3d;
+	if (w9i[n7f-2] == '=')
 	{
-		d6q = true;
-		let s5s = h9x[k1c-1];
-		if (s5s == 'N')
+		q7b = true;
+		let y1y = w9i[n7f-1];
+		if (y1y == 'N')
 		{
-			z1c = e3i.q8y() ? r4u.f3a : r4u.s7h;
+			t3j = n2t.k2b() ? d5p.w1z : d5p.g6s;
 		}
-		else if (s5s == 'B')
+		else if (y1y == 'B')
 		{
-			z1c = e3i.q8y() ? r4u.m1p : r4u.d5l;
+			t3j = n2t.k2b() ? d5p.b1p : d5p.f4r;
 		}
-		else if (s5s == 'R')
+		else if (y1y == 'R')
 		{
-			z1c = e3i.q8y() ? r4u.l5x : r4u.t2o;
+			t3j = n2t.k2b() ? d5p.l1a : d5p.b3w;
 		}
-		else if (s5s == 'Q')
+		else if (y1y == 'Q')
 		{
-			z1c = e3i.q8y() ? r4u.n3b : r4u.n8i;
+			t3j = n2t.k2b() ? d5p.i2l : d5p.f8i;
 		}
 		else
 		{
   		return false;
 		}
-		k1c -= 2;
-		if (k1c < 2)
+		n7f -= 2;
+		if (n7f < 2)
 		{
   		return false;
 		}
@@ -5872,140 +5872,140 @@ function r9w(e3i, h9x)
 
  	
 	let toString = '';
-	toString += h9x[k1c-2];
-	toString += h9x[k1c-1];
-	let a1i = z0q(toString);
-	if (a1i == f1k)
+	toString += w9i[n7f-2];
+	toString += w9i[n7f-1];
+	let j1b = t2h(toString);
+	if (j1b == d2w)
 	{
 		return false;
 	}
-	k1c -= 2;
+	n7f -= 2;
 	
 
- 	if (d6q)
+ 	if (q7b)
 	{
-		let f2c = q5e(e3i, a1i);
-		if (f2c.length == 0)
+		let f6i = b7m(n2t, j1b);
+		if (f6i.length == 0)
 		{
   		return false;
 		}
-		let o9u = [];
-		for (const c7j of f2c)
+		let b1n = [];
+		for (const z1e of f6i)
 		{
-			if (c7j.o9x == z1c)
+			if (z1e.y6k == t3j)
 			{
-				o9u.push(c7j);
+				b1n.push(z1e);
 			}
 		}
-		f2c = o9u;
-		if (f2c.length == 1)
+		f6i = b1n;
+		if (f6i.length == 1)
 		{
-			return f2c[0];
+			return f6i[0];
 		}
-		if (k1c == 0)
+		if (n7f == 0)
 		{
 			
-			for (const x2v of f2c)
+			for (const i1j of f6i)
 			{
-				if (x2v.i9e == f1k)
+				if (i1j.v6z == d2w)
 				{
-					return x2v;
+					return i1j;
 				}
 			}
   		return false;
 		}
-		if (k1c != 2)
+		if (n7f != 2)
 		{
   		return false;
 		}
 		
-		let u1s = h9x[0];
-		if (u1s < 'a' || u1s > 'h')
+		let p7i = w9i[0];
+		if (p7i < 'a' || p7i > 'h')
 		{
   		return false;
 		}
-		let y0l = l2u(u1s);
-		for (const x2v of f2c)
+		let g9b = f5h(p7i);
+		for (const i1j of f6i)
 		{
-			if (z7g(x2v.d4d) == y0l)
+			if (m9h(i1j.i1o) == g9b)
 			{
-				return x2v;
+				return i1j;
 			}
 		}
 		return false;
 	}
 
-	if (k1c == 0)
+	if (n7f == 0)
 	{
   	
-		let f2c = q5e(e3i, a1i);
-		if (f2c.length != 1)
+		let f6i = b7m(n2t, j1b);
+		if (f6i.length != 1)
 		{
   		return false;
 		}
-		return f2c[0];
+		return f6i[0];
 	}
 
   
-	let f6v = false;
-	let f2c = [];
-	let z7j = h9x[0];
-	if (z7j == 'N')
+	let f7t = false;
+	let f6i = [];
+	let g0r = w9i[0];
+	if (g0r == 'N')
 	{
-		f2c = c5k(e3i, a1i);
+		f6i = j4f(n2t, j1b);
 	}
-	else if (z7j == 'B')
+	else if (g0r == 'B')
 	{
-		f2c = g2y(e3i, a1i);
+		f6i = y6v(n2t, j1b);
 	}
-	else if (z7j == 'R')
+	else if (g0r == 'R')
 	{
-		f2c = q8t(e3i, a1i);
+		f6i = w2l(n2t, j1b);
 	}
-	else if (z7j == 'Q')
+	else if (g0r == 'Q')
 	{
-		f2c = e8l(e3i, a1i);
+		f6i = k9f(n2t, j1b);
 	}
-	else if (z7j == 'K')
+	else if (g0r == 'K')
 	{
 		
-		f2c = p2y(e3i, a1i);
+		f6i = y0k(n2t, j1b);
 	}
 	else
 	{
-		f6v = true;
-		f2c = q5e(e3i, a1i);
+		f7t = true;
+		f6i = b7m(n2t, j1b);
 	}
-	if (f2c.length == 0)
+	if (f6i.length == 0)
 	{
 		return false;
 	}
-	if (f2c.length == 1)
+	if (f6i.length == 1)
 	{
-		return f2c[0]; 
+		return f6i[0]; 
 	}
 
 	
 	
 	
-	if (k1c < 2)
+	if (n7f < 2)
 	{
 		return false;
 	}
 
- 	if (f6v)
+ 	if (f7t)
 	{
-		let u1s = h9x[0]; 
-		if (u1s < 'a' || u1s > 'h')
+		let p7i = w9i[0]; 
+		if (p7i < 'a' || p7i > 'h')
 		{
   	  return false;
 		}
-		let y0l = l2u(u1s);
-		for (const x2v of f2c)
+		let g9b = f5h(p7i);
+		for (const i1j of f6i)
 		{
-			if (z7g(x2v.d4d) == y0l && x2v.i9e != f1k)
+			if (m9h(i1j.i1o) == g9b && i1j.v6z != d2w)
 			{
-				return x2v;
+				return i1j;
 			}
 		}
 		return false;
@@ -6014,90 +6014,90 @@ function r9w(e3i, h9x)
 	
 
  	
-	let l6i = false;
-	if (h9x[k1c-1] == 'x')
+	let e5v = false;
+	if (w9i[n7f-1] == 'x')
 	{
-		l6i = true;
-		k1c--;
+		e5v = true;
+		n7f--;
 	}
-	else if (h9x[k1c-1] == '-') 
+	else if (w9i[n7f-1] == '-') 
 	{
-		l6i = false;
-		k1c--;
+		e5v = false;
+		n7f--;
 	}
 
-	if (k1c < 2)
+	if (n7f < 2)
 	{
 		return false;
 	}
 
- 	if (k1c == 2)
+ 	if (n7f == 2)
 	{
 		
-		let u1s = h9x[1]; 
-		if (u1s >= 'a' && u1s <= 'h')
+		let p7i = w9i[1]; 
+		if (p7i >= 'a' && p7i <= 'h')
 		{
-			let y0l = l2u(u1s);
-			let y4u  = 0;
-      let t3i = null;
-			for (const x2v of f2c)
+			let g9b = f5h(p7i);
+			let g1x  = 0;
+      let y4i = null;
+			for (const i1j of f6i)
 			{
-				if (z7g(x2v.d4d) == y0l)
+				if (m9h(i1j.i1o) == g9b)
 				{
-					t3i = x2v;
-					y4u++;
+					y4i = i1j;
+					g1x++;
 				}
 			}
-      return y4u === 1 ? t3i : false;
+      return g1x === 1 ? y4i : false;
 		}
-		if (u1s >= '1' && u1s <= '8')
+		if (p7i >= '1' && p7i <= '8')
 		{
-			let g3i = l0m(u1s);
-			let y4u = 0;
-      let t3i = null;
-			for (const x2v of f2c)
+			let n9e = n0r(p7i);
+			let g1x = 0;
+      let y4i = null;
+			for (const i1j of f6i)
 			{
-				if (a3p(x2v.d4d) == g3i)
+				if (u4i(i1j.i1o) == n9e)
 				{
-					t3i = x2v;
-					y4u++;
+					y4i = i1j;
+					g1x++;
 				}
 			}
-      return y4u === 1 ? t3i : false;
+      return g1x === 1 ? y4i : false;
 		}
 		return false;
 	}
 
- 	if (k1c == 3)
+ 	if (n7f == 3)
 	{
 		
-		let e4d = '';
-		e4d += h9x[1]; 
-		e4d += h9x[2];
-		let c4d = z0q(e4d);
-		if (c4d == f1k)
+		let b2n = '';
+		b2n += w9i[1]; 
+		b2n += w9i[2];
+		let o1d = t2h(b2n);
+		if (o1d == d2w)
 		{
   		return false;
 		}
-		let y4u = 0;
-    let t3i = null;
-		for (const x2v of f2c)
+		let g1x = 0;
+    let y4i = null;
+		for (const i1j of f6i)
 		{
-			if (x2v.d4d == c4d)
+			if (i1j.i1o == o1d)
 			{
-				t3i = x2v;
-				y4u++;
+				y4i = i1j;
+				g1x++;
 			}
 		}
-    return y4u === 1 ? t3i : false;
+    return g1x === 1 ? y4i : false;
 	}
 
 	return false;
 }
 
-function w1h()
+function x0w()
 {
-  let h8f = ["images/board/BoardBackground.png",
+  let y3o = ["images/board/BoardBackground.png",
     "images/board/DarkSquare.png",
     "images/board/LightSquare.png",
     "images/board/Margin.png",
@@ -6125,1813 +6125,888 @@ function w1h()
     "images/pieces/CBurnett/wP.svg",
     "images/pieces/CBurnett/wQ.svg",
     "images/pieces/CBurnett/wR.svg"];
-  return h8f;
+  return y3o;
 }
-function div(c2m, n8w)
-{
-  const h0g = c2m % n8w;
-  const quot = Math.floor((c2m - h0g) / n8w);
-  return { quot: quot, h0g: h0g };
-}
-
-function d6c(e3i, c7b)
-{
-	let c7j = new j7i();
-	if (c7b.length < 4)
-	{
-		return c7j;
-	}
-	let e4d = c7b.slice(0, 2);
-	let toString = c7b.slice(2, 4);
-	c7j.d4d = z0q(e4d);
-  c7j.v5m = e3i.j0s(c7j.d4d);
-	c7j.z4d = z0q(toString);
-	c7j.o9x = c7j.v5m;
-	if (c7b.length == 5)
-	{
-		switch (c7b[4])
-		{
-			case 'q':
-				c7j.o9x = e3i.q8y() ? r4u.n3b : r4u.n8i;
-				break;
-			case 'r':
-				c7j.o9x = e3i.q8y() ? r4u.l5x : r4u.t2o;
-				break;
-			case 'b':
-				c7j.o9x = e3i.q8y() ? r4u.m1p : r4u.d5l;
-				break;
-			case 'n':
-				c7j.o9x = e3i.q8y() ? r4u.f3a : r4u.s7h;
-				break;
-		}
-	}
-	return c7j;
-}
-
-class f8r
+class e0c
 {
 
 constructor()
 {
-	let d3i = '';
-	let value = '';
+	this.g3t = '';
 }
 
+r0c()
+{
+	let b4a = new e0c();
+	b4a.g3t = this.g3t;
+	return b4a;
 }
 
-function z3q(c7b, d3i, o3r)
+g3d()
 {
-  let e6z = " " + d3i + " ";
-  let y0y = c7b.indexOf(e6z, 0);
-	if (y0y >= 0)
-	{
-		let a4x = y0y + e6z.length;
-		let m8v = 0;
-		
-		if (d3i == "pv")
-		{
-			m8v = c7b.indexOf(" string ", a4x);
-		}
-		else
-		{
-			m8v = c7b.indexOf(" ", a4x);
-		}
-		if (m8v < 0)
-		{
-			m8v = c7b.length;
-		}
-    let value = c7b.slice(a4x, m8v).trim();
-		o3r.set(d3i, value);
-	}
+	return this.g3t.length == 0;
 }
 
-const w4y =
+z5b()
 {
-	f3g        : 0,
-	o5f      : 1,
-};
-
-class Engine
-{
-
-constructor()
-{
-	this.w8o = new o7u();
-  this.x7w = null;
-  this.t0o = new w2e();
-  this.x4x = new s1n();
-  this.v3f = false;
-  this.c4y = false;
-  this.y6e = false;
-  this.o8n = false;
-  this.z8c = false;
-  this.k7x = new i0q();
-	this.u4h = new d1f();
-  this.m1x = null;
-}
-
-v5i(s3c)
-{
-  this.w8o = s3c.z4e();
-  this.l7q();
-  this.v3f = false;
- 	for (const d2u of this.w8o.u9z.u9z)
-	{
-		if (d2u.d3i == "MultiPV")
-		{
-			this.v3f = (d2u.value != "1");
-			break;
-		}
-	}
-
-  this.d8i();
-}
-
-d8i()
-{
-  this.x7w = new Worker("engines/stockfish/stockfish-17.1-8e4d048.js");
-  this.x7w.m1x = (event) => {
-    this.o5f(event);
-  };
-}
-
-g9t()
-{
-	this.t0o.p7a();
-	this.x4x.p7a();
-	this.f3g("uci");
-}
-
-r2r()
-{
-	if (!this.y6e)
-	{
-    return;
-  }
-
-  
-	for (const d2u of this.w8o.u9z.u9z)
-	{
-		let d9e = "setoption";
-		d9e += " name ";
-		d9e += d2u.d3i;
-		d9e += " value ";
-		d9e += d2u.value;
-		this.f3g(d9e);
-	}
-  
-  
-  
-  
-
-	this.f3g("isready");
-	this.y6e = false;
-}
-
-f3g(h1f)
-{
-	this.w8f(h1f, w4y.f3g);
-  this.x7w.postMessage(h1f);
-}
-
-o5f(event)
-{
-  
-  
- 	this.w8f(event.data, w4y.o5f);
-	this.p9m(event.data);
-}
-
-p9m(d9e)
-{
-	let y2d = d9e.split(' ');
-	if (y2d.length == 0) return;
-	let h1f = y2d[0];
-
-	if (h1f == "readyok")
-	{
-		this.c4y = true;
-    if (this.m1x)
-    {
-      this.m1x({
-        cmd: "ready",
-        data: {}
-        });
-    }
-		return;
-	}
-	if (h1f == "bestmove")
-	{
-		this.t0n(d9e);
-	}
-	else if (h1f == "id")
-	{
-		this.o3h(d9e);
-	}
-	else if (h1f == "info")
-	{
-		this.h6k(d9e);
-	}
-	else if (h1f == "option")
-	{
-		this.m5x(d9e);
-	}
-	else if (h1f == "uciok")
-	{
-		this.p6p(d9e);
-	}
-}
-
-t0n(d9e)
-{
-	this.o8n = false;
-  if (this.z8c)
-  {
-    this.z8c = false;
-    this.o9i();
-  }
-}
-
-o3h(d9e)
-{
- 	let c7b = d9e;
-	let y2d = c7b.split(" ");
-	if (y2d.length < 3) return;
-
-  const word1 = y2d.shift();
-  const word2 = y2d.shift();
-  const value = y2d.join(' ');
-
-	if (word2 == "name")
-	{
-		this.t0o.d3i = value;
-	}
-	else if (word2 == "author")
-	{
-		this.t0o.l5a = value;
-	}
-}
-
-h6k(d9e)
-{
-	let c7b = d9e;
-	let o3r = new Map();
-	z3q(c7b, "depth", o3r);
- 	z3q(c7b, "seldepth", o3r);
-	z3q(c7b, "pv", o3r);
-	z3q(c7b, "nps", o3r);
-	z3q(c7b, "nodes", o3r);
-	z3q(c7b, "score cp", o3r);
-	z3q(c7b, "score mate", o3r);
-	z3q(c7b, "time", o3r);
-	z3q(c7b, "currmove", o3r);
-	z3q(c7b, "currmovenumber", o3r);
- 	z3q(c7b, "multipv", o3r);
-
-  if (o3r.has("pv") && o3r.has("depth"))
-  {
-		this.i0v(o3r);
-    if (this.m1x)
-    {
-      this.m1x({
-        cmd: "pv",
-        data: {}
-        });
-    }
-
-		return;
-  }
-
-  if (o3r.has("currmove") && o3r.has("currmovenumber"))
-	{
-		this.n5q(o3r);
-    if (this.m1x)
-    {
-      this.m1x({
-        cmd: "cm",
-        data: {}
-        });
-    }
-		return;
-	}
-}
-
-m5x(d9e)
-{
-	let d2u = new r5n();
-	let c7b = d9e;
-
-	let j5o = " name ";
-  let p9n = c7b.indexOf(j5o, 0);
-	if (p9n < 0) return;
-	let e8p = p9n + j5o.length;
-
-	let d8w = " type ";
-	let u6r = c7b.indexOf(d8w, 0);
-	if (u6r < 0) return;
-	let e1b = u6r;
-
-	let b5l = u6r + d8w.length;
-	let n3y = c7b.indexOf(" ", b5l);
-	if (n3y < 0) n3y = c7b.length + 1;
-
-	d2u.d3i = c7b.slice(e8p, e1b);
-	d2u.type = c7b.slice(b5l, n3y);
-
-	if (d2u.type == "check")
-	{
-		d2u.type = "bool";
-	}
-	else if (d2u.type == "combo")
-	{
-		d2u.type = "enum";
-	}
-
-	let v7t = " default ";
-	let f5n = c7b.indexOf(v7t, 0);
-	if (f5n >= 0)
-	{
-		let t1b = f5n + v7t.length;
-		let k0r = c7b.indexOf(" ", t1b);
-		if (k0r < 0) k0r = c7b.length + 1;
-		d2u.value = c7b.slice(t1b, k0r);
-		if (d2u.value == "<empty>")
-		{
-			d2u.value = "";
-		}
-	}
-	if (d2u.type == "spin")
-	{
-		let r8z = " min ";
-		let h1v = c7b.indexOf(r8z, 0);
-		if (h1v >= 0)
-		{
-			let c4g = h1v + r8z.length;
-			let i4q = c7b.indexOf(" ", c4g);
-			if (i4q < 0) i4q = c7b.length + 1;
-			d2u.min = c7b.slice(c4g, i4q).trim();
-		}
-		let n3n = " max ";
-		let p4s = c7b.indexOf(n3n, 0);
-		if (p4s >= 0)
-		{
-			let d7f = p4s + n3n.length;
-			let i6q = c7b.indexOf(" ", d7f);
-			if (i6q < 0) i6q = c7b.length + 1;
-			d2u.max = c7b.slice(d7f, i6q).trim();
-		}
-	}
-	else if (d2u.type == "enum")
-	{
-		let d6y = 0;
-		while (true)
-		{
-			let u6e = " var ";
-			let x2r = c7b.indexOf(u6e, d6y);
-			if (x2r < 0) break;
-			let g1b = x2r + u6e.length;
-			let l6v = c7b.indexOf(" var ", x2r + 5);
-			if (l6v < 0) l6v = c7b.length + 1;
-			if (d2u.values.length != 0)
-			{
-				d2u.values += " ";
-			}
-			d2u.values += c7b.slice(g1b, l6v).trim();
-			d6y = l6v;
-		}
-	}
-	this.x4x.u9z.push(d2u);
-}
-
-p6p(d9e)
-{
-	this.y6e = true;
-  this.r2r();
-}
-
-
-w0b()
-{
-	if (this.x7w)
-  {
-    this.f3g("quit");
-    this.x7w.terminate();
-    this.x7w = null;
-  }
-}
-
-
-
-
-
-
-
-
-l9s()
-{
-}
-
-k5q(input)
-{
-	if (this.c4y)
-	{
-  	this.w8f('setInput', w4y.f3g);
-		this.k7x = input.z4e();
-    if (this.o8n)
-    {
-      this.z8c = true;
-      this.f3g('stop');
-    }
-    else
-    {
-      this.o9i();
-    }
-	}
-}
-
-o9i()
-{
-  this.u4h = new d1f();
-  this.u4h.e3i = this.k7x.e5o();
-  this.u4h.f6q = this.k7x.f6q();
-	this.u4h.b3a = this.v3f;
-  this.o8n = true;
-  if (this.m1x)
-  {
-    this.m1x({
-      cmd: "go",
-      data: {}
-      });
-  }
-
-  let d9e = "position fen";
-  d9e += " ";
-	let q5l = s4j(this.k7x.e5o());
-	d9e += q5l;
-	this.f3g(d9e);
-	if (this.k7x.e6e == z2x)
-	{
-		d9e = "go infinite";
-		this.f3g(d9e);
-	}
-	else
-	{
-		d9e = "go movetime ";
-		d9e += this.k7x.e6e;
-		this.f3g(d9e);
-	}
-}
-
-l7q()
-{
-}
-
-w8f(c7b, q2o)
-{
-	if (!this.w8o.s3i) return;
- 	if (q2o == w4y.o5f)
-	{
-    console.log("From engine:", c7b);
-	}
-	else
-	{
-    console.log("To engine:", c7b);
-	}
-}
-
-i0v(o3r)
-{
-  let p9b = o3r.get("depth");
-  let c3y = o3r.get("multipv");
-
-	let j1a = new b4b();
-	j1a.f5h = p9b;
-
-	if (o3r.has("seldepth"))
-	{
-		j1a.t7d = o3r.get("seldepth");
-	}
-
- 	if (o3r.has("nps"))
-	{
-    let a1t = o3r.get("nps");
-		let u3q = y0d(a1t, 0);
-		let e0c = u3q / 1000;
-		if (e0c)
-		{
-			j1a.h5c = e0c + " kN/s";
-		}
-	}
-
-	let a0p = 0.0;
-  if (o3r.has("score cp"))
-	{
-    let h5i = o3r.get("score cp");
-		a0p = parseFloat(h5i);
-		a0p = a0p / 100.0;
-		if (a0p > 9.99)
-		{
-			a0p = 9.99;
-		}
-		if (a0p < -9.99)
-		{
-			a0p = -9.99;
-		}
-		if (this.u4h.e3i.a7q())
-		{
-			a0p = -a0p;
-		}
-		j1a.a0p = a0p;
-	}
-  if (o3r.has("score mate"))
-	{
-    let s5z = o3r.get("score mate");
-		let v9b = y0d(s5z, 0);
-		if (this.u4h.e3i.a7q())
-		{
-			v9b = -v9b;
-		}
-		j1a.v9b = v9b;
-		if (v9b > 0)
-		{
-			a0p = 9.99;
-		}
-		if (v9b < 0)
-		{
-			a0p = -9.99;
-		}
-		j1a.a0p = a0p;
-	}
-
-  if (o3r.has("time"))
-	{
-    let d8o = o3r.get("time");
-		let u0t = y0d(d8o, 0);
-		let w0e = u0t / 1000;
-		let m = div(w0e, 60);
-		let p3g = m.h0g;
-    p3g = Math.u6y(p3g);
-		let h = div(m.quot, 60);
-		let b6x = h.h0g;
-		let t4z = h.quot;
-    const pad = (num) => String(num).padStart(2, '0');
-    const w5r = `${pad(t4z)}:${pad(b6x)}:${pad(p3g)}`;
-    j1a.w5r = w5r;
-	}
-
-  let o7k = o3r.get("pv");
-	let y8o = o7k.split(" ");
-
-	let z1l = new l1j();
-	let f6q = this.u4h.f6q;
-	z1l.l8r(this.u4h.e3i, f6q);
-	let f3r = z1l.u4v();
-	let n5d = this.u4h.e3i.z4e();
-	for (const s of y8o)
-	{
-		if (s.length == 0)
-		{
-			continue;
-		}
-		let s4w = d6c(n5d, s);
-		let f2c = y1w(n5d);
-		let v8f = false;
-		for (const x2v of f2c)
-		{
-			if (x2v.z4d == s4w.z4d &&
-				x2v.d4d == s4w.d4d &&
-				x2v.o9x == s4w.o9x)
-			{
-				n5d.i8p(x2v);
-				let c7j = a7k(x2v);
-				z1l.d4y(f3r, c7j);
-				v8f = true;
-				break;
-			}
-		}
-    if (!v8f) break;
-	}
-	if (!z1l.i0g())
-	{
-    console.log("parse moves aantal: leeg!");
-		return;
-	}
-  console.log("parse moves aantal: " + z1l.i0g());
-	j1a.z1l = z1l;
-
- 	if (this.v3f)
-	{
-		if (c3y == 1)
-		{
-			this.u4h.n8d = j1a;
-		}
-		if (c3y > this.u4h.lines.length)
-		{
-			this.u4h.lines.push(j1a);
-		}
-		else
-		{
-			this.u4h.lines[c3y-1] = j1a;
-		}
-	}
-	else
-	{
-		this.u4h.lines.push(j1a);
-		this.u4h.n8d = j1a;
-	}
-}
-
-n5q(o3r)
-{
-  let f1e = o3r.get("currmove");
-  let f9y = o3r.get("currmovenumber"); 
-	this.u4h.a9a = y0d(f9y, 0);
-	let f2c = y1w(this.u4h.e3i);
-	this.u4h.f2z = f2c.length;
-	let s4w = d6c(this.u4h.e3i, f1e);
-	for (const x2v of f2c)
-	{
-		if (x2v.z4d == s4w.z4d &&
-			x2v.d4d == s4w.d4d &&
-			x2v.o9x == s4w.o9x)
-		{
-			this.u4h.s5x = x2v;
-			break;
-		}
-	}
-}
-
-i4b()
-{
-	return this.u4h.z4e();
-}
-
-s3c()
-{
-	return this.w8o.z4e();
-}
-
-}
-
-class w2e
-{
-
-constructor()
-{
-	this.d3i = '';
-	this.l5a = '';
-	this.r3i = '';
-	this.h1a = '';
-}
-
-z4e()
-{
-  return Object.assign(new w2e(), this);
-}
-
-p7a()
-{
-	this.d3i = '';
-	this.l5a = '';
-	this.r3i = '';
-	this.h1a = '';
+	return this.g3t;
 }
 
 }
 
 
-const z2x = 10000000;
-
-class i0q
+const r4b =
 {
-
-constructor()
-{
-	this.z1l = new l1j();
-	this.e6e = z2x;
-  this.d0k = 0;
-	this.l2p = 0;
-}
-
-z4e()
-{
-	let g8k = new i0q();
-  g8k.z1l = this.z1l.z4e();
-  g8k.e6e = this.e6e;
-  g8k.d0k = this.d0k;
-  g8k.l2p = this.l2p;
-	return g8k;
-}
-
-f6q()
-{
-	return this.z1l.d3y(this.z1l.k5o());
-}
-
-e5o()
-{
-	return this.z1l.f4v();
-}
-
-}
-
-
-class o7u
-{
-
-constructor()
-{
-	this.j7u = '';
-	this.id = new w2e();
-	this.u9z = new s1n();
-	this.p8j = new s1n();
-	this.s3i = true;
-	this.i8j = true;
-}
-
-z4e()
-{
-	let b3f = new o7u();
-	b3f.j7u = this.j7u;
-	b3f.id = this.id.z4e();
-	b3f.u9z = this.u9z.z4e();
-	b3f.p8j = this.p8j.z4e();
-	b3f.s3i = this.s3i;
-	b3f.i8j = this.i8j;
-	return b3f;
-}
-
-
-}
-
-
-function j5g(a0p)
-{
-  if (Math.abs(a0p) < 0.005)
-  {
-    return "0.00";
-  }
-  else
-  {
-     const formatted = a0p.toFixed(2);
-     return a0p > 0 ? `+${formatted}` : formatted;
-  }
-}
-
-class b4b
-{
-
-constructor()
-{
-	this.a0p = 0.0;
-	this.v9b = false;
-	this.f5h = '';
-	this.t7d = '';
-	this.w5r = '';
-	this.h5c = '';
-	this.z1l = new l1j();
-}
-
-z4e()
-{
-	let m3l = new b4b();
-  m3l.a0p = this.a0p;
-  m3l.v9b = this.v9b;
-  m3l.f5h = this.f5h;
-  m3l.t7d = this.t7d;
-  m3l.w5r = this.w5r;
-  m3l.h5c = this.h5c;
-  m3l.z1l = this.z1l.z4e();
-	return m3l;
-}
-
-f4m()
-{
-	if (this.v9b)
-	{
-		return "#" + this.v9b;
-	}
-	else
-	{
-		return j5g(this.a0p);
-	}
-}
-
-r7d()
-{
-	let y6o = scoreToMoveValue(this.a0p);
-	let f0s = moveValueToEvalString(y6o);
-	return f0s;
-}
-
-}
-
-class d1f
-{
-
-constructor()
-{
-	this.e3i = new b6u();
-	this.f6q = 1;
-	this.z3g = false;
-	this.f2i = false;
-	this.b3a = false;
-	this.lines = [];
-	this.n8d = new b4b();
-	this.s5x = new j7i();
-	this.a9a = 0;
-	this.f2z = 0;
-}
-
-z4e()
-{
-	let g8f = new d1f();
-  g8f.e3i = this.e3i.z4e();
-  g8f.f6q = this.f6q;
-  g8f.z3g = this.z3g;
-  g8f.f2i = this.f2i;
-  g8f.b3a = this.b3a;
-  g8f.lines = this.lines.slice();
-  g8f.n8d = this.n8d.z4e();
-  g8f.s5x = this.s5x.z4e();
-  g8f.a9a = this.a9a;
-  g8f.f2z = this.f2z;
-	return g8f;
-}
-
-o6i()
-{
-	return this.n8d.z1l.i0g() > 0;
-}
-
-d6b()
-{
-	let b9l = this.n8d.z1l.u4v();
-	this.n8d.z1l.i8p(b9l);
-	return b9l.c7j.x2v();
-}
-
-}
-
-
-class r5n
-{
-  constructor(type = '', d3i = '', value = '', min = '', max = '', values = '')
-  {
-    this.type = type;
-    this.d3i = d3i;
-    this.value = value;
-    this.min = min;
-    this.max = max;
-    this.values = values;
-  }
-
-  z4e()
-  {
-    return Object.assign(new r5n(), this);
-  }
-}
-
-class s1n
-{
-  constructor()
-  {
-    this.u9z = [];
-  }
-
-  z4e()
-  {
-    let u5n = new s1n();
-    u5n.u9z = this.u9z.map(p => p.z4e());
-    return u5n;
-  }
-
-  p7a()
-  {
-    this.u9z.length = 0;
-  }
-
-  addBool(d3i, value)
-  {
-    this.u9z.push(new r5n("bool", d3i, value));
-  }
-
-  addInteger(d3i, value)
-  {
-    this.u9z.push(new r5n("int", d3i, value));
-  }
-
-  addSpin(d3i, value, min, max)
-  {
-    this.u9z.push(new r5n("spin", d3i, value, min, max));
-  }
-
-  addString(d3i, value)
-  {
-    this.u9z.push(new r5n("string", d3i, value));
-  }
-
-  addEnum(d3i, value, values)
-  {
-    this.u9z.push(new r5n("enum", d3i, value, '', '', values));
-  }
-
-  addButton(d3i)
-  {
-    this.u9z.push(new r5n("button", d3i, d3i));
-  }
-
-  s0b(d3i, value)
-  {
-    for (let d2u of this.u9z)
-    {
-      if (d2u.d3i === d3i)
-      {
-        d2u.value = value;
-      }
-    }
-  }
-}
-class v6k
-{
-
-constructor()
-{
-	this.d3i = '';
-}
-
-z4e()
-{
-	let c8h = new v6k();
-	c8h.d3i = this.d3i;
-	return c8h;
-}
-
-f7c()
-{
-	return this.d3i.length == 0;
-}
-
-f6k()
-{
-	return this.d3i;
-}
-
-}
-
-
-const y3a =
-{
-	i6p : 0,
-	l8g : 1,
-	j0r: 2,
-	v7o: 3,
-	x6e: 4,
-	a8x: 5,
-	e7c: 6,
-	a7m: 7,
-	e2j: 8,
-	q5j: 9,
-	m9u: 10,
-	i4z: 11,
-	s8a: 12,
-	p8z: 13,
-	g1i: 14,
-	e9h: 15,
-	l9z: 16,
-	g3a: 17,
-	h2p: 18,
-	d2b: 19,
-	t3m: 20,
-	h0c: 21,
-	l0d: 22,
-	h0k: 23,
-	u0i: 24,
-	y0i: 25,
-	c4q: 26,
-	j2q: 27,
-	g6a: 28,
-	b1r: 29,
-	s7r: 30,
-	u4c: 31,
-	d5w: 32,
-	o6n: 33,
-	e8m: 34,
-	i8a: 35,
-	s9g: 36,
-	i7q: 37,
-	z6u: 38,
-	e8i: 39,
-	g6b: 40,
-	d0q: 41,
-	r3s: 42,
-	x7y: 43,
-	g5l: 44,
-	f7i: 45,
-	r6g: 46,
-	p4i: 47,
-	u8z: 48,
-	h3e: 49,
-	d3f: 50,
-	s2l: 51,
-	m2s: 52,
-	u6l: 53,
-	y5s: 54,
-	q2n: 55,
-	f7t: 56,
-	i9w: 57,
-	g3w: 58,
-	f7u: 59,
-	l1n: 60,
-	h1m: 61,
-	u4x: 62,
-	i1o: 63,
-	d2i: 64,
-	t3c: 65,
-	f3c: 66,
-	l2e: 67,
-	p4y: 68,
-	t8e: 69,
-	d8b: 70,
-	z3o: 71,
-	i1w: 72,
-	m1r: 73,
-	x8c: 74,
-	r3c: 75,
-	g4v: 76,
-	d9s: 77,
-	z0b: 78,
-	s9s: 79,
-	e3b: 80,
-	h8x: 81,
-	l3p: 82,
-	b3e: 83,
-	c6q: 84,
-	r4e: 85,
-	n1p: 86,
-	r9g: 87,
-	e7m: 88,
-	e4z: 89,
-	m0q: 90,
-	t9x: 91,
-	t8f: 92,
-	c3r: 93,
-	n0h: 94,
-	r7x: 95,
-	i4r: 96,
-	l3g: 97,
-	n8j: 98,
-	s5y: 99,
-	d0y: 100,
-	y8n: 101,
-	x4z: 102,
-	j1l: 103,
-	g7k: 104,
-	c8l: 105,
-	l7i: 106,
-	u7w: 107,
-	g7z: 108,
-	s8c: 109,
-	o8s: 110,
-	l4a: 111,
-	i3u: 112,
-	k7f: 113,
-	y5n: 114,
-	i6r: 115,
-	f0t: 116,
-	w0k: 117,
-	p3w: 118,
-	j5p: 119,
-	s1h: 120,
-	x6z: 121,
-	m6a: 122,
-	z2z: 123,
-	u5a: 124,
-	y2m: 125,
-	r4j: 126,
-	r6m: 127,
-	g8y: 128,
-	t4q: 129,
-	f6b: 130,
-	j8j: 131,
-	y8h: 132,
-	l6g: 133,
-	w1a: 134,
-	d0b: 135,
-	c6w: 136,
-	y0w: 137,
-	u2g: 138,
-	t5z: 139,
-	q1u: 140,
-	y1k: 141,
-	k3c: 142,
-	s6x: 143,
-	w1v: 144,
-	n0p: 145,
-	d6d: 146,
-	l8t: 147,
-	k9n: 148,
-	e0o: 149,
-	d0o: 150,
-	b2q: 151,
-	t7q: 152,
-	i8i: 153,
-	u3t: 154,
-	z8g: 155,
-	e4c: 156,
-	i5g: 157,
-	j6s: 158,
-	v6e: 159,
-	u7i: 160,
-	l7p: 161,
-	l1s: 162,
-	e8j: 163,
-	p7q: 164,
-	k1f: 165,
-	s6j: 166,
-	y4b: 167,
-	x4j: 168,
-	h8n: 169,
-	s7m: 170,
-	j1u: 171,
-	a3h: 172,
-	r5p: 173,
-	a0e: 174,
-	r1h: 175,
-	m2f: 176,
-	b7v: 177,
-	z4a: 178,
-	g2j: 179,
-	q1h: 180,
-	o9p: 181,
-	q9p: 182,
-	z6q: 183,
-	t4s: 184,
-	q5d: 185,
-	e3a: 186,
-	p6y: 187,
-	k5c: 188,
-	h1i: 189,
-	v1e: 190,
-	c7t: 191,
-	v3m: 192,
-	q6j: 193,
-	n6m: 194,
-	g8e: 195,
-	m5k: 196,
-	c0d: 197,
-	l6e: 198,
-	r7h: 199,
-	f2v: 200,
-	k3j: 201,
-	f0z: 202,
-	r2s: 203,
-	v0o: 204,
-	g9k: 205,
-	a8o: 206,
-	e7k: 207,
-	l5d: 208,
-	h8i: 209,
-	j2u: 210,
-	s5m: 211,
-	d5t: 212,
-	g0n: 213,
-	c2j: 214,
-	d7v: 215,
-	b1z: 216,
-	s1q: 217,
-	h0h: 218,
-	e3f: 219,
-	m2c: 220,
-	c7o: 221,
-	i9j: 222,
-	r7p: 223,
-	s4d: 224,
-	z5o: 225,
-	c5u: 226,
-	t1e: 227,
-	d3w: 228,
-	r9l: 229,
-	d7d: 230,
-	w8m: 231,
-	c1o: 232,
-	o3d: 233,
-	p9l: 234,
-	k4j: 235,
-	x0h: 236,
-	z1e: 237,
-	h9s: 238,
-	t1w: 239,
-	v1u: 240,
-	q3r: 241,
-	i9c: 242,
-	v9y: 243,
-	d6s: 244,
-	h5f: 245,
-	f5k: 246,
-	z4y: 247,
-	e5s: 248,
-	t2z: 249,
-	l0b: 250,
-	b4j: 251,
-	v1b: 252,
-	k8h: 253,
-	v5j: 254,
-	i9i: 255,
-	r6d: 256,
-	y4a: 257,
-	m2r: 258,
-	h7z: 259
+	f0x : 0,
+	y2f : 1,
+	f9g: 2,
+	x4h: 3,
+	h3z: 4,
+	k6x: 5,
+	r3p: 6,
+	i5a: 7,
+	j7d: 8,
+	o7h: 9,
+	z0a: 10,
+	c9q: 11,
+	b9l: 12,
+	j6q: 13,
+	z5i: 14,
+	s0l: 15,
+	f1i: 16,
+	g7r: 17,
+	j9y: 18,
+	t8w: 19,
+	u3m: 20,
+	t7o: 21,
+	f5g: 22,
+	u1r: 23,
+	a9z: 24,
+	c4y: 25,
+	x8q: 26,
+	m8g: 27,
+	z6u: 28,
+	t1u: 29,
+	l5d: 30,
+	b6g: 31,
+	o3j: 32,
+	m0n: 33,
+	f0i: 34,
+	v3g: 35,
+	f7c: 36,
+	x7g: 37,
+	v1x: 38,
+	u4l: 39,
+	i1i: 40,
+	w5k: 41,
+	c9n: 42,
+	x4a: 43,
+	h5f: 44,
+	h2t: 45,
+	j0b: 46,
+	e0a: 47,
+	v6o: 48,
+	j1r: 49,
+	y7h: 50,
+	s5e: 51,
+	o1f: 52,
+	t4c: 53,
+	g6x: 54,
+	k1z: 55,
+	x5n: 56,
+	j2v: 57,
+	x4m: 58,
+	e3y: 59,
+	i0x: 60,
+	g5r: 61,
+	i5l: 62,
+	t3d: 63,
+	c9f: 64,
+	i5x: 65,
+	p1b: 66,
+	s2n: 67,
+	m5y: 68,
+	y8q: 69,
+	t0p: 70,
+	k1r: 71,
+	v0m: 72,
+	j7l: 73,
+	j2p: 74,
+	r1d: 75,
+	c2m: 76,
+	d8r: 77,
+	d5n: 78,
+	q5a: 79,
+	u9u: 80,
+	u5d: 81,
+	c7b: 82,
+	o7g: 83,
+	h1b: 84,
+	m6v: 85,
+	p2g: 86,
+	x0v: 87,
+	w5b: 88,
+	x6m: 89,
+	o1w: 90,
+	z9o: 91,
+	j3h: 92,
+	n3i: 93,
+	r9l: 94,
+	y0a: 95,
+	w7v: 96,
+	b9w: 97,
+	a0j: 98,
+	v3s: 99,
+	k2a: 100,
+	u8g: 101,
+	b6n: 102,
+	q2k: 103,
+	w0b: 104,
+	i1g: 105,
+	p3v: 106,
+	t4d: 107,
+	q5e: 108,
+	v3r: 109,
+	i4r: 110,
+	h7w: 111,
+	h1d: 112,
+	z0x: 113,
+	j8h: 114,
+	x7o: 115,
+	m4q: 116,
+	q0n: 117,
+	a3k: 118,
+	c0x: 119,
+	i0n: 120,
+	x5f: 121,
+	h5t: 122,
+	c0n: 123,
+	a6k: 124,
+	x8l: 125,
+	r1o: 126,
+	t7x: 127,
+	j8y: 128,
+	y3t: 129,
+	j7f: 130,
+	k0l: 131,
+	w7x: 132,
+	m1k: 133,
+	r7n: 134,
+	p0j: 135,
+	w6z: 136,
+	r2c: 137,
+	z8w: 138,
+	i8w: 139,
+	u6r: 140,
+	m8f: 141,
+	c5z: 142,
+	m9g: 143,
+	b8i: 144,
+	a3g: 145,
+	v0j: 146,
+	c6i: 147,
+	p5u: 148,
+	b5a: 149,
+	z4x: 150,
+	a8j: 151,
+	x6l: 152,
+	h1i: 153,
+	m4s: 154,
+	w2a: 155,
+	u7q: 156,
+	k6e: 157,
+	d3j: 158,
+	o6s: 159,
+	i3y: 160,
+	h5c: 161,
+	f9m: 162,
+	j8f: 163,
+	g9p: 164,
+	h0y: 165,
+	h3q: 166,
+	t6x: 167,
+	a0k: 168,
+	c7u: 169,
+	u8w: 170,
+	x7j: 171,
+	m2c: 172,
+	l0i: 173,
+	o4v: 174,
+	r6w: 175,
+	b4t: 176,
+	n2k: 177,
+	h3r: 178,
+	d9v: 179,
+	l6k: 180,
+	d9u: 181,
+	o9c: 182,
+	y1x: 183,
+	c9u: 184,
+	h6m: 185,
+	d9j: 186,
+	t1b: 187,
+	h8d: 188,
+	l0c: 189,
+	v6e: 190,
+	y6b: 191,
+	s9o: 192,
+	i9b: 193,
+	o2w: 194,
+	i9l: 195,
+	l4m: 196,
+	x4z: 197,
+	m9d: 198,
+	g6h: 199,
+	l2a: 200,
+	x0s: 201,
+	j1u: 202,
+	y7y: 203,
+	y1v: 204,
+	j3b: 205,
+	q3z: 206,
+	g3c: 207,
+	s1b: 208,
+	j7s: 209,
+	k2z: 210,
+	y8t: 211,
+	k1l: 212,
+	j0a: 213,
+	j7k: 214,
+	q0v: 215,
+	h0p: 216,
+	m4b: 217,
+	r8c: 218,
+	m2k: 219,
+	h3v: 220,
+	g5y: 221,
+	a4e: 222,
+	o7n: 223,
+	p7o: 224,
+	j2m: 225,
+	f8e: 226,
+	q1y: 227,
+	v5l: 228,
+	b4e: 229,
+	d2u: 230,
+	v9q: 231,
+	g2e: 232,
+	k7g: 233,
+	j8j: 234,
+	a7v: 235,
+	v4y: 236,
+	q1l: 237,
+	g8k: 238,
+	i3d: 239,
+	j9a: 240,
+	e1q: 241,
+	q4f: 242,
+	v8h: 243,
+	b8z: 244,
+	s3y: 245,
+	q3x: 246,
+	b9y: 247,
+	b4w: 248,
+	o9y: 249,
+	u9x: 250,
+	y0n: 251,
+	g5s: 252,
+	t6n: 253,
+	q4g: 254,
+	y1j: 255,
+	k1x: 256,
+	m2j: 257,
+	h9r: 258,
+	t9k: 259
 };
 
 
-const h7i = 0;
-const k2j = 500;
+const x7r = 0;
+const b0d = 500;
 
-function w8w(c7b)
+function p3n(i7a)
 {
-	if (c7b.length != 3)
+	if (i7a.length != 3)
 	{
 		return 0;
 	}
-	let o3i = c7b[0];
-	let d4m = c7b[1];
-	let v3k = c7b[2];
+	let y1n = i7a[0];
+	let h6g = i7a[1];
+	let d7o = i7a[2];
 
-	let v2t = 0;
-	if (o3i == 'A' || o3i == 'a') v2t = 0;
-	else if (o3i == 'B' || o3i == 'b') v2t = 1;
-	else if (o3i == 'C' || o3i == 'c') v2t = 2;
-	else if (o3i == 'D' || o3i == 'd') v2t = 3;
-	else if (o3i == 'E' || o3i == 'e') v2t = 4;
+	let c6q = 0;
+	if (y1n == 'A' || y1n == 'a') c6q = 0;
+	else if (y1n == 'B' || y1n == 'b') c6q = 1;
+	else if (y1n == 'C' || y1n == 'c') c6q = 2;
+	else if (y1n == 'D' || y1n == 'd') c6q = 3;
+	else if (y1n == 'E' || y1n == 'e') c6q = 4;
 	else return 0;
-	if (isNaN(d4m) || isNaN(v3k))
+	if (isNaN(h6g) || isNaN(d7o))
 	{
 		return 0;
 	}
-	return v2t * 100 + y0d(c7b.substr(1, 2), 0) + 1;
+	return c6q * 100 + a9w(i7a.substr(1, 2), 0) + 1;
 }
 
-function b2h(z1u)
+function i1u(v3z)
 {
-	if (z1u)
+	if (v3z)
 	{
-		let div = Math.trunc((z1u - 1) / 100);
-		let h0g = (z1u - 1) % 100;
-		let u7q = 'A';
-		if (div == 0) u7q = 'A';
-		else if (div == 1) u7q = 'B';
-		else if (div == 2) u7q = 'C';
-		else if (div == 3) u7q = 'D';
-		else if (div == 4) u7q = 'E';
-		return u7q + h0g.toString().padStart(2, '0');
+		let div = Math.trunc((v3z - 1) / 100);
+		let w5y = (v3z - 1) % 100;
+		let l2t = 'A';
+		if (div == 0) l2t = 'A';
+		else if (div == 1) l2t = 'B';
+		else if (div == 2) l2t = 'C';
+		else if (div == 3) l2t = 'D';
+		else if (div == 4) l2t = 'E';
+		return l2t + w5y.toString().padStart(2, '0');
 	}
 	else
 	{
 		return "";
 	}
 }
-class m1n
+class u4h
 {
 
 constructor()
 {
-	this.q1p = 0;
-	this.x1v = 0;
-	this.p1p = 0;
+	this.x0p = 0;
+	this.s7s = 0;
+	this.r3r = 0;
 }
 
-z4e()
+r0c()
 {
-	let t7l = new m1n();
-	t7l.h1h = this.q1p;
-	t7l.k2z = this.x1v;
-	t7l.s6z = this.p1p;
-	return t7l;
+	let h0z = new u4h();
+	h0z.h2i = this.x0p;
+	h0z.h7c = this.s7s;
+	h0z.d6w = this.r3r;
+	return h0z;
 }
 
-f7c()
+g3d()
 {
-	return this.p1p == 0 && this.x1v == 0 && this.q1p == 0;
+	return this.r3r == 0 && this.s7s == 0 && this.x0p == 0;
 }
 
-i4j()
+t4y()
 {
-	let s6z = this.p1p.toString().padStart(4, '0');
-	let k2z = this.x1v.toString().padStart(2, '0');
-	let h1h = this.q1p.toString().padStart(2, '0');
-	return s6z + k2z + h1h;
+	let d6w = this.r3r.toString().padStart(4, '0');
+	let h7c = this.s7s.toString().padStart(2, '0');
+	let h2i = this.x0p.toString().padStart(2, '0');
+	return d6w + h7c + h2i;
 }
 
-u8y(z1y, c7b)
+n5n(b8o, i7a)
 {
-	let h1q = c7b.length;
-	if (!h1q)
+	let r2g = i7a.length;
+	if (!r2g)
 	{
-		this.p1p = 0;
-		this.x1v = 0;
-		this.q1p = 0;
+		this.r3r = 0;
+		this.s7s = 0;
+		this.x0p = 0;
 	}
-	else if (z1y == "dd-mm-yyyy" || z1y == "dd.mm.yyyy")
+	else if (b8o == "dd-mm-yyyy" || b8o == "dd.mm.yyyy")
 	{
-  	if (h1q == 4)
+  	if (r2g == 4)
 		{
-      this.p1p = y0d(c7b.substr(1, 4), 0);
+      this.r3r = a9w(i7a.substr(1, 4), 0);
 		}
-		else if (h1q == 10)
+		else if (r2g == 10)
 		{
-			this.q1p = y0d(c7b.substr(0, 2), 0);
-			this.x1v = y0d(c7b.substr(3, 2), 0);
-			this.p1p = y0d(c7b.substr(6, 4), 0);
-		}
-	}
-	else if (z1y == "yyyy-mm-dd" || z1y == "yyyy.mm.dd")
-	{
-  	if (h1q == 4)
-		{
-      this.p1p = y0d(c7b.substr(1, 4), 0);
-		}
-		else if (h1q == 10)
-		{
-			this.q1p = y0d(c7b.substr(8, 2), 0);
-			this.x1v = y0d(c7b.substr(5, 2), 0);
-			this.p1p = y0d(c7b.substr(0, 4), 0);
+			this.x0p = a9w(i7a.substr(0, 2), 0);
+			this.s7s = a9w(i7a.substr(3, 2), 0);
+			this.r3r = a9w(i7a.substr(6, 4), 0);
 		}
 	}
-	else if (z1y == "dd-mm-yy" || z1y == "dd.mm.yy")
+	else if (b8o == "yyyy-mm-dd" || b8o == "yyyy.mm.dd")
 	{
-		if (h1q == 8)
+  	if (r2g == 4)
 		{
-			this.q1p = y0d(c7b.substr(0, 2), 0);
-			this.x1v = y0d(c7b.substr(3, 2), 0);
-			this.p1p = y0d(c7b.substr(6, 2), 0) + 2000;
+      this.r3r = a9w(i7a.substr(1, 4), 0);
+		}
+		else if (r2g == 10)
+		{
+			this.x0p = a9w(i7a.substr(8, 2), 0);
+			this.s7s = a9w(i7a.substr(5, 2), 0);
+			this.r3r = a9w(i7a.substr(0, 4), 0);
+		}
+	}
+	else if (b8o == "dd-mm-yy" || b8o == "dd.mm.yy")
+	{
+		if (r2g == 8)
+		{
+			this.x0p = a9w(i7a.substr(0, 2), 0);
+			this.s7s = a9w(i7a.substr(3, 2), 0);
+			this.r3r = a9w(i7a.substr(6, 2), 0) + 2000;
 		}
 	}
 }
 
-toString(z1y)
+toString(b8o)
 {
-	let c7b = '';
-	if (this.f7c())
+	let i7a = '';
+	if (this.g3d())
 	{
 	}
-	else if (z1y == "list")
+	else if (b8o == "list")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		if (this.q1p)
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		if (this.x0p)
 		{
-			c7b = h1h + "-" + k2z + "-" + s6z;
+			i7a = h2i + "-" + h7c + "-" + d6w;
 		}
-		else if (this.x1v)
+		else if (this.s7s)
 		{
-			c7b = k2z + "-" + s6z;
+			i7a = h7c + "-" + d6w;
 		}
-		else if (this.p1p)
+		else if (this.r3r)
 		{
-			c7b = s6z;
+			i7a = d6w;
 		}
 	}
-	else if (z1y == "dd-mm-yyyy")
+	else if (b8o == "dd-mm-yyyy")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		c7b = h1h + "-" + k2z + "-" + s6z;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		i7a = h2i + "-" + h7c + "-" + d6w;
 	}
-	else if (z1y == "dd.mm.yyyy")
+	else if (b8o == "dd.mm.yyyy")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		c7b = h1h + "." + k2z + "." + s6z;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		i7a = h2i + "." + h7c + "." + d6w;
 	}
-	else if (z1y == "yyyy-mm-dd")
+	else if (b8o == "yyyy-mm-dd")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		c7b = s6z + "-" + k2z + "-" + h1h;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		i7a = d6w + "-" + h7c + "-" + h2i;
 	}
-	else if (z1y == "yyyy.mm.dd")
+	else if (b8o == "yyyy.mm.dd")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		c7b = s6z + "." + k2z + "." + h1h;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		i7a = d6w + "." + h7c + "." + h2i;
 	}
-	else if (z1y == "yyyymmdd")
+	else if (b8o == "yyyymmdd")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		let k2z = this.x1v.toString().padStart(2, '0');
-		let h1h = this.q1p.toString().padStart(2, '0');
-		c7b = s6z + k2z + h1h;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		let h7c = this.s7s.toString().padStart(2, '0');
+		let h2i = this.x0p.toString().padStart(2, '0');
+		i7a = d6w + h7c + h2i;
 	}
-	else if (z1y == "yyyy")
+	else if (b8o == "yyyy")
 	{
-		let s6z = this.p1p.toString().padStart(4, '0');
-		c7b = s6z;
+		let d6w = this.r3r.toString().padStart(4, '0');
+		i7a = d6w;
 	}
-	return c7b;
+	return i7a;
 }
 
 }
 
-class q8k
+class z4r
 {
 
 constructor()
 {
-	this.m1i = new l6s();
-	this.h4v = new y7u();
-	this.g1u = 0;
-	this.time = 0;
-	this.d9y = "";
-  this.h1a = y3a.i6p;
+	this.n0s = new v7x();
+	this.c0u = new j1s();
+	this.y8h = 0;
+	this.e3u = 0;
+	this.w4t = "";
+  this.i4h = r4b.f0x;
 }
 
-z4e()
+r0c()
 {
-	let b5y = new q8k();
-	b5y.m1i = this.m1i.z4e();
-	b5y.h4v = this.h4v.z4e();
-	b5y.g1u = this.g1u;
-	b5y.time = this.time;
-	b5y.d9y = this.d9y;
-  b5y.h1a = this.h1a;
-	return b5y;
+	let q0e = new z4r();
+	q0e.n0s = this.n0s.r0c();
+	q0e.c0u = this.c0u.r0c();
+	q0e.y8h = this.y8h;
+	q0e.e3u = this.e3u;
+	q0e.w4t = this.w4t;
+  q0e.i4h = this.i4h;
+	return q0e;
 }
 
-f7c()
+g3d()
 {
-	return this.m1i.f7c() &&
-		this.h4v.f7c() &&
-		this.g1u == 0 &&
-		this.time == 0 &&
-		this.d9y == "" &&
- 		this.h1a == y3a.i6p;
+	return this.n0s.g3d() &&
+		this.c0u.g3d() &&
+		this.y8h == 0 &&
+		this.e3u == 0 &&
+		this.w4t == "" &&
+ 		this.i4h == r4b.f0x;
 }
 
 }
 
 
-class p6g
-{
-
-constructor()
-{
-	this.j1n = new q8k();
-	this.f0n = new q8k();
-	this.h4b = new r7i();
-	this.e4h = new v6k();
-	this.p7z = new u9c();
-	this.d9y = new q7g();
-	this.i4j = new m1n();
-	this.t7t = q9v.i6p;
-	this.z1u = 0;
-	this.u6y = 0;
-	this.z9l = 0;
-	this.a5x = new d6o();
-  this.id = new i6l();
-}
-
-z4e()
-{
-	let v2g = new p6g();
-	v2g.j1n = this.j1n.z4e();
-	v2g.f0n = this.f0n.z4e();
-	v2g.h4b = this.h4b.z4e();
-	v2g.e4h = this.e4h.z4e();
-	v2g.p7z = this.p7z.z4e();
-	v2g.d9y = this.d9y.z4e();
-	v2g.i4j = this.i4j.z4e();
-	v2g.t7t = this.t7t;
-	v2g.z1u = this.z1u;
-	v2g.u6y = this.u6y;
-	v2g.z9l = this.z9l;
-	v2g.a5x = this.a5x.z4e();
-  v2g.id = this.id.z4e();
-	return v2g;
-}
-
-f7c()
-{
-	return this.j1n.f7c() &&
-		this.f0n.f7c() &&
-		this.h4b.f7c() &&
-		this.e4h.f7c() &&
-		this.p7z.f7c() &&
-		this.d9y.f7c() &&
-		this.i4j.f7c() &&
-		this.t7t == q9v.i6p &&
-		this.z1u == 0 &&
-		this.u6y == 0 &&
-		this.z9l == 0 &&
-		this.a5x.f7c();
-}
-
-c8o()
-{
-	let c7b = '';
-	if (this.z9l)
-	{
-		c7b = this.u6y.toString() + "." + this.z9l.toString();
-	}
-	else if (this.u6y)
-	{
-		c7b = this.u6y.toString();
-	}
-	return c7b;
-}
-
-}
-
-
-class i6l
+class c0c
 {
 
 constructor()
 {
-	this.l4b = '';
+	this.y1l = new z4r();
+	this.n4i = new z4r();
+	this.u1l = new h8g();
+	this.h9i = new e0c();
+	this.u6s = new q7e();
+	this.w4t = new g6v();
+	this.t4y = new u4h();
+	this.c8h = z8y.f0x;
+	this.v3z = 0;
+	this.y1g = 0;
+	this.t7m = 0;
+	this.j9q = new o7d();
+  this.id = new i1l();
 }
 
-z4e()
+r0c()
 {
-	let v5n = new i6l();
-	v5n.l4b = this.l4b;
-	return v5n;
+	let h1x = new c0c();
+	h1x.y1l = this.y1l.r0c();
+	h1x.n4i = this.n4i.r0c();
+	h1x.u1l = this.u1l.r0c();
+	h1x.h9i = this.h9i.r0c();
+	h1x.u6s = this.u6s.r0c();
+	h1x.w4t = this.w4t.r0c();
+	h1x.t4y = this.t4y.r0c();
+	h1x.c8h = this.c8h;
+	h1x.v3z = this.v3z;
+	h1x.y1g = this.y1g;
+	h1x.t7m = this.t7m;
+	h1x.j9q = this.j9q.r0c();
+  h1x.id = this.id.r0c();
+	return h1x;
+}
+
+g3d()
+{
+	return this.y1l.g3d() &&
+		this.n4i.g3d() &&
+		this.u1l.g3d() &&
+		this.h9i.g3d() &&
+		this.u6s.g3d() &&
+		this.w4t.g3d() &&
+		this.t4y.g3d() &&
+		this.c8h == z8y.f0x &&
+		this.v3z == 0 &&
+		this.y1g == 0 &&
+		this.t7m == 0 &&
+		this.j9q.g3d();
+}
+
+u6d()
+{
+	let i7a = '';
+	if (this.t7m)
+	{
+		i7a = this.y1g.toString() + "." + this.t7m.toString();
+	}
+	else if (this.y1g)
+	{
+		i7a = this.y1g.toString();
+	}
+	return i7a;
+}
+
+}
+
+
+class i1l
+{
+
+constructor()
+{
+	this.w1q = '';
+}
+
+r0c()
+{
+	let z0k = new i1l();
+	z0k.w1q = this.w1q;
+	return z0k;
 }
 
 toString()
 {
-  return this.l4b;
+  return this.w1q;
 }
 
 }
 
 
-class q7g
+class g6v
 {
 
 constructor()
 {
-	this.d9y = '';
+	this.w4t = '';
 }
 
-z4e()
+r0c()
 {
-	let w5u = new q7g();
-	w5u.d9y = this.d9y;
-	return w5u;
+	let c7t = new g6v();
+	c7t.w4t = this.w4t;
+	return c7t;
 }
 
-f7c()
+g3d()
 {
-	return this.d9y.length == 0;
+	return this.w4t.length == 0;
 }
 
-f6k()
+z5b()
 {
-	return this.d9y;
+	return this.w4t;
 }
 
 }
 
 
-class l6s
+class v7x
 {
 
 constructor()
 {
-	this.p6o = '';
-	this.g7b = '';
+	this.m0z = '';
+	this.c8y = '';
 }
 
-z4e()
+r0c()
 {
-	let c1q = new l6s();
-	c1q.p6o = this.p6o;
-	c1q.g7b = this.g7b;
-	return c1q;
+	let f6x = new v7x();
+	f6x.m0z = this.m0z;
+	f6x.c8y = this.c8y;
+	return f6x;
 }
 
-f7c()
+g3d()
 {
-	return this.g7b.length == 0 &&
-		this.p6o.length == 0;
+	return this.c8y.length == 0 &&
+		this.m0z.length == 0;
 }
 
-d3i()
+g3t()
 {
-	if (!this.g7b.length == 0 && !this.p6o.length == 0)
+	if (!this.c8y.length == 0 && !this.m0z.length == 0)
 	{
-		return this.g7b + "," + this.p6o;
+		return this.c8y + "," + this.m0z;
 	}
-	else if (this.g7b.length == 0 && this.p6o.length == 0)
+	else if (this.c8y.length == 0 && this.m0z.length == 0)
 	{
 		return "";
 	}
-	else if (this.p6o.length == 0)
+	else if (this.m0z.length == 0)
 	{
-		return this.g7b;
+		return this.c8y;
 	}
 	else
 	{
-		return this.p6o;
+		return this.m0z;
 	}
 }
 
-w0q()
+d4k()
 {
-	return this.d3i().replace(/,/g, " ");
+	return this.g3t().replace(/,/g, " ");
 }
 
-n8r()
+z6t()
 {
-	return this.g1w(1).replace(/,/g, " ");
+	return this.z4t(1).replace(/,/g, " ");
 }
 
-g1w(a2q)
+z4t(m6a)
 {
-	if (this.g7b.length == 0)
+	if (this.c8y.length == 0)
 	{
-		if (this.p6o.length == 0 || a2q < 1)
+		if (this.m0z.length == 0 || m6a < 1)
 		{
 			return "";
 		}
 		else
 		{
-			return this.p6o.substring(0, a2q);
+			return this.m0z.substring(0, m6a);
 		}
 	}
 	else
 	{
-		if (this.p6o.length == 0 || a2q < 1)
+		if (this.m0z.length == 0 || m6a < 1)
 		{
-			return this.g7b;
+			return this.c8y;
 		}
 		else
 		{
-			return this.g7b + "," + this.p6o.substring(0, a2q);
+			return this.c8y + "," + this.m0z.substring(0, m6a);
 		}
 	}
 }
 
-u6h(e8n)
+l1e(o7l)
 {
-	let c7b = e8n.trim();
-	let b9l = c7b.lastIndexOf(",");
-	if (b9l != -1)
+	let i7a = o7l.trim();
+	let p6q = i7a.lastIndexOf(",");
+	if (p6q != -1)
 	{
-		this.g7b = c7b.substr(0, b9l).trim();
-		this.p6o = c7b.substr(b9l+1, c7b.length).trim();
-		if (this.p6o.length != 0)
+		this.c8y = i7a.substr(0, p6q).trim();
+		this.m0z = i7a.substr(p6q+1, i7a.length).trim();
+		if (this.m0z.length != 0)
 		{
-			if (this.p6o.charAt(0).toLowerCase() == this.p6o.charAt(0))
+			if (this.m0z.charAt(0).toLowerCase() == this.m0z.charAt(0))
 			{
-				this.g7b += ",";
-				this.g7b += this.p6o;
-				this.p6o = "";
+				this.c8y += ",";
+				this.c8y += this.m0z;
+				this.m0z = "";
 			}
 		}
 	}
 	else
 	{
-		this.g7b = c7b;
-		this.p6o = "";
+		this.c8y = i7a;
+		this.m0z = "";
 	}
 }
 
-f6k()
+z5b()
 {
-	return this.d3i();
+	return this.g3t();
 }
 
 }
 
-const q9v =
+const z8y =
 {
-	i6p : 0,
-	l8a : 1,
-	m9x : 2,
-	z6p : 3,
-	f9a : 4,
-	f4n : 5,
-	o7d : 6,
-	t5n : 7,
-	n7g : 8,
-	v0v : 9,
-	y0p : 10,
-	z6s : 11,
-	n1o : 12,
-	f6l : 13,
-	l4k : 14,
-	j6v : 15
+	f0x : 0,
+	d5i : 1,
+	c6v : 2,
+	o7k : 3,
+	i0f : 4,
+	y6i : 5,
+	n9z : 6,
+	z2n : 7,
+	a5w : 8,
+	d7m : 9,
+	b2c : 10,
+	b5s : 11,
+	l8d : 12,
+	p3d : 13,
+	q8y : 14,
+	k0o : 15
 };
 
 
-function o3m(t7t)
+function u3c(c8h)
 {
-	switch (t7t)
+	switch (c8h)
 	{
-		case q9v.l8a:
+		case z8y.d5i:
 			return "2-0";
-		case q9v.z6p:
+		case z8y.o7k:
 			return "1-1";
-		case q9v.m9x:
+		case z8y.c6v:
 			return "0-2";
 		default:
 			return "";
 	}
 }
-const l3x =
+const h5y =
 {
-	n6u : 0,
-	j7t : 1,
-	h6m : 2
+	z4p : 0,
+	x1k : 1,
+	c3b : 2
 };
 
-const w6a =
+const n9q =
 [
-	[ l3x.n6u,   "High" ],
-	[ l3x.j7t, "Middle" ],
-	[ l3x.h6m,    "Low" ]
+	[ h5y.z4p,   "High" ],
+	[ h5y.x1k, "Middle" ],
+	[ h5y.c3b,    "Low" ]
 ];
 
-class u9c
+class q7e
 {
 
 constructor()
 {
-	this.d9y = '';
-	this.n5y = '';
-	this.l1m = new m1n();
-	this.c5m = new m1n();
-	this.a6r = 0;
-	this.j2t = l3x.n6u;
+	this.w4t = '';
+	this.z0d = '';
+	this.b9u = new u4h();
+	this.w6j = new u4h();
+	this.l7g = 0;
+	this.u9p = h5y.z4p;
 }
 
-z4e()
+r0c()
 {
-	let r6i = new u9c();
-	r6i.d9y = this.d9y;
-	r6i.n5y = this.n5y;
-	r6i.l1m = this.l1m.z4e();
-	r6i.c5m = this.c5m.z4e();
-	r6i.a6r = this.a6r;
-	r6i.j2t = this.j2t;
-	return r6i;
+	let s3o = new q7e();
+	s3o.w4t = this.w4t;
+	s3o.z0d = this.z0d;
+	s3o.b9u = this.b9u.r0c();
+	s3o.w6j = this.w6j.r0c();
+	s3o.l7g = this.l7g;
+	s3o.u9p = this.u9p;
+	return s3o;
 }
 
-f7c()
+g3d()
 {
-	return this.d9y.length == 0 &&
-		this.n5y.length == 0 &&
-		this.l1m.f7c() &&
-		this.c5m.f7c() &&
-		this.a6r == 0 &&
-		this.j2t == l3x.n6u;
+	return this.w4t.length == 0 &&
+		this.z0d.length == 0 &&
+		this.b9u.g3d() &&
+		this.w6j.g3d() &&
+		this.l7g == 0 &&
+		this.u9p == h5y.z4p;
 }
 
-f6k()
+z5b()
 {
-	let c7b = this.d9y;
-	if (this.n5y.length)
+	let i7a = this.w4t;
+	if (this.z0d.length)
 	{
-		if (c7b.length)
+		if (i7a.length)
 		{
-			c7b += " ";
+			i7a += " ";
 		}
-		c7b += this.n5y;
+		i7a += this.z0d;
 	}
-	return c7b;
+	return i7a;
 }
 
 }
 
 
-const z5r =
+const m7w =
 {
-	o7v : 0,
-	q1w : 1,
-	a9c : 2,
-	j8n : 3,
-	m4w : 4,
-	m2j : 5,
-	t3g : 6,
-	c5s : 7,
-	l4e : 8,
-	t4a : 9,
-	l1t : 10,
-	o6x : 11,
-	z7c : 12,
-	x8l : 13,
-	k2s : 14,
-	x5c : 15
+	c1d : 0,
+	i8s : 1,
+	g8m : 2,
+	z8m : 3,
+	h6e : 4,
+	x9x : 5,
+	q1f : 6,
+	j4x : 7,
+	m0d : 8,
+	j7y : 9,
+	u7u : 10,
+	p6l : 11,
+	r8q : 12,
+	w6x : 13,
+	c2w : 14,
+	r6z : 15
 };
 
-class d6o
+class o7d
 {
 
 constructor()
@@ -7939,500 +7014,500 @@ constructor()
 	this.value = 0;
 }
 
-p1k(value)
+p1x(value)
 {
 	this.value = value;
 }
 
-z4e()
+r0c()
 {
-	let r5h = new d6o();
-	r5h.value = this.value;
-	return r5h;
+	let w9q = new o7d();
+	w9q.value = this.value;
+	return w9q;
 }
 
-f7c()
+g3d()
 {
 	return this.value == 0;
 }
 
-q0i()
+v2j()
 {
 	return this.value != 0;
 }
 
-i6p()
+f0x()
 {
 	return this.value == 0;
 }
 
-z7m()
+i1b()
 {
-	let s7n = 0;
+	let n6n = 0;
 	for (let i = 0; i < 16; i++)
 	{
-		if (this.k7g(i))
+		if (this.x7w(i))
 		{
-			s7n++;
+			n6n++;
 		}
 	}
-	return s7n;
+	return n6n;
 }
 
-i9b()
+o5s()
 {
 	this.value = 0;
 }
 
-set(j8m, o0s)
+set(c3y, g2b)
 {
-	if (o0s)
+	if (g2b)
 	{
-		this.value |= (1 << j8m);
+		this.value |= (1 << c3y);
 	}
 	else
 	{
-		this.value &= ~(1 << j8m);
+		this.value &= ~(1 << c3y);
 	}
 }
 
-k7g(j8m)
+x7w(c3y)
 {
-	return (this.value & (1 << j8m)) != 0;
+	return (this.value & (1 << c3y)) != 0;
 }
 
-j1k()
+w8t()
 {
 	return this.value;
 }
 
 }
 
-function d7q(s6z)
+function o4b(d6w)
 {
-	return s6z.toString().padStart(4, '0');
+	return d6w.toString().padStart(4, '0');
 }
 
-class y7u
+class j1s
 {
 
 constructor()
 {
-	this.d3i = '';
-	this.j8h = 0;
-	this.s6z = 0;
-	this.v6w = false;
-	this.h1a = y3a.i6p;
+	this.g3t = '';
+	this.a5d = 0;
+	this.d6w = 0;
+	this.q4m = false;
+	this.i4h = r4b.f0x;
 }
 
-z4e()
+r0c()
 {
-	let p5n = new y7u();
-	p5n.d3i = this.d3i;
-	p5n.j8h = this.j8h;
-	p5n.s6z = this.s6z;
-	p5n.v6w = this.v6w;
-	p5n.h1a = this.h1a;
-	return p5n;
+	let y5j = new j1s();
+	y5j.g3t = this.g3t;
+	y5j.a5d = this.a5d;
+	y5j.d6w = this.d6w;
+	y5j.q4m = this.q4m;
+	y5j.i4h = this.i4h;
+	return y5j;
 }
 
-f7c()
+g3d()
 {
-	return this.d3i.length == 0 &&
-		this.j8h == 0 &&
-		this.s6z == 0 &&
-		this.v6w == false &&
-		this.h1a == y3a.i6p;
+	return this.g3t.length == 0 &&
+		this.a5d == 0 &&
+		this.d6w == 0 &&
+		this.q4m == false &&
+		this.i4h == r4b.f0x;
 }
 
-i9d()
+p9y()
 {
-	let c7b = this.d3i;
-	if (this.j8h)
+	let i7a = this.g3t;
+	if (this.a5d)
 	{
-		if (c7b.length)
+		if (i7a.length)
 		{
-			c7b += " ";
+			i7a += " ";
 		}
-		c7b += this.j8h;
+		i7a += this.a5d;
 	}
-	return c7b;
+	return i7a;
 }
 
-f6k()
+z5b()
 {
-	let c7b = this.d3i;
-	if (this.j8h)
+	let i7a = this.g3t;
+	if (this.a5d)
 	{
-		if (c7b.length)
+		if (i7a.length)
 		{
-			c7b += " ";
+			i7a += " ";
 		}
-		c7b += this.j8h;
+		i7a += this.a5d;
 	}
-	if (c7b.length)
+	if (i7a.length)
 	{
-		c7b += " ";
+		i7a += " ";
 	}
-	c7b += this.a4n();
-	return c7b;
+	i7a += this.j0j();
+	return i7a;
 }
 
 
-a9u()
+i4l()
 {
-	let c7b = this.d3i;
-	if (this.j8h > 1)
+	let i7a = this.g3t;
+	if (this.a5d > 1)
 	{
-		c7b += " ";
-		c7b += this.j8h;
+		i7a += " ";
+		i7a += this.a5d;
 	}
-	return c7b;
+	return i7a;
 }
 
-a4n()
+j0j()
 {
-	let c7b = '';
-	if (this.v6w)
+	let i7a = '';
+	if (this.q4m)
 	{
-		let x9v = d7q(this.s6z);
-		let j8y = d7q(this.s6z + 1);
-		let k0q = x9v + "/" + j8y.substr(2, 2);
-		c7b = k0q;
+		let j4m = o4b(this.d6w);
+		let b1i = o4b(this.d6w + 1);
+		let f1t = j4m + "/" + b1i.substr(2, 2);
+		i7a = f1t;
 	}
 	else
 	{
-		c7b = d7q(this.s6z);
+		i7a = o4b(this.d6w);
 	}
-	return c7b;
+	return i7a;
 }
 
 }
 
-class j3e
+class m6f
 {
 
 constructor()
 {
-	this.t4z = 0;
-	this.b6x = 0;
-	this.p3g = 0;
+	this.s3n = 0;
+	this.f6s = 0;
+	this.c0m = 0;
 
 }
 
 }
 
-function o6y(c7b, t6v, time)
+function q5d(i7a, c3g, e3u)
 {
-	time.t4z = 0;
-	time.b6x = 0;
-	time.p3g = 0;
+	e3u.s3n = 0;
+	e3u.f6s = 0;
+	e3u.c0m = 0;
 
-	let h1q = c7b.length;
-	if (!h1q || c7b == "?")
+	let r2g = i7a.length;
+	if (!r2g || i7a == "?")
 	{
 		return;
 	}
 	let i = 0;
-	for (; i < h1q; i++)
+	for (; i < r2g; i++)
 	{
-		if (!isNaN(c7b[i]))
+		if (!isNaN(i7a[i]))
 		{
 			break;
 		}
 	}
-	let t8c = '';
-	for (; i < h1q; i++)
+	let f7u = '';
+	for (; i < r2g; i++)
 	{
-		if (isNaN(c7b[i]))
+		if (isNaN(i7a[i]))
 		{
 			break;
 		}
-		t8c += c7b[i].toString();
+		f7u += i7a[i].toString();
 	}
-	for (; i < h1q; i++)
+	for (; i < r2g; i++)
 	{
-		if (!isNaN(c7b[i]))
-		{
-			break;
-		}
-	}
-	let t6s = '';
-	for (; i < h1q; i++)
-	{
-		if (isNaN(c7b[i]))
-		{
-			break;
-		}
-		t6s += c7b[i].toString();
-	}
-	for (; i < h1q; i++)
-	{
-		if (!isNaN(c7b[i]))
+		if (!isNaN(i7a[i]))
 		{
 			break;
 		}
 	}
-	let u2w = '';
-	for (; i < h1q; i++)
+	let n1h = '';
+	for (; i < r2g; i++)
 	{
-		if (isNaN(c7b[i]))
+		if (isNaN(i7a[i]))
 		{
 			break;
 		}
-		u2w += c7b[i].toString();
+		n1h += i7a[i].toString();
 	}
-	let s0j = y0d(t8c, 0);
-	let n6t = y0d(t6s, 0);
-	let a7p = y0d(u2w, 0);
+	for (; i < r2g; i++)
+	{
+		if (!isNaN(i7a[i]))
+		{
+			break;
+		}
+	}
+	let e5o = '';
+	for (; i < r2g; i++)
+	{
+		if (isNaN(i7a[i]))
+		{
+			break;
+		}
+		e5o += i7a[i].toString();
+	}
+	let h3u = a9w(f7u, 0);
+	let a6z = a9w(n1h, 0);
+	let p1j = a9w(e5o, 0);
 	if (
-		s0j < 0 || s0j > t6v ||
-		n6t < 0 || n6t > 59 ||
-		a7p < 0 || a7p > 59)
+		h3u < 0 || h3u > c3g ||
+		a6z < 0 || a6z > 59 ||
+		p1j < 0 || p1j > 59)
 	{
-		s0j = 0;
-		n6t = 0;
-		a7p = 0;
+		h3u = 0;
+		a6z = 0;
+		p1j = 0;
 	}
-	time.t4z = s0j;
-	time.b6x = n6t;
-	time.p3g = a7p;
+	e3u.s3n = h3u;
+	e3u.f6s = a6z;
+	e3u.c0m = p1j;
 }
 
-function b5r(c7b)
+function j2h(i7a)
 {
-	if (c7b.length == 0)
+	if (i7a.length == 0)
 	{
 		return 0;
 	}
 	else
 	{
-		let time = new j3e();
-		o6y(c7b, 9, time);
-		return time.t4z * 60 + time.b6x;
+		let e3u = new m6f();
+		q5d(i7a, 9, e3u);
+		return e3u.s3n * 60 + e3u.f6s;
 	}
 }
 
 
-const i5j =
+const b3l =
 {
-	i6p : 0,
-	s8f : 1,
-	w0u : 2,
-	h4b : 3,
-	m9v : 4,
-	t9e : 5,
-	y5b : 6,
-	h0d : 7
+	f0x : 0,
+	a5z : 1,
+	g7x : 2,
+	u1l : 3,
+	w1l : 4,
+	a5r : 5,
+	x3j : 6,
+	s4i : 7
 };
 
-const p1j =
+const a5i =
 [
-	[ i5j.i6p, 			 	""                   ],
-	[ i5j.s8f,  		 	"SingleGame"         ],
-	[ i5j.w0u,  		 	"Match"              ],
-	[ i5j.h4b,  "RoundRobin"         ],
-	[ i5j.m9v,   		"SwissSystem"        ],
-	[ i5j.t9e,    "Knockout"           ],
-	[ i5j.y5b,"Simul"              ],
-	[ i5j.h0d,"ScheveningenSystem" ]
+	[ b3l.f0x, 			 	""                   ],
+	[ b3l.a5z,  		 	"SingleGame"         ],
+	[ b3l.g7x,  		 	"Match"              ],
+	[ b3l.u1l,  "RoundRobin"         ],
+	[ b3l.w1l,   		"SwissSystem"        ],
+	[ b3l.a5r,    "Knockout"           ],
+	[ b3l.x3j,"Simul"              ],
+	[ b3l.s4i,"ScheveningenSystem" ]
 ];
 
-class r7i
+class h8g
 {
 
 constructor()
 {
-	this.d9y = '';
-	this.i7v = '';
-	this.t5p = new m1n();
-	this.f8z = new m1n();
-	this.u4j = a4f.j5k;
-	this.n7m = 0;
-	this.h1a = y3a.i6p;
-	this.type = i5j.i6p;
-	this.c9j = 0;
-	this.c1y = false;
-	this.g3q = false;
-	this.n8a = false;
-	this.u0m = false;
+	this.w4t = '';
+	this.d0c = '';
+	this.l6w = new u4h();
+	this.d2h = new u4h();
+	this.e6a = n7y.j8g;
+	this.l0u = 0;
+	this.i4h = r4b.f0x;
+	this.type = b3l.f0x;
+	this.k2v = 0;
+	this.z3a = false;
+	this.s5x = false;
+	this.s0s = false;
+	this.c3e = false;
 }
 
-z4e()
+r0c()
 {
-	let b5q = new r7i();
-	b5q.d9y = this.d9y;
-	b5q.i7v = this.i7v;
-	b5q.t5p = this.t5p.z4e();
-	b5q.f8z = this.f8z.z4e();
-	b5q.u4j = this.u4j;
-	b5q.n7m = this.n7m;
-	b5q.h1a = this.h1a;
-	b5q.type = this.type;
-	b5q.c9j = this.c9j;
-	b5q.c1y = this.c1y;
-	b5q.g3q = this.g3q;
-	b5q.n8a = this.n8a;
-	b5q.u0m = this.u0m;
-	return b5q;
+	let k9j = new h8g();
+	k9j.w4t = this.w4t;
+	k9j.d0c = this.d0c;
+	k9j.l6w = this.l6w.r0c();
+	k9j.d2h = this.d2h.r0c();
+	k9j.e6a = this.e6a;
+	k9j.l0u = this.l0u;
+	k9j.i4h = this.i4h;
+	k9j.type = this.type;
+	k9j.k2v = this.k2v;
+	k9j.z3a = this.z3a;
+	k9j.s5x = this.s5x;
+	k9j.s0s = this.s0s;
+	k9j.c3e = this.c3e;
+	return k9j;
 }
 
-f7c()
+g3d()
 {
-	return this.d9y.length == 0 &&
-		this.i7v.length == 0 &&
-		this.t5p.f7c() &&
-		this.f8z.f7c() &&
-		this.u4j == a4f.j5k &&
-		this.n7m == 0 &&
-		this.h1a == y3a.i6p &&
-		this.type == i5j.i6p &&
-		!this.c9j &&
-		!this.c1y &&
-		!this.g3q &&
-		!this.n8a &&
-		!this.u0m;
+	return this.w4t.length == 0 &&
+		this.d0c.length == 0 &&
+		this.l6w.g3d() &&
+		this.d2h.g3d() &&
+		this.e6a == n7y.j8g &&
+		this.l0u == 0 &&
+		this.i4h == r4b.f0x &&
+		this.type == b3l.f0x &&
+		!this.k2v &&
+		!this.z3a &&
+		!this.s5x &&
+		!this.s0s &&
+		!this.c3e;
 }
 
-f6k()
+z5b()
 {
-	let c7b = this.d9y;
-	if (this.i7v.length)
+	let i7a = this.w4t;
+	if (this.d0c.length)
 	{
-		if (c7b.length)
+		if (i7a.length)
 		{
-			c7b += " ";
+			i7a += " ";
 		}
-		c7b += this.i7v;
+		i7a += this.d0c;
 	}
-	if (c7b.length)
+	if (i7a.length)
 	{
-		c7b += " ";
+		i7a += " ";
 	}
-	let s6z = this.t5p.s6z.toString().padStart(4, '0');
-	c7b += s6z;
-	return c7b;
+	let d6w = this.l6w.d6w.toString().padStart(4, '0');
+	i7a += d6w;
+	return i7a;
 }
 
 }
 
 
 
-const a4f =
+const n7y =
 {
-	j5k : 0,
-	u6c : 1,
-	x6t : 2,
-	y8f : 3
+	j8g : 0,
+	c7l : 1,
+	q9b : 2,
+	t0x : 3
 };
 
-const m8w =
+const l5w =
 [
-	[ a4f.j5k, "Normal" ],
-	[ a4f.u6c,  "Rapid"  ],
-	[ a4f.x6t,  "Blitz"  ],
-	[ a4f.y8f,   "Corr"   ]
+	[ n7y.j8g, "Normal" ],
+	[ n7y.c7l,  "Rapid"  ],
+	[ n7y.q9b,  "Blitz"  ],
+	[ n7y.t0x,   "Corr"   ]
 ];
 
-function m0y(u4j)
+function z6c(e6a)
 {
-	return m8w[u4j][1];
+	return l5w[e6a][1];
 }
 
-function v6b()
+function z6f()
 {
-	let h3d = [];
-	for (const u4j of m8w)
+	let t3z = [];
+	for (const e6a of l5w)
 	{
-		h3d.push(u4j[1]);
+		t3z.push(e6a[1]);
 	}
-	return h3d;
+	return t3z;
 }
 
-class f6g
+class r0u
 {
 
 constructor()
 {
-	this.u4n = '';
-	this.k2c = '';
-	this.s4h = z1r.i6p;
-	this.style = l9b.i6p;
-	this.value = c3i.i6p;
-	this.s8d = new f2p();
-	this.c6n = new n3j();
-	this.q7k = new k4l();
-	this.k2p = f7p.i6p;
-	this.a5n = false;
-	this.s3t = false;
-  this.x8r = false;
+	this.f2r = '';
+	this.i7r = '';
+	this.o1b = t4p.f0x;
+	this.style = r2j.f0x;
+	this.value = m0e.f0x;
+	this.r7v = new i5q();
+	this.u5a = new u6i();
+	this.z2x = new s2q();
+	this.u6x = k9n.f0x;
+	this.d0q = false;
+	this.t0z = false;
+  this.e8i = false;
 }
 
-z4e()
+r0c()
 {
-	let v5l = new f6g();
-	v5l.u4n = this.u4n;
-	v5l.k2c = this.k2c;
-	v5l.s4h = this.s4h;
-	v5l.style = this.style;
-	v5l.value = this.value;
-	v5l.s8d = this.s8d.z4e();
-	v5l.c6n = this.c6n.z4e();
-	v5l.q7k = this.q7k.z4e();
-	v5l.k2p = this.k2p;
-	v5l.a5n = this.a5n;
-	v5l.s3t = this.s3t;
- 	v5l.x8r = this.x8r;
-	return v5l;
+	let x9w = new r0u();
+	x9w.f2r = this.f2r;
+	x9w.i7r = this.i7r;
+	x9w.o1b = this.o1b;
+	x9w.style = this.style;
+	x9w.value = this.value;
+	x9w.r7v = this.r7v.r0c();
+	x9w.u5a = this.u5a.r0c();
+	x9w.z2x = this.z2x.r0c();
+	x9w.u6x = this.u6x;
+	x9w.d0q = this.d0q;
+	x9w.t0z = this.t0z;
+ 	x9w.e8i = this.e8i;
+	return x9w;
 }
 
-f7c()
+g3d()
 {
-	return this.u4n.length == 0 &&
-		this.k2c.length == 0 &&
-		this.s4h == z1r.i6p &&
-		this.style == l9b.i6p &&
-		this.value == c3i.i6p &&
-		this.s8d.f7c() &&
-		this.c6n.f7c() &&
-		this.q7k.f7c() &&
-		this.k2p == f7p.i6p &&
-		this.a5n == false &&
-		this.s3t == false &&
- 		this.x8r == false;
+	return this.f2r.length == 0 &&
+		this.i7r.length == 0 &&
+		this.o1b == t4p.f0x &&
+		this.style == r2j.f0x &&
+		this.value == m0e.f0x &&
+		this.r7v.g3d() &&
+		this.u5a.g3d() &&
+		this.z2x.g3d() &&
+		this.u6x == k9n.f0x &&
+		this.d0q == false &&
+		this.t0z == false &&
+ 		this.e8i == false;
 }
 
 }
 
-const f7p =
+const k9n =
 {
-	i6p : 0,
-	w8q : 1,
-	j7t : 2,
-	q5g : 3
+	f0x : 0,
+	b6o : 1,
+	x1k : 2,
+	c9k : 3
 };
 
-const x8h =
+const h8p =
 {
-	z9z : 0,
-	s5n : 1,
-	w1l : 2,
-	z2j : 3,
-	a6k : 4,
-	r4i : 5,
-	z3c : 6,
-	j6v : 7,
-	p8i : 8,
-	m0i : 9,
-	i4n : 10,
-	f2d : 11,
-	f2i : 12,
-	y6z : 13,
-	l6q : 14,
-	d7z : 15
+	m0t : 0,
+	u4e : 1,
+	u3k : 2,
+	v4x : 3,
+	i6y : 4,
+	q9f : 5,
+	b4b : 6,
+	k0o : 7,
+	y5m : 8,
+	a9a : 9,
+	h6i : 10,
+	w1g : 11,
+	d8f : 12,
+	e4g : 13,
+	e9g : 14,
+	a8c : 15
 };
 
-class f2p
+class i5q
 {
 
 constructor()
@@ -8440,334 +7515,318 @@ constructor()
 	this.value = 0;
 }
 
-p1k(value)
+p1x(value)
 {
 	this.value = value;
 }
 
-z4e()
+r0c()
 {
-	let y5j = new f2p();
-	y5j.value = this.value;
-	return y5j;
+	let a0r = new i5q();
+	a0r.value = this.value;
+	return a0r;
 }
 
-f7c()
+g3d()
 {
 	return this.value == 0;
 }
 
-q0i()
+v2j()
 {
 	return this.value != 0;
 }
 
-i6p()
+f0x()
 {
 	return this.value == 0;
 }
 
-z7m()
+i1b()
 {
-	let s7n = 0;
+	let n6n = 0;
 	for (let i = 0; i < 16; i++)
 	{
-		if (this.k7g(i))
+		if (this.x7w(i))
 		{
-			s7n++;
+			n6n++;
 		}
 	}
-	return s7n;
+	return n6n;
 }
 
-i9b()
+o5s()
 {
 	this.value = 0;
 }
 
-set(j8m, o0s)
+set(c3y, g2b)
 {
-	if (o0s)
+	if (g2b)
 	{
-		this.value |= (1 << j8m);
+		this.value |= (1 << c3y);
 	}
 	else
 	{
-		this.value &= ~(1 << j8m);
+		this.value &= ~(1 << c3y);
 	}
 }
 
-k7g(j8m)
+x7w(c3y)
 {
-	return (this.value & (1 << j8m)) != 0;
+	return (this.value & (1 << c3y)) != 0;
 }
 
-j1k()
+w8t()
 {
 	return this.value;
 }
 
 }
 
-const z1r =
+const t4p =
 {
-	i6p : 0,
-	c1a : 1,
-	l5k : 2,
-	k7j : 3,
-	k2q : 4,
-	t3e : 5,
-	p7y : 6
+	f0x : 0,
+	j8r : 1,
+	w3d : 2,
+	m5n : 3,
+	b8r : 4,
+	v7j : 5,
+	w5j : 6
 };
 
-const r5y =
+const l4i =
 [
-	[ z1r.i6p,     		  ""   ],
-	[ z1r.c1a,       		  "RR" ],
-	[ z1r.l5k, 		  "&#8979;"  ],
-	[ z1r.k7j, 		  "&#8804;"  ],
-	[ z1r.k2q,  "="  ],
-	[ z1r.t3e,   "&#9651;"  ],
-	[ z1r.p7y,  "&#9661;"  ]
+	[ t4p.f0x,     		  ""   ],
+	[ t4p.j8r,       		  "RR" ],
+	[ t4p.w3d, 		  "&#8979;"  ],
+	[ t4p.m5n, 		  "&#8804;"  ],
+	[ t4p.b8r,  "="  ],
+	[ t4p.v7j,   "&#9651;"  ],
+	[ t4p.w5j,  "&#9661;"  ]
 ];
 
-function y0f(s4h)
+function w6v(o1b)
 {
-	return r5y[s4h][1];
+	return l4i[o1b][1];
 }
 
 
-const l9b =
+const r2j =
 {
-	i6p : 0,
-	b5t : 1,
-	c7s : 2,
-	d2n : 3,
-	u7g : 4,
-	b8p : 5,
-	k3g : 6,
-	z9p : 7,
-	f7k : 8
+	f0x : 0,
+	r3e : 1,
+	q7q : 2,
+	u2o : 3,
+	x4e : 4,
+	m8q : 5,
+	r0f : 6,
+	d3t : 7,
+	l8j : 8
 };
 
-const s3f =
+const k2m =
 [
-	[ l9b.i6p,     		"" 	 ],
-	[ l9b.b5t,       	"!"  ],
-	[ l9b.c7s, 					"?"  ],
-	[ l9b.d2n,	"!?" ],
-	[ l9b.u7g,	 		"?!" ],
-	[ l9b.b8p,  	"!!" ],
-	[ l9b.k3g, 			"??" ],
-	[ l9b.z9p, 		"&#8857;"  ],
-	[ l9b.f7k, 		"&#9723;"  ]
+	[ r2j.f0x,     		"" 	 ],
+	[ r2j.r3e,       	"!"  ],
+	[ r2j.q7q, 					"?"  ],
+	[ r2j.u2o,	"!?" ],
+	[ r2j.x4e,	 		"?!" ],
+	[ r2j.m8q,  	"!!" ],
+	[ r2j.r0f, 			"??" ],
+	[ r2j.d3t, 		"&#8857;"  ],
+	[ r2j.l8j, 		"&#9723;"  ]
 ];
 
-function v4u(style)
+function u1o(style)
 {
-	return s3f[style][1];
+	return k2m[style][1];
 }
 
 
-class r8e
+class q5b
 {
 
 constructor()
 {
-	this.c7j = new m1z();
-	this.o4i = null;
-	this.h7l = null;
-	this.v6c = null;
-	this.b4o = null;
-  this.j8h = 0; 
+	this.z1e = new y5p();
+	this.x7d = null;
+	this.g8c = null;
+	this.l3l = null;
+	this.a2j = null;
+  this.a5d = 0; 
 }
 
-u1n(c7j)
+g0i(z1e)
 {
-	this.c7j = c7j.z4e();
+	this.z1e = z1e.r0c();
 }
 
-a5a(e3i, c4d, a1i, s8q)
+n9k(n2t, o1d, j1b, o4u)
 {
-	this.c7j.a5a(e3i, c4d, a1i, s8q);
+	this.z1e.n9k(n2t, o1d, j1b, o4u);
 }
 
 }
 
-class x5a
-{
-
-constructor()
-{
-	this.z0s = null;
-	this.c7j = null;
-}
-
-q0w(o8d)
-{
-	return this.z0s == o8d.z0s;
-}
-
-t5w(o8d)
-{
-	return !this.q0w(o8d);
-}
-
-z4e()
-{
-	let e6g = new x5a();
-  e6g.z0s = this.z0s;
-  e6g.c7j = this.c7j;
-	return e6g;
-}
-
-}
-
-
-class l1j
+class v6h
 {
 
 constructor()
 {
-	this.j4k = new b6u();
- 	this.y6l = null;
-	this.s7u = 1;
-	this.j4k.n9y();
-  this.y2g = new f6g();
+	this.o3l = null;
+	this.z1e = null;
 }
 
-l9q(o8d)
+s4b(b5l)
 {
-	this.l8r(o8d.j4k, o8d.s7u);
-	this.y2g = o8d.y2g.z4e();
-	this.y6l = this.w6j(o8d.y6l);
+	return this.o3l == b5l.o3l;
 }
 
-z4e()
+n1x(b5l)
 {
-	let s5g = new l1j();
-	s5g.l9q(this);
-	return s5g;
+	return !this.s4b(b5l);
 }
 
-l8r(x7g, k7e)
+r0c()
 {
-	this.j4k = x7g.z4e();
-	this.s7u = k7e;
-	this.y2g = new f6g();
-	this.y6l = null;
+	let l0k = new v6h();
+  l0k.o3l = this.o3l;
+  l0k.z1e = this.z1e;
+	return l0k;
 }
 
-k7e()
-{
-	return this.s7u;
-}
-
-x7g()
-{
-	return this.j4k.z4e();
 }
 
 
-k5o()
+class e1t
 {
-	let b9l = this.u4v();
-	this.k8l(b9l);
-	return b9l;
+
+constructor()
+{
+	this.m7j = new i9r();
+ 	this.q6h = null;
+	this.y0i = 1;
+	this.m7j.e7t();
+  this.w5t = new r0u();
 }
 
-
-f4v()
+i6j(b5l)
 {
-	let k8l = this.k5o();
-	return this.e3i(k8l);
+	this.m7y(b5l.m7j, b5l.y0i);
+	this.w5t = b5l.w5t.r0c();
+	this.q6h = this.h4e(b5l.q6h);
 }
 
-
-d3y(b9l)
+r0c()
 {
-  let i4v = this.k0m(b9l) + 1;
-	if (i4v)
+	let g2i = new e1t();
+	g2i.i6j(this);
+	return g2i;
+}
+
+m7y(b3q, h2u)
+{
+	this.m7j = b3q.r0c();
+	this.y0i = h2u;
+	this.w5t = new r0u();
+	this.q6h = null;
+}
+
+h2u()
+{
+	return this.y0i;
+}
+
+b3q()
+{
+	return this.m7j.r0c();
+}
+
+o8o(p6q)
+{
+  let k0e = this.k6y(p6q) + 1;
+	if (k0e)
 	{
-		return this.s7u +
-			Math.floor((i4v - 1 + this.j4k.a7q()) / 2);
+		return this.y0i +
+			Math.floor((k0e - 1 + this.m7j.b9z()) / 2);
 	}
 	else
 	{
-		return this.s7u;
+		return this.y0i;
 	}
 }
 
-k0m(b9l)
+k6y(p6q)
 {
-	let i4v = 0;
-	if (!b9l.z0s)
+	let k0e = 0;
+	if (!p6q.o3l)
 	{
 		return 0;
 	}
-	let l0e = b9l.z0s;
+	let r6i = p6q.o3l;
 	while (1)
 	{
-		i4v++;
-		if (!l0e.h7l)
+		k0e++;
+		if (!r6i.g8c)
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			if (!w6b.h7l)
+			if (!e2a.g8c)
 			{
 				break;
 			}
 		}
-		if (l0e.h7l)
+		if (r6i.g8c)
 		{
-			l0e = l0e.h7l;
+			r6i = r6i.g8c;
 		}
 		else
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			l0e = w6b.h7l;
+			r6i = e2a.g8c;
 		}
 	}
-	return i4v;
+	return k0e;
 }
 
 
-i0g()
+e6d()
 {
-	let u0w = 0;
-	let w0r = this.y6l;
-	while (w0r)
+	let w9s = 0;
+	let j0u = this.q6h;
+	while (j0u)
 	{
-		u0w++;
-		w0r = w0r.o4i;
+		w9s++;
+		j0u = j0u.x7d;
 	}
-	return u0w;
+	return w9s;
 }
 
-w0m()
+j0w()
 {
-	return this.y6l != null;
+	return this.q6h != null;
 }
 
-k0o(b9l)
+j5j(p6q)
 {
-	return b9l.q0w(this.u4v());
+	return p6q.s4b(this.s0m());
 }
 
-y4k(b9l)
+u2i(p6q)
 {
-	if (b9l.z0s)
+	if (p6q.o3l)
 	{
-		return b9l.z0s.o4i == null;
+		return p6q.o3l.x7d == null;
 	}
-	else if (this.y6l)
+	else if (this.q6h)
 	{
 		return false;
 	}
@@ -8777,1927 +7836,1916 @@ y4k(b9l)
 	}
 }
 
-o1f(b9l)
+k4f(p6q)
 {
-	if (!this.k0o(b9l))
+	if (!this.j5j(p6q))
 	{
-		if (b9l.z0s.h7l)
+		if (p6q.o3l.g8c)
 		{
-			b9l.z0s = b9l.z0s.h7l;
-			b9l.c7j = b9l.z0s.c7j;
+			p6q.o3l = p6q.o3l.g8c;
+			p6q.z1e = p6q.o3l.z1e;
 		}
 		else
 		{
-			let l0e = b9l.z0s;
-			while (l0e.v6c)
+			let r6i = p6q.o3l;
+			while (r6i.l3l)
 			{
-				l0e = l0e.v6c;
+				r6i = r6i.l3l;
 			}
-			l0e = l0e.h7l;
-			b9l.z0s = l0e;
-      if (b9l.z0s)
+			r6i = r6i.g8c;
+			p6q.o3l = r6i;
+      if (p6q.o3l)
       {
-  			b9l.c7j = b9l.z0s.c7j;
+  			p6q.z1e = p6q.o3l.z1e;
       }
       else
       {
-        b9l.c7j = null;
+        p6q.z1e = null;
       }
 		}
 	}
 }
 
-i8p(b9l)
+m4i(p6q)
 {
-	if (!this.y4k(b9l))
+	if (!this.u2i(p6q))
 	{
-		b9l.z0s = this.z7u(b9l);
-		b9l.c7j = b9l.z0s.c7j;
+		p6q.o3l = this.l7x(p6q);
+		p6q.z1e = p6q.o3l.z1e;
 	}
 }
 
-k4x(b9l, e5x)
+h0w(p6q, m2w)
 {
-	let f9i = this.e7t(b9l);
-	if (e5x < 0 || e5x >= f9i)
+	let l5k = this.n3a(p6q);
+	if (m2w < 0 || m2w >= l5k)
 	{
 		return;
 	}
-	let w6b = this.z7u(b9l);
+	let e2a = this.l7x(p6q);
 	let i = 0;
-	while (i != e5x)
+	while (i != m2w)
 	{
 		i++;
-		w6b = w6b.b4o;
+		e2a = e2a.a2j;
 	}
-	b9l.z0s = w6b;
-	b9l.c7j = b9l.z0s.c7j;
+	p6q.o3l = e2a;
+	p6q.z1e = p6q.o3l.z1e;
 }
 
-f6q(b9l)
+e0k(p6q)
 {
-	if (!b9l.z0s)
+	if (!p6q.o3l)
 	{
-		return this.s7u;
+		return this.y0i;
 	}
-	let i4v = this.k0m(b9l);
-	if (i4v)
+	let k0e = this.k6y(p6q);
+	if (k0e)
 	{
-		return this.s7u +
-      Math.floor((i4v - 1 + this.j4k.a7q()) / 2);
+		return this.y0i +
+      Math.floor((k0e - 1 + this.m7j.b9z()) / 2);
 	}
 	else
 	{
-		return this.s7u;
+		return this.y0i;
 	}
 }
 
-u4v()
+s0m()
 {
-	let b9l = new x5a();
-	b9l.z0s = null;
-	b9l.c7j = null;
-	return b9l;
+	let p6q = new v6h();
+	p6q.o3l = null;
+	p6q.z1e = null;
+	return p6q;
 }
 
-k8l(b9l)
+e4m(p6q)
 {
-	if (!this.y4k(b9l))
+	if (!this.u2i(p6q))
 	{
-		let l0e = this.z7u(b9l);
+		let r6i = this.l7x(p6q);
 		while (true)
 		{
-			if (!l0e.o4i)
+			if (!r6i.x7d)
 			{
 				break;
 			}
-			l0e = l0e.o4i;
+			r6i = r6i.x7d;
 		}
-		b9l.z0s = l0e;
-		b9l.c7j = b9l.z0s.c7j;
+		p6q.o3l = r6i;
+		p6q.z1e = p6q.o3l.z1e;
 	}
 }
 
-l6j(m0v)
+u3l(s2h)
 {
-	let b9l = this.u4v();
-	if (m0v > 0)
+	let p6q = this.s0m();
+	if (s2h > 0)
 	{
-    this.m0v = 0;
-		this.u5z(b9l, m0v);
-		return b9l;
+    this.s2h = 0;
+		this.n2e(p6q, s2h);
+		return p6q;
 	}
 	else
 	{
-		return b9l;
+		return p6q;
 	}
 }
 
-u5z(b9l, m0v)
+n2e(p6q, s2h)
 {
 	while (true)
 	{
-		if (this.y4k(b9l))
+		if (this.u2i(p6q))
 		{
 			return false;
 		}
-		let f9i = this.e7t(b9l);
-		if (f9i > 1)
+		let l5k = this.n3a(p6q);
+		if (l5k > 1)
 		{
-			let k3z = b9l.z4e();
-			for (let i = 1; i < f9i; i++)
+			let d5z = p6q.r0c();
+			for (let i = 1; i < l5k; i++)
 			{
-				this.k4x(b9l, i);
-				this.m0v++;
-				if (this.m0v == m0v)
+				this.h0w(p6q, i);
+				this.s2h++;
+				if (this.s2h == s2h)
 				{
 					return true;
 				}
-				if (this.u5z(b9l, m0v))
+				if (this.n2e(p6q, s2h))
 				{
 					return true;
 				}
-        b9l.z0s = k3z.z0s;
-        b9l.c7j = k3z.c7j;
+        p6q.o3l = d5z.o3l;
+        p6q.z1e = d5z.z1e;
 			}
 		}
-		this.i8p(b9l);
-		this.m0v++;
-		if (this.m0v == m0v)
+		this.m4i(p6q);
+		this.s2h++;
+		if (this.s2h == s2h)
 		{
 			return true;
 		}
 	}
 }
 
-h4z(b9l)
+l8u(p6q)
 {
-	if (!b9l.z0s)
+	if (!p6q.o3l)
 	{
 		return 0;
 	}
 	else
 	{
-		return b9l.z0s.j8h;
+		return p6q.o3l.a5d;
 	}
 }
 
-a0t(b9l)
+d8m(p6q)
 {
-	let z1l = [];
- 	if (!b9l.z0s)
+	let s3b = [];
+ 	if (!p6q.o3l)
   {
-		return z1l;
+		return s3b;
 	}
-	let l0e = b9l.z0s;
+	let r6i = p6q.o3l;
 	while (1)
 	{
-		z1l.push(l0e);
-		if (!l0e.h7l)
+		s3b.push(r6i);
+		if (!r6i.g8c)
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			if (!w6b.h7l)
+			if (!e2a.g8c)
 			{
 				break;
 			}
 		}
-		if (l0e.h7l)
+		if (r6i.g8c)
 		{
-			l0e = l0e.h7l;
+			r6i = r6i.g8c;
 		}
 		else
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			l0e = w6b.h7l;
+			r6i = e2a.g8c;
 		}
 	}
-	return z1l.reverse();
+	return s3b.reverse();
 }
 
-t1u(b9l)
+o0f(p6q)
 {
-	let z1l = this.a0t(b9l);
-	let f9i = this.e7t(b9l);
-	if (f9i == 0)
+	let s3b = this.d8m(p6q);
+	let l5k = this.n3a(p6q);
+	if (l5k == 0)
 	{
-		return z1l;
+		return s3b;
 	}
-	let g6t = this.c7k(b9l, 0);
-	while (g6t)
+	let b2x = this.k7o(p6q, 0);
+	while (b2x)
 	{
-		z1l.push(g6t);
-		g6t = g6t.o4i;
+		s3b.push(b2x);
+		b2x = b2x.x7d;
 	}
-	return z1l;
+	return s3b;
 }
 
-e7t(b9l)
+n3a(p6q)
 {
-	let g6t = this.z7u(b9l);
-	if (!g6t)
+	let b2x = this.l7x(p6q);
+	if (!b2x)
 	{
 		return 0;
 	}
-	let f9i = 1;
-	while (g6t.b4o)
+	let l5k = 1;
+	while (b2x.a2j)
 	{
-		f9i++;
-		g6t = g6t.b4o;
+		l5k++;
+		b2x = b2x.a2j;
 	}
-	return f9i;
+	return l5k;
 }
 
-n9d(b9l, e8v)
+i1n(p6q, e8t)
 {
-	if (this.k0o(b9l))
+	if (this.j5j(p6q))
 	{
-		this.y6l = e8v;
-		b9l.z0s = e8v;
-		b9l.c7j = b9l.z0s.c7j;
+		this.q6h = e8t;
+		p6q.o3l = e8t;
+		p6q.z1e = p6q.o3l.z1e;
 	}
 	else
 	{
-		b9l.z0s.o4i = e8v;
-		e8v.h7l = b9l.z0s;
-		b9l.z0s = e8v;
-		b9l.c7j = b9l.z0s.c7j;
+		p6q.o3l.x7d = e8t;
+		e8t.g8c = p6q.o3l;
+		p6q.o3l = e8t;
+		p6q.z1e = p6q.o3l.z1e;
 	}
 }
 
-r3f(b9l, e8v)
+t5g(p6q, e8t)
 {
-	let w6b = this.z7u(b9l);
-	while (w6b.b4o)
+	let e2a = this.l7x(p6q);
+	while (e2a.a2j)
 	{
-		w6b = w6b.b4o;
+		e2a = e2a.a2j;
 	}
-	w6b.b4o = e8v;
-	e8v.v6c = w6b;
+	e2a.a2j = e8t;
+	e8t.l3l = e2a;
 
-	b9l.z0s = e8v;
-	b9l.c7j = b9l.z0s.c7j;
+	p6q.o3l = e8t;
+	p6q.z1e = p6q.o3l.z1e;
 }
 
-d4y(b9l, c7j)
+z7v(p6q, z1e)
 {
-	let e8v = new r8e();
- 	e8v.u1n(c7j);
-	if (this.y4k(b9l))
+	let e8t = new q5b();
+ 	e8t.g0i(z1e);
+	if (this.u2i(p6q))
 	{
-		this.n9d(b9l, e8v);
+		this.i1n(p6q, e8t);
 	}
 	else
 	{
-		this.r3f(b9l, e8v);
+		this.t5g(p6q, e8t);
 	}
 }
 
-
-h2i(b9l, z1l)
+y0p(p6q)
 {
-	for (const c7j of z1l)
-	{
-		this.d4y(b9l, c7j);
-	}
-}
-
-
-t0k(b9l)
-{
-	let w6b = this.c7k(b9l, 1);
-	if (!w6b)
+	let e2a = this.k7o(p6q, 1);
+	if (!e2a)
 	{
 		return false;
 	}
-	while (w6b)
+	while (e2a)
 	{
-		let w0r = w6b.o4i;
-		while (w0r)
+		let j0u = e2a.x7d;
+		while (j0u)
 		{
-			if (w0r.b4o)
+			if (j0u.a2j)
 			{
 				return false;
 			}
-			w0r = w0r.o4i;
+			j0u = j0u.x7d;
 		}
-		w6b = w6b.b4o;
+		e2a = e2a.a2j;
 	}
 	return true;
 }
 
-g1t()
+i6f()
 {
-	let w0r = this.y6l;
-	while (w0r)
+	let j0u = this.q6h;
+	while (j0u)
 	{
-		if (w0r.b4o)
+		if (j0u.a2j)
 		{
 			return true;
 		}
-		w0r = w0r.o4i;
+		j0u = j0u.x7d;
 	}
 	return false;
 }
 
-o8m()
+x3r()
 {
-	if (!this.y2g.f7c())
+	if (!this.w5t.g3d())
 	{
 		return true;
 	}
-	if (this.g1t())
+	if (this.i6f())
 	{
 		return true;
 	}
-	let w0r = this.y6l;
-	while (w0r)
+	let j0u = this.q6h;
+	while (j0u)
 	{
-		if (w0r.c7j.o8m())
+		if (j0u.z1e.x3r())
 		{
 			return true;
 		}
-		w0r = w0r.o4i;
+		j0u = j0u.x7d;
 	}
 	return false;
 }
 
-z7u(b9l)
+l7x(p6q)
 {
-	if (b9l.z0s)
+	if (p6q.o3l)
 	{
-		return b9l.z0s.o4i;
+		return p6q.o3l.x7d;
 	}
-	return this.y6l;
+	return this.q6h;
 }
 
-c7k(b9l, e5x)
+k7o(p6q, m2w)
 {
 	let i = 0;
-	let w6b = this.z7u(b9l);
-	while (w6b && i != e5x)
+	let e2a = this.l7x(p6q);
+	while (e2a && i != m2w)
 	{
-		w6b = w6b.b4o;
+		e2a = e2a.a2j;
 		i++;
 	}
-	return w6b;
+	return e2a;
 }
 
-w6j(w6b)
+h4e(e2a)
 {
-	let l9k = w6b;
-	let f4p = null;
-	let e8v = null;
-	let n2a = null;
-	while (l9k)
+	let m8m = e2a;
+	let p0l = null;
+	let e8t = null;
+	let r3h = null;
+	while (m8m)
 	{
-		e8v = new r8e();
-		e8v.u1n(l9k.c7j);
-		if (f4p)
+		e8t = new q5b();
+		e8t.g0i(m8m.z1e);
+		if (p0l)
 		{
-			f4p.o4i = e8v;
-			e8v.h7l = f4p;
+			p0l.x7d = e8t;
+			e8t.g8c = p0l;
 		}
 		else
 		{
-			n2a = e8v;
+			r3h = e8t;
 		}
-		f4p = e8v;
-		if (l9k.b4o && !l9k.v6c)
+		p0l = e8t;
+		if (m8m.a2j && !m8m.l3l)
 		{
-			let c0y = l9k.b4o;
-			let n2x = f4p;
-			while (c0y)
+			let p5j = m8m.a2j;
+			let z2c = p0l;
+			while (p5j)
 			{
-				let l2v = this.w6j(c0y);
-				n2x.b4o = l2v;
-				l2v.v6c = n2x;
-				n2x = l2v;
-				c0y = c0y.b4o;
+				let j1y = this.h4e(p5j);
+				z2c.a2j = j1y;
+				j1y.l3l = z2c;
+				z2c = j1y;
+				p5j = p5j.a2j;
 			}
 		}
-		l9k = l9k.o4i;
+		m8m = m8m.x7d;
 	}
-	return n2a;
+	return r3h;
 }
 
-a9i()
+b9e()
 {
-	return this.y2g;
+	return this.w5t;
 }
 
-j8c()
+g4t()
 {
-	return this.y2g.u4n;
+	return this.w5t.f2r;
 }
 
-z3j(m3t)
+t9q(m7i)
 {
-	this.y2g.u4n = m3t;
+	this.w5t.f2r = m7i;
 }
 
-c6a()
+e7s()
 {
-	return !this.y2g.c6n.f7c();
+	return !this.w5t.u5a.g3d();
 }
 
-b0w(c6n)
+m7m(u5a)
 {
-	this.y2g.c6n = c6n.z4e();
+	this.w5t.u5a = u5a.r0c();
 }
 
-w6x()
+y8x()
 {
-	return this.y2g.c6n;
+	return this.w5t.u5a;
 }
 
-y2v()
+h6v()
 {
-	return !this.y2g.q7k.f7c();
+	return !this.w5t.z2x.g3d();
 }
 
-y1g(q7k)
+e6z(z2x)
 {
-	this.y2g.q7k = q7k.z4e();
+	this.w5t.z2x = z2x.r0c();
 }
 
-n3z()
+w2j()
 {
-	return this.y2g.q7k;
+	return this.w5t.z2x;
 }
 
-d5x()
+s5j()
 {
-	return !this.y2g.s8d.f7c();
+	return !this.w5t.r7v.g3d();
 }
 
-z4q(s8d)
+j6s(r7v)
 {
-	this.y2g.s8d = s8d.z4e();
+	this.w5t.r7v = r7v.r0c();
 }
 
-k4r()
+i0e()
 {
-	return this.y2g.s8d;
+	return this.w5t.r7v;
 }
 
-y1f(m0v)
+u3z(s2h)
 {
-  if (m0v == 0)
+  if (s2h == 0)
   {
     return true;
   }
-	let w0r = this.y6l;
-	while (w0r)
+	let j0u = this.q6h;
+	while (j0u)
 	{
-    if (w0r.j8h == m0v)
+    if (j0u.a5d == s2h)
     {
       return true;
     }
-		w0r = w0r.o4i;
+		j0u = j0u.x7d;
 	}
 	return false;
 }
 
-h0q()
+y0x()
 {
-	let b9l = this.u4v();
-	this.m0v = 0;
-	this.z9m(b9l);
+	let p6q = this.s0m();
+	this.s2h = 0;
+	this.e2g(p6q);
 }
 
-z9m(b9l)
+e2g(p6q)
 {
 	while (true)
 	{
-		if (this.y4k(b9l))
+		if (this.u2i(p6q))
 		{
 			return;
 		}
-		let f9i = this.e7t(b9l);
-		if (f9i > 1)
+		let l5k = this.n3a(p6q);
+		if (l5k > 1)
 		{
-			let k3z = b9l.z4e();
-			for (let i = 1; i < f9i; i++)
+			let d5z = p6q.r0c();
+			for (let i = 1; i < l5k; i++)
 			{
-				this.k4x(b9l, i);
-				this.m0v++;
-        b9l.z0s.j8h = this.m0v;
-				this.z9m(b9l);
-        b9l.z0s = k3z.z0s;
-        b9l.c7j = k3z.c7j;
+				this.h0w(p6q, i);
+				this.s2h++;
+        p6q.o3l.a5d = this.s2h;
+				this.e2g(p6q);
+        p6q.o3l = d5z.o3l;
+        p6q.z1e = d5z.z1e;
 			}
 		}
-		this.i8p(b9l);
-  	this.m0v++;
-    b9l.z0s.j8h = this.m0v;
+		this.m4i(p6q);
+  	this.s2h++;
+    p6q.o3l.a5d = this.s2h;
 	}
 }
 
-e3i(b9l)
+n2t(p6q)
 {
-	let e3i = this.j4k.z4e();
-	if (!b9l.z0s)
+	let n2t = this.m7j.r0c();
+	if (!p6q.o3l)
 	{
-		return e3i;
+		return n2t;
 	}
-	let z1l = this.s1d(b9l);
-  for (const c7j of z1l)
+	let s3b = this.u6p(p6q);
+  for (const z1e of s3b)
 	{
-		e3i.i8p(c7j.x2v());
+		n2t.m4i(z1e.i1j());
 	}
-	return e3i;
+	return n2t;
 }
 
-s1d(b9l)
+u6p(p6q)
 {
-	let z1l = [];
- 	if (!b9l.z0s)
+	let s3b = [];
+ 	if (!p6q.o3l)
   {
-		return z1l;
+		return s3b;
 	}
-	let l0e = b9l.z0s;
+	let r6i = p6q.o3l;
 	while (1)
 	{
-		z1l.push(l0e.c7j);
-		if (!l0e.h7l)
+		s3b.push(r6i.z1e);
+		if (!r6i.g8c)
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			if (!w6b.h7l)
+			if (!e2a.g8c)
 			{
 				break;
 			}
 		}
-		if (l0e.h7l)
+		if (r6i.g8c)
 		{
-			l0e = l0e.h7l;
+			r6i = r6i.g8c;
 		}
 		else
 		{
-			let w6b = l0e;
-			while (w6b.v6c)
+			let e2a = r6i;
+			while (e2a.l3l)
 			{
-				w6b = w6b.v6c;
+				e2a = e2a.l3l;
 			}
-			l0e = w6b.h7l;
+			r6i = e2a.g8c;
 		}
 	}
-	return z1l.reverse();
+	return s3b.reverse();
 }
 
 
-w2u()
+l9k()
 {
-	this.y2g = new f6g();
-	this.y6l = null; 
+	this.w5t = new r0u();
+	this.q6h = null; 
   
 }
 
 
-r5q()
+y7c()
 {
-	let z1l = [];
-	let w0r = this.y6l;
-	while (w0r)
+	let s3b = [];
+	let j0u = this.q6h;
+	while (j0u)
 	{
-		z1l.push(w0r.c7j);
-		w0r = w0r.o4i;
+		s3b.push(j0u.z1e);
+		j0u = j0u.x7d;
 	}
-	return z1l;
+	return s3b;
 }
 
-
 }
 
-const c3i =
+const m0e =
 {
-	i6p : 0,
-	f9a : 1,
-	f4n : 2,
-	o7d : 3,
-	t5n : 4,
-	n7g : 5,
-	v0v : 6,
-	y0p : 7,
-	z6s : 8,
-	n1o : 9,
-	f6l : 10,
-	l4k : 11,
-	j6v : 12,
-	b3l : 13,
-	i7t : 14,
-	z2j : 15
+	f0x : 0,
+	i0f : 1,
+	y6i : 2,
+	n9z : 3,
+	z2n : 4,
+	a5w : 5,
+	d7m : 6,
+	b2c : 7,
+	b5s : 8,
+	l8d : 9,
+	p3d : 10,
+	q8y : 11,
+	k0o : 12,
+	c4h : 13,
+	h2s : 14,
+	v4x : 15
 };
 
-const z6a =
+const x7t =
 [
-	[ c3i.i6p,     						  ""    ],
-	[ c3i.f9a,        "+&#8211;" ],
-	[ c3i.f4n, 						"&#177;" ],
-	[ c3i.o7d,		"&#10866;"  ],
-	[ c3i.t5n, 							"="   ],
-	[ c3i.n7g,  							"&#8734;" ],
-	[ c3i.v0v,  	"&#10865;"],
-	[ c3i.y0p, 						"&#8723;" ],
-	[ c3i.z6s, 				"&#8211;+"],
-	[ c3i.n1o,						"&#8773;" ],
-	[ c3i.f6l, 						"&#8646;" ],
-	[ c3i.l4k,  						"&#8593;" ],
-	[ c3i.j6v, 								"&#8594;" ],
-	[ c3i.b3l, 					"&#8853;" ],
-	[ c3i.i7t,		"&#10227;"],
-	[ c3i.z2j, 								"N"   ]
+	[ m0e.f0x,     						  ""    ],
+	[ m0e.i0f,        "+&#8211;" ],
+	[ m0e.y6i, 						"&#177;" ],
+	[ m0e.n9z,		"&#10866;"  ],
+	[ m0e.z2n, 							"="   ],
+	[ m0e.a5w,  							"&#8734;" ],
+	[ m0e.d7m,  	"&#10865;"],
+	[ m0e.b2c, 						"&#8723;" ],
+	[ m0e.b5s, 				"&#8211;+"],
+	[ m0e.l8d,						"&#8773;" ],
+	[ m0e.p3d, 						"&#8646;" ],
+	[ m0e.q8y,  						"&#8593;" ],
+	[ m0e.k0o, 								"&#8594;" ],
+	[ m0e.c4h, 					"&#8853;" ],
+	[ m0e.h2s,		"&#10227;"],
+	[ m0e.v4x, 								"N"   ]
 ];
 
-function n0f(value)
+function f6c(value)
 {
-	return z6a[value][1];
+	return x7t[value][1];
 }
 
 
-const n8t =
+const j5s =
 {
-	k2t : 0,
-	d2y : 1,
-	g9q : 2
+	k6k : 0,
+	r1w : 1,
+	u4x : 2
 };
 
-const v1z =
+const e4e =
 {
-	i6p : 0,
-	v0b : 1,
-	p6a : 2,
-	p6i : 3,
-	s1y : 4,
-	s4h : 5,
-	k2c : 6,
-	u4n : 7,
-	c4c : 8,
-	s8d : 9,
-	a5n : 10,
-	s3t : 11
+	f0x : 0,
+	x3p : 1,
+	y1m : 2,
+	t9l : 3,
+	q1g : 4,
+	o1b : 5,
+	i7r : 6,
+	f2r : 7,
+	e4h : 8,
+	r7v : 9,
+	d0q : 10,
+	t0z : 11
 };
 
 /*
 TO DO
-- Aanpassen voor tekst after van v4r daar kan dia inzitten (zie c++)
-- Vette tekst en niet vette v0b testen bij wel/niet MultiPV
+- Aanpassen voor tekst after van y9n daar kan dia inzitten (zie c++)
+- Vette tekst en niet vette x3p testen bij wel/niet MultiPV
 */
-class g2h
+class y4w
 {
 
 constructor()
 {
-	this.l1g = new k0d();
-  this.n5m = true;
-  this.z8t = false;
-  this.e2f = true;
-  this.y5d = true;
-  this.s5h = n8t.k2t;
-  this.b3a = false;
-  this.m5a = true;
- 	this.w0x = true;
- 	this.x9d = -1;
-  this.u0x = false;
-  this.h9p = false;
-	this.r9t = false;
-	this.h1t = true;
-  this.s5p = false;
-  this.u6w = false;
-  this.x2c = 0;
-	this.b8e = true;
-  this.z7k = null;
- 	this.v4h = v1z.i6p;
+	this.v1l = new q6l();
+  this.m7q = true;
+  this.r0z = false;
+  this.r4h = true;
+  this.c2n = true;
+  this.g9m = j5s.k6k;
+  this.m0x = false;
+  this.y3g = true;
+ 	this.u4n = true;
+ 	this.n4k = -1;
+  this.b1g = false;
+  this.m9t = false;
+	this.y4b = false;
+	this.v7f = true;
+  this.n6c = false;
+  this.o9b = false;
+  this.f3d = 0;
+	this.s8a = true;
+  this.n9l = null;
+ 	this.h4v = e4e.f0x;
 }
 
-o2i(z1l)
+a1v(s3b)
 {
-	this.z7k = z1l;
- 	let u4v = this.z7k.u4v();
-	let x7g = this.z7k.x7g();
-	this.v4h = v1z.i6p;
-	this.h1t = true;
-	this.h9p = false;
-	this.r9t = false;
-	this.u0x = false;
-	this.s5p = this.z7k.o8m();
-	this.b8e = true;
-	this.x2c = 0;
+	this.n9l = s3b;
+ 	let s0m = this.n9l.s0m();
+	let b3q = this.n9l.b3q();
+	this.h4v = e4e.f0x;
+	this.v7f = true;
+	this.m9t = false;
+	this.y4b = false;
+	this.b1g = false;
+	this.n6c = this.n9l.x3r();
+	this.s8a = true;
+	this.f3d = 0;
 
-	if (this.b3a)
+	if (this.m0x)
 	{
-		this.b4p(v1z.p6a);
-		this.w6n();
+		this.g2o(e4e.y1m);
+		this.s9b();
 	}
 	else
 	{
     
-    if (this.s5h == n8t.d2y ||
-      (this.s5h == n8t.g9q && !x7g.l5f()))
+    if (this.g9m == j5s.r1w ||
+      (this.g9m == j5s.u4x && !b3q.n7j()))
     {
-      if (this.y5d)
+      if (this.c2n)
       {
-        this.a0w(u4v, x7g, x2c);
-        this.h1t = true;
+        this.a7t(s0m, b3q, f3d);
+        this.v7f = true;
       }
     }
 
-    this.b4p((this.s5p && !this.x8r) ? v1z.v0b : v1z.p6a);
-    this.f2a(this.s5p);
-    this.d4y(u4v, "");
-    this.x3k(u4v, this.z7k.a9i().u4n);
+    this.g2o((this.n6c && !this.e8i) ? e4e.x3p : e4e.y1m);
+    this.f3z(this.n6c);
+    this.z7v(s0m, "");
+    this.t4i(s0m, this.n9l.b9e().f2r);
 
-    if (this.z7k.w0m())
+    if (this.n9l.j0w())
     {
-      this.z6h();
+      this.p6w();
     }
-   	this.b4p(v1z.i6p);
-   	this.m0a();
+   	this.g2o(e4e.f0x);
+   	this.c7n();
   }
 }
 
-w6n()
+s9b()
 {
-	let b9l = this.z7k.u4v();
-	let e7t = this.z7k.e7t(b9l);
-	for (let i = 0; i < e7t; i++)
+	let p6q = this.n9l.s0m();
+	let n3a = this.n9l.n3a(p6q);
+	for (let i = 0; i < n3a; i++)
 	{
-    this.l1g.l0w('<div class="variation-row">');
-		b9l = this.z7k.u4v();
-  	let e3i = this.z7k.x7g();
-	  let f6q = this.z7k.k7e();
-		this.z7k.k4x(b9l, i);
-		this.h1t = true;
-		let a1d = true;
-		let c7j = b9l.c7j;
-		let k2c = c7j.k2c();
-		if (k2c.length)
+    this.v1l.q6d('<div class="variation-row">');
+		p6q = this.n9l.s0m();
+  	let n2t = this.n9l.b3q();
+	  let e0k = this.n9l.h2u();
+		this.n9l.h0w(p6q, i);
+		this.v7f = true;
+		let n4j = true;
+		let z1e = p6q.z1e;
+		let i7r = z1e.i7r();
+		if (i7r.length)
 		{
-			this.b5j(b9l, k2c);
+			this.x8e(p6q, i7r);
 		}
-		this.b4p(v1z.p6a);
+		this.g2o(e4e.y1m);
 		do
 		{
-			if (a1d)
+			if (n4j)
 			{
-				b9l.c7j.i5y();
+				p6q.z1e.p2p();
 			}
-			this.i6g(b9l, e3i, f6q);
-			if (a1d)
+			this.l1h(p6q, n2t, e0k);
+			if (n4j)
 			{
-				b9l.c7j.g9m(k2c);
-				a1d = false;
+				p6q.z1e.p8c(i7r);
+				n4j = false;
 			}
-			if (this.z7k.y4k(b9l))
+			if (this.n9l.u2i(p6q))
 			{
 				break;
 			}
-			e3i.i8p(b9l.c7j);
-			if (e3i.q8y())
+			n2t.m4i(p6q.z1e);
+			if (n2t.k2b())
 			{
-				f6q++;
+				e0k++;
 			}
-			this.z7k.i8p(b9l);
+			this.n9l.m4i(p6q);
 		} while (true);
-    this.l1g.l0w('<div');
+    this.v1l.q6d('<div');
 	}
 }
 
-z6h()
+p6w()
 {
-  let p7i = 0;
- 	let b9l = this.z7k.u4v();
-	let e3i = this.z7k.x7g();
-  let f6q = this.z7k.k7e();
+  let g0s = 0;
+ 	let p6q = this.n9l.s0m();
+	let n2t = this.n9l.b3q();
+  let e0k = this.n9l.h2u();
 
-	let k5n = 100000;
-	if (this.x9d == 0)
+	let x0c = 100000;
+	if (this.n4k == 0)
 	{
 		return;
 	}
-	if (this.x9d != -1)
+	if (this.n4k != -1)
 	{
-		k5n = this.x9d;
+		x0c = this.n4k;
 	}
-	let o0f = f6q + k5n - 1;
-	this.h1t = true;
+	let p0v = e0k + x0c - 1;
+	this.v7f = true;
 	while (true)
 	{
-		let e7t = this.z7k.e7t(b9l);
-		while (f6q <= o0f && !this.z7k.y4k(b9l))
+		let n3a = this.n9l.n3a(p6q);
+		while (e0k <= p0v && !this.n9l.u2i(p6q))
 		{
-      this.z7k.i8p(b9l);
-    	this.b4p((this.s5p && !this.x8r) ? v1z.v0b : v1z.p6a);
-			this.i6g(b9l, e3i, f6q);
-			e3i.i8p(b9l.c7j.x2v());
- 			if (e3i.q8y())
+      this.n9l.m4i(p6q);
+    	this.g2o((this.n6c && !this.e8i) ? e4e.x3p : e4e.y1m);
+			this.l1h(p6q, n2t, e0k);
+			n2t.m4i(p6q.z1e.i1j());
+ 			if (n2t.k2b())
 			{
-				f6q++;
+				e0k++;
 			}
-			if (this.w0x && e7t > 1)
+			if (this.u4n && n3a > 1)
 			{
 				break;
 			}
-			e7t = this.z7k.e7t(b9l);
+			n3a = this.n9l.n3a(p6q);
 		}
-		if (!e7t || f6q > o0f)
+		if (!n3a || e0k > p0v)
 		{
 			return;
 		}
-    e3i.o1f(b9l.c7j.x2v());
-		if (e3i.a7q())
+    n2t.k4f(p6q.z1e.i1j());
+		if (n2t.b9z())
 		{
-			f6q--;
+			e0k--;
 		}
-    this.z7k.o1f(b9l);
-		for (let i = 1; i < e7t; i++)
+    this.n9l.k4f(p6q);
+		for (let i = 1; i < n3a; i++)
 		{
-      p7i++;
-      let d0f = "<span class=\"tdline\" data-level=\"";
-      d0f += p7i.toString();
-      d0f += "\">";
-      this.l1g.l0w(d0f);
-			this.k3u(v1z.p6i);
-			this.w4p("[", true);
-			let s4h = '';
-      this.e7v(b9l, e3i, f6q, i, s4h, p7i);
-			this.b4p(v1z.p6i);
-			this.w4p("]", true);
-      this.l1g.l0w("</span>");
-      p7i--;
-     	this.b4p((this.s5p && !this.x8r) ? v1z.v0b : v1z.p6a);
+      g0s++;
+      let d1g = "<span class=\"tdline\" data-level=\"";
+      d1g += g0s.toString();
+      d1g += "\">";
+      this.v1l.q6d(d1g);
+			this.t0k(e4e.t9l);
+			this.q4d("[", true);
+			let o1b = '';
+      this.s8e(p6q, n2t, e0k, i, o1b, g0s);
+			this.g2o(e4e.t9l);
+			this.q4d("]", true);
+      this.v1l.q6d("</span>");
+      g0s--;
+     	this.g2o((this.n6c && !this.e8i) ? e4e.x3p : e4e.y1m);
 		}
-		this.k3u(this.v4h);
-    this.z7k.i8p(b9l);
-    e3i.i8p(b9l.c7j.x2v());
-		if (e3i.q8y())
+		this.t0k(this.h4v);
+    this.n9l.m4i(p6q);
+    n2t.m4i(p6q.z1e.i1j());
+		if (n2t.k2b())
 		{
-			f6q++;
+			e0k++;
 		}
-		this.h1t = true;
+		this.v7f = true;
 	}
 }
 
-i6g(b9l, e3i, f6q)
+l1h(p6q, n2t, e0k)
 {
-	if (this.z7k.k0o(b9l))
+	if (this.n9l.j5j(p6q))
 	{
 		return;
 	}
- 	let c7j = b9l.c7j;
+ 	let z1e = p6q.z1e;
 
-	let c7b = '';
-  let x7q = false;
-  if (this.n5m)
+	let i7a = '';
+  let w9w = false;
+  if (this.m7q)
 	{
-		if (c7j.a7b())
+		if (z1e.g0d())
 		{
-			if (!this.z7k.k0o(b9l))
+			if (!this.n9l.j5j(p6q))
 			{
-        let h8k = b9l.z4e();
-        this.z7k.o1f(h8k);
-        if (h8k.c7j)
+        let q7r = p6q.r0c();
+        this.n9l.k4f(q7r);
+        if (q7r.z1e)
         {
-  				if (h8k.c7j.f3o())
+  				if (q7r.z1e.c8b())
 	  			{
-		  			x7q = true;
+		  			w9w = true;
 			  	}
         }
 			}
 		}
   }
-	if (this.h9p)
+	if (this.m9t)
 	{
-		c7b = "(";
-		this.h9p = false;
-		if (this.n5m && c7j.j9u())
+		i7a = "(";
+		this.m9t = false;
+		if (this.m7q && z1e.k5p())
 		{
-			this.w4p("(", true);
-			let y3w = this.v4h;
-			this.b5j(b9l, c7j.k2c());
-			this.b4p(y3w);
-			c7b = "";
-      x7q = true;
+			this.q4d("(", true);
+			let a1t = this.h4v;
+			this.x8e(p6q, z1e.i7r());
+			this.g2o(a1t);
+			i7a = "";
+      w9w = true;
 		}
 	}
 	else
 	{
-		if (this.n5m && c7j.j9u())
+		if (this.m7q && z1e.k5p())
 		{
-  	  let y3w = this.v4h;
-	  	this.b5j(b9l, c7j.k2c());
-		  this.b4p(y3w);
-      x7q = true;
+  	  let a1t = this.h4v;
+	  	this.x8e(p6q, z1e.i7r());
+		  this.g2o(a1t);
+      w9w = true;
     }
 	}
-	if (c7j.f6c())
+	if (z1e.s3k())
 	{
-		c7b += y0f(c7j.s4h());
+		i7a += w6v(z1e.o1b());
 	}
-	let x9j = c7j.c0t();
-	if (x9j)
+	let x5k = z1e.u1g();
+	if (x5k)
 	{
-    c7b += f6q;
-		c7b += '.';
+    i7a += e0k;
+		i7a += '.';
 	}
 	else
 	{
-		if (this.h1t || x7q)
+		if (this.v7f || w9w)
 		{
- 			c7b += f6q;
-			c7b += "...";
+ 			i7a += e0k;
+			i7a += "...";
 		}
 	}
-	c7b += a9d(e3i, c7j.x2v(), false);
-	if (c7j.s2h())
+	i7a += v2s(n2t, z1e.i1j(), false);
+	if (z1e.n6r())
 	{
-		c7b += v4u(c7j.style());
+		i7a += u1o(z1e.style());
 	}
-	if (c7j.o8u())
+	if (z1e.h2x())
 	{
-		c7b += n0f(c7j.value());
+		i7a += f6c(z1e.value());
 	}
-	if (c7j.y5z())
+	if (z1e.h4b())
 	{
-		c7b += " End Of Game";
+		i7a += " End Of Game";
   }
-	if (this.r9t || this.u0x)
+	if (this.y4b || this.b1g)
 	{
-		if (this.z7k.y4k(b9l) && (!this.n5m || !c7j.f3o()))
+		if (this.n9l.u2i(p6q) && (!this.m7q || !z1e.c8b()))
 		{
-			if (this.r9t)
+			if (this.y4b)
 			{
-				c7b += ")";
-				this.r9t = false;
+				i7a += ")";
+				this.y4b = false;
 			}
 			else
 			{
-				c7b += ";";
-				this.u0x = false;
+				i7a += ";";
+				this.b1g = false;
 			}
 		}
 	}
-	this.d4y(b9l, c7b);
-	this.h1t = false;
+	this.z7v(p6q, i7a);
+	this.v7f = false;
 
-	if (c7j.q3h())
+	if (z1e.y9o())
 	{
-		let u4n = c7j.u4n();
-    let c0q = u4n.indexOf("[#]");
-		let u2n = u4n.substring(0, c0q);
-	  let e0z = u4n.substring(c0q + 3);
-		if (u2n.length)
+		let f2r = z1e.f2r();
+    let h1t = f2r.indexOf("[#]");
+		let d7a = f2r.substring(0, h1t);
+	  let n8l = f2r.substring(h1t + 3);
+		if (d7a.length)
 		{
-			this.x3k(b9l, u2n);
+			this.t4i(p6q, d7a);
 		}
-		this.x2c++;
-		if (this.y5d)
+		this.f3d++;
+		if (this.c2n)
 		{
-			this.k3u(v1z.i6p);
-      this.a0w(b9l, e3i, this.x2c);
-			this.h1t = true;
+			this.t0k(e4e.f0x);
+      this.a7t(p6q, n2t, this.f3d);
+			this.v7f = true;
 		}
-		if (e0z.length)
+		if (n8l.length)
 		{
-			this.x3k(b9l, e0z);
+			this.t4i(p6q, n8l);
 		}
 	}
 	else
 	{
-		this.x3k(b9l, c7j.u4n());
+		this.t4i(p6q, z1e.f2r());
 	}
 
-  if (c7j.y5z())
+  if (z1e.h4b())
 	{
-    this.l1g.j5j("<div>&nbsp;</div>"); 
-   	this.m0a();
- 	  this.f2a(false); 
- 	  this.u6w = true;
+    this.v1l.p3z("<div>&nbsp;</div>"); 
+   	this.c7n();
+ 	  this.f3z(false); 
+ 	  this.o9b = true;
 	}
 }
 
-b4p(y3e)
+g2o(w4w)
 {
-	if (y3e != this.v4h)
+	if (w4w != this.h4v)
 	{
-		this.f9v();
-		this.v4h = y3e;
-		this.x6j();
+		this.o1a();
+		this.h4v = w4w;
+		this.i8y();
 	}
 }
 
-x6j()
+i8y()
 {
 }
 
-f9v()
+o1a()
 {
-	this.v4h = v1z.i6p;
+	this.h4v = e4e.f0x;
 }
 
-k3u(y3e)
+t0k(w4w)
 {
-	this.f9v();
-	this.v4h = v1z.i6p;
+	this.o1a();
+	this.h4v = e4e.f0x;
   
   
   
   
-  this.l1g.j5j("<br>"); 
-	if (y3e != v1z.i6p)
+  this.v1l.p3z("<br>"); 
+	if (w4w != e4e.f0x)
 	{
-		this.v4h = y3e;
-		this.x6j();
+		this.h4v = w4w;
+		this.i8y();
 	}
 }
 
-a0w(b9l, e3i, j8h)
+a7t(p6q, n2t, a5d)
 {
-  this.b8e = true;
-	let d0f = "<span class=\"tddia\" movenr=\"";
-  d0f += this.z7k.h4z(b9l).toString();
-	d0f += "\">",
-	this.l1g.l0w(d0f);
-	this.l1g.l0w("<canvas></canvas>");
-	this.l1g.l0w("</span>");
-	this.h1t = true;
+  this.s8a = true;
+	let d1g = "<span class=\"tddia\" movenr=\"";
+  d1g += this.n9l.l8u(p6q).toString();
+	d1g += "\">",
+	this.v1l.q6d(d1g);
+	this.v1l.q6d("<canvas></canvas>");
+	this.v1l.q6d("</span>");
+	this.v7f = true;
 }
 
-e4i(b9l, m3t)
+y8d(p6q, m7i)
 {
-  this.w7w(b9l);
-	this.s7y(m3t);
-  this.n1g();
+  this.b6v(p6q);
+	this.y4r(m7i);
+  this.i2c();
 }
 
-e7v(m8t, d3d, f6q, e5x, s4h, p7i)
+s8e(a3w, y2g, e0k, m2w, o1b, g0s)
 {
-  let b9l = m8t.z4e();
-  let e3i = d3d.z4e();
+  let p6q = a3w.r0c();
+  let n2t = y2g.r0c();
 
-	if (s4h.length)
+	if (o1b.length)
 	{
-		this.b4p(v1z.s4h);
-		let m8k = s4h;
-		m8k += ")";
-    let d0f = "<span class=\"tdprefix\">";
-    this.l1g.l0w(d0f);
-  	this.w4p(m8k);
-    this.l1g.l0w("</span>");
+		this.g2o(e4e.o1b);
+		let i4a = o1b;
+		i4a += ")";
+    let d1g = "<span class=\"tdprefix\">";
+    this.v1l.q6d(d1g);
+  	this.q4d(i4a);
+    this.v1l.q6d("</span>");
 	}
-	let e7t = 0;
-	let v1i = 1;
-  this.z7k.k4x(b9l, e5x);
-	this.h1t = true;
+	let n3a = 0;
+	let m8s = 1;
+  this.n9l.h0w(p6q, m2w);
+	this.v7f = true;
 	do
 	{
-		this.b4p(v1z.p6i);
-		this.i6g(b9l, e3i, f6q);
-		if (e7t > 1)
+		this.g2o(e4e.t9l);
+		this.l1h(p6q, n2t, e0k);
+		if (n3a > 1)
 		{
-      this.z7k.o1f(b9l);
-      this.c9f(b9l, e3i, f6q);
-      this.z7k.i8p(b9l);
-			this.h1t = true;
+      this.n9l.k4f(p6q);
+      this.x8k(p6q, n2t, e0k);
+      this.n9l.m4i(p6q);
+			this.v7f = true;
 		}
-		e3i.i8p(b9l.c7j.x2v());
-		if (e3i.q8y())
+		n2t.m4i(p6q.z1e.i1j());
+		if (n2t.k2b())
 		{
-			f6q++;
+			e0k++;
 		}
-		e7t = this.z7k.e7t(b9l);
-		if (e7t == 0)
+		n3a = this.n9l.n3a(p6q);
+		if (n3a == 0)
 		{
 			break;
 		}
-		if (e7t > 1)
+		if (n3a > 1)
 		{
-			if (!this.z7k.t0k(b9l))
+			if (!this.n9l.y0p(p6q))
 			{
 				break;
 			}
 		}
-    this.z7k.i8p(b9l);
-		v1i++;
+    this.n9l.m4i(p6q);
+		m8s++;
 	} while (true);
 
-	if (this.z7k.y4k(b9l))
+	if (this.n9l.u2i(p6q))
 	{
 		return;
 	}
 
-	let r8j = s4h.length;
-	let m8k = '';
-	let o6r = 1;
-	for (let i = 0; i < e7t; i++)
+	let a9k = o1b.length;
+	let i4a = '';
+	let z0z = 1;
+	for (let i = 0; i < n3a; i++)
 	{
-		if (r8j == 0)
+		if (a9k == 0)
 		{
-      m8k = String.fromCharCode('A'.charCodeAt() + o6r - 1);
+      i4a = String.fromCharCode('A'.charCodeAt() + z0z - 1);
 		}
-		else if (r8j == 1)
+		else if (a9k == 1)
 		{
-      m8k = s4h;
-      m8k += o6r;
+      i4a = o1b;
+      i4a += z0z;
 		}
-		else if (r8j == 2)
+		else if (a9k == 2)
 		{
-      m8k = s4h;
-      m8k += String.fromCharCode('a'.charCodeAt() + o6r - 1);
+      i4a = o1b;
+      i4a += String.fromCharCode('a'.charCodeAt() + z0z - 1);
 		}
 		else
 		{
-      m8k = s4h;
-      m8k += o6r;
+      i4a = o1b;
+      i4a += z0z;
 		}
 
-    let d0f = "<span class=\"tdline\" data-level=\"";
-    d0f += p7i.toString();
-    d0f += "\">";
-    this.l1g.l0w(d0f);
-  	this.k3u(this.v4h);
-    this.e7v(b9l, e3i, f6q, i, m8k, p7i);
-    this.l1g.l0w("</span>");
-		o6r++;
+    let d1g = "<span class=\"tdline\" data-level=\"";
+    d1g += g0s.toString();
+    d1g += "\">";
+    this.v1l.q6d(d1g);
+  	this.t0k(this.h4v);
+    this.s8e(p6q, n2t, e0k, i, i4a, g0s);
+    this.v1l.q6d("</span>");
+		z0z++;
 	}
 }
 
-c9f(m8t, d3d, f6q)
+x8k(a3w, y2g, e0k)
 {
-  let b9l = m8t.z4e();
-  let e3i = d3d.z4e();
+  let p6q = a3w.r0c();
+  let n2t = y2g.r0c();
 
-	this.b4p(v1z.s1y);
-	this.h9p = true;
-	this.u0x = false;
-	let e7t = this.z7k.e7t(b9l);
-	for (let i = 1; i < e7t; i++)
+	this.g2o(e4e.q1g);
+	this.m9t = true;
+	this.b1g = false;
+	let n3a = this.n9l.n3a(p6q);
+	for (let i = 1; i < n3a; i++)
 	{
-		if (i == e7t - 1)
+		if (i == n3a - 1)
 		{
-			this.r9t = true;
+			this.y4b = true;
 		}
-		if (i < e7t - 1)
+		if (i < n3a - 1)
 		{
-			this.u0x = true;
+			this.b1g = true;
 		}
-    this.v9a(b9l, e3i, f6q, i);
-		if (this.u0x)
+    this.a9t(p6q, n2t, e0k, i);
+		if (this.b1g)
 		{
-			this.b4p(v1z.s1y);
-			this.w4p(";", false);
-			this.u0x = false;
+			this.g2o(e4e.q1g);
+			this.q4d(";", false);
+			this.b1g = false;
 		}
 	}
-	this.b4p(v1z.s1y);
-	if (this.r9t)
+	this.g2o(e4e.q1g);
+	if (this.y4b)
 	{
-		this.w4p(")", false);
-		this.r9t = false;
+		this.q4d(")", false);
+		this.y4b = false;
 	}
 }
 
-v9a(m8t, d3d, f6q, e5x)
+a9t(a3w, y2g, e0k, m2w)
 {
-  let b9l = m8t.z4e();
-  let e3i = d3d.z4e();
+  let p6q = a3w.r0c();
+  let n2t = y2g.r0c();
 
-  this.z7k.k4x(b9l, e5x);
-	let v1i = 0;
-	this.h1t = true;
+  this.n9l.h0w(p6q, m2w);
+	let m8s = 0;
+	this.v7f = true;
 	do
 	{
-		v1i++;
-		this.b4p(v1z.s1y);
-		this.i6g(b9l, e3i, f6q);
-		if (this.z7k.y4k(b9l))
+		m8s++;
+		this.g2o(e4e.q1g);
+		this.l1h(p6q, n2t, e0k);
+		if (this.n9l.u2i(p6q))
 		{
 			break;
 		}
-		e3i.i8p(b9l.c7j.x2v());
-		if (e3i.q8y())
+		n2t.m4i(p6q.z1e.i1j());
+		if (n2t.k2b())
 		{
-			f6q++;
+			e0k++;
 		}
-    this.z7k.i8p(b9l);
+    this.n9l.m4i(p6q);
 	} while (true);
 }
 
-d4y(b9l, c7b)
+z7v(p6q, i7a)
 {
-	if (c7b.length)
+	if (i7a.length)
 	{
- 		this.b7b(b9l, c7b);
+ 		this.i6x(p6q, i7a);
 	}
 	else
 	{
-		if (this.m5a)
+		if (this.y3g)
     {
-      this.b7b(b9l, "[...]");
+      this.i6x(p6q, "[...]");
     }
 	}
-	if (b9l.c7j)
+	if (p6q.z1e)
 	{
-		if (b9l.c7j.h2g() || b9l.c7j.l8w())
+		if (p6q.z1e.m9z() || p6q.z1e.j3d())
 		{
-			this.u3j(b9l, v1z.c4c);
+			this.h8z(p6q, e4e.e4h);
 		}
-		if (b9l.c7j.q3h())
+		if (p6q.z1e.y9o())
 		{
 		}
-		if (b9l.c7j.g5i())
+		if (p6q.z1e.a8q())
 		{
-			this.u3j(b9l, v1z.a5n);
+			this.h8z(p6q, e4e.d0q);
 		}
-		if (b9l.c7j.g1d())
+		if (p6q.z1e.x2m())
 		{
-			this.u3j(b9l, v1z.s8d);
+			this.h8z(p6q, e4e.r7v);
 		}
 	}
 	else
 	{
-		if (this.z7k.c6a() || this.z7k.y2v())
+		if (this.n9l.e7s() || this.n9l.h6v())
 		{
-			this.u3j(b9l, v1z.c4c);
+			this.h8z(p6q, e4e.e4h);
 		}
-		if (this.z7k.d5x())
+		if (this.n9l.s5j())
 		{
-		 	this.u3j(b9l, v1z.s8d);
+		 	this.h8z(p6q, e4e.r7v);
 		}
 	}
 }
 
-w4p(c7b, m7i)
+q4d(i7a, u4q)
 {
-	if (c7b.length == 0)
+	if (i7a.length == 0)
 	{
 		return;
 	}
-	if (!this.b8e && m7i)
+	if (!this.s8a && u4q)
 	{
-		this.l1g.j5j(" ");
+		this.v1l.p3z(" ");
 	}
-	this.l1g.j5j(c7b);
-	this.b8e = false;
+	this.v1l.p3z(i7a);
+	this.s8a = false;
 }
 
-b5j(b9l, k2c)
+x8e(p6q, i7r)
 {
-	if (this.n5m && k2c.length)
+	if (this.m7q && i7r.length)
 	{
-		this.b4p(v1z.k2c);
-		this.e4i(b9l, k2c);
-	}
-}
-
-x3k(b9l, u4n)
-{
-	if (this.n5m && u4n.length)
-	{
-		this.b4p(v1z.u4n);
-		this.e4i(b9l, u4n);
+		this.g2o(e4e.i7r);
+		this.y8d(p6q, i7r);
 	}
 }
 
-s7y(m3t)
+t4i(p6q, f2r)
 {
-  let e5a = m3t;
-  let o3g = e5a.replaceAll("<br><br>", "<br>");
-  let b4n = o3g.replaceAll("<br><br>", "<br>");
-  let h0f = b4n.replaceAll("<br>", "<div>&nbsp;</div>");
-  let s = h0f;
-  this.l1g.j5j(s);
+	if (this.m7q && f2r.length)
+	{
+		this.g2o(e4e.f2r);
+		this.y8d(p6q, f2r);
+	}
 }
 
-b7b(b9l, c7b)
+y4r(m7i)
 {
-	if (c7b.length == 0)
+  let x9z = m7i;
+  let a5e = x9z.replaceAll("<br><br>", "<br>");
+  let l3q = a5e.replaceAll("<br><br>", "<br>");
+  let l4b = l3q.replaceAll("<br>", "<div>&nbsp;</div>");
+  let s = l4b;
+  this.v1l.p3z(s);
+}
+
+i6x(p6q, i7a)
+{
+	if (i7a.length == 0)
 	{
 		return;
 	}
-	if (!this.b8e)
+	if (!this.s8a)
 	{
-		this.l1g.j5j(" ");
+		this.v1l.p3z(" ");
 	}
-  let a4b = '';
-  if (b9l.c7j)
+  let z8a = '';
+  if (p6q.z1e)
   {
-  	if (b9l.c7j.t9n())
+  	if (p6q.z1e.y7s())
 	  {
-		  if (b9l.c7j.k2p() == f7p.w8q)
+		  if (p6q.z1e.u6x() == k9n.b6o)
   		{
-	  		a4b = "tdmove-crit-opening";
+	  		z8a = "tdmove-crit-opening";
 		  }
-  		else if (b9l.c7j.k2p() == f7p.j7t)
+  		else if (p6q.z1e.u6x() == k9n.x1k)
 	  	{
-		  	a4b = "tdmove-crit-middle";
+		  	z8a = "tdmove-crit-middle";
   		}
-	  	else if (b9l.c7j.k2p() == f7p.q5g)
+	  	else if (p6q.z1e.u6x() == k9n.c9k)
 		  {
-  			a4b = "tdmove-crit-end";
+  			z8a = "tdmove-crit-end";
 	  	}
   	}
   }
-	let w4h = "<span class=\"";
-	if (a4b.length == 0)
+	let v5d = "<span class=\"";
+	if (z8a.length == 0)
 	{
-		w4h += "tdmove\" movenr=\"";
+		v5d += "tdmove\" movenr=\"";
 	}
 	else
 	{
-		w4h += "tdmove " + a4b + "\" movenr=\"";
+		v5d += "tdmove " + z8a + "\" movenr=\"";
 	}
-  w4h += this.z7k.h4z(b9l).toString();
-  w4h += "\"";
-	w4h += ">",
-	w4h += c7b;
-	w4h += "</span>";
+  v5d += this.n9l.l8u(p6q).toString();
+  v5d += "\"";
+	v5d += ">",
+	v5d += i7a;
+	v5d += "</span>";
 
-	this.l1g.l0w(w4h);
-	this.b8e = false;
+	this.v1l.q6d(v5d);
+	this.s8a = false;
 }
 
-u3j(b9l, y3e)
+h8z(p6q, w4w)
 {
-  if (y3e == v1z.c4c)
+  if (w4w == e4e.e4h)
   {
-    this.p1y(b9l);
+    this.d3o(p6q);
   }
-  else if (y3e == v1z.s8d)
+  else if (w4w == e4e.r7v)
   {
-    this.j4i(b9l);
+    this.l7t(p6q);
   }
 }
 
-p1y(b9l)
+d3o(p6q)
 {
-	let d0f = "<span class=\"tdcolors\" movenr=\"";
-  d0f += this.z7k.h4z(b9l).toString();
-	d0f += "\">",
-	this.l1g.l0w(d0f);
-	this.l1g.l0w("</span>");
+	let d1g = "<span class=\"tdcolors\" movenr=\"";
+  d1g += this.n9l.l8u(p6q).toString();
+	d1g += "\">",
+	this.v1l.q6d(d1g);
+	this.v1l.q6d("</span>");
 }
 
-j4i(b9l)
+l7t(p6q)
 {
-	let d0f = "<span class=\"tdmedal\" movenr=\"";
-  d0f += this.z7k.h4z(b9l).toString();
-	d0f += "\">",
-	this.l1g.l0w(d0f);
-	this.l1g.l0w("<canvas></canvas>");
-	this.l1g.l0w("</span>");
+	let d1g = "<span class=\"tdmedal\" movenr=\"";
+  d1g += this.n9l.l8u(p6q).toString();
+	d1g += "\">",
+	this.v1l.q6d(d1g);
+	this.v1l.q6d("<canvas></canvas>");
+	this.v1l.q6d("</span>");
 }
 
-f2a(i4m)
+f3z(f9z)
 {
- 	let d0f = "<span class=\"tdline\"";
-	if (i4m)
+ 	let d1g = "<span class=\"tdline\"";
+	if (f9z)
 	{
-		d0f += " data-commented=\"1\"";
+		d1g += " data-commented=\"1\"";
 	}
-	d0f += " data-level=\"0\">";
-	this.l1g.j5j(d0f);
+	d1g += " data-level=\"0\">";
+	this.v1l.p3z(d1g);
 }
 
-m0a()
+c7n()
 {
-  this.l1g.l0w("</span>");
+  this.v1l.q6d("</span>");
 }
 
-w7w(b9l)
+b6v(p6q)
 {
-  let l9e = "tdcomment";
-  if (this.z8t)
+  let q7o = "tdcomment";
+  if (this.r0z)
   {
-    l9e += " is-bold";
+    q7o += " is-bold";
   }
-  let d0f = "<span class=\"" + l9e + "\" movenr=\"";
-  d0f += this.z7k.h4z(b9l).toString();
-  d0f += "\">";
-  this.l1g.j5j(d0f);
+  let d1g = "<span class=\"" + q7o + "\" movenr=\"";
+  d1g += this.n9l.l8u(p6q).toString();
+  d1g += "\">";
+  this.v1l.p3z(d1g);
 }
 
-n1g()
+i2c()
 {
-  this.l1g.l0w("</span>");
+  this.v1l.q6d("</span>");
 }
 
-q3a(value)
+v0f(value)
 {
-  this.m5a = value;
+  this.y3g = value;
 }
 
-g4o(value)
+t8z(value)
 {
-  this.z8t = value;
+  this.r0z = value;
 }
 
-k0s(value)
+w2k(value)
 {
-  this.e2f = value;
+  this.r4h = value;
 }
 
-s4s(value)
+i7g(value)
 {
-  this.b3a = value;
+  this.m0x = value;
 }
 
 } 
-const y3m =
+const n6q =
 {
-	j6v : 1,
-	m0i : 2,
-	o2m : 3
+	k0o : 1,
+	a9a : 2,
+	b1m : 3
 };
 
-class x1p
+class n6j
 {
 
 constructor()
 {
-	this.d4d = 0;
-	this.z4d = 0;
-	this.type = y3m.j6v;
+	this.i1o = 0;
+	this.p2v = 0;
+	this.type = n6q.k0o;
 }
 
-z4e()
+r0c()
 {
-	let v9d = new x1p();
-	v9d.d4d = this.d4d;
-	v9d.z4d = this.z4d;
-	v9d.type = this.type;
-	return v9d;
+	let f7r = new n6j();
+	f7r.i1o = this.i1o;
+	f7r.p2v = this.p2v;
+	f7r.type = this.type;
+	return f7r;
 }
 
 }
 
-function r5l(d4d, z4d, type)
+function m5s(i1o, p2v, type)
 {
-	let s = new x1p();
-	s.d4d = d4d;
-	s.z4d = z4d;
+	let s = new n6j();
+	s.i1o = i1o;
+	s.p2v = p2v;
 	s.type = type;
 	return s;
 }
-class n3j
+class u6i
 {
 
 constructor()
 {
-	this.y4w = [];
+	this.q7t = [];
 }
 
-z4e()
+r0c()
 {
-	let k7d = new n3j();
-	for (const l1c of this.y4w)
+	let z9p = new u6i();
+	for (const f6u of this.q7t)
 	{
-		k7d.add(l1c.z4e());
+		z9p.add(f6u.r0c());
 	}
-	return k7d;
+	return z9p;
 }
 
-p7a()
+h9j()
 {
-	this.y4w.length = 0;
+	this.q7t.length = 0;
 }
 
-f7c()
+g3d()
 {
-	return this.y4w.length == 0;
+	return this.q7t.length == 0;
 }
 
 size()
 {
-	return this.y4w.length;
+	return this.q7t.length;
 }
 
-add(l1c)
+add(f6u)
 {
-	let z2r = l1c.z4e();
-	this.y4w.push(z2r);
+	let d9m = f6u.r0c();
+	this.q7t.push(d9m);
 }
 
 }
 
-const f6d =
+const o3t =
 {
-	a8z : 0,
-	f7s : 1,
-	r4p : 2
+	b8j : 0,
+	m9q : 1,
+	t2o : 2
 };
 
-class i9p
+class d7y
 {
 
 constructor()
 {
-	this.k2d = 0;
-	this.type = f6d.a8z;
+	this.t0h = 0;
+	this.type = o3t.b8j;
 }
 
-z4e()
+r0c()
 {
-	let w8t = new i9p();
-	w8t.k2d = this.k2d;
-	w8t.type = this.type;
-	return w8t;
+	let g7q = new d7y();
+	g7q.t0h = this.t0h;
+	g7q.type = this.type;
+	return g7q;
 }
 
 }
 
-function s3v(k2d, type)
+function u0n(t0h, type)
 {
-	let f4j = new i9p();
-	f4j.k2d = k2d;
-	f4j.type = type;
-	return f4j;
+	let p9z = new d7y();
+	p9z.t0h = t0h;
+	p9z.type = type;
+	return p9z;
 }
 
-class k4l
+class s2q
 {
 
 constructor()
 {
-	this.u7k = [];
+	this.n5a = [];
 }
 
-z4e()
+r0c()
 {
-	let o6p = new k4l();
-	for (const n7v of this.u7k)
+	let y8p = new s2q();
+	for (const z0y of this.n5a)
 	{
-		o6p.add(n7v.z4e());
+		y8p.add(z0y.r0c());
 	}
-	return o6p;
+	return y8p;
 }
 
-p7a()
+h9j()
 {
-	this.u7k.length = 0;
+	this.n5a.length = 0;
 }
 
-f7c()
+g3d()
 {
-	return this.u7k.length == 0;
+	return this.n5a.length == 0;
 }
 
 size()
 {
-	return this.u7k.length;
+	return this.n5a.length;
 }
 
-add(z5i)
+add(f6n)
 {
-	let a8e = z5i.z4e();
-	this.u7k.push(a8e);
+	let v6m = f6n.r0c();
+	this.n5a.push(v6m);
 }
 
 }
 
-const j9n =
+const g5i =
 {
-	f6v    : 0,
-	g1f  : 1,
-	j7q  : 2,
-	i4s    : 3,
-  t3j   : 4,
-	d1z    : 5,
+	f7t    : 0,
+	x9b  : 1,
+	y0u  : 2,
+	y0l    : 3,
+  n7o   : 4,
+	n1o    : 5,
 };
 
 
-function s3n(h1e)
+function s7p(d8n)
 {
-	let c7b = '';
-	switch (h1e)
+	let i7a = '';
+	switch (d8n)
 	{
-		case j9n.f6v:
-			c7b = "P";
+		case g5i.f7t:
+			i7a = "P";
 			break;
-		case j9n.g1f:
-			c7b = "N";
+		case g5i.x9b:
+			i7a = "N";
 			break;
-		case j9n.j7q:
-			c7b = "B";
+		case g5i.y0u:
+			i7a = "B";
 			break;
-		case j9n.i4s:
-			c7b = "R";
+		case g5i.y0l:
+			i7a = "R";
 			break;
-		case j9n.t3j:
-			c7b = "Q";
+		case g5i.n7o:
+			i7a = "Q";
 			break;
-		case j9n.king:
-			c7b = "K";
+		case g5i.king:
+			i7a = "K";
 			break;
 	}
-	return c7b;
+	return i7a;
 }
 
-class b6z
+class k3k
 {
 
 constructor()
 {
-  this.p6s = 0;
-	this.n5t = new p6g();
-	this.z1l = new l1j();
+  this.f3e = 0;
+	this.n4q = new c0c();
+	this.s3b = new e1t();
 }
 
-z4e()
+r0c()
 {
-	let m9r = new b6z();
-  m9r.p6s = this.p6s;
-	m9r.n5t = this.n5t.z4e();
-	m9r.z1l = this.z1l.z4e();
-	return m9r;
+	let x5j = new k3k();
+  x5j.f3e = this.f3e;
+	x5j.n4q = this.n4q.r0c();
+	x5j.s3b = this.s3b.r0c();
+	return x5j;
 }
 
 }
 
-const e4v = 	 		"#7B8295";
-const i7d =			"#9F9F9F";
-const q9x = 			    "#7B8295";
-const r3v = 		  "#FFFFFF";
-const r1p =       "#D0B194";
+const d4v = 	 		"#7B8295";
+const o7j =			"#9F9F9F";
+const o9k = 			    "#7B8295";
+const l9h = 		  "#FFFFFF";
+const h6u =       "#D0B194";
 
-const l8j	   = "#E13129";
-const j2v	 = "#389C13";
-const z0r = "#E2B628";
+const o5d	   = "#E13129";
+const s4k	 = "#389C13";
+const m3u = "#E2B628";
 
-const o8j	 = "#E13129";
-const e7j	 = "#389C13";
-const q0y	   = "#E2B628";
+const y2c	 = "#E13129";
+const c3z	 = "#389C13";
+const g1s	   = "#E2B628";
 
-class e6y
+class p8q
 {
 
 constructor()
 {
-	this.e3h = null;
-	this.f4t = false;
-	this.a4k = null;
-	this.x2l = null;
-	this.m6k = null;
-	this.g0k = 0;
-	this.m1e = 0;
-	this.h3l = 0;
-	this.i4h = 0;
-	this.b1y = 0;
-	this.n0d = 0;
-	this.x4e = new j4f();
-	this.e3i = new b6u();
-	this.c6n = new n3j();
-	this.q7k = new k4l();
-  this.w9j = new j7i();
-  this.p0g = true;
-	this.x1h = true;
-	this.p1f = true;
-	this.k1g = false;
-	this.m3p = e4v;
-	this.l7a = i7d;
-	this.s4o = t9p;
-	this.q5m = w2f;
-	this.n2y = w2f;
-	this.j4o = h5b;
-	this.l0u = true;
-	this.p0p = f1k;
-	this.p7j = f1k;
-	this.y9c = false;
-	this.s5e = [];
-	this.a8g = 0;
+	this.j3l = null;
+	this.p5e = false;
+	this.g0o = null;
+	this.x7u = null;
+	this.w4s = null;
+	this.h7x = 0;
+	this.d2f = 0;
+	this.e9p = 0;
+	this.p8z = 0;
+	this.p9s = 0;
+	this.a8y = 0;
+	this.t6l = new i2p();
+	this.n2t = new i9r();
+	this.u5a = new u6i();
+	this.z2x = new s2q();
+  this.y5q = new b1y();
+  this.j0i = true;
+	this.n7g = true;
+	this.t1o = true;
+	this.f0a = false;
+	this.i6p = d4v;
+	this.s8s = o7j;
+	this.c5g = d2q;
+	this.a2e = n5b;
+	this.e1x = n5b;
+	this.d7w = t6z;
+	this.r2h = true;
+	this.q4i = d2w;
+	this.d8k = d2w;
+	this.j4y = false;
+	this.c1j = [];
+	this.p1v = 0;
 }
 
-m4q(e3h)
+u9s(j3l)
 {
-	this.e3h = e3h;
+	this.j3l = j3l;
 }
 
-m7c(x4e)
+r9p(t6l)
 {
-	this.x4e = x4e;
-	this.h3l = x4e.h3l();
-	this.i4h = x4e.h3l();
+	this.t6l = t6l;
+	this.e9p = t6l.e9p();
+	this.p8z = t6l.e9p();
 
-	this.g0k = (this.e3h.width - this.h3l) / 2;
-	let top = (this.e3h.height - this.i4h) * 0.25;
+	this.h7x = (this.j3l.width - this.e9p) / 2;
+	let top = (this.j3l.height - this.p8z) * 0.25;
 	if (top > 0 && top < 16) top = 16;
-	this.m1e = top;
-	this.b1y = this.g0k + this.h3l - 1;
-	this.n0d = this.m1e + this.i4h - 1;
-	this.f4t = false;
-	this.n1q();
+	this.d2f = top;
+	this.p9s = this.h7x + this.e9p - 1;
+	this.a8y = this.d2f + this.p8z - 1;
+	this.p5e = false;
+	this.h2r();
 }
 
-l8r(e3i)
+m7y(n2t)
 {
-	this.e3i = e3i.z4e();
-	this.c6n.p7a();
-	this.q7k.p7a();
+	this.n2t = n2t.r0c();
+	this.u5a.h9j();
+	this.z2x.h9j();
 }
 
-f4h(c6n)
+r8y(u5a)
 {
-	this.c6n = c6n.z4e();
+	this.u5a = u5a.r0c();
 }
 
-j9q(q7k)
+v7d(z2x)
 {
-	this.q7k = q7k.z4e();
+	this.z2x = z2x.r0c();
 }
 
-n8h(c7j)
+y0b(z1e)
 {
-  this.w9j = c7j.z4e();
+  this.y5q = z1e.r0c();
 }
 
-x6l(k1g)
+e7e(f0a)
 {
-	this.k1g = k1g;
+	this.f0a = f0a;
 }
 
-n5l()
+n5p()
 {
-	this.k1g = !this.k1g;
+	this.f0a = !this.f0a;
 }
 
-z6p()
+o7k()
 {
-	if (!this.e3h) return;
-	if (this.h3l <= 0 || this.i4h <= 0)
+	if (!this.j3l) return;
+	if (this.e9p <= 0 || this.p8z <= 0)
 	{
 		return;
 	}
-	this.w7n();
+	this.y4n();
 }
 
-k2n()
+z7i()
 {
-	let x1r = this.x4e.x1r;
-	if (this.f4t)
+	let p3o = this.t6l.p3o;
+	if (this.p5e)
 	{
 		return;
 	}
-	this.f4t = true;
-	if (x1r == f2t.f0b)
+	this.p5e = true;
+	if (p3o == d1d.u5l)
 	{
-  	this.a4k = u5s.r3h("images/board/LightSquare");
-  	this.x2l = u5s.r3h("images/board/DarkSquare");
-		this.m6k = u5s.r3h("images/board/Margin");
+  	this.g0o = o8v.u1v("images/board/LightSquare");
+  	this.x7u = o8v.u1v("images/board/DarkSquare");
+		this.w4s = o8v.u1v("images/board/Margin");
 	}
 }
 
-n1q()
+h2r()
 {
-	this.k2n();
-	let x1r = this.x4e.x1r;
-	if (x1r == f2t.f0b)
+	this.z7i();
+	let p3o = this.t6l.p3o;
+	if (p3o == d1d.u5l)
 	{
-		this.l0u = false;
-		this.x1h = false;
-		this.p1f = false;
-		this.s4o = "#FFFF97";
-		this.q5m = "#9B2E31";
-		this.n2y = z4t;
+		this.r2h = false;
+		this.n7g = false;
+		this.t1o = false;
+		this.c5g = "#FFFF97";
+		this.a2e = "#9B2E31";
+		this.e1x = i0w;
 	}
 }
 
-w7n()
+y4n()
 {
-	this.n1q();
-	if (this.x4e.x1r == f2t.f0b)
+	this.h2r();
+	if (this.t6l.p3o == d1d.u5l)
 	{
-		let q5v = u5s.r3h("images/board/BoardBackground");
-		this.p0c(new d2o(0, 0, this.e3h.width, this.e3h.height), q5v);
+		let m3b = o8v.u1v("images/board/BoardBackground");
+		this.m3d(new o1y(0, 0, this.j3l.width, this.j3l.height), m3b);
 	}
-	this.n2k();  
-	this.r4n(); 
-	this.n0c(); 
+	this.j6g();  
+	this.i3c(); 
+	this.e3s(); 
   if (chess)
   {
-	  this.y6q();
+	  this.q4a();
   }
   else
   {
-	  this.m3f();
-  	this.c2p();
+	  this.j3q();
+  	this.d0m();
   }
   
-  this.y9w();
- 	this.h3g();
- 	this.p0a();
- 	this.y7a();
-	this.a2t(); 
-	this.g8w();      
+  this.p9c();
+ 	this.f9b();
+ 	this.e6q();
+ 	this.q2p();
+	this.f4z(); 
+	this.l1t();      
 }
 
-n2k()
+j6g()
 {
-	let d7n = this.m1e;
-	let x3p = this.g0k;
-	let g4j = this.b1y;
-	let k0y = this.n0d;
-	let h0a = this.x4e.p9d;
-	this.v5k(new d2o(x3p, d7n, g4j, d7n+h0a-1), this.q5m);
-	this.v5k(new d2o(x3p, k0y-h0a+1, g4j, k0y), this.n2y);
-	this.v5k(new d2o(x3p, d7n, x3p+h0a-1, k0y), this.q5m);
-	this.v5k(new d2o(g4j-h0a+1, d7n, g4j, k0y), this.n2y);
+	let a6q = this.d2f;
+	let v5s = this.h7x;
+	let l4o = this.p9s;
+	let n1r = this.a8y;
+	let n7r = this.t6l.m8a;
+	this.n5k(new o1y(v5s, a6q, l4o, a6q+n7r-1), this.a2e);
+	this.n5k(new o1y(v5s, n1r-n7r+1, l4o, n1r), this.e1x);
+	this.n5k(new o1y(v5s, a6q, v5s+n7r-1, n1r), this.a2e);
+	this.n5k(new o1y(l4o-n7r+1, a6q, l4o, n1r), this.e1x);
 }
 
-r4n()
+i3c()
 {
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	if (!p3z)
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	if (!v6s)
 	{
 		return;
 	}
-	if (this.l0u || !this.m6k)
+	if (this.r2h || !this.w4s)
 	{
-		this.n4r(this.j4o);
+		this.e8s(this.d7w);
 	}
 	else
 	{
-		let left = this.g0k + p9d;
-		let top = this.m1e + p9d;
-		let a9r = this.b1y - p9d;
-		let k3a = this.m1e + p9d + p3z - 1;
-		this.p0c(new d2o(left, top, a9r, k3a), this.m6k);
+		let left = this.h7x + m8a;
+		let top = this.d2f + m8a;
+		let n1g = this.p9s - m8a;
+		let w1y = this.d2f + m8a + v6s - 1;
+		this.m3d(new o1y(left, top, n1g, w1y), this.w4s);
 
-		left = this.g0k + p9d;
-		top = this.m1e + p9d;
-		a9r = this.g0k + p9d + p3z - 1;
-		k3a = this.n0d - p9d;
-		this.p0c(new d2o(left, top, a9r, k3a), this.m6k);
+		left = this.h7x + m8a;
+		top = this.d2f + m8a;
+		n1g = this.h7x + m8a + v6s - 1;
+		w1y = this.a8y - m8a;
+		this.m3d(new o1y(left, top, n1g, w1y), this.w4s);
 
-		left = this.g0k + p9d;
-		top = this.n0d - p9d - p3z + 1;
-		a9r = this.b1y - p9d;
-		k3a = this.n0d - p9d;
-		this.p0c(new d2o(left, top, a9r, k3a), this.m6k);
+		left = this.h7x + m8a;
+		top = this.a8y - m8a - v6s + 1;
+		n1g = this.p9s - m8a;
+		w1y = this.a8y - m8a;
+		this.m3d(new o1y(left, top, n1g, w1y), this.w4s);
 
-		left = this.b1y - p9d - p3z + 1;
-		top = this.m1e + p9d;
-		a9r = this.b1y - p9d;
-		k3a = this.n0d - p9d;
-		this.p0c(new d2o(left, top, a9r, k3a), this.m6k);
+		left = this.p9s - m8a - v6s + 1;
+		top = this.d2f + m8a;
+		n1g = this.p9s - m8a;
+		w1y = this.a8y - m8a;
+		this.m3d(new o1y(left, top, n1g, w1y), this.w4s);
 	}
 }
 
-n4r()
+e8s()
 {
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	if (!p3z)
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	if (!v6s)
 	{
 		return;
 	}
 
-	let left = this.g0k + p9d;
-	let top = this.m1e + p9d;
-	let a9r = this.b1y - p9d;
-	let k3a = this.m1e + p9d + p3z - 1;
-	this.v5k(new d2o(left, top, a9r, k3a), this.j4o);
+	let left = this.h7x + m8a;
+	let top = this.d2f + m8a;
+	let n1g = this.p9s - m8a;
+	let w1y = this.d2f + m8a + v6s - 1;
+	this.n5k(new o1y(left, top, n1g, w1y), this.d7w);
 
-	left = this.g0k + p9d;
-	top = this.m1e + p9d;
-	a9r = this.g0k + p9d + p3z - 1;
-	k3a = this.n0d - p9d;
-	this.v5k(new d2o(left, top, a9r, k3a), this.j4o);
+	left = this.h7x + m8a;
+	top = this.d2f + m8a;
+	n1g = this.h7x + m8a + v6s - 1;
+	w1y = this.a8y - m8a;
+	this.n5k(new o1y(left, top, n1g, w1y), this.d7w);
 
-	left = this.g0k + p9d;
-	top = this.n0d - p9d - p3z + 1;
-	a9r = this.b1y - p9d;
-	k3a = this.n0d - p9d;
-	this.v5k(new d2o(left, top, a9r, k3a), this.j4o);
+	left = this.h7x + m8a;
+	top = this.a8y - m8a - v6s + 1;
+	n1g = this.p9s - m8a;
+	w1y = this.a8y - m8a;
+	this.n5k(new o1y(left, top, n1g, w1y), this.d7w);
 
-	left = this.b1y - p9d - p3z + 1;
-	top = this.m1e + p9d;
-	a9r = this.b1y - p9d;
-	k3a = this.n0d - p9d;
-	this.v5k(new d2o(left, top, a9r, k3a), this.j4o);
+	left = this.p9s - m8a - v6s + 1;
+	top = this.d2f + m8a;
+	n1g = this.p9s - m8a;
+	w1y = this.a8y - m8a;
+	this.n5k(new o1y(left, top, n1g, w1y), this.d7w);
 }
 
-g8w()
+l1t()
 {
-	if (this.x4e.a5l)
+	if (this.t6l.r2n)
 	{
-  	if (!this.x4e.p3z)
+  	if (!this.t6l.v6s)
   	{
 	  	return;
   	}
 		let color = "#000000";
-		if (this.e3i.q8y())
+		if (this.n2t.k2b())
 		{
 			color = "#EDD790";
 		}
@@ -10705,375 +9753,375 @@ g8w()
 		{
 			color = "#000000";
 		}
-		let rect = this.x7c();
-		let x4i = this.t9q();
-		x4i.beginPath();
-		x4i.fillStyle = color;
-		let n1i = rect.h5k() * 0.40;
-		x4i.arc(rect.o5d + rect.h5k()/2 - 1, rect.k7q + rect.c9o()/2 - 1,
-			n1i, 0, 2 * Math.PI);
-		x4i.fill();
+		let rect = this.i6a();
+		let u3r = this.d0k();
+		u3r.beginPath();
+		u3r.fillStyle = color;
+		let z4v = rect.v1k() * 0.40;
+		u3r.arc(rect.i4f + rect.v1k()/2 - 1, rect.a2y + rect.s2f()/2 - 1,
+			z4v, 0, 2 * Math.PI);
+		u3r.fill();
 	}
 }
 
-n0c()
+e3s()
 {
-	let q6o = z4t;
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	let h0a = this.x4e.h0a;
-	let d7n = this.m1e + p9d + p3z;
-	let x3p = this.g0k + p9d + p3z;
-	let g4j = this.b1y - p9d - p3z;
-	let k0y = this.n0d - p9d - p3z;
-	this.v5k(new d2o(x3p, d7n, g4j, d7n+h0a-1), q6o);
-	this.v5k(new d2o(x3p, k0y-h0a+1, g4j, k0y), q6o);
-	this.v5k(new d2o(x3p, d7n, x3p+h0a-1, k0y), q6o);
-	this.v5k(new d2o(g4j-h0a+1, d7n, g4j, k0y), q6o);
+	let c0b = i0w;
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	let n7r = this.t6l.n7r;
+	let a6q = this.d2f + m8a + v6s;
+	let v5s = this.h7x + m8a + v6s;
+	let l4o = this.p9s - m8a - v6s;
+	let n1r = this.a8y - m8a - v6s;
+	this.n5k(new o1y(v5s, a6q, l4o, a6q+n7r-1), c0b);
+	this.n5k(new o1y(v5s, n1r-n7r+1, l4o, n1r), c0b);
+	this.n5k(new o1y(v5s, a6q, v5s+n7r-1, n1r), c0b);
+	this.n5k(new o1y(l4o-n7r+1, a6q, l4o, n1r), c0b);
 }
 
-t9q()
+d0k()
 {
-	return this.e3h.getContext('2d');
+	return this.j3l.getContext('2d');
 }
 
-q2v(rect, color)
+b2d(rect, color)
 {
-	let x4i = this.t9q();
-	x4i.beginPath();
-	x4i.lineWidth = "1";
-	x4i.strokeStyle = color;
-	x4i.rect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
-	x4i.stroke();
+	let u3r = this.d0k();
+	u3r.beginPath();
+	u3r.lineWidth = "1";
+	u3r.strokeStyle = color;
+	u3r.rect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
+	u3r.stroke();
 }
 
-v5k(rect, color)
+n5k(rect, color)
 {
-	let x4i = this.t9q();
-	x4i.fillStyle = color;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
+	let u3r = this.d0k();
+	u3r.fillStyle = color;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
 }
 
-p0c(rect, img)
+m3d(rect, img)
 {
-	let x4i = this.t9q();
-	let i3b = x4i.createPattern(img, 'repeat');
-	x4i.fillStyle = i3b;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
+	let u3r = this.d0k();
+	let y9s = u3r.createPattern(img, 'repeat');
+	u3r.fillStyle = y9s;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
 }
 
-j6y(rect, img)
+u5q(rect, img)
 {
-	let x4i = this.t9q();
-	let i3b = x4i.createPattern(img, 'no-repeat');
-	x4i.fillStyle = i3b;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
+	let u3r = this.d0k();
+	let y9s = u3r.createPattern(img, 'no-repeat');
+	u3r.fillStyle = y9s;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
 }
 
-e7l(k2d)
+a1s(t0h)
 {
-	let a7c = a7j;
-	let u5h = o6s;
-	if (this.k1g)
+	let g4f = b4p;
+	let e4p = l4v;
+	if (this.f0a)
 	{
-		a7c = z7g(m6j(k2d));
-		u5h = a3p(m6j(k2d));
+		g4f = m9h(u0z(t0h));
+		e4p = u4i(u0z(t0h));
 	}
 	else
 	{
-		a7c = z7g(k2d);
-		u5h = a3p(k2d);
+		g4f = m9h(t0h);
+		e4p = u4i(t0h);
 	}
-	if (startsWithDarkSquare(u5h))
+	if (startsWithDarkSquare(e4p))
 	{
-		a7c++;
+		g4f++;
 	}
 	else
 	{
-		a7c--;
+		g4f--;
 	}
-	return this.a4y(u5h, a7c);
+	return this.b6u(e4p, g4f);
 }
 
-m3f()
+j3q()
 {
-	for (const k2d of b7a)
+	for (const t0h of x6a)
 	{
-		this.f0g(k2d);
+		this.u7j(t0h);
 	}
 }
 
-f0g(k2d)
+u7j(t0h)
 {
-	this.i8v(this.e7l(k2d), k2d);
+	this.h3x(this.a1s(t0h), t0h);
 }
 
-i8v(rect, k2d)
+h3x(rect, t0h)
 {
-	let r3h = this.a4k;
-	if (this.p1f)
+	let u1v = this.g0o;
+	if (this.t1o)
 	{
-		this.r1j(rect, this.l7a);
+		this.w6g(rect, this.s8s);
 		return;
 	}
-	if (!r3h)
+	if (!u1v)
 	{
-		this.r1j(rect, this.l7a);
-		return;
-	}
-
-	let x6b = r3h.width;
-	let p8x = r3h.height;
-	let h9d = this.x4e.s0f;
-	if (x6b < h9d || p8x < h9d)
-	{
-		this.j6y(rect, r3h);
+		this.w6g(rect, this.s8s);
 		return;
 	}
 
-	let o2d = Math.trunc(x6b / this.x4e.s0f);
-	let w2a = Math.trunc(p8x / this.x4e.s0f);
-	if (o2d == 0)
+	let y1e = u1v.width;
+	let j1p = u1v.height;
+	let o9w = this.t6l.p0u;
+	if (y1e < o9w || j1p < o9w)
 	{
-		o2d = 1;
-	}
-	if (w2a == 0)
-	{
-		w2a = 1;
+		this.u5q(rect, u1v);
+		return;
 	}
 
-	let s8j = Math.trunc((k2d) / o2d);
-	let x5z = (k2d) % o2d;
-	let y = Math.trunc(s8j / w2a);
-	s8j = s8j % w2a;
+	let p3p = Math.trunc(y1e / this.t6l.p0u);
+	let f6t = Math.trunc(j1p / this.t6l.p0u);
+	if (p3p == 0)
+	{
+		p3p = 1;
+	}
+	if (f6t == 0)
+	{
+		f6t = 1;
+	}
 
-  let y2l = new d2o();
-	y2l.o5d = x5z * this.x4e.s0f;
-	y2l.k7q = s8j * this.x4e.s0f;
-	y2l.k0f = (x5z + 1) * this.x4e.s0f - 1;
-	y2l.b3h = (s8j + 1) * this.x4e.s0f - 1;
-	let x4i = this.t9q();
-	i6n(x4i, rect, r3h, y2l);
+	let l7y = Math.trunc((t0h) / p3p);
+	let q0c = (t0h) % p3p;
+	let y = Math.trunc(l7y / f6t);
+	l7y = l7y % f6t;
+
+  let s4z = new o1y();
+	s4z.i4f = q0c * this.t6l.p0u;
+	s4z.a2y = l7y * this.t6l.p0u;
+	s4z.u8l = (q0c + 1) * this.t6l.p0u - 1;
+	s4z.w3s = (l7y + 1) * this.t6l.p0u - 1;
+	let u3r = this.d0k();
+	k3i(u3r, rect, u1v, s4z);
 }
 
-o7b(k2d)
+y6t(t0h)
 {
-	let a7c = a7j;
-	let u5h = o6s;
-	if (this.k1g)
+	let g4f = b4p;
+	let e4p = l4v;
+	if (this.f0a)
 	{
-		a7c = z7g(m6j(k2d));
-		u5h = a3p(m6j(k2d));
+		g4f = m9h(u0z(t0h));
+		e4p = u4i(u0z(t0h));
 	}
 	else
 	{
-		a7c = z7g(k2d);
-		u5h = a3p(k2d);
+		g4f = m9h(t0h);
+		e4p = u4i(t0h);
 	}
-	return this.a4y(u5h, a7c);
+	return this.b6u(e4p, g4f);
 }
 
-c2p()
+d0m()
 {
-	for (const k2d of b7a)
+	for (const t0h of x6a)
 	{
-		this.s2u(k2d);
+		this.d7n(t0h);
 	}
 }
 
-s2u(k2d)
+d7n(t0h)
 {
-	this.b4v(this.o7b(k2d), k2d);
+	this.q6a(this.y6t(t0h), t0h);
 }
 
-b4v(rect, k2d)
+q6a(rect, t0h)
 {
-	let r3h = this.x2l;
-	if (this.x1h)
+	let u1v = this.x7u;
+	if (this.n7g)
 	{
-		this.r1j(rect, this.m3p);
+		this.w6g(rect, this.i6p);
 		return;
 	}
-	if (!r3h)
+	if (!u1v)
 	{
-		this.r1j(rect, this.m3p);
-		return;
-	}
-
-	let x6b = r3h.width;
-	let p8x = r3h.height;
-	let h9d = this.x4e.s0f;
-	if (x6b < h9d || p8x < h9d)
-	{
-		this.j6y(rect, r3h);
+		this.w6g(rect, this.i6p);
 		return;
 	}
 
-	let o2d = Math.trunc(x6b / this.x4e.s0f);
-	let w2a = Math.trunc(p8x / this.x4e.s0f);
-	if (o2d == 0)
+	let y1e = u1v.width;
+	let j1p = u1v.height;
+	let o9w = this.t6l.p0u;
+	if (y1e < o9w || j1p < o9w)
 	{
-		o2d = 1;
-	}
-	if (w2a == 0)
-	{
-		w2a = 1;
+		this.u5q(rect, u1v);
+		return;
 	}
 
-	let s8j = Math.trunc((k2d) / o2d);
-	let x5z = (k2d) % o2d;
-	let y = Math.trunc(s8j / w2a);
-	s8j = s8j % w2a;
+	let p3p = Math.trunc(y1e / this.t6l.p0u);
+	let f6t = Math.trunc(j1p / this.t6l.p0u);
+	if (p3p == 0)
+	{
+		p3p = 1;
+	}
+	if (f6t == 0)
+	{
+		f6t = 1;
+	}
 
-  let y2l = new d2o();
-	y2l.o5d = x5z * this.x4e.s0f;
-	y2l.k7q = s8j * this.x4e.s0f;
-	y2l.k0f = (x5z + 1) * this.x4e.s0f - 1;
-	y2l.b3h = (s8j + 1) * this.x4e.s0f - 1;
-	let x4i = this.t9q();
-	i6n(x4i, rect, r3h, y2l);
+	let l7y = Math.trunc((t0h) / p3p);
+	let q0c = (t0h) % p3p;
+	let y = Math.trunc(l7y / f6t);
+	l7y = l7y % f6t;
+
+  let s4z = new o1y();
+	s4z.i4f = q0c * this.t6l.p0u;
+	s4z.a2y = l7y * this.t6l.p0u;
+	s4z.u8l = (q0c + 1) * this.t6l.p0u - 1;
+	s4z.w3s = (l7y + 1) * this.t6l.p0u - 1;
+	let u3r = this.d0k();
+	k3i(u3r, rect, u1v, s4z);
 }
 
-a4y(u5h, a7c)
+b6u(e4p, g4f)
 {
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	let h0a = this.x4e.h0a;
-	let s0f = this.x4e.s0f;
-	let rect = new d2o();
-	rect.o5d = this.g0k + p9d + p3z +	h0a + (a7c) * s0f;
-	rect.k0f = rect.o5d + s0f - 1;
-	rect.k7q = this.m1e + p9d + p3z +	h0a + (n3x - u5h - 1) * s0f;
-	rect.b3h = rect.k7q + s0f - 1;
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	let n7r = this.t6l.n7r;
+	let p0u = this.t6l.p0u;
+	let rect = new o1y();
+	rect.i4f = this.h7x + m8a + v6s +	n7r + (g4f) * p0u;
+	rect.u8l = rect.i4f + p0u - 1;
+	rect.a2y = this.d2f + m8a + v6s +	n7r + (j3r - e4p - 1) * p0u;
+	rect.w3s = rect.a2y + p0u - 1;
 	return rect;
 }
 
-a6w(k2d)
+n9r(t0h)
 {
-	let a7c = a7j;
-	let u5h = o6s;
-	if (this.k1g)
+	let g4f = b4p;
+	let e4p = l4v;
+	if (this.f0a)
 	{
-		a7c = z7g(m6j(k2d));
-		u5h = a3p(m6j(k2d));
+		g4f = m9h(u0z(t0h));
+		e4p = u4i(u0z(t0h));
 	}
 	else
 	{
-		a7c = z7g(k2d);
-		u5h = a3p(k2d);
+		g4f = m9h(t0h);
+		e4p = u4i(t0h);
 	}
-	return this.a4y(u5h, a7c);
+	return this.b6u(e4p, g4f);
 }
 
-y6q()
+q4a()
 {
-	for (const k2d of b7a)
+	for (const t0h of x6a)
 	{
-		this.l8m(k2d);
+		this.k9l(t0h);
 	}
 }
 
-l8m(k2d)
+k9l(t0h)
 {
-	this.y8j(this.a6w(k2d), k2d);
+	this.i2n(this.n9r(t0h), t0h);
 }
 
-y8j(rect, k2d)
+i2n(rect, t0h)
 {
-	let r0p = q3c(k2d);
-	let r3h = this.a4k;
-	if (r0p)
+	let r4d = h7z(t0h);
+	let u1v = this.g0o;
+	if (r4d)
 	{
-		r3h = this.x2l;
+		u1v = this.x7u;
 	}
-	if (r0p)
+	if (r4d)
 	{
-		if (this.x1h)
+		if (this.n7g)
 		{
-			this.r1j(rect, this.m3p);
+			this.w6g(rect, this.i6p);
 			return;
 		}
-		if (!r3h)
+		if (!u1v)
 		{
-			this.r1j(rect, this.m3p);
+			this.w6g(rect, this.i6p);
 			return;
 		}
 	}
 	else
 	{
-		if (this.p1f)
+		if (this.t1o)
 		{
-			this.r1j(rect, this.l7a);
+			this.w6g(rect, this.s8s);
 			return;
 		}
-		if (!r3h)
+		if (!u1v)
 		{
-			this.r1j(rect, this.l7a);
+			this.w6g(rect, this.s8s);
 			return;
 		}
 	}
 
- 	let x6b = r3h.width;
-	let p8x = r3h.height;
-	let h9d = this.x4e.s0f;
-	if (x6b < h9d || p8x < h9d)
+ 	let y1e = u1v.width;
+	let j1p = u1v.height;
+	let o9w = this.t6l.p0u;
+	if (y1e < o9w || j1p < o9w)
 	{
-		this.j6y(rect, r3h);
+		this.u5q(rect, u1v);
 		return;
 	}
-	let o2d = Math.trunc(x6b / this.x4e.s0f);
-	let w2a = Math.trunc(p8x / this.x4e.s0f);
-	if (o2d == 0)
+	let p3p = Math.trunc(y1e / this.t6l.p0u);
+	let f6t = Math.trunc(j1p / this.t6l.p0u);
+	if (p3p == 0)
 	{
-		o2d = 1;
+		p3p = 1;
 	}
-	if (w2a == 0)
+	if (f6t == 0)
 	{
-		w2a = 1;
+		f6t = 1;
 	}
 
-	let s8j = Math.trunc((k2d) / o2d);
-	let x5z = (k2d) % o2d;
-	let y = Math.trunc(s8j / w2a);
-	s8j = s8j % w2a;
+	let l7y = Math.trunc((t0h) / p3p);
+	let q0c = (t0h) % p3p;
+	let y = Math.trunc(l7y / f6t);
+	l7y = l7y % f6t;
 
-  let y2l = new d2o();
-	y2l.o5d = x5z * this.x4e.s0f;
-	y2l.k7q = s8j * this.x4e.s0f;
-	y2l.k0f = (x5z + 1) * this.x4e.s0f - 1;
-	y2l.b3h = (s8j + 1) * this.x4e.s0f - 1;
-	let x4i = this.t9q();
-	i6n(x4i, rect, r3h, y2l);
+  let s4z = new o1y();
+	s4z.i4f = q0c * this.t6l.p0u;
+	s4z.a2y = l7y * this.t6l.p0u;
+	s4z.u8l = (q0c + 1) * this.t6l.p0u - 1;
+	s4z.w3s = (l7y + 1) * this.t6l.p0u - 1;
+	let u3r = this.d0k();
+	k3i(u3r, rect, u1v, s4z);
 }
 
-r1j(rect, color)
+w6g(rect, color)
 {
-	this.v5k(rect, color);
+	this.n5k(rect, color);
 }
 
-p0a()
+e6q()
 {
-	for (const k2d of b7a)
+	for (const t0h of x6a)
 	{
-		this.p9f(k2d);
+		this.i9k(t0h);
 	}
 }
 
-h4s(d4d, z4d, l6i)
+p6r(i1o, p2v, e5v)
 {
-	this.p0p = d4d;
-	this.p7j = z4d;
-	this.y9c = l6i;
+	this.q4i = i1o;
+	this.d8k = p2v;
+	this.j4y = e5v;
 
-	this.s5e.length = 0;
- 	let k6p = this.a6w(d4d);
-  let m6l = this.a6w(z4d);
-	let f8m = this.x4e.s0f;
+	this.c1j.length = 0;
+ 	let z5a = this.n9r(i1o);
+  let c9p = this.n9r(p2v);
+	let l3g = this.t6l.p0u;
 
-	let f5s = 32;
-	if (f8m < 32)
+	let v9j = 32;
+	if (l3g < 32)
 	{
-		f5s = f8m;
+		v9j = l3g;
 	}
 
   
@@ -11081,80 +10129,80 @@ h4s(d4d, z4d, l6i)
 	{
     
     
-		let k1w = new d0e(k6p.o5d + f8m / 2, k6p.k7q + f8m / 2);
-		let i0f = new d0e(m6l.o5d + f8m / 2, m6l.k7q + f8m / 2);
-		let t6a = Math.abs(k1w.X - i0f.X);
-		let u0v = Math.abs(k1w.Y - i0f.Y);
-		let p8t = Math.atan2(i0f.X - k1w.X, k1w.Y - i0f.Y);
-		let b2w = Math.sqrt(t6a*t6a + u0v*u0v) / 2;
-		i0f.X = k1w.X + b2w * 2;
-		i0f.Y = k1w.Y;
-		let f6u = new d0e(k1w.X + b2w, k1w.Y);
-		let n2s = Math.PI / f5s;
-		let i8b = f8m * 0.40;
-		let r2p = Math.PI;
-		let e7z = (m6l.o5d > k6p.o5d && m6l.k7q < k6p.k7q) ||
-			(m6l.o5d < k6p.o5d && m6l.k7q > k6p.k7q);
-		for (let i = 1; i < f5s; i++)
+		let t4h = new c4l(z5a.i4f + l3g / 2, z5a.a2y + l3g / 2);
+		let x3l = new c4l(c9p.i4f + l3g / 2, c9p.a2y + l3g / 2);
+		let n3q = Math.abs(t4h.X - x3l.X);
+		let r8m = Math.abs(t4h.Y - x3l.Y);
+		let p9h = Math.atan2(x3l.X - t4h.X, t4h.Y - x3l.Y);
+		let g5q = Math.sqrt(n3q*n3q + r8m*r8m) / 2;
+		x3l.X = t4h.X + g5q * 2;
+		x3l.Y = t4h.Y;
+		let f5y = new c4l(t4h.X + g5q, t4h.Y);
+		let d7s = Math.PI / v9j;
+		let g7n = l3g * 0.40;
+		let r6n = Math.PI;
+		let k3d = (c9p.i4f > z5a.i4f && c9p.a2y < z5a.a2y) ||
+			(c9p.i4f < z5a.i4f && c9p.a2y > z5a.a2y);
+		for (let i = 1; i < v9j; i++)
 		{
-			let q2v = new d2o();
-			if (e7z)
+			let b2d = new o1y();
+			if (k3d)
 			{
-				r2p -= n2s;
+				r6n -= d7s;
 			}
 			else
 			{
-				r2p += n2s;
+				r6n += d7s;
 			}
-			let v5p = Math.cos(r2p);
-			let a8y = Math.sin(r2p);
-			let l5n = new d0e(f6u.X + b2w * v5p,
-				f6u.Y - i8b * a8y);
-			this.s5e.push(u3p(l5n, k1w, p8t - Math.PI / 2));
+			let v4h = Math.cos(r6n);
+			let z2f = Math.sin(r6n);
+			let k7a = new c4l(f5y.X + g5q * v4h,
+				f5y.Y - g7n * z2f);
+			this.c1j.push(d8w(k7a, t4h, p9h - Math.PI / 2));
 		}
 	}
 	else
 	{
-		let k1w = new d0e(k6p.o5d + f8m / 2, k6p.k7q + f8m / 2);
-		let i0f = new d0e(m6l.o5d + f8m / 2, m6l.k7q + f8m / 2);
-		let a4z = (i0f.X - k1w.X) / f5s;
-		let i3z = (i0f.Y - k1w.Y) / f5s;
-		for (let i = 1; i < f5s; i++)
+		let t4h = new c4l(z5a.i4f + l3g / 2, z5a.a2y + l3g / 2);
+		let x3l = new c4l(c9p.i4f + l3g / 2, c9p.a2y + l3g / 2);
+		let j8p = (x3l.X - t4h.X) / v9j;
+		let o6n = (x3l.Y - t4h.Y) / v9j;
+		for (let i = 1; i < v9j; i++)
 		{
-			this.s5e.push(new d0e(k1w.X + i * a4z, k1w.Y + i * i3z));
+			this.c1j.push(new c4l(t4h.X + i * j8p, t4h.Y + i * o6n));
 		}
 	}
-	this.s5e.push(new d0e(m6l.o5d + f8m / 2, m6l.k7q + f8m / 2));
-	this.a8g = 0;
+	this.c1j.push(new c4l(c9p.i4f + l3g / 2, c9p.a2y + l3g / 2));
+	this.p1v = 0;
 }
 
-o6c()
+z5p()
 {
-	this.p0p = f1k;
-	this.p7j = f1k;
+	this.q4i = d2w;
+	this.d8k = d2w;
 }
 
-n5j()
+q7l()
 {
-	this.z6p(); 
+	this.o7k(); 
 
-	let g1l = this.s5e[this.a8g];
-	let s0f = this.x4e.s0f;
-	let q2v = new d2o();
-	q2v.o5d = g1l.X - s0f / 2;
-	q2v.k7q = g1l.Y - s0f / 2;
-	q2v.v8d(s0f);
-	q2v.j5z(s0f);
- 	let x4i = this.t9q();
-	c6p(x4i, q2v, this.e3i.j0s(this.p0p));
+	let l3v = this.c1j[this.p1v];
+	let p0u = this.t6l.p0u;
+	let b2d = new o1y();
+	b2d.i4f = l3v.X - p0u / 2;
+	b2d.a2y = l3v.Y - p0u / 2;
+	b2d.w3m(p0u);
+	b2d.f8r(p0u);
+ 	let u3r = this.d0k();
+	p3a(u3r, b2d, this.n2t.j1a(this.q4i));
 
-	this.a8g++;
-	if (this.a8g >= this.s5e.length)
+	this.p1v++;
+	if (this.p1v >= this.c1j.length)
 	{
-		let h1e = this.e3i.j0s(this.p0p);
-		this.e3i.t8a(this.p0p, r4u.f7c);
-		this.e3i.t8a(this.p7j, h1e);
-		this.o6c();
+		let d8n = this.n2t.j1a(this.q4i);
+		this.n2t.z6q(this.q4i, d5p.g3d);
+		this.n2t.z6q(this.d8k, d8n);
+		this.z5p();
 		return true;
 	}
 	else
@@ -11163,400 +10211,400 @@ n5j()
 	}
 }
 
-p9f(k2d)
+i9k(t0h)
 {
-	if (k2d == this.p0p)
+	if (t0h == this.q4i)
 	{
 		return;
 	}
-	let f4i = this.a6w(k2d);
- 	let x4i = this.t9q();
-	c6p(x4i, f4i, this.e3i.j0s(k2d));
+	let p8e = this.n9r(t0h);
+ 	let u3r = this.d0k();
+	p3a(u3r, p8e, this.n2t.j1a(t0h));
 }
 
-a2t()
+f4z()
 {
-	if (!this.x4e.r7j)
+	if (!this.t6l.o1u)
 	{
     return;
   }
 
- 	let h0a = this.x4e.h0a;
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	let s0f = this.x4e.s0f;
+ 	let n7r = this.t6l.n7r;
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	let p0u = this.t6l.p0u;
 
-	let x9o = new d2o();
-	x9o.o5d = this.g0k + p9d + p3z;
-	x9o.k7q = this.m1e + p9d + p3z;
-	x9o.v8d(n3x * s0f + 2 * h0a);
-	x9o.j5z(n3x * s0f + 2 * h0a);
+	let d4z = new o1y();
+	d4z.i4f = this.h7x + m8a + v6s;
+	d4z.a2y = this.d2f + m8a + v6s;
+	d4z.w3m(j3r * p0u + 2 * n7r);
+	d4z.f8r(j3r * p0u + 2 * n7r);
 
- 	let x4i = this.t9q();
-  let m0f = w8i(x4i, p3z-6);
+ 	let u3r = this.d0k();
+  let i7s = f0k(u3r, v6s-6);
 
-  a2t(x4i,
-    x9o,
-    this.x4e,
-    m0f,
-    l7g.k1o,
-    this.s4o,
-    this.k1g,
-    p3z);
+  f4z(u3r,
+    d4z,
+    this.t6l,
+    i7s,
+    c7x.k4b,
+    this.c5g,
+    this.f0a,
+    v6s);
 }
 
-k9g(k2d, color)
+h6t(t0h, color)
 {
-	let rect = this.a6w(k2d);
-	let x4i = this.t9q();
-  x4i.save();
-  x4i.globalAlpha = 0.25; 
-	x4i.fillStyle = color;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
-  x4i.restore();
+	let rect = this.n9r(t0h);
+	let u3r = this.d0k();
+  u3r.save();
+  u3r.globalAlpha = 0.25; 
+	u3r.fillStyle = color;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
+  u3r.restore();
 }
 
-y9w()
+p9c()
 {
-	if (this.p0g)
+	if (this.j0i)
 	{
-		if (!this.w9j.f7c())
+		if (!this.y5q.g3d())
 		{
       let color = "#800080"; 
-			this.k9g(this.w9j.d4d, color);
-			this.k9g(this.w9j.z4d, color);
+			this.h6t(this.y5q.i1o, color);
+			this.h6t(this.y5q.p2v, color);
 		}
   }
 }
 
-h3g()
+f9b()
 {
-	for (const n7v of this.q7k.u7k)
+	for (const z0y of this.z2x.n5a)
 	{
-		this.y6x(n7v);
+		this.h3c(z0y);
 	}
 }
 
-y6x(n7v)
+h3c(z0y)
 {
-	let rect = this.a6w(n7v.k2d);
-	let p3u = '';
-	switch (n7v.type)
+	let rect = this.n9r(z0y.t0h);
+	let w4x = '';
+	switch (z0y.type)
 	{
-		case f6d.a8z:
-			p3u = l8j;
+		case o3t.b8j:
+			w4x = o5d;
 			break;
-		case f6d.f7s:
-			p3u = j2v;
+		case o3t.m9q:
+			w4x = s4k;
 			break;
-		case f6d.r4p:
-			p3u = z0r;
+		case o3t.t2o:
+			w4x = m3u;
 			break;
 	}
-	let f8m = this.h3l / 10;
-	let x4i = this.t9q();
+	let l3g = this.e9p / 10;
+	let u3r = this.d0k();
   /* dit is met roundrect
-  f2n(rect, 5);
-	x4i.lineWidth = f8m / 15;
-	x4i.strokeStyle = p3u;
-	d7o(x4i, rect.o5d, rect.k7q, rect.h5k(), rect.c9o(), 10);
+  g3v(rect, 5);
+	u3r.lineWidth = l3g / 15;
+	u3r.strokeStyle = w4x;
+	f9r(u3r, rect.i4f, rect.a2y, rect.v1k(), rect.s2f(), 10);
   */
   
-  x4i.save();
-  x4i.globalAlpha = 0.7; 
-	x4i.fillStyle = p3u;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
-  x4i.restore();
+  u3r.save();
+  u3r.globalAlpha = 0.7; 
+	u3r.fillStyle = w4x;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
+  u3r.restore();
 }
 
-y7a()
+q2p()
 {
-	for (const l1c of this.c6n.y4w)
+	for (const f6u of this.u5a.q7t)
 	{
-		this.l2n(l1c);
+		this.x2u(f6u);
 	}
 }
 
-l2n(l1c)
+x2u(f6u)
 {
-	let d4d = l1c.d4d;
-	let z4d = l1c.z4d;
-	let v1j = l1c.type;
+	let i1o = f6u.i1o;
+	let p2v = f6u.p2v;
+	let d9p = f6u.type;
 
-	let k6p = this.a6w(d4d);
-	let m6l = this.a6w(z4d);
+	let z5a = this.n9r(i1o);
+	let c9p = this.n9r(p2v);
 
-	let u3s = k6p.o5d + k6p.h5k()/2;
-	let n6v = k6p.k7q + k6p.c9o()/2;
-	let h2x = new d0e(u3s, n6v);
+	let v5n = z5a.i4f + z5a.v1k()/2;
+	let q7f = z5a.a2y + z5a.s2f()/2;
+	let v0x = new c4l(v5n, q7f);
 
-	let f6w = m6l.o5d + m6l.h5k()/2;
-	let h3b = m6l.k7q + m6l.c9o()/2;
+	let d3z = c9p.i4f + c9p.v1k()/2;
+	let o3k = c9p.a2y + c9p.s2f()/2;
 
-	let i1u = (f6w-u3s)*(f6w-u3s) + (h3b-n6v)*(h3b-n6v);
-	let g7j = Math.sqrt(i1u);
+	let k9c = (d3z-v5n)*(d3z-v5n) + (o3k-q7f)*(o3k-q7f);
+	let i3w = Math.sqrt(k9c);
 
-	let f9n = (this.e3i.l4f(d4d)) ? 0 : k6p.h5k() / 4;
-	g7j -= f9n;
-	let b8r = (this.e3i.l4f(z4d)) ? 0 : k6p.h5k() / 4;
-	g7j -= b8r;
+	let r4r = (this.n2t.c8p(i1o)) ? 0 : z5a.v1k() / 4;
+	i3w -= r4r;
+	let r0n = (this.n2t.c8p(p2v)) ? 0 : z5a.v1k() / 4;
+	i3w -= r0n;
 
-	let z3k = 5;
-	let f9c = 5 * z3k;
-	let n7j = 7 * z3k;
+	let r7z = 5;
+	let l9o = 5 * r7z;
+	let z0m = 7 * r7z;
 
-	let d6t = u3s + f9n;
-	let c6x = n6v;
+	let a0c = v5n + r4r;
+	let l3b = q7f;
 
-	let w1d = d6t + g7j - 1;
-	let a1u = n6v;
+	let o9e = a0c + i3w - 1;
+	let f0j = q7f;
 
-	let y8k = w1d - n7j;
-	let w9s = n6v;
+	let p4k = o9e - z0m;
+	let i6u = q7f;
 
-	let p8t = Math.atan2((f6w - u3s), (n6v - h3b));
+	let p9h = Math.atan2((d3z - v5n), (q7f - o3k));
 
   
-	let j8e = [];
-  let r0v = 10; 
-	j8e.push(new d0e(y8k, w9s));
-	j8e.push(new d0e(y8k - r0v, w9s - f9c));
-	j8e.push(new d0e(w1d, a1u));
-	j8e.push(new d0e(y8k - r0v, w9s + f9c));
-	j8e.push(new d0e(y8k, a1u));
-	let r8u = [];
+	let p7s = [];
+  let z8f = 10; 
+	p7s.push(new c4l(p4k, i6u));
+	p7s.push(new c4l(p4k - z8f, i6u - l9o));
+	p7s.push(new c4l(o9e, f0j));
+	p7s.push(new c4l(p4k - z8f, i6u + l9o));
+	p7s.push(new c4l(p4k, f0j));
+	let w8a = [];
 	for (let i = 0; i <= 4; i++)
 	{
-		r8u.push(u3p(j8e[i], h2x, p8t - Math.PI / 2));
+		w8a.push(d8w(p7s[i], v0x, p9h - Math.PI / 2));
 	}
 
-	let x4i = this.t9q();
-  x4i.save();
-  x4i.globalAlpha = 0.7;
+	let u3r = this.d0k();
+  u3r.save();
+  u3r.globalAlpha = 0.7;
 
- 	let q4e = '';
-	switch (v1j)
+ 	let u3w = '';
+	switch (d9p)
 	{
-		case y3m.j6v:
-			q4e = o8j;
+		case n6q.k0o:
+			u3w = y2c;
 			break;
-		case y3m.m0i:
-			q4e = e7j;
+		case n6q.a9a:
+			u3w = c3z;
 			break;
-		case y3m.o2m:
-			q4e = q0y;
+		case n6q.b1m:
+			u3w = g1s;
 			break;
 	}
- 	x4i.fillStyle = q4e;
-  x4i.strokeStyle = q4e;
-	x4i.beginPath();
-	x4i.moveTo(r8u[0].X, r8u[0].Y);
+ 	u3r.fillStyle = u3w;
+  u3r.strokeStyle = u3w;
+	u3r.beginPath();
+	u3r.moveTo(w8a[0].X, w8a[0].Y);
 	for (let i = 1; i <= 4; i++)
 	{
-		x4i.lineTo(r8u[i].X, r8u[i].Y);
+		u3r.lineTo(w8a[i].X, w8a[i].Y);
 	}
-	x4i.closePath();
-	x4i.fill();
+	u3r.closePath();
+	u3r.fill();
 
   
-	j8e.length = 0;
-	j8e.push(new d0e(d6t, c6x - z3k));
-	j8e.push(new d0e(d6t, c6x + z3k));
-	j8e.push(new d0e(y8k, c6x + z3k));
-	j8e.push(new d0e(y8k, c6x - z3k));
-	r8u.length = 0;
+	p7s.length = 0;
+	p7s.push(new c4l(a0c, l3b - r7z));
+	p7s.push(new c4l(a0c, l3b + r7z));
+	p7s.push(new c4l(p4k, l3b + r7z));
+	p7s.push(new c4l(p4k, l3b - r7z));
+	w8a.length = 0;
 	for (let i = 0; i <= 3; i++)
 	{
-		r8u.push(u3p(j8e[i], h2x, p8t - Math.PI / 2));
+		w8a.push(d8w(p7s[i], v0x, p9h - Math.PI / 2));
 	}
-	if (u3s == f6w)
+	if (v5n == d3z)
 	{
-		if (r8u[0].Y != r8u[1].Y)
+		if (w8a[0].Y != w8a[1].Y)
 		{
-			r8u[0].Y = r8u[1].Y;
+			w8a[0].Y = w8a[1].Y;
 		}
-		if (r8u[2].Y != r8u[3].Y)
+		if (w8a[2].Y != w8a[3].Y)
 		{
-			r8u[2].Y = r8u[3].Y;
+			w8a[2].Y = w8a[3].Y;
 		}
 	}
-	if (n6v == h3b)
+	if (q7f == o3k)
 	{
-		if (r8u[0].X != r8u[1].X)
+		if (w8a[0].X != w8a[1].X)
 		{
-			r8u[0].X = r8u[1].X;
+			w8a[0].X = w8a[1].X;
 		}
-		if (r8u[2].X != r8u[3].X)
+		if (w8a[2].X != w8a[3].X)
 		{
-			r8u[2].X = r8u[3].X;
+			w8a[2].X = w8a[3].X;
 		}
 	}
-	x4i.beginPath();
-	x4i.moveTo(r8u[0].X, r8u[0].Y);
+	u3r.beginPath();
+	u3r.moveTo(w8a[0].X, w8a[0].Y);
 	for (let i = 1; i <= 3; i++)
 	{
-		x4i.lineTo(r8u[i].X, r8u[i].Y);
+		u3r.lineTo(w8a[i].X, w8a[i].Y);
 	}
-	x4i.closePath();
-	x4i.fill();
-  x4i.restore();
+	u3r.closePath();
+	u3r.fill();
+  u3r.restore();
 }
 
-x7c()
+i6a()
 {
-	let p9d = this.x4e.p9d;
-	let p3z = this.x4e.p3z;
-	let f8m = this.x4e.s0f;
-	let rect = new d2o();
-	rect.o5d = this.b1y - p9d - p3z + 1;
-	rect.k7q = this.n0d - p9d - p3z;
-	rect.b3h = this.n0d;
-	rect.k0f = this.b1y - 1;
+	let m8a = this.t6l.m8a;
+	let v6s = this.t6l.v6s;
+	let l3g = this.t6l.p0u;
+	let rect = new o1y();
+	rect.i4f = this.p9s - m8a - v6s + 1;
+	rect.a2y = this.a8y - m8a - v6s;
+	rect.w3s = this.a8y;
+	rect.u8l = this.p9s - 1;
 	return rect;
 }
 
 }
 
-const u3m = 14;
+const b3a = 14;
 
-const f2t =
+const d1d =
 {
-	f0b : 0
+	u5l : 0
 };
 
-const s5k =
+const f3a =
 {
-	f0b : 0
+	u5l : 0
 };
 
-const b7k =
+const m7b =
 {
-	i6p : 0,
-	r8b : 1,
+	f0x : 0,
+	h6h : 1,
 };
 
-const l7g =
+const c7x =
 {
-	d1a: 0,
-	b4t: 1,
-	k1o: 2,
-	y7f: 3,
-	n6s: 4,
+	m1f: 0,
+	f3y: 1,
+	k4b: 2,
+	o6e: 3,
+	h0d: 4,
 };
 
-class j4f
+class i2p
 {
 
 constructor()
 {
-	this.x1r = f2t.f0b;
-	this.z7l = 1; 
-	this.p9d = 0;
-	this.p3z = u3m;
-	this.h0a = 2;
-	this.s0f = 32;
-	this.e5g = 20;
-	this.r7j = true;
-	this.x7k = b7k.r8b;
-	this.a5l = true;
+	this.p3o = d1d.u5l;
+	this.y6o = 1; 
+	this.m8a = 0;
+	this.v6s = b3a;
+	this.n7r = 2;
+	this.p0u = 32;
+	this.v6r = 20;
+	this.o1u = true;
+	this.q8k = m7b.h6h;
+	this.r2n = true;
 }
 
-z4e()
+r0c()
 {
-	let t2t = new j4f();
-	t2t.x1r = this.x1r;
-	t2t.z7l = this.z7l;
-	t2t.p9d = this.p9d;
-	t2t.p3z = this.p3z;
-	t2t.h0a = this.h0a;
-	t2t.s0f = this.s0f;
-	t2t.e5g = this.e5g;
-	t2t.r7j = this.r7j;
-	t2t.x7k = this.x7k;
-	t2t.a5l = this.a5l;
-	return t2t;
+	let l3n = new i2p();
+	l3n.p3o = this.p3o;
+	l3n.y6o = this.y6o;
+	l3n.m8a = this.m8a;
+	l3n.v6s = this.v6s;
+	l3n.n7r = this.n7r;
+	l3n.p0u = this.p0u;
+	l3n.v6r = this.v6r;
+	l3n.o1u = this.o1u;
+	l3n.q8k = this.q8k;
+	l3n.r2n = this.r2n;
+	return l3n;
 }
 
-h3l()
+e9p()
 {
-	return this.s0f * n3x + 2 * (this.p9d + this.p3z + this.h0a);
+	return this.p0u * j3r + 2 * (this.m8a + this.v6s + this.n7r);
 }
 
-q2p(rect)
+e6n(rect)
 {
-	let w = rect.h5k();
-	let h = rect.c9o();
-	let e0d = 0;
+	let w = rect.v1k();
+	let h = rect.s2f();
+	let t8e = 0;
 	if (w < h)
 	{
-		e0d = w;
+		t8e = w;
 	}
 	else
 	{
-		e0d = h;
+		t8e = h;
 	}
-	if (this.p3z)
+	if (this.v6s)
 	{
-		for (this.s0f = 2; this.s0f < 1000; this.s0f++)
+		for (this.p0u = 2; this.p0u < 1000; this.p0u++)
 		{
-			this.p3z = (this.s0f / 100) * this.e5g;
-			if (this.p3z < u3m)
+			this.v6s = (this.p0u / 100) * this.v6r;
+			if (this.v6s < b3a)
 			{
-				this.p3z = u3m;
+				this.v6s = b3a;
 			}
-			let size = 2 * (this.p9d + this.p3z + this.h0a) + n3x * this.s0f;
-			if (size > e0d)
+			let size = 2 * (this.m8a + this.v6s + this.n7r) + j3r * this.p0u;
+			if (size > t8e)
 			{
 				break;
 			}
 		}
-		this.s0f--;
-		this.p3z = (this.s0f / 100) * this.e5g;
-		if (this.p3z < u3m)
+		this.p0u--;
+		this.v6s = (this.p0u / 100) * this.v6r;
+		if (this.v6s < b3a)
 		{
-			this.p3z = u3m;
+			this.v6s = b3a;
 		}
 	}
 	else
 	{
-		for (this.s0f = 2; this.s0f < 1000; this.s0f++)
+		for (this.p0u = 2; this.p0u < 1000; this.p0u++)
 		{
-			let size = 2 * (this.p9d + this.h0a) + n3x * this.s0f;
-			if (size > e0d)
+			let size = 2 * (this.m8a + this.n7r) + j3r * this.p0u;
+			if (size > t8e)
 			{
 				break;
 			}
 		}
-		this.s0f--;
+		this.p0u--;
 	}
-	return this.h3l();
+	return this.e9p();
 }
 
 }
 
 
-class l8u
+class l3f
 {
 
 constructor()
 {
-	this.x7g = new b6u();
-	this.r9j = new b6u();
-	this.c6n = new n3j();
-	this.q7k = new k4l();
-	this.o4i = new j7i();
- 	this.h7l = new j7i();
-	this.d3y = 0;
-	this.b6l = false;
-	this.u4q = false;
-	this.v1i = 0;
-	this.k0m = 0;
-	this.i4n = '';
+	this.b3q = new i9r();
+	this.y9b = new i9r();
+	this.u5a = new u6i();
+	this.z2x = new s2q();
+	this.x7d = new b1y();
+ 	this.g8c = new b1y();
+	this.o8o = 0;
+	this.s3l = false;
+	this.g4r = false;
+	this.m8s = 0;
+	this.k6y = 0;
+	this.h6i = '';
 }
 
 }
 
-const y7c =
+const c4i =
 [
 	"#F7C42B",  
 	"#F327F3",  
@@ -11576,113 +10624,113 @@ const y7c =
 	"#28F4F4"   
 ];
 
-function f2n(rect, i9q)
+function g3v(rect, y7z)
 {
-	rect.o5d += i9q;
-	rect.k0f -= i9q;
-	if (rect.o5d > rect.k0f)
+	rect.i4f += y7z;
+	rect.u8l -= y7z;
+	if (rect.i4f > rect.u8l)
 	{
-		rect.o5d = rect.k0f;
+		rect.i4f = rect.u8l;
 	}
-	rect.k7q += i9q;
-	rect.b3h -= i9q;
-	if (rect.k7q > rect.b3h)
+	rect.a2y += y7z;
+	rect.w3s -= y7z;
+	if (rect.a2y > rect.w3s)
 	{
-		rect.k7q = rect.b3h;
+		rect.a2y = rect.w3s;
 	}
 }
 
-function i6n(o1w, l1w, f2s, y2l)
+function k3i(f8c, x1y, d4d, s4z)
 {
-	o1w.drawImage(f2s, y2l.o5d, y2l.k7q, y2l.h5k(), y2l.c9o(),
-		l1w.o5d, l1w.k7q, l1w.h5k(), l1w.c9o());
+	f8c.drawImage(d4d, s4z.i4f, s4z.a2y, s4z.v1k(), s4z.s2f(),
+		x1y.i4f, x1y.a2y, x1y.v1k(), x1y.s2f());
 }
 
-function d7o(x4i, x, y, width, height, n1i)
+function f9r(u3r, x, y, width, height, z4v)
 {
-	x4i.beginPath();
-	x4i.moveTo(x, y + n1i);
-	x4i.lineTo(x, y + height - n1i);
-	x4i.arcTo(x, y + height, x + n1i, y + height, n1i);
-	x4i.lineTo(x + width - n1i, y + height);
-	x4i.arcTo(x + width, y + height, x + width, y + height-n1i, n1i);
-	x4i.lineTo(x + width, y + n1i);
-	x4i.arcTo(x + width, y, x + width - n1i, y, n1i);
-	x4i.lineTo(x + n1i, y);
-	x4i.arcTo(x, y, x, y + n1i, n1i);
-	x4i.stroke();
+	u3r.beginPath();
+	u3r.moveTo(x, y + z4v);
+	u3r.lineTo(x, y + height - z4v);
+	u3r.arcTo(x, y + height, x + z4v, y + height, z4v);
+	u3r.lineTo(x + width - z4v, y + height);
+	u3r.arcTo(x + width, y + height, x + width, y + height-z4v, z4v);
+	u3r.lineTo(x + width, y + z4v);
+	u3r.arcTo(x + width, y, x + width - z4v, y, z4v);
+	u3r.lineTo(x + z4v, y);
+	u3r.arcTo(x, y, x, y + z4v, z4v);
+	u3r.stroke();
 }
 
-function u3p(j9a, h2x, c0a)
+function d8w(i7k, v0x, q4o)
 {
-	let p = new d0e();
-	p.X = (Math.cos(c0a) * (j9a.X - h2x.X)) - (Math.sin(c0a) * (j9a.Y - h2x.Y)) + h2x.X;
-	p.Y = (Math.sin(c0a) * (j9a.X - h2x.X)) + (Math.cos(c0a) * (j9a.Y - h2x.Y)) + h2x.Y;
+	let p = new c4l();
+	p.X = (Math.cos(q4o) * (i7k.X - v0x.X)) - (Math.sin(q4o) * (i7k.Y - v0x.Y)) + v0x.X;
+	p.Y = (Math.sin(q4o) * (i7k.X - v0x.X)) + (Math.cos(q4o) * (i7k.Y - v0x.Y)) + v0x.Y;
 	return p;
 }
 
-function o7l(x4i, rect, s8d)
+function g3q(u3r, rect, r7v)
 {
-	let left = rect.o5d;
-	let top = rect.k7q;
-	let a9r = rect.k0f;
-	let k3a = rect.b3h;
+	let left = rect.i4f;
+	let top = rect.a2y;
+	let n1g = rect.u8l;
+	let w1y = rect.w3s;
 
-	x4i.fillStyle = u0b;
-	x4i.fillRect(rect.o5d, rect.k7q, rect.h5k(), rect.c9o());
+	u3r.fillStyle = x4t;
+	u3r.fillRect(rect.i4f, rect.a2y, rect.v1k(), rect.s2f());
 
-	if (s8d.i6p())
+	if (r7v.f0x())
 	{
 		return;
 	}
 
-	let z6e = s8d.z7m();
-	let f8f = 0;
-	if (z6e > 8)
+	let x2c = r7v.i1b();
+	let l9x = 0;
+	if (x2c > 8)
 	{
-		f8f = (a9r - left) / 8;
+		l9x = (n1g - left) / 8;
 	}
 	else
 	{
-		f8f = (a9r - left) / z6e;
+		l9x = (n1g - left) / x2c;
 	}
-	let t9a = left - f8f;
-	let j7a = top;
-	let u9n = t9a + f8f;
-	let w2x = 0;
-	if (z6e > 8)
+	let s2t = left - l9x;
+	let m3m = top;
+	let c5k = s2t + l9x;
+	let o0r = 0;
+	if (x2c > 8)
 	{
-		w2x = (k3a - top + 1) / 2;
+		o0r = (w1y - top + 1) / 2;
 	}
 	else
 	{
-		w2x = k3a - top + 1;
+		o0r = w1y - top + 1;
 	}
 
-	let a7i = top + w2x - 1;
-	let g9x = 0;
+	let j5w = top + o0r - 1;
+	let j9o = 0;
 	for (let i = 0; i < 16; i++)
 	{
-		if (s8d.k7g(i))
+		if (r7v.x7w(i))
 		{
-			t9a += f8f;
-			u9n += f8f;
-			if (g9x == 7 || g9x == 15 ||
-				(g9x < 8 && g9x == z6e - 1))
+			s2t += l9x;
+			c5k += l9x;
+			if (j9o == 7 || j9o == 15 ||
+				(j9o < 8 && j9o == x2c - 1))
 			{
-				u9n = a9r;
+				c5k = n1g;
 			}
-			if (g9x == 8)
+			if (j9o == 8)
 			{
-				t9a = left;
-				u9n = t9a + f8f;
-				j7a = top + w2x;
-				a7i = k3a;
+				s2t = left;
+				c5k = s2t + l9x;
+				m3m = top + o0r;
+				j5w = w1y;
 			}
-			let m1y = new d2o(t9a, j7a, u9n, a7i);
-			x4i.fillStyle = y7c[i];
-			x4i.fillRect(m1y.o5d, m1y.k7q, m1y.h5k(), m1y.c9o());
-			g9x++;
+			let y4h = new o1y(s2t, m3m, c5k, j5w);
+			u3r.fillStyle = c4i[i];
+			u3r.fillRect(y4h.i4f, y4h.a2y, y4h.v1k(), y4h.s2f());
+			j9o++;
 		}
 	}
 }
@@ -11690,70 +10738,70 @@ function o7l(x4i, rect, s8d)
 
 
 
-class p5g
+class z0c
 {
 
 constructor()
 {
-	this.d3i = '';
-	this.r3h = null;
+	this.g3t = '';
+	this.u1v = null;
 }
 
 }
 
-class a7o
+class v2p
 {
 
 constructor()
 {
-	this.j2b = [];
+	this.r1f = [];
 }
 
 add(img)
 {
-	let m5s = new p5g();
-	m5s.d3i = img.id;
-	m5s.r3h = img;
-	this.j2b.push(m5s);
+	let c0q = new z0c();
+	c0q.g3t = img.id;
+	c0q.u1v = img;
+	this.r1f.push(c0q);
 }
 
-r3h(d3i)
+u1v(g3t)
 {
-	for (const l7f of this.j2b)
+	for (const t6m of this.r1f)
 	{
-		if (l7f.d3i.toLowerCase() == d3i.toLowerCase())
+		if (t6m.g3t.toLowerCase() == g3t.toLowerCase())
 		{
-			return l7f.r3h;
+			return t6m.u1v;
 		}
 	}
 	return null;
 }
 
 }
-const i9z 				= "#00FFFF";
-const z4t 			= "#000000";
-const h5b 				= "#0000FF";
-const p2i 			= "#FFFBF0";
-const c2l 			= "#808080";
-const o2c 		= "#FF00FF";
-const u4w 				= "#808080";
-const q2a 			= "#008000";
-const h9j 				= "#00FF00";
-const j6t 			= "#C0C0C0";
-const k4s 			= "#800000";
-const l1i 		= "#A0A0A4";
-const p2s 	= "#C0DCC0";
-const p2n 				= "#000080";
-const p8q 			= "#808000";
-const r6a 			= "#800080";
-const u0b 				= "#FF0000";
-const s8k 			= "#C0C0C0";
-const k4t 		= "#A6CAF0";
-const u4d 				= "#008000";
-const w2f 			= "#FFFFFF";
-const t9p 			= "#FFFF00";
+const x5z 				= "#00FFFF";
+const i0w 			= "#000000";
+const t6z 				= "#0000FF";
+const k4h 			= "#FFFBF0";
+const f3q 			= "#808080";
+const c0l 		= "#FF00FF";
+const l3y 				= "#808080";
+const v3i 			= "#008000";
+const l2i 				= "#00FF00";
+const d0n 			= "#C0C0C0";
+const c7e 			= "#800000";
+const x0t 		= "#A0A0A4";
+const l7k 	= "#C0DCC0";
+const p7f 				= "#000080";
+const s3m 			= "#808000";
+const i0a 			= "#800080";
+const x4t 				= "#FF0000";
+const i1e 			= "#C0C0C0";
+const n2f 		= "#A6CAF0";
+const g9e 				= "#008000";
+const n5b 			= "#FFFFFF";
+const d2q 			= "#FFFF00";
 
-class d0e
+class c4l
 {
 
 constructor(x, y)
@@ -11770,576 +10818,280 @@ constructor(x, y)
 	}
 }
 
-z4e()
+r0c()
 {
-	let r0i = new d0e();
-	r0i.o5d = this.X;
-	r0i.k7q = this.Y;
-	return r0i;
+	let w8y = new c4l();
+	w8y.i4f = this.X;
+	w8y.a2y = this.Y;
+	return w8y;
 }
 
 }
 
-class d2o
+class o1y
 {
 
-constructor(left, top, a9r, k3a)
+constructor(left, top, n1g, w1y)
 {
 	if (left === undefined)
 	{
-		this.o5d = 0;
-		this.k7q = 0;
-		this.k0f = 0;
-		this.b3h = 0;
+		this.i4f = 0;
+		this.a2y = 0;
+		this.u8l = 0;
+		this.w3s = 0;
 	}
 	else
 	{
-		this.o5d = left;
-		this.k7q = top;
-		this.k0f = a9r;
-		this.b3h = k3a;
+		this.i4f = left;
+		this.a2y = top;
+		this.u8l = n1g;
+		this.w3s = w1y;
 	}
 }
 
-z4e()
+r0c()
 {
-	let o5x = new d2o();
-	o5x.o5d = this.o5d;
-	o5x.k7q = this.k7q;
-	o5x.k0f = this.k0f;
-	o5x.b3h = this.b3h;
-	return o5x;
+	let g8g = new o1y();
+	g8g.i4f = this.i4f;
+	g8g.a2y = this.a2y;
+	g8g.u8l = this.u8l;
+	g8g.w3s = this.w3s;
+	return g8g;
 }
 
-h5k()
+v1k()
 {
-	return this.k0f - this.o5d + 1;
+	return this.u8l - this.i4f + 1;
 }
 
-l5t()
+s5w()
 {
-	return this.k0f - this.o5d + 1;
+	return this.u8l - this.i4f + 1;
 }
 
-v8d(width)
+w3m(width)
 {
-	this.k0f = this.o5d + width - 1;
+	this.u8l = this.i4f + width - 1;
 }
 
-c9o()
+s2f()
 {
-	return this.b3h - this.k7q + 1;
+	return this.w3s - this.a2y + 1;
 }
 
-w8y()
+j4b()
 {
-	return this.b3h - this.k7q + 1;
+	return this.w3s - this.a2y + 1;
 }
 
-j5z(height)
+f8r(height)
 {
-	this.b3h = this.k7q + height - 1;
+	this.w3s = this.a2y + height - 1;
 }
 
-t2l()
+s1f()
 {
-	this.o5d++;
-	this.k7q++;
-	this.k0f--;
-	this.b3h--;
+	this.i4f++;
+	this.a2y++;
+	this.u8l--;
+	this.w3s--;
 }
 
-v9j(g1l)
+a9e(l3v)
 {
-	return g1l.X >= this.o5d &&
-		g1l.X <= this.k0f &&
-		g1l.Y >= this.k7q &&
-		g1l.Y <= this.b3h;
+	return l3v.X >= this.i4f &&
+		l3v.X <= this.u8l &&
+		l3v.Y >= this.a2y &&
+		l3v.Y <= this.w3s;
 }
 
 
 }
 
-class u9h
+class o3u
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-	this.y2u = y2u;
-	this.r2t = new b6u();
-	this.f1l = new e6y();
-	this.p2k = null;
-	this.x4e = new j4f();
-	this.s2g = true;
+	this.s5i = s5i;
+	this.e1u = new i9r();
+	this.r2x = new p8q();
+	this.s6w = null;
+	this.t6l = new i2p();
+	this.b7q = true;
 }
 
-c0m()
+t5u()
 {
-	let q2j = window.devicePixelRatio;
+	let n8c = window.devicePixelRatio;
 
-	this.f1l.e3h.width = this.p2k.clientWidth * q2j;
-	this.f1l.e3h.height = this.p2k.clientHeight * q2j;
+	this.r2x.j3l.width = this.s6w.clientWidth * n8c;
+	this.r2x.j3l.height = this.s6w.clientHeight * n8c;
 
-	let w4l = 32 * q2j;
-	let a9t = 32 * q2j;
-	let d7h = this.f1l.e3h.width - w4l;
-	let v7c = this.f1l.e3h.height - a9t;
-	let a3o = v7c < d7h ? v7c : d7h;
-	if (a3o < 128)
+	let b4s = 32 * n8c;
+	let d6z = 32 * n8c;
+	let s7v = this.r2x.j3l.width - b4s;
+	let d1l = this.r2x.j3l.height - d6z;
+	let k8w = d1l < s7v ? d1l : s7v;
+	if (k8w < 128)
 	{
-		a3o = 128;
+		k8w = 128;
 	}
-	let rect = new d2o();
-	rect.o5d = 0;
-	rect.k7q = 0;
-	rect.v8d(a3o);
-	rect.j5z(a3o);
-	this.x4e.p3z = a3o * 0.02;
-  if (this.x4e.p3z < u3m)
+	let rect = new o1y();
+	rect.i4f = 0;
+	rect.a2y = 0;
+	rect.w3m(k8w);
+	rect.f8r(k8w);
+	this.t6l.v6s = k8w * 0.02;
+  if (this.t6l.v6s < b3a)
   {
-    this.x4e.p3z = u3m;
+    this.t6l.v6s = b3a;
   }
-	a3o = this.x4e.q2p(rect);
- 	this.f1l.m7c(this.x4e);
-	this.f1l.z6p();
+	k8w = this.t6l.e6n(rect);
+ 	this.r2x.r9p(this.t6l);
+	this.r2x.o7k();
 }
 
-n5l()
+n5p()
 {
-	this.f1l.n5l();
-	this.f1l.z6p();
+	this.r2x.n5p();
+	this.r2x.o7k();
 }
 
-c1w()
+q8s()
 {
-	this.x4e.r7j = !this.x4e.r7j;
-	this.f1l.m7c(this.x4e);
-	this.f1l.z6p();
+	this.t6l.o1u = !this.t6l.o1u;
+	this.r2x.r9p(this.t6l);
+	this.r2x.o7k();
 }
 
-f6s()
+z2k()
 {
-	this.f1l.m7c(this.x4e);
-	this.f1l.z6p();
+	this.r2x.r9p(this.t6l);
+	this.r2x.o7k();
 }
 
-t5i(i5o)
+j7c(p6t)
 {
-	this.r2t = i5o.r9j.z4e();
-	this.f1l.l8r(this.r2t);
-	this.f1l.f4h(i5o.c6n);
-	this.f1l.j9q(i5o.q7k);
+	this.e1u = p6t.y9b.r0c();
+	this.r2x.m7y(this.e1u);
+	this.r2x.r8y(p6t.u5a);
+	this.r2x.v7d(p6t.z2x);
   
- 	this.f1l.n8h(i5o.h7l);
-	this.f1l.z6p();
+ 	this.r2x.y0b(p6t.g8c);
+	this.r2x.o7k();
 
-	if (this.s2g)
+	if (this.b7q)
 	{
-		y7y('playBackward' + this.y2u, i5o.b6l);
-		y7y('goToBegin'+ this.y2u, i5o.b6l);
-		y7y('playForward' + this.y2u, i5o.u4q);
-		y7y('goToEnd' + this.y2u, i5o.u4q);
-		y7y('autoPlay' + this.y2u, i5o.u4q);
+		w6n('playBackward' + this.s5i, p6t.s3l);
+		w6n('goToBegin'+ this.s5i, p6t.s3l);
+		w6n('playForward' + this.s5i, p6t.g4r);
+		w6n('goToEnd' + this.s5i, p6t.g4r);
+		w6n('autoPlay' + this.s5i, p6t.g4r);
 	}
 	else
 	{
-		y7y('goToBegin' + this.y2u, i5o.b6l);
-		y7y('goToEnd' + this.y2u, i5o.u4q);
+		w6n('goToBegin' + this.s5i, p6t.s3l);
+		w6n('goToEnd' + this.s5i, p6t.g4r);
 	}
 }
 
-l8r(e3i)
+m7y(n2t)
 {
-	let i5o = new l8u();
-	i5o.r9j = e3i.z4e();
-	this.l8r(i5o);
+	let p6t = new l3f();
+	p6t.y9b = n2t.r0c();
+	this.m7y(p6t);
 }
 
-m7c(x4e)
+r9p(t6l)
 {
-  this.x4e = x4e.z4e();
+  this.t6l = t6l.r0c();
 }
 
 }
 
-const v2j =
-{
-	h5j       : 0,
-	v5g        : 1,
-};
-
-class g0t
+class b0i
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-	this.y2u = y2u;
- 	this.h3h = new l1j();
- 	this.v7f = new r3l(y2u);
-  this.v7f.m5a = false;
-  this.v7f.k4b = true;
-  this.v7f.z8t = true;
-  this.v7f.e2f = false;
-  this.j9t = null;
-  this.w8o = new o7u();
-  this.z3n = new i0q();
- 	this.r6p = new d1f();
-	this.h1w = new b6u();
-	this.v3l = new b6u();
-	this.q6a = 0;
-	this.v7r = [];
-	this.b3d = false;
- 	this.u9f = false;
- 	this.o5j = false;
- 	this.y8u = false;
-  this.d3h = v2j.h5j;
-  this.j3l = document.getElementById("threat"+this.y2u);
- 	this.j3l.onclick = this.c3w.bind(this);
-  this.i2l();
-  this.n8e = document.getElementById("engineSettings"+this.y2u);
+	this.s5i = s5i;
+  this.u3n = null;
+	this.k0a = new c0c();
 }
 
-s1i(s3c)
+d2c(k0a)
 {
-  this.j9t = new Engine();
-  this.j9t.m1x = (event) => {
-    this.a0l(event);
-  };
-  this.j9t.v5i(s3c);
-  this.j9t.g9t();
+	this.k0a = k0a.r0c();
+	this.z7z();
 }
 
-j2a()
+z7z()
 {
-	this.w8o = this.j9t.s3c();
-	this.r6p = new d1f();
-  /*
-	showName();
-	MovePanel->Caption = "";
-	ScorePanel->Caption = "";
-	DepthPanel->Caption = "";
-	NodesPanel->Caption = "";
-  */
-	this.h3h.l8r(this.r6p.e3i,
-    this.r6p.f6q);
-	this.r7k();
- 	this.b2p();
-  this.i2l();
-}
+	let n7l = this.k0a.y1l.n0s.d4k();
+	let j6i = this.k0a.n4i.n0s.d4k();
 
-l8r(x7g, k7e, z1l, w0m)
-{
-	this.v3l = x7g.z4e();
-	this.q6a = k7e;
-	this.v7r = z1l.slice(); 
-	this.b3d = w0m;
-	this.b2p();
-}
-
-b2p()
-{
-	if (!this.j9t) return;
-	if (this.u9f) return;
-
-	if (this.o5j)
+	let u5u = '';
+	if (n7l.length && this.k0a.y1l.y8h)
 	{
-		let z1l = new l1j();
-		z1l.l8r(this.v3l, this.q6a);
-		let u4v = z1l.u4v();
-		z1l.h2i(u4v, this.v7r);
-		let y3u = z1l.f4v();
-		let j5m = z1l.d3y(z1l.k5o());
-		if (y3u.a7q())
-		{
-			j5m++;
-		}
-		let a8f = y3u;
-		a8f.i0x();
-		this.z3n = new i0q();
-    this.z3n.z1l.l8r(a8f, j5m);
-		this.h1w = a8f;
-  }
-  else
-  {
- 		this.z3n.z1l.l8r(this.v3l, this.q6a);
-		let u4v = this.z3n.z1l.u4v();
-		this.z3n.z1l.h2i(u4v, this.v7r);
-		this.h1w = this.z3n.z1l.f4v();
-  }
-  if (t8d === 10) 
-  {
-    this.z3n.e6e = z2x;
-  }
-  else
-  {
-    this.z3n.e6e = v7m(t8d);
-  }
-
-  this.j9t.l9s();
-	this.y8u = false;
-  let z1l = y1w(this.h1w);
-  if (z1l.length == 0)
-  {
-  	this.j9t.k5q(this.z3n);
-		return;
-  }
-  else
-  {
-  	this.j9t.k5q(this.z3n);
-		return;
-  }
-}
-
-m0j()
-{
-	this.r6p = this.j9t.i4b();
-  /*
-	showScore();
-	showDepth();
-	showNodes();
-	showCM();
-  */
-	this.h3h.l8r(this.r6p.e3i,
-    this.r6p.f6q);
-	this.r7k();
-}
-
-m4e()
-{
-	this.r6p = this.j9t.i4b();
-	
-}
-
-
-h1l()
-{
-	this.r6p = this.j9t.i4b();
-  
-	
-	
-	
-  
-	this.r7k();
-}
-
-r7k()
-{
-	let b6r = this.r6p.n8d.z1l.z4e();
-  b6r.l8r(this.r6p.e3i, this.r6p.f6q);
-
-  if (this.r6p.b3a)
-  {
-    for (let d9e of this.r6p.lines)
-    {
-      let z1l = d9e.z1l.r5q();
-      let b9l = b6r.u4v();
-      let f6q = 0;
-      for (let c7j of z1l)
-      {
-        if (f6q == 0)
-        {
-					let j6f = d9e.f4m() +
-						"/" + d9e.f5h;
-					c7j.g9m(j6f);
-        }
-        b6r.d4y(b9l, c7j);
-        f6q++;
-      }
-    }
-  }
-  else
-  {
-    if (this.r6p.lines.length !== 0)
-    {
-      let d9e = this.r6p.lines[this.r6p.lines.length - 1];
-      let z1l = d9e.z1l.r5q();
-      let b9l = b6r.u4v();
-      let f6q = 0;
-      for (let c7j of z1l)
-      {
-				if (f6q == 0)
-				{
-					let j6f = d9e.f4m() +
-						"/" + d9e.f5h;
-					c7j.g9m(j6f);
-				}
-        b6r.d4y(b9l, c7j);
-        f6q++;
-      }
-    }
-  }
-  this.h3h = b6r.z4e();
-  this.v7f.b3a = this.r6p.b3a;
-  this.v7f.q3z(this.h3h, 0);
-}
-
-a0l(event)
-{
-  const {cmd, data} = event;
-  if (cmd === 'ready')
-  {
-    this.j2a()
-  }
-  else if (cmd === 'go')
-  {
-    this.m0j()
-  }
-  else if (cmd === 'cm')
-  {
-    this.m4e();
-  }
-  else if (cmd === 'pv')
-  {
-    this.h1l();
-  }
-}
-
-c4z()
-{
-	if (this.j9t)
-	{
-    this.j9t.m1x = null;
-    this.j9t.w0b();
-		this.j9t = null;
-		this.r6p = new d1f();
-  	this.h3h.l8r(this.r6p.e3i,
-      this.r6p.f6q);
-  	this.r7k();
-    this.o5j = false;
-    this.i2l();
-  }
-}
-
-n1r()
-{
-	return (this.j9t != null);
-}
-
-a4o()
-{
-  return (this.engineMode === v2j.v5g);
-}
-
-c3w()
-{
-	if (this.j9t && !this.a4o())
-	{
-		this.o5j = !this.o5j;
-		this.i2l();
-		this.b2p();
+		u5u = this.k0a.y1l.y8h.toString();
 	}
-}
-
-i2l()
-{
-	if (this.j9t)
+	let g3m = '';
+	if (n7l.length && this.k0a.y1l.w4t.length)
 	{
-    this.j3l.disabled = false;
-    this.j3l.classList.remove('threat-inactive');
-		if (this.o5j)
-		{
-      this.j3l.classList.remove('threat-off');
-      this.j3l.classList.add('threat-on');
-		}
-		else
-		{
-      this.j3l.classList.remove('threat-on');
-      this.j3l.classList.add('threat-off');
-		}
-	}
-	else
-	{
-    this.j3l.disabled = true;
-    this.j3l.classList.add('threat-inactive');
-    this.j3l.classList.remove('threat-on');
-    this.j3l.classList.add('threat-off');
-	}
-}
-
-}
-
-class n5b
-{
-
-constructor(y2u)
-{
-	this.y2u = y2u;
-  this.d2m = null;
-	this.b7n = new p6g();
-}
-
-k3s(b7n)
-{
-	this.b7n = b7n.z4e();
-	this.k6c();
-}
-
-k6c()
-{
-	let u1u = this.b7n.j1n.m1i.w0q();
-	let c8x = this.b7n.f0n.m1i.w0q();
-
-	let b0t = '';
-	if (u1u.length && this.b7n.j1n.g1u)
-	{
-		b0t = this.b7n.j1n.g1u.toString();
-	}
-	let r9y = '';
-	if (u1u.length && this.b7n.j1n.d9y.length)
-	{
-		r9y = this.b7n.j1n.d9y.toString();
+		g3m = this.k0a.y1l.w4t.toString();
 	}
 
-	let w2l = '';
-	if (c8x.length && this.b7n.f0n.g1u)
+	let x4g = '';
+	if (j6i.length && this.k0a.n4i.y8h)
 	{
-		w2l = this.b7n.f0n.g1u.toString();
+		x4g = this.k0a.n4i.y8h.toString();
 	}
-	let i1t = '';
-	if (c8x.length && this.b7n.f0n.d9y.length)
+	let e4c = '';
+	if (j6i.length && this.k0a.n4i.w4t.length)
 	{
-		i1t = this.b7n.f0n.d9y.toString();
-	}
-
-	let s6l = this.b7n.j1n.m1i.g1w(1);
-	let u6s = this.b7n.f0n.m1i.g1w(1);
-
-	let t0h = '';
-	let a5u = '';
-	if (!this.b7n.j1n.h4v.f7c() &&
-		!this.b7n.f0n.h4v.f7c())
-	{
-		t0h = this.b7n.j1n.h4v.i9d();
-		a5u = this.b7n.f0n.h4v.i9d();
+		e4c = this.k0a.n4i.w4t.toString();
 	}
 
-	let k6h = o3m(this.b7n.t7t);
-	let h4b = this.b7n.h4b.d9y;
-	if (!this.b7n.h4b.t5p.f7c())
+	let i5z = this.k0a.y1l.n0s.z4t(1);
+	let u4v = this.k0a.n4i.n0s.z4t(1);
+
+	let m1l = '';
+	let h0f = '';
+	if (!this.k0a.y1l.c0u.g3d() &&
+		!this.k0a.n4i.c0u.g3d())
 	{
-		h4b += " ";
-		h4b += this.b7n.h4b.t5p.s6z.toString();
-	}
-	let v3e = '';
-	if (!this.b7n.i4j.f7c())
-	{
-		v3e = this.b7n.i4j.toString("dd-mm-yyyy");
-	}
-	let e4h = '';
-	if (!this.b7n.e4h.f7c())
-	{
-		e4h = '</br>' + '[' + this.b7n.e4h.d3i + ']';
+		m1l = this.k0a.y1l.c0u.p9y();
+		h0f = this.k0a.n4i.c0u.p9y();
 	}
 
-	let r1d = document.getElementById("nota-container"+this.y2u);
-	let p8l = r1d.clientHeight;
-	let g0p = 200;
+	let f5n = u3c(this.k0a.c8h);
+	let u1l = this.k0a.u1l.w4t;
+	if (!this.k0a.u1l.l6w.g3d())
+	{
+		u1l += " ";
+		u1l += this.k0a.u1l.l6w.d6w.toString();
+	}
+	let d5w = '';
+	if (!this.k0a.t4y.g3d())
+	{
+		d5w = this.k0a.t4y.toString("dd-mm-yyyy");
+	}
+	let h9i = '';
+	if (!this.k0a.h9i.g3d())
+	{
+		h9i = '</br>' + '[' + this.k0a.h9i.g3t + ']';
+	}
 
-  let index = this.y2u;
-  let i7v = this.b7n.h4b.i7v;
+	let s3i = document.getElementById("nota-container"+this.s5i);
+	let g7w = s3i.clientHeight;
+	let l0p = 200;
 
-	let h5x = true;
-	if (this.d2m.clientWidth >= 374 && p8l >= g0p)
+  let index = this.s5i;
+  let d0c = this.k0a.u1l.d0c;
+
+	let e5b = true;
+	if (this.u3n.clientWidth >= 374 && g7w >= l0p)
 	{
     let s = "<span class=\"mainHeader\"></span>";
     s +=    "<table class=\"headerTable scroll\">";
@@ -12348,19 +11100,19 @@ k6c()
     
     s += 				"</td>";
 		s +=        "<td class=\"playerWhite\" colspan=\"8\">";
-    s +=          "<span class=\"player\">" + u1u + "</span>";
-    s += 					"<span class=\"rating\">" + b0t + "</span>";
+    s +=          "<span class=\"player\">" + n7l + "</span>";
+    s += 					"<span class=\"rating\">" + u5u + "</span>";
     s +=          "<br>";
-		s += 				  "<span class=\"team\">" + t0h + "</span>";
+		s += 				  "<span class=\"team\">" + m1l + "</span>";
 		s +=        "</td>";
     s += 		  	"<td class=\"result\" colspan=\"2\">";
-    s +=          "<span>" + k6h + "</span>";
+    s +=          "<span>" + f5n + "</span>";
 		s +=        "</td>";
     s +=        "<td class=\"playerBlack\" colspan=\"8\">";
-    s +=          "<span class=\"player\">" + c8x + "</span>";
-		s +=          "<span class=\"rating\">" + w2l + "</span>";
+    s +=          "<span class=\"player\">" + j6i + "</span>";
+		s +=          "<span class=\"rating\">" + x4g + "</span>";
     s +=          "<br>";
-    s +=          "<span class=\"team\">" + a5u + "</span>";
+    s +=          "<span class=\"team\">" + h0f + "</span>";
     s +=        "</td>";
 		s +=        "<td class=\"playerPortrait\" colspan=\"3\" rowspan=\"2\">";
     
@@ -12371,29 +11123,29 @@ k6c()
     s +=          "<span><img id=\"whitePlayerNation" + index + "\" class=\"playerNation\"></span>";
 		s +=        "</td>";
     s +=        "<td class=\"fmjd\" colspan=\"1\">";
-		s +=          "<span>" + r9y + "</span>";
+		s +=          "<span>" + g3m + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"tournamentData\" colspan=\"12\">";
-    s +=          "<span class=\"tournamentTitle\">" + h4b + "</span>";
+    s +=          "<span class=\"tournamentTitle\">" + u1l + "</span>";
     s +=          "<br>";
-    s +=          "<span class=\"tournamentPlace\">" + i7v + "</span>";
-		s +=          "<span class=\"gameDate\">" + v3e + "</span>";
-    s +=          "<span class=\"annotator\">" + e4h + "</span>";
+    s +=          "<span class=\"tournamentPlace\">" + d0c + "</span>";
+		s +=          "<span class=\"gameDate\">" + d5w + "</span>";
+    s +=          "<span class=\"annotator\">" + h9i + "</span>";
     s +=        "</td>";
 		s +=        "<td class=\"fmjd\" colspan=\"1\">";
-    s +=          "<span>" + i1t + "</span>";
+    s +=          "<span>" + e4c + "</span>";
     s +=        "</td>";
 		s +=        "<td class=\"flagBlack\" colspan=\"2\">";
 		s +=          "<span><img id=\"blackPlayerNation" + index + "\" class=\"playerNation\"></span>";
 		s +=        "</td>";
 		s +=      "</tr>";
 		s +=    "</table>";
-		this.d2m.innerHTML = s;
+		this.u3n.innerHTML = s;
 
 		
 		
-		let s0p = Math.trunc(this.d2m.clientWidth / 10);
-		if (s0p < 24) s0p = 24;
+		let x3a = Math.trunc(this.u3n.clientWidth / 10);
+		if (x3a < 24) x3a = 24;
     
 		
 		
@@ -12402,26 +11154,26 @@ k6c()
 		
 		
 	}
-	else if (this.d2m.clientWidth >= 300 && p8l >= g0p)
+	else if (this.u3n.clientWidth >= 300 && g7w >= l0p)
 	{
 		
 		let s = "<span class=\"mainHeader\"></span>";
     s +=    "<table class=\"headerTable\">";
     s +=      "<tr>";
     s +=        "<td class=\"playerWhite\" colspan=\"9\">";
-    s +=          "<span class=\"player\">" + s6l + "</span>";
-    s +=          "<span class=\"rating\">" + b0t + "</span>";
+    s +=          "<span class=\"player\">" + i5z + "</span>";
+    s +=          "<span class=\"rating\">" + u5u + "</span>";
     s +=          "<br>";
-		s += 				  "<span class=\"team\">" + t0h + "</span>";
+		s += 				  "<span class=\"team\">" + m1l + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"result\" colspan=\"2\">";
-    s +=          "<span>" + k6h + "</span>";
+    s +=          "<span>" + f5n + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"playerBlack\" colspan=\"9\">";
-    s +=          "<span class=\"player\">" + u6s + "</span>";
-    s +=          "<span class=\"rating\">" + w2l + "</span>";
+    s +=          "<span class=\"player\">" + u4v + "</span>";
+    s +=          "<span class=\"rating\">" + x4g + "</span>";
     s +=          "<br>";
-    s +=          "<span class=\"team\">" + a5u + "</span>";
+    s +=          "<span class=\"team\">" + h0f + "</span>";
 		s +=        "</td>";
     s +=      "</tr>";
     s +=      "<tr>";
@@ -12429,25 +11181,25 @@ k6c()
     s +=          "<span><img id=\"whitePlayerNation" + index + "\" class=\"playerNation\"></span>";
     s +=        "</td>";
     s +=        "<td class=\"fmjd\" colspan=\"1\">";
-    s +=          "<span>" + r9y + "</span>";
+    s +=          "<span>" + g3m + "</span>";
     s +=        "</td>";
 		s +=        "<td class=\"tournamentData\" colspan=\"14\">";
-    s +=          "<span class=\"tournamentTitle\">" + h4b + "</span>";
-    s +=          "<span class=\"tournamentPlace\">" + "</br>" + i7v + "</span>";
-    s +=          "<span class=\"gameDate\">" + v3e + "</span>";
-		s +=          "<span class=\"annotator\">" + e4h + "</span>";
+    s +=          "<span class=\"tournamentTitle\">" + u1l + "</span>";
+    s +=          "<span class=\"tournamentPlace\">" + "</br>" + d0c + "</span>";
+    s +=          "<span class=\"gameDate\">" + d5w + "</span>";
+		s +=          "<span class=\"annotator\">" + h9i + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"fmjd\" colspan=\"1\">";
-    s +=          "<span>" + i1t + "</span>";
+    s +=          "<span>" + e4c + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"flagBlack\" colspan=\"2\">";
     s +=          "<span><img id=\"blackPlayerNation" + index + "\" class=\"playerNation\"></span>";
     s +=        "</td>";
     s +=      "</tr>";
     s +=    "</table>";
-		this.d2m.innerHTML = s;
+		this.u3n.innerHTML = s;
 	}
-	else if (this.d2m.clientWidth >= 280)
+	else if (this.u3n.clientWidth >= 280)
 	{
 		
 		let s = "<span class=\"mainHeader\"></span>";
@@ -12457,445 +11209,415 @@ k6c()
     s +=          "<span><img id=\"whitePlayerNation" + index + "\" class=\"playerNation\"></span>";
     s +=        "</td>";
     s +=        "<td class=\"playerWhite\" colspan=\"9\">";
-    s +=          "<span class=\"player\">" + s6l + "</span>";
-    s +=          "<span class=\"rating\">" + b0t + "</span>";
+    s +=          "<span class=\"player\">" + i5z + "</span>";
+    s +=          "<span class=\"rating\">" + u5u + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"result\" colspan=\"2\">";
-    s +=          "<span>" + k6h + "</span>";
+    s +=          "<span>" + f5n + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"playerBlack\" colspan=\"9\">";
-    s +=          "<span class=\"player\">" + u6s + "</span>";
-    s +=          "<span class=\"rating\">" + w2l + "</span>";
+    s +=          "<span class=\"player\">" + u4v + "</span>";
+    s +=          "<span class=\"rating\">" + x4g + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"flagBlack\" colspan=\"2\">";
     s +=          "<span><img id=\"blackPlayerNation" + index + "\" class=\"playerNation\"></span>";
     s +=        "</td>";
     s +=      "</tr>";
     s +=    "</table>";
-		this.d2m.innerHTML = s;
+		this.u3n.innerHTML = s;
 	}
 	else
 	{
 		
-		h5x = false; 
+		e5b = false; 
 		let s = "<span class=\"mainHeader\"></span>";
     s +=    "<table class=\"headerTable\">";
     s +=      "<tr>";
     s +=        "<td class=\"playerWhite\" width=\"45%\">";
-    s +=          "<span class=\"player\">" + s6l + "</span>";
+    s +=          "<span class=\"player\">" + i5z + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"result\" width=\"10%\">";
-    s +=          "<span>" + k6h + "</span>";
+    s +=          "<span>" + f5n + "</span>";
     s +=        "</td>";
     s +=        "<td class=\"playerBlack\" width=\"45%\">";
-    s +=          "<span class=\"player\">" + u6s + "</span>";
+    s +=          "<span class=\"player\">" + u4v + "</span>";
     s +=        "</td>";
     s +=      "</tr>";
     s +=    "</table>";
-		this.d2m.innerHTML = s;
+		this.u3n.innerHTML = s;
 	}
 
-	if (h5x)
+	if (e5b)
 	{
-		let k6e = 16;
-		if (this.d2m.clientWidth < 400)
+		let r0e = 16;
+		if (this.u3n.clientWidth < 400)
 		{
-			k6e = 16;
+			r0e = 16;
 		}
-		else if (this.d2m.clientWidth < 500)
+		else if (this.u3n.clientWidth < 500)
 		{
-			k6e = 24;
+			r0e = 24;
 		}
 		else
 		{
-			k6e = 32;
+			r0e = 32;
 		}
-    if (this.b7n.j1n.h1a != y3a.i6p)
+    if (this.k0a.y1l.i4h != r4b.f0x)
     {
-  		let a3c = document.getElementById("whitePlayerNation"+this.y2u);
-	  	a3c.src = "images/flags/" + k6e.toString() +"/" + r1m(this.b7n.j1n.h1a) + ".png";
-		  a3c.height = k6e;
-  		a3c.width = k6e;
+  		let u4k = document.getElementById("whitePlayerNation"+this.s5i);
+	  	u4k.src = "images/flags/" + r0e.toString() +"/" + r1h(this.k0a.y1l.i4h) + ".png";
+		  u4k.height = r0e;
+  		u4k.width = r0e;
     }
-    if (this.b7n.f0n.h1a != y3a.i6p)
+    if (this.k0a.n4i.i4h != r4b.f0x)
     {
-  		let o3v = document.getElementById("blackPlayerNation"+this.y2u);
-	  	o3v.src = "images/flags/" + k6e.toString() + "/" + r1m(this.b7n.f0n.h1a) + ".png";
-		  o3v.height = k6e;
-  		o3v.width = k6e;
+  		let k3t = document.getElementById("blackPlayerNation"+this.s5i);
+	  	k3t.src = "images/flags/" + r0e.toString() + "/" + r1h(this.k0a.n4i.i4h) + ".png";
+		  k3t.height = r0e;
+  		k3t.width = r0e;
     }
 	}
 }
 
 }
 
-class o4l
+class w5x
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-	this.y2u = y2u;
-	this.b7n = new p6g();
-	this.l4g = new u9h(y2u);
-	this.r9v = new h2y(y2u);
-	this.r9v.v7f.m6s = this; 
-	this.g1o = new k2h();
-  this.k1r = new g0t(y2u);
+	this.s5i = s5i;
+	this.k0a = new c0c();
+	this.t4s = new o3u(s5i);
+	this.l6e = new s1v(s5i);
+	this.l6e.z9c.l0q = this; 
+	this.e1c = new f8z();
 }
 
-n5l()
+n5p()
 {
-	this.l4g.n5l();
+	this.t4s.n5p();
 }
 
-c1w()
+q8s()
 {
-	this.l4g.c1w();
+	this.t4s.q8s();
 }
 
-f6s()
+z2k()
 {
-	this.l4g.f6s();
-	this.r9v.v7f.f6s();
+	this.t4s.z2k();
+	this.l6e.z9c.z2k();
 }
 
-n7y(m7j, m4b, m0v, s8f)
+p9e(g3n, z2z, s2h, a5z)
 {
-	this.d0n(s8f, m0v);
+	this.q0j(a5z, s2h);
 }
 
-d0n(s8f, m0v)
+q0j(a5z, s2h)
 {
-	this.b7n = s8f.n5t.z4e();
-	this.k3s();
-	this.r9v.v7f.q3z(s8f.z1l, m0v);
+	this.k0a = a5z.n4q.r0c();
+	this.d2c();
+	this.l6e.z9c.m1v(a5z.s3b, s2h);
 }
 
-k3s()
+d2c()
 {
-	this.r9v.c5h.k3s(this.b7n);
+	this.l6e.g9q.d2c(this.k0a);
 }
 
-x8x(i5o)
+e8f(p6t)
 {
-	this.l4g.t5i(i5o);
-  this.k0u();
+	this.t4s.j7c(p6t);
+  this.s5l();
 }
 
-o2o()
+e6r()
 {
-	if (this.g1o.m7y())
+	if (this.e1c.a1y())
 	{
-		this.g1o.p0l();
-    this.o9i();
+		this.e1c.g7g();
 	}
 	else
 	{
-		if (!this.r9v.v7f.y4k())
+		if (!this.l6e.z9c.u2i())
 		{
       
-			this.g1o.m6s = this; 
-			this.g1o.l5s();
-			this.r9v.v7f.y4s();
+			this.e1c.l0q = this; 
+			this.e1c.o6b();
+			this.l6e.z9c.r1p();
 		}
 	}
 }
 
-e3n(s3c)
+s5l()
 {
-	this.k1r.s1i(s3c);
-}
-
-q5q()
-{
-	this.k1r.c4z();
-}
-
-y5y()
-{
-	return this.k1r.n1r();
-}
-
-k0u()
-{
-  if (!this.g1o.m7y())
-  {
-    this.o9i();
-  }
-}
-
-o9i()
-{
-	this.k1r.l8r(
-		this.r9v.v7f.x7g(),
-		this.r9v.v7f.k7e(),
-		this.r9v.v7f.s1d(),
-		this.r9v.v7f.w0m());
 }
 
 }
 
-const z2s =
+const w5o =
 {
-	v9h : 0,
-	m5e : 1,
-	z3x : 2,
-	g3v : 3,
-	f4c : 4,
- 	b0v : 5,
-	t7t : 6,
-	z1l : 7,
-	s6z : 8,
+	k7e : 0,
+	g7m : 1,
+	s7z : 2,
+	a0y : 3,
+	y2l : 4,
+ 	a4d : 5,
+	c8h : 6,
+	s3b : 7,
+	d6w : 8,
 	event : 9,
-	u6y : 10
+	y1g : 10
 };
 
-const m9w =
+const u9z =
 {
-	i6p : 0,
-	t7i : 1,
-	u7x : 2
+	f0x : 0,
+	j4h : 1,
+	t9a : 2
 };
 
-let u0a = 0;
-let c2w = 0;
-let y9f = 0;
-let a0m = 0;
-let g9c = 0;
-let u3r = 0;
-let q4a = 0;
-let x3a = 0;
+let e2k = 0;
+let h7k = 0;
+let f5f = 0;
+let c6y = 0;
+let h5a = 0;
+let c5f = 0;
+let s4n = 0;
+let l5m = 0;
 
-let u7x = false;
+let t9a = false;
 
-function i3j(f, s)
+function x8n(f, s)
 {
-	let q8x = f.n5t.j1n.m1i.d3i();
-	let o2j = s.n5t.j1n.m1i.d3i();
-	if (q8x < o2j)
+	let a1i = f.n4q.y1l.n0s.g3t();
+	let e6e = s.n4q.y1l.n0s.g3t();
+	if (a1i < e6e)
 	{
-		return u7x ? -1 : 1;
+		return t9a ? -1 : 1;
 	}
-	if (q8x > o2j)
+	if (a1i > e6e)
 	{
-		return u7x ? 1 : -1;
+		return t9a ? 1 : -1;
 	}
-	q8x = f.n5t.f0n.m1i.d3i();
-	o2j = s.n5t.f0n.m1i.d3i();
-	if (q8x < o2j)
+	a1i = f.n4q.n4i.n0s.g3t();
+	e6e = s.n4q.n4i.n0s.g3t();
+	if (a1i < e6e)
 	{
 		return -1;
 	}
-	if (q8x > o2j)
+	if (a1i > e6e)
 	{
 		return 1;
 	}
 	return 0;
 }
 
-function z0p(f, s)
+function m5g(f, s)
 {
-	let q8x = f.n5t.f0n.m1i.d3i();
-	let o2j = s.n5t.f0n.m1i.d3i();
-	if (q8x < o2j)
+	let a1i = f.n4q.n4i.n0s.g3t();
+	let e6e = s.n4q.n4i.n0s.g3t();
+	if (a1i < e6e)
 	{
-		return u7x ? -1 : 1;
+		return t9a ? -1 : 1;
 	}
-	if (q8x > o2j)
+	if (a1i > e6e)
 	{
-		return u7x ? 1 : -1;
+		return t9a ? 1 : -1;
 	}
-	q8x = f.n5t.j1n.m1i.d3i();
-	o2j = s.n5t.j1n.m1i.d3i();
-	if (q8x < o2j)
+	a1i = f.n4q.y1l.n0s.g3t();
+	e6e = s.n4q.y1l.n0s.g3t();
+	if (a1i < e6e)
 	{
 		return -1;
 	}
-	if (q8x > o2j)
+	if (a1i > e6e)
 	{
 		return 1;
 	}
 	return 0;
 }
 
-function k6d(f, s)
+function y8n(f, s)
 {
-	let n3c = f.n5t.j1n.g1u - s.n5t.j1n.g1u;
-	if (u7x)
+	let p5m = f.n4q.y1l.y8h - s.n4q.y1l.y8h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.f0n.g1u - s.n5t.f0n.g1u;
-	if (u7x)
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.n4i.y8h - s.n4q.n4i.y8h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function b1a(f, s)
+function f8k(f, s)
 {
-	let n3c = f.n5t.f0n.g1u - s.n5t.f0n.g1u;
-	if (u7x)
+	let p5m = f.n4q.n4i.y8h - s.n4q.n4i.y8h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.j1n.g1u - s.n5t.j1n.g1u;
-	if (u7x)
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.y1l.y8h - s.n4q.y1l.y8h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function e7w(f, s)
+function u3q(f, s)
 {
-	let n3c = f.n5t.j1n.h1a - s.n5t.j1n.h1a;
-	if (u7x)
+	let p5m = f.n4q.y1l.i4h - s.n4q.y1l.i4h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.f0n.h1a - s.n5t.f0n.h1a;
-	if (u7x)
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.n4i.i4h - s.n4q.n4i.i4h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function h2n(f, s)
+function d1c(f, s)
 {
-	let n3c = f.n5t.f0n.h1a - s.n5t.f0n.h1a;
-	if (u7x)
+	let p5m = f.n4q.n4i.i4h - s.n4q.n4i.i4h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.j1n.h1a - s.n5t.j1n.h1a;
-	if (u7x)
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.y1l.i4h - s.n4q.y1l.i4h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function w6i(f, s)
+function r2z(f, s)
 {
-	let n3c = f.n5t.t7t - s.n5t.t7t;
-	if (u7x)
+	let p5m = f.n4q.c8h - s.n4q.c8h;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function i8c(f, s)
+function h1a(f, s)
 {
-	let n3c = s.n5t.i4j.i4j() - f.n5t.i4j.i4j();
-	if (u7x)
+	let p5m = s.n4q.t4y.t4y() - f.n4q.t4y.t4y();
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function m1l(f, s)
+function a2m(f, s)
 {
-	let c6o = f.n5t.h4b.d9y;
-	let n1m = s.n5t.h4b.d9y;
-	if (c6o < n1m)
+	let p7z = f.n4q.u1l.w4t;
+	let j0o = s.n4q.u1l.w4t;
+	if (p7z < j0o)
 	{
-		return u7x ? -1 : 1;
+		return t9a ? -1 : 1;
 	}
-	if (c6o > n1m)
+	if (p7z > j0o)
 	{
-		return u7x ? 1 : -1;
+		return t9a ? 1 : -1;
 	}
-	let n3c = f.n5t.h4b.t5p.i4j() - s.n5t.h4b.t5p.i4j();
-	if (u7x)
+	let p5m = f.n4q.u1l.l6w.t4y() - s.n4q.u1l.l6w.t4y();
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.u6y - s.n5t.u6y;
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = f.n5t.z9l - s.n5t.z9l;
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.y1g - s.n4q.y1g;
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = f.n4q.t7m - s.n4q.t7m;
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function l0j(f, s)
+function n7z(f, s)
 {
-	let n3c = s.n5t.u6y - f.n5t.u6y;
-	if (u7x)
+	let p5m = s.n4q.y1g - f.n4q.y1g;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	n3c = s.n5t.z9l - f.n5t.z9l;
-	if (u7x)
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	p5m = s.n4q.t7m - f.n4q.t7m;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-function c3p(f, s)
+function e3w(f, s)
 {
-	let n3c = s.p6s - f.p6s;
-	if (u7x)
+	let p5m = s.f3e - f.f3e;
+	if (t9a)
 	{
-		n3c = -n3c;
+		p5m = -p5m;
 	}
-	if (n3c < 0) return -1;
-	if (n3c > 0) return 1;
-	return i3j(f, s);
+	if (p5m < 0) return -1;
+	if (p5m > 0) return 1;
+	return x8n(f, s);
 }
 
-class e1h
+class t7g
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-	this.y2u = y2u;
-	this.q9u = [];
-	this.s1s = null;
-	this.b4z = null;
-	this.b0e = null;
-	this.h2s = [];
-	this.e3o = [];
-	this.e9c = -1;
-	this.j0x = m9w.i6p;
-	this.m4v = 0;
-  this.s1f = null;
+	this.s5i = s5i;
+	this.l4x = [];
+	this.n4o = null;
+	this.y3q = null;
+	this.n8u = null;
+	this.e0n = [];
+	this.j1d = [];
+	this.r4n = -1;
+	this.l7l = u9z.f0x;
+	this.n7v = 0;
+  this.j9m = null;
 }
 
-r2r()
+x3e()
 {
 	let s = "";
 	s += "<tr class=\"grid-header-row\">";
@@ -12911,365 +11633,365 @@ r2r()
 	s += "<th class=\"grid-header-cell grid-event\">Event</th>";
 	s += "<th class=\"grid-header-cell grid-round\">Rnd</th>";
 	s += "</tr>";
-	this.b0e.innerHTML = s;
-	this.h2s = this.b0e.getElementsByTagName("TH");
-	let y2u = this.y2u;
+	this.n8u.innerHTML = s;
+	this.e0n = this.n8u.getElementsByTagName("TH");
+	let s5i = this.s5i;
 
- 	this.h2s[z2s.v9h].onclick = this.q2u.bind(this);
-	this.h2s[z2s.m5e].onclick = this.g9j.bind(this);
-  this.h2s[z2s.z3x].onclick = this.w1p.bind(this);
-	this.h2s[z2s.g3v].onclick = this.q2u.bind(this);
-	this.h2s[z2s.f4c].onclick = this.d3l.bind(this);
-  this.h2s[z2s.b0v].onclick = this.k0p.bind(this);
-	this.h2s[z2s.t7t].onclick = this.n1x.bind(this);
-	this.h2s[z2s.z1l].onclick = this.c9e.bind(this);
-	this.h2s[z2s.s6z].onclick = this.a3g.bind(this);
-	this.h2s[z2s.event].onclick = this.c2r.bind(this);
-	this.h2s[z2s.u6y].onclick = this.u4o.bind(this);
+ 	this.e0n[w5o.k7e].onclick = this.t7y.bind(this);
+	this.e0n[w5o.g7m].onclick = this.f1w.bind(this);
+  this.e0n[w5o.s7z].onclick = this.r6a.bind(this);
+	this.e0n[w5o.a0y].onclick = this.t7y.bind(this);
+	this.e0n[w5o.y2l].onclick = this.h1w.bind(this);
+  this.e0n[w5o.a4d].onclick = this.y4f.bind(this);
+	this.e0n[w5o.c8h].onclick = this.v8q.bind(this);
+	this.e0n[w5o.s3b].onclick = this.q1z.bind(this);
+	this.e0n[w5o.d6w].onclick = this.a6u.bind(this);
+	this.e0n[w5o.event].onclick = this.y9r.bind(this);
+	this.e0n[w5o.y1g].onclick = this.y2o.bind(this);
 }
 
-u5d(q9u)
+s9p(l4x)
 {
-	this.q9u = q9u;
-	this.c0m();
+	this.l4x = l4x;
+	this.t5u();
 }
 
-i5k()
+h7f()
 {
-	this.k7b("grid-player");
-	this.k7b("grid-rating");
- 	this.k7b("grid-flag");
-	this.k7b("grid-result");
-	this.k7b("grid-moves");
-	this.k7b("grid-year");
-	this.k7b("grid-event");
-	this.k7b("grid-round");
+	this.l1z("grid-player");
+	this.l1z("grid-rating");
+ 	this.l1z("grid-flag");
+	this.l1z("grid-result");
+	this.l1z("grid-moves");
+	this.l1z("grid-year");
+	this.l1z("grid-event");
+	this.l1z("grid-round");
 }
 
-u9b()
+h4j()
 {
-	this.x2d("grid-player", u0a);
-	this.x2d("grid-rating", c2w);
- 	this.x2d("grid-flag", x3a);
-	this.x2d("grid-result", y9f);
-	this.x2d("grid-moves", a0m);
-	this.x2d("grid-year", g9c);
-	this.x2d("grid-event", u3r);
-	this.x2d("grid-round", q4a);
+	this.k7n("grid-player", e2k);
+	this.k7n("grid-rating", h7k);
+ 	this.k7n("grid-flag", l5m);
+	this.k7n("grid-result", f5f);
+	this.k7n("grid-moves", c6y);
+	this.k7n("grid-year", h5a);
+	this.k7n("grid-event", c5f);
+	this.k7n("grid-round", s4n);
 
 }
 
-k7b(y3z)
+l1z(j8t)
 {
-	let k8k = this.s1s.getElementsByClassName(y3z);
-	for (let i = 0; i < k8k.length; i++) {
-		k8k[i].style.display = "none";
+	let a6g = this.n4o.getElementsByClassName(j8t);
+	for (let i = 0; i < a6g.length; i++) {
+		a6g[i].style.display = "none";
 	}
 }
 
-v8y(y3z)
+l6c(j8t)
 {
-	let k8k = this.s1s.getElementsByClassName(y3z);
-	for (let i = 0; i < k8k.length; i++) {
-		k8k[i].style.display = "table-cell";
+	let a6g = this.n4o.getElementsByClassName(j8t);
+	for (let i = 0; i < a6g.length; i++) {
+		a6g[i].style.display = "table-cell";
 	}
 }
 
-x2d(y3z, width)
+k7n(j8t, width)
 {
-	let k8k = this.s1s.getElementsByClassName(y3z);
-	for (let i = 0; i < k8k.length; i++) {
-		k8k[i].style.width = (width) + "px";
+	let a6g = this.n4o.getElementsByClassName(j8t);
+	for (let i = 0; i < a6g.length; i++) {
+		a6g[i].style.width = (width) + "px";
 	}
 }
 
-c0m()
+t5u()
 {
-	this.m4v = this.s1s.clientWidth;
-	this.m4v -= 17;
-	if (this.m4v < 100)
+	this.n7v = this.n4o.clientWidth;
+	this.n7v -= 17;
+	if (this.n7v < 100)
 	{
-		this.m4v = 100;
+		this.n7v = 100;
 	}
-	u0a = 200;
-	c2w = 52;
-	y9f = 34;
-	a0m = 50;
-	g9c = 52;
-	u3r = 200;
-	q4a = 50;
-  x3a = 30;
+	e2k = 200;
+	h7k = 52;
+	f5f = 34;
+	c6y = 50;
+	h5a = 52;
+	c5f = 200;
+	s4n = 50;
+  l5m = 30;
 
  
-	let w3h = document.getElementsByClassName("tdreplay")[0];
-	if (w3h.clientWidth <= v0s)
+	let o2t = document.getElementsByClassName("tdreplay")[0];
+	if (o2t.clientWidth <= q7d)
 	{
-		let t7g = 0.7;
-		u0a *= t7g;
-		c2w *= t7g;
-		y9f *= t7g;
-		a0m *= t7g;
-		g9c *= t7g;
-		u3r *= t7g;
-		q4a *= t7g;
+		let f9i = 0.7;
+		e2k *= f9i;
+		h7k *= f9i;
+		f5f *= f9i;
+		c6y *= f9i;
+		h5a *= f9i;
+		c5f *= f9i;
+		s4n *= f9i;
 	}
-	this.n9c();
+	this.b5i();
 }
 
-d9d()
+u5w()
 {
-	this.i5k();
-	this.u9b();
+	this.h7f();
+	this.h4j();
 
-  let o2e = 2.8;
-  let k0a = 2.8;
-  let q7a = 17;
-	if (this.m4v <= 400)
+  let u9y = 2.8;
+  let i2a = 2.8;
+  let w8k = 17;
+	if (this.n7v <= 400)
 	{
-		this.v8y("grid-player");
-		this.v8y("grid-result");
-    this.v8y("grid-year");
-		this.v8y("grid-event");
-    let z2b = 5 * (o2e + k0a);
-		let n2o = y9f + g9c;
-		let o4d = Math.trunc((this.m4v - n2o - z2b - q7a) / 3);
-		this.x2d("grid-player", o4d);
-		this.x2d("grid-event", o4d);
+		this.l6c("grid-player");
+		this.l6c("grid-result");
+    this.l6c("grid-year");
+		this.l6c("grid-event");
+    let u1h = 5 * (u9y + i2a);
+		let g9o = f5f + h5a;
+		let f4a = Math.trunc((this.n7v - g9o - u1h - w8k) / 3);
+		this.k7n("grid-player", f4a);
+		this.k7n("grid-event", f4a);
 	}
-	else if (this.m4v <= 580)
+	else if (this.n7v <= 580)
 	{
-		this.v8y("grid-player");
-		this.v8y("grid-rating");
-		this.v8y("grid-result");
-		this.v8y("grid-year");
-		this.v8y("grid-event");
-    let z2b = 7 * (o2e + k0a);
-		let n2o = 2 * c2w + y9f + g9c;
-		let o4d = Math.trunc((this.m4v - n2o - z2b - q7a) / 3);
-		this.x2d("grid-player", o4d);
-		this.x2d("grid-event", o4d);
+		this.l6c("grid-player");
+		this.l6c("grid-rating");
+		this.l6c("grid-result");
+		this.l6c("grid-year");
+		this.l6c("grid-event");
+    let u1h = 7 * (u9y + i2a);
+		let g9o = 2 * h7k + f5f + h5a;
+		let f4a = Math.trunc((this.n7v - g9o - u1h - w8k) / 3);
+		this.k7n("grid-player", f4a);
+		this.k7n("grid-event", f4a);
 	}
 	else
 	{
-		this.v8y("grid-player");
-		this.v8y("grid-rating");
-    this.v8y("grid-flag");
-		this.v8y("grid-result");
-		this.v8y("grid-moves");
-		this.v8y("grid-year");
-		this.v8y("grid-event");
-		this.v8y("grid-round");
-    let z2b = 11 * (o2e + k0a);
-		let n2o = 2 * c2w + 2 * x3a + y9f + a0m + g9c + q4a;
-		let o4d = Math.trunc((this.m4v - n2o - z2b - q7a) / 3);
-		this.x2d("grid-player", o4d);
-		this.x2d("grid-event", o4d);
+		this.l6c("grid-player");
+		this.l6c("grid-rating");
+    this.l6c("grid-flag");
+		this.l6c("grid-result");
+		this.l6c("grid-moves");
+		this.l6c("grid-year");
+		this.l6c("grid-event");
+		this.l6c("grid-round");
+    let u1h = 11 * (u9y + i2a);
+		let g9o = 2 * h7k + 2 * l5m + f5f + c6y + h5a + s4n;
+		let f4a = Math.trunc((this.n7v - g9o - u1h - w8k) / 3);
+		this.k7n("grid-player", f4a);
+		this.k7n("grid-event", f4a);
 	}
 }
 
-n9c()
+b5i()
 {
-	let k6e = 16;
+	let r0e = 16;
 	let s = '';
-  s += "<tbody id=\"gameList" + this.y2u + "\">"; 
-	for (const s8f of this.q9u)
+  s += "<tbody id=\"gameList" + this.s5i + "\">"; 
+	for (const a5z of this.l4x)
 	{
 		s += "<tr class=\"grid-row\">";
 		s += "<td class=\"grid-cell grid-player\">";
-		s += s8f.n5t.j1n.m1i.n8r();
+		s += a5z.n4q.y1l.n0s.z6t();
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-rating\">";
-		if (s8f.n5t.j1n.g1u)
+		if (a5z.n4q.y1l.y8h)
 		{
-			s += s8f.n5t.j1n.g1u;
+			s += a5z.n4q.y1l.y8h;
 		}
 		s += "</td>";
    	s += "<td class=\"grid-cell grid-flag\">";
-		if (s8f.n5t.j1n.h1a != y3a.i6p)
+		if (a5z.n4q.y1l.i4h != r4b.f0x)
 		{
-      let n1n = "images/flags/" + k6e.toString() + "/" + r1m(s8f.n5t.j1n.h1a) + ".png";
+      let m6n = "images/flags/" + r0e.toString() + "/" + r1h(a5z.n4q.y1l.i4h) + ".png";
   		s += "<span>";
       s += "<img src=\"";
-      s += n1n;
+      s += m6n;
       s += "\" height=\"16\"";
       s += ">";
    		s += "</span>";
 		}
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-player\">";
-		s += s8f.n5t.f0n.m1i.n8r();
+		s += a5z.n4q.n4i.n0s.z6t();
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-rating\">";
-		if (s8f.n5t.f0n.g1u)
+		if (a5z.n4q.n4i.y8h)
 		{
-			s += s8f.n5t.f0n.g1u;
+			s += a5z.n4q.n4i.y8h;
 		}
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-flag\">";
-		if (s8f.n5t.f0n.h1a != y3a.i6p)
+		if (a5z.n4q.n4i.i4h != r4b.f0x)
 		{
-      let n1n = "images/flags/" + k6e.toString() + "/" + r1m(s8f.n5t.f0n.h1a) + ".png";
+      let m6n = "images/flags/" + r0e.toString() + "/" + r1h(a5z.n4q.n4i.i4h) + ".png";
   		s += "<span>";
       s += "<img src=\"";
-      s += n1n;
+      s += m6n;
       s += "\" height=\"16\"";
       s += ">";
    		s += "</span>";
 		}
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-result\">";
-		s += o3m(s8f.n5t.t7t);
+		s += u3c(a5z.n4q.c8h);
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-moves\">";
-		s += s8f.p6s;
+		s += a5z.f3e;
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-year\">";
-		s += s8f.n5t.i4j.toString("yyyy");
+		s += a5z.n4q.t4y.toString("yyyy");
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-event\">";
-		s += s8f.n5t.h4b.d9y;
+		s += a5z.n4q.u1l.w4t;
 		s += "</td>";
 		s += "<td class=\"grid-cell grid-round\">";
-		s += s8f.n5t.c8o();
+		s += a5z.n4q.u6d();
 		s += "</td>";
 		s += "</tr>";
 	}
   s += "</tbody>";
-	this.b4z.innerHTML = s;
+	this.y3q.innerHTML = s;
 
-  let j9e = document.getElementById('gameList' + this.y2u);
-  j9e.addEventListener('click', this.u9g.bind(this));
+  let v0k = document.getElementById('gameList' + this.s5i);
+  v0k.addEventListener('click', this.x5a.bind(this));
 
-	this.d9d();
+	this.u5w();
 }
 
-t3p(m8i)
+h6b(r4l)
 {
-	if (m8i != this.e9c)
+	if (r4l != this.r4n)
 	{
-		this.e9c = m8i;
-		this.j0x = m9w.t7i;
+		this.r4n = r4l;
+		this.l7l = u9z.j4h;
 	}
 	else
 	{
-		if (this.j0x == m9w.i6p)
+		if (this.l7l == u9z.f0x)
 		{
-			this.j0x = m9w.t7i;
+			this.l7l = u9z.j4h;
 		}
-		else if (this.j0x == m9w.t7i)
+		else if (this.l7l == u9z.j4h)
 		{
-			this.j0x = m9w.u7x;
+			this.l7l = u9z.t9a;
 		}
-		else if (this.j0x == m9w.u7x)
+		else if (this.l7l == u9z.t9a)
 		{
-			this.j0x = m9w.t7i;
+			this.l7l = u9z.j4h;
 		}
 	}
-	u7x = (this.j0x == m9w.u7x);
+	t9a = (this.l7l == u9z.t9a);
 
-	for (const j6q of this.h2s)
+	for (const s2j of this.e0n)
 	{
-		let s = j6q.l9e;
-		let i2g = s.replace(" grid-header-sort grid-header-sort-desc", "");
-		let y9k = i2g.replace(" grid-header-sort grid-header-sort-asc", "");
-		j6q.l9e = y9k;
+		let s = s2j.q7o;
+		let z0p = s.replace(" grid-header-sort grid-header-sort-desc", "");
+		let e7k = z0p.replace(" grid-header-sort grid-header-sort-asc", "");
+		s2j.q7o = e7k;
 	}
-	let p9q = this.h2s[this.e9c];
-	if (this.j0x == m9w.u7x)
+	let f5c = this.e0n[this.r4n];
+	if (this.l7l == u9z.t9a)
 	{
-		p9q.l9e = p9q.l9e + " grid-header-sort grid-header-sort-desc";
+		f5c.q7o = f5c.q7o + " grid-header-sort grid-header-sort-desc";
 	}
 	else
 	{
-		p9q.l9e = p9q.l9e + " grid-header-sort grid-header-sort-asc";
+		f5c.q7o = f5c.q7o + " grid-header-sort grid-header-sort-asc";
 	}
 }
 
-q2u(event)
+t7y(event)
 {
-	this.t3p(z2s.v9h);
-	this.q9u.sort(i3j);
-	this.n9c();
+	this.h6b(w5o.k7e);
+	this.l4x.sort(x8n);
+	this.b5i();
 }
 
-g9j(event)
+f1w(event)
 {
-	this.t3p(z2s.m5e);
-	this.q9u.sort(k6d);
-	this.n9c();
+	this.h6b(w5o.g7m);
+	this.l4x.sort(y8n);
+	this.b5i();
 }
 
-w1p(event)
+r6a(event)
 {
-	this.t3p(z2s.z3x);
-	this.q9u.sort(e7w);
-	this.n9c();
+	this.h6b(w5o.s7z);
+	this.l4x.sort(u3q);
+	this.b5i();
 }
 
-k1b(event)
+d9l(event)
 {
-	this.t3p(z2s.g3v);
-	this.q9u.sort(z0p);
-	this.n9c();
+	this.h6b(w5o.a0y);
+	this.l4x.sort(m5g);
+	this.b5i();
 }
 
-d3l(event)
+h1w(event)
 {
-	this.t3p(z2s.f4c);
-	this.q9u.sort(b1a);
-	this.n9c();
+	this.h6b(w5o.y2l);
+	this.l4x.sort(f8k);
+	this.b5i();
 }
 
-k0p(event)
+y4f(event)
 {
-	this.t3p(z2s.b0v);
-	this.q9u.sort(h2n);
-	this.n9c();
+	this.h6b(w5o.a4d);
+	this.l4x.sort(d1c);
+	this.b5i();
 }
 
-n1x(event)
+v8q(event)
 {
-	this.t3p(z2s.t7t);
-	this.q9u.sort(w6i);
-	this.n9c();
+	this.h6b(w5o.c8h);
+	this.l4x.sort(r2z);
+	this.b5i();
 }
 
-a3g(event)
+a6u(event)
 {
-	this.t3p(z2s.s6z);
-	this.q9u.sort(i8c);
-	this.n9c();
+	this.h6b(w5o.d6w);
+	this.l4x.sort(h1a);
+	this.b5i();
 }
 
-c2r(event)
+y9r(event)
 {
-	this.t3p(z2s.event);
-	this.q9u.sort(m1l);
-	this.n9c();
+	this.h6b(w5o.event);
+	this.l4x.sort(a2m);
+	this.b5i();
 }
 
-u4o(event)
+y2o(event)
 {
-	this.t3p(z2s.u6y);
-	this.q9u.sort(l0j);
-	this.n9c();
+	this.h6b(w5o.y1g);
+	this.l4x.sort(n7z);
+	this.b5i();
 }
 
-c9e(event)
+q1z(event)
 {
-	this.t3p(z2s.z1l);
-	this.q9u.sort(c3p);
-	this.n9c();
+	this.h6b(w5o.s3b);
+	this.l4x.sort(e3w);
+	this.b5i();
 }
 
-u9g(event)
+x5a(event)
 {
   const clickedRow = event.target.closest('tr');
   if (!clickedRow) return;
   const index = clickedRow.rowIndex;
-  if (this.s1f)
+  if (this.j9m)
   {
-    this.s1f(this, index);
+    this.j9m(this, index);
   }
 }
 
@@ -13279,532 +12001,532 @@ u9g(event)
 TO DO:
 Hover op eval/depth: laat bordje ziet met slotstand.
 */
-class t6p
+class o7w
 {
 
 constructor()
 {
-	this.e3i = new b6u();
-	this.n5d = new b6u();
-	this.l6i = false;
-	this.v4s = 0;
-	this.g8c = 0;
-	this.s6n = [];
+	this.n2t = new i9r();
+	this.h6d = new i9r();
+	this.e5v = false;
+	this.d0a = 0;
+	this.r1z = 0;
+	this.z8o = [];
 }
 
 }
 
 var tooltip = null;
 
-class r3l
+class z5k
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-	this.y2u = y2u;
-	this.z7k = new l1j();
-	this.m6s = null;
-	this.v2f = new t6p();
-	this.c8r = null;
-	this.e1t = [];
-	this.q9y = [];
-  this.n7u = [];
-  this.o3q = [];
-	this.k2u = -1;
-	this.x4e = new j4f();
-  this.d6u = null;
-	this.q0q = true;
-	this.o2p = false;
-	this.f1a = [];
-	this.z0e = 0;
-  this.m5a = true;
-  this.k4b = false;
-	this.z8t = false;
-	this.e2f = true;
-  this.b3a = false;
+	this.s5i = s5i;
+	this.n9l = new e1t();
+	this.l0q = null;
+	this.b4d = new o7w();
+	this.p5w = null;
+	this.t4a = [];
+	this.x9h = [];
+  this.z7k = [];
+  this.g6a = [];
+	this.m9e = -1;
+	this.t6l = new i2p();
+  this.i7v = null;
+	this.m0s = true;
+	this.m6p = false;
+	this.q4b = [];
+	this.q2r = 0;
+  this.y3g = true;
+  this.l4l = false;
+	this.r0z = false;
+	this.r4h = true;
+  this.m0x = false;
 }
 
-q3z(f7z, m0v)
+m1v(o5q, s2h)
 {
-	this.z7k = f7z.z4e();
-  this.z7k.h0q();
-	this.d6u = this.z7k.l6j(m0v);
-	this.n7y();
+	this.n9l = o5q.r0c();
+  this.n9l.y0x();
+	this.i7v = this.n9l.u3l(s2h);
+	this.p9e();
 }
 
-w4q(i3h)
+t6g(w8l)
 {
-  this.y5i(this.n7u[i3h]);
+  this.r8n(this.z7k[w8l]);
 }
 
-n7y()
+p9e()
 {
-	this.q1a();
-	this.y4s();
-  this.a4h(this.z7k.h4z(this.d6u));
+	this.q0r();
+	this.r1p();
+  this.o4h(this.n9l.l8u(this.i7v));
 }
 
-q1a()
+q0r()
 {
-	let l3k = new g2h();
-  l3k.q3a(this.m5a);
-	l3k.s4s(this.b3a);
+	let b2k = new y4w();
+  b2k.v0f(this.y3g);
+	b2k.i7g(this.m0x);
   /*
-	l3k.setOneLine(this.b3a);
+	b2k.setOneLine(this.m0x);
   */
-	l3k.g4o(this.z8t);
-	l3k.k0s(this.e2f);
-	l3k.o2i(this.z7k);
+	b2k.t8z(this.r0z);
+	b2k.w2k(this.r4h);
+	b2k.a1v(this.n9l);
 
-  this.c8r.innerHTML = l3k.l1g.m3t;
-  this.e1t = this.c8r.getElementsByClassName("tdmove");
-  this.q9y = this.c8r.getElementsByClassName("tdcomment");
+  this.p5w.innerHTML = b2k.v1l.m7i;
+  this.t4a = this.p5w.getElementsByClassName("tdmove");
+  this.x9h = this.p5w.getElementsByClassName("tdcomment");
 
-	this.r7g("tdmove");
-	this.r7g("tdcomment");
-	this.r7g("tddia");
-	this.r7g("tdmedal");
-  this.r7g("tdcolors");
+	this.g9j("tdmove");
+	this.g9j("tdcomment");
+	this.g9j("tddia");
+	this.g9j("tdmedal");
+  this.g9j("tdcolors");
 
-  this.g8j("tdmove");
+  this.r2d("tdmove");
 
-	this.e5y();
-	this.o7l();
+	this.u3x();
+	this.g3q();
 }
 
-r7g(m8b)
+g9j(i9x)
 {
-	let y2u = this.y2u;
-	let a5x = this.c8r.getElementsByClassName(m8b);
-	for (const j8m of a5x)
+	let s5i = this.s5i;
+	let j9q = this.p5w.getElementsByClassName(i9x);
+	for (const c3y of j9q)
 	{
-    let m0v = j8m.getAttribute('movenr');
-    j8m.onclick = this.o0d.bind(this, m0v);
+    let s2h = c3y.getAttribute('movenr');
+    c3y.onclick = this.c2p.bind(this, s2h);
 	}
 }
 
-g8j(m8b)
+r2d(i9x)
 {
-	let y2u = this.y2u;
-	let a5x = this.c8r.getElementsByClassName(m8b);
-	for (const j8m of a5x)
+	let s5i = this.s5i;
+	let j9q = this.p5w.getElementsByClassName(i9x);
+	for (const c3y of j9q)
 	{
-    let m0v = j8m.getAttribute('movenr');
-    j8m.onmouseover = this.v1v.bind(this, m0v);
-    j8m.onmouseleave = this.g3f.bind(this, m0v);
+    let s2h = c3y.getAttribute('movenr');
+    c3y.onmouseover = this.x3n.bind(this, s2h);
+    c3y.onmouseleave = this.f5r.bind(this, s2h);
 	}
 }
 
-f6s()
+z2k()
 {
-	this.e5y();
+	this.u3x();
 }
 
-e5y()
+u3x()
 {
-	let d8g = this.c8r.getElementsByClassName("tddia");
-	for (const l3d of d8g)
+	let l9q = this.p5w.getElementsByClassName("tddia");
+	for (const b5e of l9q)
 	{
-		let f1l = new e6y();
-		f1l.e3h = l3d.getElementsByTagName("canvas")[0];
-		let a3o = this.x4e.h3l();
-		f1l.e3h.width = a3o;
-		f1l.e3h.height = a3o;
-		f1l.m7c(this.x4e);
-		let b9l = this.z7k.l6j(l3d.getAttribute('movenr'));
-    f1l.l8r(this.z7k.e3i(b9l));
-    if (b9l.c7j)
+		let r2x = new p8q();
+		r2x.j3l = b5e.getElementsByTagName("canvas")[0];
+		let k8w = this.t6l.e9p();
+		r2x.j3l.width = k8w;
+		r2x.j3l.height = k8w;
+		r2x.r9p(this.t6l);
+		let p6q = this.n9l.u3l(b5e.getAttribute('movenr'));
+    r2x.m7y(this.n9l.n2t(p6q));
+    if (p6q.z1e)
     {
-  		f1l.f4h(b9l.c7j.c6n());
-	  	f1l.j9q(b9l.c7j.q7k());
+  		r2x.r8y(p6q.z1e.u5a());
+	  	r2x.v7d(p6q.z1e.z2x());
     }
     else
     {
-   		f1l.f4h(this.z7k.w6x());
-	  	f1l.j9q(this.z7k.n3z());
+   		r2x.r8y(this.n9l.y8x());
+	  	r2x.v7d(this.n9l.w2j());
     }
-		f1l.z6p();
+		r2x.o7k();
 	}
 }
 
-o7l()
+g3q()
 {
-	let u2f = this.c8r.getElementsByClassName("tdmedal");
-	for (const s7l of u2f)
+	let r7s = this.p5w.getElementsByClassName("tdmedal");
+	for (const h0a of r7s)
 	{
-		let e3h = s7l.getElementsByTagName("canvas")[0];
-		e3h.width = 40;
-		e3h.height = 16;
-		let x4i = e3h.getContext('2d');
-		let rect = new d2o();
-		rect.v8d(40);
-		rect.j5z(16);
-		let b9l = this.z7k.l6j(s7l.getAttribute('movenr'));
-    if (b9l.c7j)
+		let j3l = h0a.getElementsByTagName("canvas")[0];
+		j3l.width = 40;
+		j3l.height = 16;
+		let u3r = j3l.getContext('2d');
+		let rect = new o1y();
+		rect.w3m(40);
+		rect.f8r(16);
+		let p6q = this.n9l.u3l(h0a.getAttribute('movenr'));
+    if (p6q.z1e)
     {
-  		o7l(x4i, rect, b9l.c7j.s8d());
+  		g3q(u3r, rect, p6q.z1e.r7v());
     }
     else
     {
-  		o7l(x4i, rect, this.z7k.k4r());
+  		g3q(u3r, rect, this.n9l.i0e());
     }
 	}
 }
 
-y4s()
+r1p()
 {
-	let i5o = new l8u();
-	i5o.x7g = this.z7k.x7g();
-  i5o.r9j = this.z7k.e3i(this.d6u);
-  if (this.k0o())
+	let p6t = new l3f();
+	p6t.b3q = this.n9l.b3q();
+  p6t.y9b = this.n9l.n2t(this.i7v);
+  if (this.j5j())
   {
-    i5o.c6n = this.z7k.w6x();
-	  i5o.q7k = this.z7k.n3z();
+    p6t.u5a = this.n9l.y8x();
+	  p6t.z2x = this.n9l.w2j();
   }
   else
   {
-  	i5o.c6n = this.d6u.c7j.c6n();
-	  i5o.q7k = this.d6u.c7j.q7k();
+  	p6t.u5a = this.i7v.z1e.u5a();
+	  p6t.z2x = this.i7v.z1e.z2x();
   }
   
-	if (this.y4k())
+	if (this.u2i())
 	{
-		i5o.o4i = new j7i();
+		p6t.x7d = new b1y();
 	}
 	else
 	{
-    let b6j = this.d6u.z4e();
-		this.z7k.i8p(b6j);
-		i5o.o4i = b6j.c7j.x2v().z4e();
+    let m9m = this.i7v.r0c();
+		this.n9l.m4i(m9m);
+		p6t.x7d = m9m.z1e.i1j().r0c();
 	}
   
- 	if (!this.k0o())
+ 	if (!this.j5j())
 	{
-		i5o.h7l = this.d6u.c7j.x2v();
+		p6t.g8c = this.i7v.z1e.i1j();
 	}
-	i5o.d3y = this.d3y();
-	i5o.b6l = this.b6l();
-	i5o.u4q = this.u4q();
-	i5o.v1i = 0; 
-  i5o.k0m = this.z7k.k0m(this.d6u);
-	if (this.m6s)
+	p6t.o8o = this.o8o();
+	p6t.s3l = this.s3l();
+	p6t.g4r = this.g4r();
+	p6t.m8s = 0; 
+  p6t.k6y = this.n9l.k6y(this.i7v);
+	if (this.l0q)
 	{
-		this.m6s.x8x(i5o);
-	}
-}
-
-o0a(o2z)
-{
-	this.d6u = this.z7k.l6j(o2z);
-	this.y4s();
-}
-
-f6m(l1v)
-{
-	switch (l1v)
-	{
-		case d8j:
-		case c8y:
-		case r5e:
-			this.n1u();
-			break;
-		case k9y:
-		case t2i:
-		case m6m:
-			this.b8f();
-			break;
-		case f2q:
-		case z4c:
-		case f3q:
-			this.v3p();
-			break;
-		case s4c:
-		case i1i:
-		case z5a:
-			this.r1t();
-			break;
-		case d5r:
-			break;
-		case f4o:
-			break;
+		this.l0q.e8f(p6t);
 	}
 }
 
-c7w()
+d0l(v4g)
 {
-  if (this.d6u.z0s)
+	this.i7v = this.n9l.u3l(v4g);
+	this.r1p();
+}
+
+w0m(y4l)
+{
+	switch (y4l)
+	{
+		case b0r:
+		case z0o:
+		case p1f:
+			this.t7n();
+			break;
+		case b7h:
+		case n9w:
+		case h2h:
+			this.j7z();
+			break;
+		case t7c:
+		case y1w:
+		case o0c:
+			this.h8y();
+			break;
+		case a6s:
+		case k7t:
+		case y0s:
+			this.m3c();
+			break;
+		case u1t:
+			break;
+		case d8g:
+			break;
+	}
+}
+
+i1d()
+{
+  if (this.i7v.o3l)
   {
-    this.a4h(this.d6u.z0s.j8h);
+    this.o4h(this.i7v.o3l.a5d);
   }
   else
   {
-    this.a4h(0);
+    this.o4h(0);
   }
 }
 
-i1z()
+p2e()
 {
-	this.c7w();
-	this.y4s();
+	this.i1d();
+	this.r1p();
 }
 
-b6l()
+s3l()
 {
-	return !this.k0o();
+	return !this.j5j();
 }
 
-k0o()
+j5j()
 {
-	return this.z7k.k0o(this.d6u);
+	return this.n9l.j5j(this.i7v);
 }
 
-y4k()
+u2i()
 {
-	return this.z7k.y4k(this.d6u);
+	return this.n9l.u2i(this.i7v);
 }
 
-d3y()
+o8o()
 {
-	return this.z7k.d3y(this.d6u);
+	return this.n9l.o8o(this.i7v);
 }
 
-o4i(e5x)
+x7d(m2w)
 {
-	if (this.y4k())
+	if (this.u2i())
 	{
 		return null;
 	}
 	else
 	{
-    let b6j = this.d6u.z4e();
-		this.z7k.k4x(b6j, e5x);
-		return b6j.c7j;
+    let m9m = this.i7v.r0c();
+		this.n9l.h0w(m9m, m2w);
+		return m9m.z1e;
 	}
 }
 
-b8f()
+j7z()
 {
-	if (this.b6l())
+	if (this.s3l())
 	{
-		this.z7k.o1f(this.d6u);
-		this.i1z();
+		this.n9l.k4f(this.i7v);
+		this.p2e();
 	}
 }
 
-u4q()
+g4r()
 {
-	return !this.y4k();
+	return !this.u2i();
 }
 
-n1u()
+t7n()
 {
-	if (this.u4q())
+	if (this.g4r())
 	{
-		this.d7x(0);
+		this.x9m(0);
 	}
 }
 
-d7x(index)
+x9m(index)
 {
-	let f9i = this.z7k.e7t(this.d6u);
-	if (index >= 0 && index < f9i)
+	let l5k = this.n9l.n3a(this.i7v);
+	if (index >= 0 && index < l5k)
 	{
-		this.z7k.k4x(this.d6u, index);
-		this.i1z();
+		this.n9l.h0w(this.i7v, index);
+		this.p2e();
 	}
 }
 
-r1t()
+m3c()
 {
-	if (this.u4q())
+	if (this.g4r())
 	{
-		this.z7k.k8l(this.d6u);
-		this.i1z();
+		this.n9l.e4m(this.i7v);
+		this.p2e();
 	}
 }
 
-v3p()
+h8y()
 {
-	if (this.b6l())
+	if (this.s3l())
 	{
-		this.d6u = this.z7k.u4v();
-		this.i1z();
+		this.i7v = this.n9l.s0m();
+		this.p2e();
 	}
 }
 
-v8v()
+d3w()
 {
-	if (this.q0q)
+	if (this.m0s)
 	{
-		this.j0e();
+		this.j8l();
 	}
 	else
 	{
-		this.x0y();
+		this.q9h();
 	}
 }
 
-c9y()
+b7z()
 {
-	if (this.o2p)
+	if (this.m6p)
 	{
-		this.o2p = false;
-		this.m6s.l4g.f1l.o6c();
-		this.y4s();
+		this.m6p = false;
+		this.l0q.t4s.r2x.z5p();
+		this.r1p();
 	}
 	else
 	{
-		this.y4s();
+		this.r1p();
 	}
 }
 
 
-x0y()
+q9h()
 {
-	if (this.y4k())
+	if (this.u2i())
 	{
-		this.y4s();
+		this.r1p();
 		return;
 	}
   if (chess)
   {
-  	this.d7x(0);
+  	this.x9m(0);
     return;
   }
 
   
- 	let c7j = this.o4i(0);
-  if (!c7j.g8c())
+ 	let z1e = this.x7d(0);
+  if (!z1e.r1z())
  	{
-  	this.d7x(0);
+  	this.x9m(0);
 	  return;
  	}
 
   
-	let c9p = false;
-	if (!this.v2f.l6i)
+	let n5t = false;
+	if (!this.b4d.e5v)
 	{
-		c9p = true;
+		n5t = true;
 	}
 	else
 	{
-		c9p = false;
-		if (this.v2f.v4s < this.v2f.g8c)
+		n5t = false;
+		if (this.b4d.d0a < this.b4d.r1z)
 		{
-			if (this.v2f.n5d.t5w(this.v2f.e3i))
+			if (this.b4d.h6d.n1x(this.b4d.n2t))
 			{
-				c9p = true;
+				n5t = true;
 			}
 		}
 	}
-	if (c9p)
+	if (n5t)
 	{
-		this.v2f.e3i = this.z7k.e3i(this.d6u);
-		this.v2f.n5d = this.z7k.e3i(this.d6u);
-		this.v2f.l6i = true;
-		this.v2f.v4s = 0;
-		this.v2f.s6n.length = 0;
-		this.v2f.s6n.push(c7j.d4d()); 
-		this.v2f.g8c = c7j.g8c();
-		if (this.v2f.g8c > 1)
+		this.b4d.n2t = this.n9l.n2t(this.i7v);
+		this.b4d.h6d = this.n9l.n2t(this.i7v);
+		this.b4d.e5v = true;
+		this.b4d.d0a = 0;
+		this.b4d.z8o.length = 0;
+		this.b4d.z8o.push(z1e.i1o()); 
+		this.b4d.r1z = z1e.r1z();
+		if (this.b4d.r1z > 1)
 		{
-			let i2q = generateBetweens(this.v2f.n5d, c7j.x2v());
-			for (let i = 0; i < this.v2f.g8c - 1; i++)
+			let i1q = generateBetweens(this.b4d.h6d, z1e.i1j());
+			for (let i = 0; i < this.b4d.r1z - 1; i++)
 			{
-				this.v2f.s6n.push(i2q[i]);
+				this.b4d.z8o.push(i1q[i]);
 			}
 		}
-		this.v2f.s6n.push(c7j.a1i());
+		this.b4d.z8o.push(z1e.j1b());
 	}
-	if (this.v2f.v4s < this.v2f.g8c)
+	if (this.b4d.d0a < this.b4d.r1z)
 	{
-		let v5m = c7j.v5m();
-		let c4d = this.v2f.s6n[this.v2f.v4s];
-		let a1i = this.v2f.s6n[this.v2f.v4s + 1];
-		this.v2f.n5d.t8a(c4d, r4u.f7c);
-		this.v2f.n5d.t8a(a1i, v5m);
-		this.v2f.e3i = this.v2f.n5d.z4e();
-		this.v2f.v4s++;
-		let i5o = new l8u();
-		i5o.r9j = this.v2f.n5d.z4e();
-		i5o.b6l = this.b6l();
-		i5o.u4q = this.u4q();
-		if (this.m6s)
+		let x0m = z1e.x0m();
+		let o1d = this.b4d.z8o[this.b4d.d0a];
+		let j1b = this.b4d.z8o[this.b4d.d0a + 1];
+		this.b4d.h6d.z6q(o1d, d5p.g3d);
+		this.b4d.h6d.z6q(j1b, x0m);
+		this.b4d.n2t = this.b4d.h6d.r0c();
+		this.b4d.d0a++;
+		let p6t = new l3f();
+		p6t.y9b = this.b4d.h6d.r0c();
+		p6t.s3l = this.s3l();
+		p6t.g4r = this.g4r();
+		if (this.l0q)
 		{
-			this.m6s.x8x(i5o);
+			this.l0q.e8f(p6t);
 		}
 	}
 	else
 	{
-		this.v2f.l6i = false;
-		this.d7x(0);
+		this.b4d.e5v = false;
+		this.x9m(0);
 	}
 }
 
 
 
-j0e()
+j8l()
 {
-	if (this.o2p)
+	if (this.m6p)
 	{
-		let u6m = this.m6s.l4g.f1l.n5j();
-		if (u6m)
+		let v5f = this.l0q.t4s.r2x.q7l();
+		if (v5f)
 		{
-			if (this.z0e < this.f1a.length - 1)
+			if (this.q2r < this.q4b.length - 1)
 			{
-				this.m6s.l4g.f1l.h4s(this.f1a[this.z0e],
-					this.f1a[this.z0e+1], true);
-				this.z0e++;
+				this.l0q.t4s.r2x.p6r(this.q4b[this.q2r],
+					this.q4b[this.q2r+1], true);
+				this.q2r++;
 			}
 			else
 			{
-				this.o2p = false;
-				this.d7x(0);
+				this.m6p = false;
+				this.x9m(0);
 			}
 		}
 		return;
 	}
 
-	if (this.y4k())
+	if (this.u2i())
 	{
-		this.y4s();
+		this.r1p();
 		return;
 	}
 
-	this.f1a.length = 0;
-	let c7j = this.o4i(0);
-	let g8c = c7j.g8c();
-	if (g8c == 0)
+	this.q4b.length = 0;
+	let z1e = this.x7d(0);
+	let r1z = z1e.r1z();
+	if (r1z == 0)
 	{
-		this.f1a.push(c7j.d4d()); 
-		this.f1a.push(c7j.z4d());
+		this.q4b.push(z1e.i1o()); 
+		this.q4b.push(z1e.p2v());
 	}
 	else
 	{
-		this.f1a.push(c7j.d4d());
-		if (g8c > 1)
+		this.q4b.push(z1e.i1o());
+		if (r1z > 1)
 		{
-      let e3i = this.z7k.e3i(this.d6u);
-      let i2q = generateBetweens(e3i, c7j.x2v());
-			for (let i = 0; i < g8c - 1; i++)
+      let n2t = this.n9l.n2t(this.i7v);
+      let i1q = generateBetweens(n2t, z1e.i1j());
+			for (let i = 0; i < r1z - 1; i++)
 			{
-				this.f1a.push(i2q[i]);
+				this.q4b.push(i1q[i]);
 			}
 		}
-		this.f1a.push(c7j.z4d());
+		this.q4b.push(z1e.p2v());
 	}
 
-	this.m6s.l4g.f1l.h4s(this.f1a[0],
-		this.f1a[1], g8c > 0);
-	this.z0e = 1;
-	this.o2p = true;
+	this.l0q.t4s.r2x.p6r(this.q4b[0],
+		this.q4b[1], r1z > 0);
+	this.q2r = 1;
+	this.m6p = true;
 }
 
-w3r(x8o)
+o0k(s8o)
 {
-	for (const m of this.e1t)
+	for (const m of this.t4a)
 	{
-		if (m.getAttribute('movenr') == x8o)
+		if (m.getAttribute('movenr') == s8o)
 		{
 			return m;
 		}
@@ -13812,135 +12534,135 @@ w3r(x8o)
 	return null;
 }
 
-t2y(x8o)
+h2b(s8o)
 {
-	let v7p = [];
-	for (const l3q of this.q9y)
+	let s6f = [];
+	for (const q6t of this.x9h)
 	{
-		if (l3q.getAttribute('movenr') == x8o)
+		if (q6t.getAttribute('movenr') == s8o)
 		{
-			v7p.push(l3q);
+			s6f.push(q6t);
 		}
 	}
-	return v7p;
+	return s6f;
 }
 
-y5i(y1c)
+r8n(t5i)
 {
-	let z9r = y1c.offsetTop;
-	let f3j = y1c.scrollHeight;
+	let d1t = t5i.offsetTop;
+	let t6b = t5i.scrollHeight;
 
-	let h1k = this.c8r.offsetTop;
-	let q0g = this.c8r.scrollTop;
-	let p9v = this.c8r.clientHeight;
-	let y4c = this.c8r.scrollHeight;
-	let x1o = z9r - h1k;
-	if (x1o >= q0g && x1o + f3j <= q0g + p9v - 1)
+	let e7m = this.p5w.offsetTop;
+	let f2j = this.p5w.scrollTop;
+	let r2b = this.p5w.clientHeight;
+	let b9q = this.p5w.scrollHeight;
+	let w6w = d1t - e7m;
+	if (w6w >= f2j && w6w + t6b <= f2j + r2b - 1)
 	{
 		
 	}
 	else
 	{
 		
-		let top = x1o - (p9v / 2);
+		let top = w6w - (r2b / 2);
 		if (top < 0) top = 0;
-		this.c8r.scrollTop = top;
+		this.p5w.scrollTop = top;
 	}
 }
 
-y5k(w6b, m3v)
+e9e(e2a, w0j)
 {
-	let w0r = w6b;
-	while (w0r.v6c)
+	let j0u = e2a;
+	while (j0u.l3l)
 	{
-		w0r = w0r.v6c;
+		j0u = j0u.l3l;
 	}
- 	while (w0r)
+ 	while (j0u)
 	{
-    if (this.z7k.y1f(w0r.j8h) == false)
+    if (this.n9l.u3z(j0u.a5d) == false)
     {
- 	  	let y1c = this.w3r(w0r.j8h);
-  	  if (y1c)
+ 	  	let t5i = this.o0k(j0u.a5d);
+  	  if (t5i)
  		  {
-  		  y1c.classList.add(m3v);
+  		  t5i.classList.add(w0j);
  	  	}
     }
-    w0r = w0r.b4o;
+    j0u = j0u.a2j;
   }
 }
 
-a4h(m0v)
+o4h(s2h)
 {
   
- 	for (const c7j of this.e1t)
+ 	for (const z1e of this.t4a)
 	{
- 		c7j.classList.remove('tdcurline');
-    c7j.classList.remove('tdcurnode1');
+ 		z1e.classList.remove('tdcurline');
+    z1e.classList.remove('tdcurnode1');
 	}
- 	for (const l3q of this.q9y)
+ 	for (const q6t of this.x9h)
 	{
- 		l3q.classList.remove('tdcurline');
+ 		q6t.classList.remove('tdcurline');
 	}
 
   
-	if (this.k2u >= 0)
+	if (this.m9e >= 0)
 	{
-		let y1c = this.w3r(this.k2u);
-		if (y1c)
+		let t5i = this.o0k(this.m9e);
+		if (t5i)
 		{
-			y1c.classList.remove('tdcurmove');
+			t5i.classList.remove('tdcurmove');
 		}
 	}
 
   
-  let n2a = true;
-  let u3q = this.z7k.t1u(this.d6u);
- 	for (const w6b of u3q)
+  let r3h = true;
+  let a4r = this.n9l.o0f(this.i7v);
+ 	for (const e2a of a4r)
 	{
-    if (w6b.v6c && n2a)
+    if (e2a.l3l && r3h)
 		{
-		  this.y5k(w6b, 'tdcurnode1');
-      n2a = false;
+		  this.e9e(e2a, 'tdcurnode1');
+      r3h = false;
     }
     else
     {
-      if (this.z7k.y1f(w6b.j8h) == false)
+      if (this.n9l.u3z(e2a.a5d) == false)
       {
-   	  	let u7f = this.w3r(w6b.j8h);
-	  	  if (u7f)
+   	  	let o7t = this.o0k(e2a.a5d);
+	  	  if (o7t)
   		  {
-	  		  u7f.classList.add('tdcurline');
+	  		  o7t.classList.add('tdcurline');
   	  	}
       }
     }
 	}
 
   
-	let y1c = this.w3r(m0v);
-	if (y1c)
+	let t5i = this.o0k(s2h);
+	if (t5i)
 	{
-    y1c.classList.remove('tdcurline');
-		y1c.classList.add('tdcurmove');
-		this.y5i(y1c);
+    t5i.classList.remove('tdcurline');
+		t5i.classList.add('tdcurmove');
+		this.r8n(t5i);
 	}
-	this.k2u = m0v;
+	this.m9e = s2h;
 }
 
-x6g()
+u3y()
 {
-	let c7j = this.w3r(this.k2u);
-	if (!c7j) return;
-	let v1c = c7j.offsetTop;
-	let i4d = null;
-	let q1l = -1;
-	for (const m of this.e1t)
+	let z1e = this.o0k(this.m9e);
+	if (!z1e) return;
+	let z9e = z1e.offsetTop;
+	let z6o = null;
+	let t5d = -1;
+	for (const m of this.t4a)
 	{
-		if (m.offsetTop < v1c)
+		if (m.offsetTop < z9e)
 		{
-			if (m.offsetTop > q1l)
+			if (m.offsetTop > t5d)
 			{
-				i4d = m;
-				q1l = m.offsetTop;
+				z6o = m;
+				t5d = m.offsetTop;
 			}
 		}
 		else
@@ -13948,111 +12670,111 @@ x6g()
 			break;
 		}
 	}
-	if (i4d)
+	if (z6o)
 	{
-		this.u5k(i4d.getAttribute('movenr'));
+		this.p0b(z6o.getAttribute('movenr'));
 	}
 	else
 	{
-		if (this.e1t.length)
+		if (this.t4a.length)
 		{
-			this.u5k(this.e1t[0].getAttribute('movenr'));
+			this.p0b(this.t4a[0].getAttribute('movenr'));
 		}
 	}
 }
 
-k3f()
+d8h()
 {
-	let c7j = this.w3r(this.k2u);
-	if (!c7j)
+	let z1e = this.o0k(this.m9e);
+	if (!z1e)
 	{
-		this.n1u();
+		this.t7n();
 		return;
 	}
-	let v1c = c7j.offsetTop;
-	for (const m of this.e1t)
+	let z9e = z1e.offsetTop;
+	for (const m of this.t4a)
 	{
-		if (m.offsetTop > v1c)
+		if (m.offsetTop > z9e)
 		{
-			this.u5k(m.getAttribute('movenr'));
+			this.p0b(m.getAttribute('movenr'));
 			return;
 		}
 	}
-	if (this.e1t.length)
+	if (this.t4a.length)
 	{
-		this.u5k(this.e1t[this.e1t.length - 1].getAttribute('movenr'));
+		this.p0b(this.t4a[this.t4a.length - 1].getAttribute('movenr'));
 	}
 }
 
-u5k(o2z)
+p0b(v4g)
 {
   
   
   
   
-  if (this.d6u.z0s)
+  if (this.i7v.o3l)
   {
-    if (this.d6u.z0s.j8h == o2z)
+    if (this.i7v.o3l.a5d == v4g)
     {
       return;
     }
   }
   else
   {
-    if (o2z == 0)
+    if (v4g == 0)
     {
       return;
     }
   }
 	
-  this.o0a(o2z);
-  this.a4h(o2z);
+  this.d0l(v4g);
+  this.o4h(v4g);
 	
 }
 
-h4z()
+l8u()
 {
-	return this.z7k.h4z(this.d6u);
+	return this.n9l.l8u(this.i7v);
 }
 
-m7c(x4e)
+r9p(t6l)
 {
-  this.x4e = x4e.z4e();
-	this.x4e.p9d = 0;
-	this.x4e.p3z = 0;
-	this.x4e.s0f = 32;
-  this.x4e.h0a = 2;
- 	this.x4e.r7j = false;
+  this.t6l = t6l.r0c();
+	this.t6l.m8a = 0;
+	this.t6l.v6s = 0;
+	this.t6l.p0u = 32;
+  this.t6l.n7r = 2;
+ 	this.t6l.o1u = false;
 }
 
-x7g()
+b3q()
 {
-	return this.z7k.x7g();
+	return this.n9l.b3q();
 }
 
-k7e()
+h2u()
 {
-	return this.z7k.k7e();
+	return this.n9l.h2u();
 }
 
-s1d()
+u6p()
 {
-	return this.z7k.s1d(this.d6u);
+	return this.n9l.u6p(this.i7v);
 }
 
-w0m()
+j0w()
 {
-	return this.z7k.w0m();
+	return this.n9l.j0w();
 }
 
-o0d(m0v, event)
+c2p(s2h, event)
 {
-  this.u5k(m0v);
+  this.p0b(s2h);
 }
 
-v1v(m0v, event)
+x3n(s2h, event)
 {
-  if (!this.k4b) return;
+  if (!this.l4l) return;
 
   if (!tooltip)
   {
@@ -14061,305 +12783,296 @@ v1v(m0v, event)
     document.body.appendChild(tooltip);
   }
 
-  const j8m = event.currentTarget; 
-  const rect = j8m.getBoundingClientRect();
-  console.log(`d2o.o5d: ${rect.left}`);
-  console.log(`d2o.k7q: ${rect.top}`);
-  let o5z = rect.left;
-  let s8e = rect.top + rect.height;
+  const c3y = event.currentTarget; 
+  const rect = c3y.getBoundingClientRect();
+  console.log(`o1y.i4f: ${rect.left}`);
+  console.log(`o1y.a2y: ${rect.top}`);
+  let e4a = rect.left;
+  let c9e = rect.top + rect.height;
 
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
-	let h0o = this.x4e.h3l();
+	let v9w = this.t6l.e9p();
 
-  if (o5z + h0o > viewportWidth)
+  if (e4a + v9w > viewportWidth)
   {
-    o5z = viewportWidth - h0o - 5;
+    e4a = viewportWidth - v9w - 5;
   }
-  if (o5z < 5)
+  if (e4a < 5)
   {
-    o5z = 5;
+    e4a = 5;
   }
-  if (s8e + h0o > viewportHeight)
+  if (c9e + v9w > viewportHeight)
   {
-    s8e = viewportHeight - h0o - 5;
+    c9e = viewportHeight - v9w - 5;
   }
-  if (s8e < 5)
+  if (c9e < 5)
   {
-    s8e = 5;
+    c9e = 5;
   }
 
-  let b9l = this.z7k.l6j(m0v);
-  let e3i = this.z7k.e3i(b9l);
-  tooltip.innerHTML = this.m2l(e3i);
+  let p6q = this.n9l.u3l(s2h);
+  let n2t = this.n9l.n2t(p6q);
+  tooltip.innerHTML = this.w0n(n2t);
 
-  tooltip.style.left = `${o5z}px`;
-  tooltip.style.top = `${s8e}px`;
+  tooltip.style.left = `${e4a}px`;
+  tooltip.style.top = `${c9e}px`;
   tooltip.classList.add('visible');
 }
 
-g3f(m0v, event)
+f5r(s2h, event)
 {
-  if (!this.k4b) return;
+  if (!this.l4l) return;
   tooltip.classList.remove('visible');
 }
 
-m2l(e3i)
+w0n(n2t)
 {
-  let f1l = new e6y();
+  let r2x = new p8q();
   const tempCanvas = document.createElement('canvas');
-	f1l.e3h = tempCanvas;
-	let a3o = this.x4e.h3l();
-	f1l.e3h.width = a3o;
-	f1l.e3h.height = a3o;
-	f1l.m7c(this.x4e);
-  f1l.l8r(e3i);
-  f1l.z6p();
+	r2x.j3l = tempCanvas;
+	let k8w = this.t6l.e9p();
+	r2x.j3l.width = k8w;
+	r2x.j3l.height = k8w;
+	r2x.r9p(this.t6l);
+  r2x.m7y(n2t);
+  r2x.o7k();
   const imageDataURL = tempCanvas.toDataURL('image/png');
   return `<img src="${imageDataURL}" alt="Chess Position" width="${boardSize}" height="${boardSize}">`;
 }
 
 }
 
-class d3t
+class b1x
 {
 
 constructor()
 {
 	this.fontSize = 15;
-  this.k6k = true;
- 	this.b5z = true;
+  this.w0d = true;
+ 	this.l7c = true;
 }
 
-z4e()
+r0c()
 {
-  return Object.assign(new d3t(), this);
+  return Object.assign(new b1x(), this);
 }
 
 }
-class h2y
+class s1v
 {
 
-constructor(y2u)
+constructor(s5i)
 {
-  this.c5h = new n5b(y2u);
-  this.v7f = new r3l(y2u);
+  this.g9q = new b0i(s5i);
+  this.z9c = new z5k(s5i);
 }
 
 }
 
-class k2h
+class f8z
 {
 
 constructor()
 {
-	this.g9b = false;
-	this.m6s = null;
-	this.b2n = null;
-	this.f7v = 6;
-	this.u9y = null;
-	this.p2e = null;
-	this.s0x = null;
-	this.e0l = null;
-	this.i5z = null;
-	this.k4m = false;
+	this.n6i = false;
+	this.l0q = null;
+	this.h7s = null;
+	this.p2w = 6;
+	this.a2s = null;
+	this.x5s = null;
+	this.w2q = null;
+	this.g6f = null;
+	this.j4w = null;
+	this.e7p = false;
 }
 
-l5s()
+o6b()
 {
-	this.g9b = false;
-	this.f1i();
-	this.u9y.classList.replace('autoPlay', 'autoStop');
-	this.e0l.style.display = 'none';
-	this.i5z.style.display = 'none';
-	this.p2e.style.display = 'inline-block';
-	this.s0x.style.display = 'inline-block';
-	this.j6h();
-	this.m6s.l4g.s2g = false;
+	this.n6i = false;
+	this.v7t();
+	this.a2s.classList.replace('autoPlay', 'autoStop');
+	this.g6f.style.display = 'none';
+	this.j4w.style.display = 'none';
+	this.x5s.style.display = 'inline-block';
+	this.w2q.style.display = 'inline-block';
+	this.b6d();
+	this.l0q.t4s.b7q = false;
 }
 
-p0l()
+g7g()
 {
-	if (this.b2n)
+	if (this.h7s)
 	{
-		clearInterval(this.b2n);
-		this.b2n = null;
-		this.u9y.classList.replace('autoStop', 'autoPlay');
-		this.e0l.style.display = 'inline-block';
-		this.i5z.style.display = 'inline-block';
-		this.p2e.style.display = 'none';
-		this.s0x.style.display = 'none';
-		this.m6s.l4g.s2g = true; 
-		this.m6s.r9v.v7f.c9y();
+		clearInterval(this.h7s);
+		this.h7s = null;
+		this.a2s.classList.replace('autoStop', 'autoPlay');
+		this.g6f.style.display = 'inline-block';
+		this.j4w.style.display = 'inline-block';
+		this.x5s.style.display = 'none';
+		this.w2q.style.display = 'none';
+		this.l0q.t4s.b7q = true; 
+		this.l0q.l6e.z9c.b7z();
 	}
 }
 
-f1i()
+v7t()
 {
-	let y2u = this.m6s.y2u;
-	this.b2n = setInterval(function(){ p4t(y2u); },
-		this.m6s.r9v.v7f.q0q ? this.f7v * 2 : this.f7v * 100);
+	let s5i = this.l0q.s5i;
+	this.h7s = setInterval(function(){ h9s(s5i); },
+		this.l0q.l6e.z9c.m0s ? this.p2w * 2 : this.p2w * 100);
 }
 
-m7y()
+a1y()
 {
-	return this.b2n != null;
+	return this.h7s != null;
 }
 
-b6l()
+s3l()
 {
-	return !this.m6s.r9v.v7f.k0o();
+	return !this.l0q.l6e.z9c.j5j();
 }
 
-u4q()
+g4r()
 {
-	return !this.m6s.r9v.v7f.y4k();
+	return !this.l0q.l6e.z9c.u2i();
 }
 
-b9x()
+z4c()
 {
-	if (this.k4m)
+	if (this.e7p)
 	{
 		return;
 	}
 	else
 	{
-		this.k4m = true;
+		this.e7p = true;
 	}
-	if (!this.u4q())
+	if (!this.g4r())
 	{
-		this.p0l();
+		this.g7g();
 	}
 	else
 	{
-		this.m6s.r9v.v7f.v8v();
+		this.l0q.l6e.z9c.d3w();
 	}
-	this.k4m = false;
+	this.e7p = false;
 }
 
-x3b()
+s6o()
 {
-	if (this.b2n)
+	if (this.h7s)
 	{
-		if (this.f7v < 50)
+		if (this.p2w < 50)
 		{
-			this.f7v++;
-			clearInterval(this.b2n);
-			this.f1i();
-			this.j6h();
+			this.p2w++;
+			clearInterval(this.h7s);
+			this.v7t();
+			this.b6d();
 		}
 	}
 }
 
-m5v()
+r5r()
 {
-	if (this.b2n)
+	if (this.h7s)
 	{
-		if (this.f7v > 1)
+		if (this.p2w > 1)
 		{
-			this.f7v--;
-			clearInterval(this.b2n);
-			this.f1i();
-			this.j6h();
+			this.p2w--;
+			clearInterval(this.h7s);
+			this.v7t();
+			this.b6d();
 		}
 	}
 }
 
-j6h()
+b6d()
 {
-	r6r(this.p2e, this.f7v < 50);
-	r6r(this.s0x, this.f7v > 1);
+	h4p(this.x5s, this.p2w < 50);
+	h4p(this.w2q, this.p2w > 1);
 }
 
 }
 
-let n3k = null;
-let i9q = 0;
-let i6j = null;
+let v5p = null;
+let y7z = 0;
+let a4b = null;
 
-class z9k
+class t1a
 {
 
 constructor()
 {
 	this.index = 0;
-	this.w2o = '';
-	this.w3h = null;
-	this.u0c = false;
-	this.m6s = null;
-	this.f9l = null;
-  this.q9u = [];
-	this.r1w = 0;
-  this.a0j = 0;
+	this.j6v = '';
+	this.o2t = null;
+	this.r9m = false;
+	this.l0q = null;
+	this.f8t = null;
+  this.l4x = [];
+	this.y7q = 0;
+  this.j8v = 0;
 
-	this.m7o = null;
-	this.v4r = null;
+	this.i5v = null;
+	this.y9n = null;
 	this.left = null;
-	this.k2w = null;
-	this.x5m = null;
-	this.d7r = null;
-	this.u7u = null;
-	this.p2k = null;
-	this.a2b = null;
-	this.q4i = null;
-	this.u6f = null;
- 	this.l9r = null;
- 	this.o4w = null;
-	this.k4v = null;
-	this.e0l = null;
-	this.p2e = null;
-	this.u9y = null;
-	this.i5z = null;
-	this.s0x = null;
-	this.f8w = null;
- 	this.x2q = null;
-  this.r1o = null;
-	this.l6l = null;
-  this.n8e = null;
-	this.h4t = null;
-	this.k3h = null;
-	this.s1s = null;
-	this.z9o = null;
-	this.d1g = null;
-	this.q8a = null;
-  this.s0o = null;
-  this.z8s = null;
-	this.v0y = null;
-	this.a9r = null;
-	this.m4r = null;
-	this.g0y = null;
-	this.o2q = null;
+	this.z5z = null;
+	this.e8e = null;
+	this.h0v = null;
+	this.g6g = null;
+	this.s6w = null;
+	this.f1o = null;
+	this.h6c = null;
+	this.j7j = null;
+ 	this.h5n = null;
+ 	this.b0z = null;
+	this.r1i = null;
+	this.g6f = null;
+	this.x5s = null;
+	this.a2s = null;
+	this.j4w = null;
+	this.w2q = null;
+	this.b3n = null;
+ 	this.c6g = null;
+  this.n9m = null;
+	this.o7x = null;
+  this.c7o = null;
+	this.z6w = null;
+	this.o1h = null;
+	this.n4o = null;
+	this.y9j = null;
+	this.j2c = null;
+	this.p8l = null;
+  this.z0j = null;
+  this.g6d = null;
+	this.b0s = null;
+	this.n1g = null;
+	this.h8c = null;
+	this.l8r = null;
+	this.i2m = null;
 
-	this.f4y = null;
-	this.a2y = null;
-	this.h1o = null;
-	this.m0s = null;
-
-  this.k7h = null;
-	this.u0l = null;
-	this.a5w = null;
-  this.e0v = null;
-
-  this.z5w = null;
+	this.k2n = null;
+	this.j5o = null;
+	this.c2y = null;
+	this.e6f = null;
 
   
-  this.i3a = null;
-  this.c2z = null;
-  this.o1v = null;
-  this.w1r = null;
-  this.v0i = null;
-  this.m7g = null;
-
-  
+  this.d0e = null;
+  this.j5p = null;
+  this.h0o = null;
+  this.x8t = null;
+  this.j5q = null;
+  this.c6e = null;
 }
 
-u3d(index, w3h, w2o)
+c0a(index, o2t, j6v)
 {
 	this.index = index;
-	this.w3h = w3h;
-	this.w2o = w2o;
-	w3h.innerHTML = '';
-	w3h.id = "replay";
+	this.o2t = o2t;
+	this.j6v = j6v;
+	o2t.innerHTML = '';
+	o2t.id = "replay";
 
   let s = '';
  	s += "<div class=\"rootParent\">";
@@ -14415,32 +13128,6 @@ u3d(index, w3h, w2o)
 	s +=           "</div>";
 	s +=         "</div>";
 	s +=         "<div id=\"rightSouth" + index + "\" class=\"rightSouth\">";
-	s +=           "<div id=\"enota-container" + index + "\" class=\"enota-container\">";
-
-  
-	s +=  "<div id=\"belowBoard" + index + "\" class=\"belowBoard\">";
- 	s +=  "<div id=\"engineButtonPanel" + index + "\" class=\"replayPanel\">";
-
-  
-  s += "<div class=\"toggle-container\">";
-  s += "<input type=\"checkbox\" id=\"startEngine" + index + "\" hidden>";
-  s += "<label for=\"startEngine" + index + "\" class=\"switch\" title=\"Evaluation on/off\">";
-  s += "<span class=\"slider\"></span>";
-  s += "</label>";
-  s += "</div>";
-  
-	s += "<button id=\"threat" + index + "\" class=\"replayButton threat-off\" title=\"Threat\"></button>";
-  
-	s += "<button id=\"engineSettings" + index + "\" class=\"replayButton engineSettings\" title=\"Settings\"></button>";
-  s +=  "</div>";
-  s +=  "</div>";
-
-	s +=             "<div class=\"enota-moves-container\">";
-	s +=               "<div id=\"enota-imoves-container" + index + "\" class=\"enota-imoves-container\">";
-	s +=                 "<div id=\"emovesPanel" + index + "\" class=\"emovesPanel\"></div>";
-	s +=               "</div>";
-	s +=             "</div>";
-	s +=           "</div>";
 	s +=         "</div>";
   s +=       "</div>";
 	s +=     "</div>";
@@ -14460,645 +13147,545 @@ u3d(index, w3h, w2o)
 	s +=   "</div>";
 	s += "</div>";
 
-  w3h.innerHTML = s;
+  o2t.innerHTML = s;
 
-	this.m7o = document.getElementById("rootParent"+index);
-	this.v4r = document.getElementById("root"+index);
+	this.i5v = document.getElementById("rootParent"+index);
+	this.y9n = document.getElementById("root"+index);
 	this.left = document.getElementById("left"+index);
-	this.k2w = document.getElementById("leftContainer"+index);
-	this.x5m = document.getElementById("leftNest"+index);
-	this.d7r = document.getElementById("leftNorth"+index);
-	this.u7u = document.getElementById("boardHolder"+index);
-	this.p2k = document.getElementById("boardPanel"+index);
-	this.a2b = document.getElementById("boardCanvas"+index);
-	this.q4i = document.getElementById("belowBoard"+index);
-	this.u6f = document.getElementById("replayPanel"+index);
- 	this.l9r = document.getElementById("goToPrevious"+index);
- 	this.o4w = document.getElementById("goToNext"+index);
-	this.k4v = document.getElementById("goToBegin"+index);
-	this.e0l = document.getElementById("playBackward"+index);
-	this.p2e = document.getElementById("playSlower"+index);
-	this.u9y = document.getElementById("autoPlay"+index);
-	this.i5z = document.getElementById("playForward"+index);
-	this.s0x = document.getElementById("playFaster"+index);
-	this.f8w = document.getElementById("goToEnd"+index);
-  this.x2q = document.getElementById("flipBoard"+index);
-  this.r1o = document.getElementById("download"+index);
-	this.l6l = document.getElementById("showGameList"+index);
-  this.n8e = document.getElementById("settings"+index);
-	this.h4t = document.getElementById("leftSouth"+index);
-	this.k3h = document.getElementById("leftSouthNest"+index);
-	this.s1s = document.getElementById("listParent"+index);
-	this.z9o = document.getElementById("listHeader"+index);
-	this.d1g = document.getElementById("listHeaderTable"+index);
-	this.q8a = document.getElementById("listBody"+index);
-  this.s0o = document.getElementById("list-button-container"+index);
-  this.z8s = document.getElementById("hideGameList"+index);
-	this.v0y = document.getElementById("gameList"+index);
-	this.a9r = document.getElementById("right"+index);
-	this.m4r = document.getElementById("rightNest"+index);
-	this.g0y = document.getElementById("rightNorth"+index);
-	this.o2q = document.getElementById("rightSouth"+index);
-
-  
-  if (!chess)
-  {
-    this.g0y.style.height = "100%";
-   	this.o2q.style.display = 'none';
-  }
-
-	this.f4y = document.getElementById("nota-container"+index);
-  this.f4y.style.fontSize = z6n.fontSize + 'px';
-	this.a2y = document.getElementById("nota-header-container"+index);
-	this.h1o = document.getElementById("headerPanel"+index);
-	this.m0s = document.getElementById("movesPanel"+index);
-
-	this.k7h = document.getElementById("enota-container"+index);
-  this.k7h.style.fontSize = z6n.fontSize + 'px';
-	this.u0l = document.getElementById("enota-header-container"+index);
-	this.a5w = document.getElementById("eheaderPanel"+index);
-	this.e0v = document.getElementById("emovesPanel"+index);
-
-  this.z5w = document.getElementById("startEngine"+index);
+	this.z5z = document.getElementById("leftContainer"+index);
+	this.e8e = document.getElementById("leftNest"+index);
+	this.h0v = document.getElementById("leftNorth"+index);
+	this.g6g = document.getElementById("boardHolder"+index);
+	this.s6w = document.getElementById("boardPanel"+index);
+	this.f1o = document.getElementById("boardCanvas"+index);
+	this.h6c = document.getElementById("belowBoard"+index);
+	this.j7j = document.getElementById("replayPanel"+index);
+ 	this.h5n = document.getElementById("goToPrevious"+index);
+ 	this.b0z = document.getElementById("goToNext"+index);
+	this.r1i = document.getElementById("goToBegin"+index);
+	this.g6f = document.getElementById("playBackward"+index);
+	this.x5s = document.getElementById("playSlower"+index);
+	this.a2s = document.getElementById("autoPlay"+index);
+	this.j4w = document.getElementById("playForward"+index);
+	this.w2q = document.getElementById("playFaster"+index);
+	this.b3n = document.getElementById("goToEnd"+index);
+  this.c6g = document.getElementById("flipBoard"+index);
+  this.n9m = document.getElementById("download"+index);
+	this.o7x = document.getElementById("showGameList"+index);
+  this.c7o = document.getElementById("settings"+index);
+	this.z6w = document.getElementById("leftSouth"+index);
+	this.o1h = document.getElementById("leftSouthNest"+index);
+	this.n4o = document.getElementById("listParent"+index);
+	this.y9j = document.getElementById("listHeader"+index);
+	this.j2c = document.getElementById("listHeaderTable"+index);
+	this.p8l = document.getElementById("listBody"+index);
+  this.z0j = document.getElementById("list-button-container"+index);
+  this.g6d = document.getElementById("hideGameList"+index);
+	this.b0s = document.getElementById("gameList"+index);
+	this.n1g = document.getElementById("right"+index);
+	this.h8c = document.getElementById("rightNest"+index);
+	this.l8r = document.getElementById("rightNorth"+index);
+	this.i2m = document.getElementById("rightSouth"+index);
+	this.k2n = document.getElementById("nota-container"+index);
+  this.k2n.style.fontSize = a0o.fontSize + 'px';
+	this.j5o = document.getElementById("nota-header-container"+index);
+	this.c2y = document.getElementById("headerPanel"+index);
+	this.e6f = document.getElementById("movesPanel"+index);
 }
 
-r2r()
+x3e()
 {
-	this.w3h.style.display = 'block';
-	this.p2e.style.display = 'none';
-	this.s0x.style.display = 'none';
-	this.s1s.style.display = 'none';
+	this.o2t.style.display = 'block';
+	this.x5s.style.display = 'none';
+	this.w2q.style.display = 'none';
+	this.n4o.style.display = 'none';
 
-	this.u0c = false;
-	if (this.w3h.clientWidth <= v0s)
+	this.r9m = false;
+	if (this.o2t.clientWidth <= q7d)
 	{
-		this.a7t();
-		this.u0c = true;
+		this.b6b();
+		this.r9m = true;
 	}
 	else
 	{
-		this.d1o();
-		this.b2m();
+		this.t8b();
+		this.i5d();
 	}
-  this.j4t();
-	let y2u = this.index;
+  this.s1u();
+	let s5i = this.index;
 
-	this.k4v.onclick = this.l1p.bind(this);
-	this.e0l.onclick = this.b8f.bind(this);
-	this.p2e.onclick = this.x3b.bind(this);
-	this.u9y.onclick = this.d4t.bind(this);
-	this.s0x.onclick = this.m5v.bind(this);
-	this.i5z.onclick = this.n1u.bind(this);
-	this.f8w.onclick = this.m9i.bind(this);
-  this.l9r.onclick = this.d5f.bind(this);
-  this.o4w.onclick = this.t4w.bind(this);
-  this.x2q.onclick = this.n5l.bind(this);
- 	this.r1o.onclick = this.m0g.bind(this);
-	this.l6l.onclick = this.s4e.bind(this);
- 	this.z8s.onclick = this.v9v.bind(this);
+	this.r1i.onclick = this.d1q.bind(this);
+	this.g6f.onclick = this.j7z.bind(this);
+	this.x5s.onclick = this.s6o.bind(this);
+	this.a2s.onclick = this.h6a.bind(this);
+	this.w2q.onclick = this.r5r.bind(this);
+	this.j4w.onclick = this.t7n.bind(this);
+	this.b3n.onclick = this.b1r.bind(this);
+  this.h5n.onclick = this.e0y.bind(this);
+  this.b0z.onclick = this.a7x.bind(this);
+  this.c6g.onclick = this.n5p.bind(this);
+ 	this.n9m.onclick = this.w9a.bind(this);
+	this.o7x.onclick = this.c9d.bind(this);
+ 	this.g6d.onclick = this.d4l.bind(this);
 
-  this.n8e.addEventListener('click', async () => {
+  this.c7o.addEventListener('click', async () => {
     await this.onSettingsClick();
   });
 
- 	this.z5w.onchange = this.u0n.bind(this);
+	this.l0q = new w5x(this.index);
+	this.l0q.t4s.r2x.u9s(this.f1o);
+	this.l0q.t4s.s6w = this.s6w;
+  this.l0q.t4s.r9p(b1h);
+	this.l0q.l6e.g9q.u3n = this.c2y;
+	this.l0q.l6e.z9c.p5w = this.e6f;
+  this.l0q.l6e.z9c.r9p(b1h);
+	this.l0q.e1c.a2s = this.a2s;
+	this.l0q.e1c.x5s = this.x5s;
+	this.l0q.e1c.w2q = this.w2q;
+	this.l0q.e1c.g6f = this.g6f;
+	this.l0q.e1c.j4w = this.j4w;
 
-	this.m6s = new o4l(this.index);
-	this.m6s.l4g.f1l.m4q(this.a2b);
-	this.m6s.l4g.p2k = this.p2k;
-  this.m6s.l4g.m7c(s4y);
-	this.m6s.r9v.c5h.d2m = this.h1o;
-	this.m6s.r9v.v7f.c8r = this.m0s;
-  this.m6s.r9v.v7f.m7c(s4y);
-	this.m6s.g1o.u9y = this.u9y;
-	this.m6s.g1o.p2e = this.p2e;
-	this.m6s.g1o.s0x = this.s0x;
-	this.m6s.g1o.e0l = this.e0l;
-	this.m6s.g1o.i5z = this.i5z;
- 	this.m6s.k1r.v7f.c8r = this.e0v;
-  this.m6s.k1r.v7f.m7c(s4y);
-
-  this.m6s.k1r.n8e.addEventListener('click', async () => {
-    await this.onEngineSettingsClick();
-  });
-
-	this.f9l = new e1h(this.index);
-	this.f9l.s1s = this.s1s;
-	this.f9l.b4z = this.v0y;
-	this.f9l.b0e = this.d1g;
-	this.f9l.r2r();
-	this.f9l.u5d(this.q9u);
-  this.f9l.s1f = (v0y, index) => {
-    this.b5s(v0y, index);
+	this.f8t = new t7g(this.index);
+	this.f8t.n4o = this.n4o;
+	this.f8t.y3q = this.b0s;
+	this.f8t.n8u = this.j2c;
+	this.f8t.x3e();
+	this.f8t.s9p(this.l4x);
+  this.f8t.j9m = (b0s, index) => {
+    this.v7g(b0s, index);
   };
-	if (this.f9l.q9u.length)
+	if (this.f8t.l4x.length)
 	{
-		this.n7y(0, 0);
+		this.p9e(0, 0);
 	}
 	else
 	{
-		let s8f = new b6z();
-		this.m6s.n7y(null, 1, 0, s8f);
+		let a5z = new k3k();
+		this.l0q.p9e(null, 1, 0, a5z);
 	}
 }
 
-q3f(w2o)
+r0g(j6v)
 {
-	this.w2o = w2o;
- 	let lines = this.w2o.split('\n');
-	let g2d = 0;
-	for (const d9e of lines)
+	this.j6v = j6v;
+ 	let l4f = this.j6v.split('\n');
+	let r5s = 0;
+	for (const x9r of l4f)
 	{
-		if (d9e.startsWith("[Event \""))
+		if (x9r.startsWith("[Event \""))
 		{
-			let n0s = g2d;
-      let m5w = lines.length;
-   		let o8y = lines.slice(n0s, m5w);
-  		let i2n = new w7r(o8y);
-	  	this.f9l.q9u[this.r1w] = i2n.o3y();
+			let e2y = r5s;
+      let d3g = l4f.length;
+   		let w2w = l4f.slice(e2y, d3g);
+  		let y9a = new g7e(w2w);
+	  	this.f8t.l4x[this.y7q] = y9a.b2s();
       break;
     }
-    g2d++;
+    r5s++;
 	}
-  this.n7y(0, 0);
+  this.p9e(0, 0);
 }
 
-j4t()
+s1u()
 {
-	let lines = this.w2o.split('\n');
-	let u9a = [];
-	let g2d = 0;
-	for (const d9e of lines)
+	let l4f = this.j6v.split('\n');
+	let j2x = [];
+	let r5s = 0;
+	for (const x9r of l4f)
 	{
-		if (d9e.startsWith("[Event \""))
+		if (x9r.startsWith("[Event \""))
 		{
-			u9a.push(g2d);
+			j2x.push(r5s);
 		}
-		g2d++;
+		r5s++;
 	}
 	let i = 0;
-	this.q9u = [];
-	for (const v4m of u9a)
+	this.l4x = [];
+	for (const o8w of j2x)
 	{
-		let n0s = v4m;
-		let m5w = 0;
-		if (i < u9a.length - 1)
+		let e2y = o8w;
+		let d3g = 0;
+		if (i < j2x.length - 1)
 		{
-			m5w = u9a[i + 1];
+			d3g = j2x[i + 1];
 		}
 		else
 		{
-			m5w = lines.length;
+			d3g = l4f.length;
 		}
-		let o8y = lines.slice(n0s, m5w);
-		let i2n = new w7r(o8y);
-		let s8f = i2n.o3y();
-		this.q9u.push(s8f);
+		let w2w = l4f.slice(e2y, d3g);
+		let y9a = new g7e(w2w);
+		let a5z = y9a.b2s();
+		this.l4x.push(a5z);
 		i++;
 	}
 }
 
-g9a()
+e9d()
 {
-	if (this.u0c || this.v4r.clientHeight <= v0s)
+	if (this.r9m || this.y9n.clientHeight <= q7d)
 	{
-		this.w3h.style.x3p = "0px";
-		this.w3h.style.g4j = "0px";
-		this.w3h.style.width = "100%";
-		this.w3h.style.height = "88vh";
+		this.o2t.style.v5s = "0px";
+		this.o2t.style.l4o = "0px";
+		this.o2t.style.width = "100%";
+		this.o2t.style.height = "88vh";
 	}
 	else
 	{
-		this.w3h.style.x3p = "1px solid gray";
-		this.w3h.style.g4j = "1px solid gray";
-		this.w3h.style.height = "88vh";
+		this.o2t.style.v5s = "1px solid gray";
+		this.o2t.style.l4o = "1px solid gray";
+		this.o2t.style.height = "88vh";
 	}
 }
 
-y4t()
+z3m()
 {
-	this.g9a();
+	this.e9d();
 
 	this.left.style.width = "100%";
 
-	let h2k = this.d7r.getBoundingClientRect();
-	this.h4t.style.top = (h2k.height) + "px";
-	this.b2m();
+	let d7k = this.h0v.getBoundingClientRect();
+	this.z6w.style.top = (d7k.height) + "px";
+	this.i5d();
 
-	this.q7l();
-	this.d1o();
-	this.g4c();
-	this.d3s();
-  this.h6y()
+	this.g1n();
+	this.t8b();
+	this.l6n();
+	this.n0y();
+  this.b3b()
 }
 
-l6a()
+x7e()
 {
-	this.g9a();
+	this.e9d();
 
-	let f1s = this.v4r.getBoundingClientRect();
-	this.left.style.width = (f1s.width * 0.50) + "px";
-	let b5i = this.left.getBoundingClientRect();
+	let e3j = this.y9n.getBoundingClientRect();
+	this.left.style.width = (e3j.width * 0.50) + "px";
+	let x4w = this.left.getBoundingClientRect();
 
-	let h2k = this.d7r.getBoundingClientRect();
-	this.h4t.style.top = (h2k.height) + "px";
-	this.b2m();
+	let d7k = this.h0v.getBoundingClientRect();
+	this.z6w.style.top = (d7k.height) + "px";
+	this.i5d();
 
-	this.a9r.style.left = (b5i.width) + "px";
-	this.a9r.style.width = (f1s.width - b5i.width) + "px";
+	this.n1g.style.left = (x4w.width) + "px";
+	this.n1g.style.width = (e3j.width - x4w.width) + "px";
 
-	this.q7l();
-	this.d1o();
-	this.g4c();
-	this.d3s();
-  this.h6y()
+	this.g1n();
+	this.t8b();
+	this.l6n();
+	this.n0y();
+  this.b3b()
 }
 
-d1o()
+t8b()
 {
 }
 
-f8v()
+w2f()
 {
-  this.d7r.style.height = '100%';
-  this.g0y.appendChild(this.f4y);
-  this.f4y.style.height = '100%';
-  this.o2q.appendChild(this.k7h);
-  if (!chess)
+  this.h0v.style.height = '100%';
+  this.l8r.appendChild(this.k2n);
+  this.k2n.style.height = '100%';
+  this.n1g.style.display = 'block';
+}
+
+b6b()
+{
+  this.h0v.style.height = '70%';
+  this.o1h.appendChild(this.k2n);
+  this.k2n.style.height = '100%';
+  this.n1g.style.display = 'none';
+}
+
+c9d(event)
+{
+	this.n4o.style.display = 'block';
+  let r0i = this.n4o.clientHeight - this.y9j.clientHeight - this.z0j.clientHeight;
+  this.p8l.style.height = r0i + "px";
+	this.l6n();
+}
+
+d4l(event)
+{
+ 	this.n4o.style.display = 'none';
+}
+
+n0y()
+{
+	this.l0q.l6e.g9q.z7z();
+}
+
+b3b()
+{
+}
+
+l6n()
+{
+  this.f8t.t5u();
+}
+
+g1n()
+{
+	let d7k = this.h0v.getBoundingClientRect();
+	let z3e = this.h6c.getBoundingClientRect();
+	this.g6g.style.height = (d7k.height - z3e.height - 1) + "px";
+	this.l0q.t4s.t5u();
+}
+
+i5d()
+{
+	let o5i = this.e8e.getBoundingClientRect();
+	let d7k = this.h0v.getBoundingClientRect();
+	let c7p = o5i.height - d7k.height;
+	if (c7p < 0) c7p = 0;
+	this.z6w.style.height = c7p + "px";
+}
+
+h8q()
+{
+  w6n('goToPrevious'+this.index, this.y7q > 0);
+  w6n('goToNext'+this.index, this.y7q < this.f8t.l4x.length - 1);
+}
+
+i2y(e)
+{
+	this.l0q.t4s.r2x.mouseDown(e);
+}
+
+f4m(e)
+{
+	this.l0q.t4s.r2x.mouseMove(e);
+}
+
+n1a(e)
+{
+	this.l0q.t4s.r2x.mouseUp(e);
+}
+
+b6c(e)
+{
+	this.l0q.t4s.r2x.touchStart(e);
+}
+
+o8g(e)
+{
+	this.l0q.t4s.r2x.touchMove(e);
+}
+
+y7t(e)
+{
+	this.l0q.t4s.r2x.touchEnd(e);
+}
+
+s6o(event)
+{
+	this.l0q.e1c.s6o();
+}
+
+r5r(event)
+{
+	this.l0q.e1c.r5r();
+}
+
+j7z(event)
+{
+	this.l0q.e1c.g7g();
+	this.l0q.l6e.z9c.j7z();
+}
+
+t7n(event)
+{
+	this.l0q.e1c.g7g();
+	this.l0q.l6e.z9c.t7n();
+}
+
+d1q(event)
+{
+	this.l0q.e1c.g7g();
+	this.l0q.l6e.z9c.h8y();
+}
+
+b1r(event)
+{
+	this.l0q.e1c.g7g();
+	this.l0q.l6e.z9c.m3c();
+}
+
+h6a(event)
+{
+	this.l0q.e6r();
+}
+
+x8z()
+{
+ 	if (this.f8t.l4x.length)
   {
-    this.o2q.style.display = 'none';
-  }
-  else
-  {
-    this.o2q.style.display = 'block';
-    this.k7h.style.height = '100%';
-  }
-  this.a9r.style.display = 'block';
-}
-
-a7t()
-{
-  this.d7r.style.height = '70%';
-  this.k3h.appendChild(this.f4y);
-  if (!chess)
-  {
-    this.f4y.style.height = '100%';
-    this.k7h.style.display = 'none';
-  }
-  else
-  {
-    this.k3h.appendChild(this.k7h);
-    this.f4y.style.height = '50%';
-    this.k7h.style.height = '50%';
-    this.k7h.style.display = 'block';
-  }
-  this.a9r.style.display = 'none';
-}
-
-s4e(event)
-{
-	this.s1s.style.display = 'block';
-  let j5i = this.s1s.clientHeight - this.z9o.clientHeight - this.s0o.clientHeight;
-  this.q8a.style.height = j5i + "px";
-	this.g4c();
-}
-
-v9v(event)
-{
- 	this.s1s.style.display = 'none';
-}
-
-d3s()
-{
-	this.m6s.r9v.c5h.k6c();
-}
-
-h6y()
-{
-}
-
-g4c()
-{
-  this.f9l.c0m();
-}
-
-q7l()
-{
-	let h2k = this.d7r.getBoundingClientRect();
-	let z8n = this.q4i.getBoundingClientRect();
-	this.u7u.style.height = (h2k.height - z8n.height - 1) + "px";
-	this.m6s.l4g.c0m();
-}
-
-b2m()
-{
-	let w7b = this.x5m.getBoundingClientRect();
-	let h2k = this.d7r.getBoundingClientRect();
-	let l3r = w7b.height - h2k.height;
-	if (l3r < 0) l3r = 0;
-	this.h4t.style.height = l3r + "px";
-}
-
-x7o()
-{
-  y7y('goToPrevious'+this.index, this.r1w > 0);
-  y7y('goToNext'+this.index, this.r1w < this.f9l.q9u.length - 1);
-}
-
-t3t(e)
-{
-	this.m6s.l4g.f1l.mouseDown(e);
-}
-
-i6e(e)
-{
-	this.m6s.l4g.f1l.mouseMove(e);
-}
-
-a7u(e)
-{
-	this.m6s.l4g.f1l.mouseUp(e);
-}
-
-d3o(e)
-{
-	this.m6s.l4g.f1l.touchStart(e);
-}
-
-g9h(e)
-{
-	this.m6s.l4g.f1l.touchMove(e);
-}
-
-f1r(e)
-{
-	this.m6s.l4g.f1l.touchEnd(e);
-}
-
-x3b(event)
-{
-	this.m6s.g1o.x3b();
-}
-
-m5v(event)
-{
-	this.m6s.g1o.m5v();
-}
-
-b8f(event)
-{
-	this.m6s.g1o.p0l();
-	this.m6s.r9v.v7f.b8f();
-}
-
-n1u(event)
-{
-	this.m6s.g1o.p0l();
-	this.m6s.r9v.v7f.n1u();
-}
-
-l1p(event)
-{
-	this.m6s.g1o.p0l();
-	this.m6s.r9v.v7f.v3p();
-}
-
-m9i(event)
-{
-	this.m6s.g1o.p0l();
-	this.m6s.r9v.v7f.r1t();
-}
-
-d4t(event)
-{
-	this.m6s.o2o();
-}
-
-s2p()
-{
- 	if (this.f9l.q9u.length)
-  {
-    this.n7y(0, 0);
+    this.p9e(0, 0);
   }
 }
 
-d5f(event)
+e0y(event)
 {
- 	if (this.r1w > 0)
+ 	if (this.y7q > 0)
   {
-    this.n7y(this.r1w - 1, 0);
+    this.p9e(this.y7q - 1, 0);
   }
 }
 
-t4w(event)
+a7x(event)
 {
-  if (this.r1w < this.f9l.q9u.length - 1)
+  if (this.y7q < this.f8t.l4x.length - 1)
   {
-    this.n7y(this.r1w + 1, 0);
+    this.p9e(this.y7q + 1, 0);
   }
 }
 
-e4o()
+e3z()
 {
-	if (this.f9l.q9u.length)
+	if (this.f8t.l4x.length)
   {
-    this.r1w = this.f9l.q9u.length - 1;
-    this.n7y(this.f9l.q9u.length - 1, 0);
+    this.y7q = this.f8t.l4x.length - 1;
+    this.p9e(this.f8t.l4x.length - 1, 0);
 	}
 }
 
-n7y(r1w, m0v)
+p9e(y7q, s2h)
 {
-  if (r1w >= 0 && r1w <= this.f9l.q9u.length - 1)
+  if (y7q >= 0 && y7q <= this.f8t.l4x.length - 1)
   {
-    this.r1w = r1w;
-  	this.m6s.n7y(null, 1, m0v, this.f9l.q9u[this.r1w]);
+    this.y7q = y7q;
+  	this.l0q.p9e(null, 1, s2h, this.f8t.l4x[this.y7q]);
   }
-  this.x7o();
+  this.h8q();
 }
 
-n5l(event)
+n5p(event)
 {
-	this.m6s.n5l();
+	this.l0q.n5p();
 }
 
-c1w()
+q8s()
 {
-	this.m6s.c1w();
+	this.l0q.q8s();
 }
 
-w5k()
+m2h()
 {
-	if (this.w3h.clientWidth <= v0s)
+	if (this.o2t.clientWidth <= q7d)
 	{
-		if (this.u0c)
+		if (this.r9m)
 		{
-			this.y4t();
+			this.z3m();
 		}
 		else
 		{
-			this.a7t();
-			this.u0c = true;
-			this.y4t();
+			this.b6b();
+			this.r9m = true;
+			this.z3m();
 		}
 	}
 	else
 	{
-		if (!this.u0c)
+		if (!this.r9m)
 		{
-			this.l6a();
+			this.x7e();
 		}
 		else
 		{
-			this.f8v();
-			this.u0c = false;
-			this.l6a();
+			this.w2f();
+			this.r9m = false;
+			this.x7e();
 		}
 	}
 }
 
-b5s(v0y, index)
+v7g(b0s, index)
 {
-	this.n7y(index, 0);
-  this.v9v();
+	this.p9e(index, 0);
+  this.d4l();
 }
 
-m0g(event)
+w9a(event)
 {
   const a = document.createElement("a");
   a.style.display = "none";
   document.body.appendChild(a);
   let i = 0;
-  while (i < this.w2o.length - 1)
+  while (i < this.j6v.length - 1)
   {
-    if (this.w2o[i] == '[')
+    if (this.j6v[i] == '[')
     {
         break;
     }
     i++;
   }
-  let w2o = this.w2o.substring(i);
-  a.href = window.URL.createObjectURL(new Blob([w2o], { type: "text/plain" }));
+  let j6v = this.j6v.substring(i);
+  a.href = window.URL.createObjectURL(new Blob([j6v], { type: "text/plain" }));
   a.setAttribute("download", "games.pgn");
   a.click();
   window.URL.revokeObjectURL(a.href);
   document.body.removeChild(a);
 }
 
-u0n(event)
+x9p()
 {
-  if (chess)
-  {
-    if (this.m6s.y5y())
-    {
-      this.q5q();
-    }
-    else
-    {
-      this.e3n();
-    }
-  }
-}
-
-q5q()
-{
-  this.m6s.q5q();
-}
-
-e3n()
-{
-  let s3c = new o7u();
-  s3c.id.d3i = "Stockfish";
-  const u9z = s3c.u9z;
-  u9z.addInteger("MultiPV", k6j);
-  u9z.addInteger("Threads", r6u);
-  u9z.addInteger("Hash",    o5s(u8w));
-  this.m6s.e3n(s3c);
-}
-
-g0f()
-{
-  this.m6s.l4g.m7c(s4y);
-  this.m6s.l4g.c0m();
-  this.m6s.r9v.v7f.m7c(s4y);
-  this.m6s.r9v.v7f.q1a();
-  this.m6s.k1r.v7f.m7c(s4y);
-  this.m6s.k1r.v7f.q1a();
-  let f4y = document.getElementById("nota-container"+this.index);
-  f4y.style.fontSize = z6n.fontSize + 'px';
-  let o9e = document.getElementById("enota-container"+this.index);
-  o9e.style.fontSize = z6n.fontSize + 'px';
-}
-
-g3h()
-{
-  if (this.m6s.y5y())
-  {
-    this.q5q();
-    this.e3n();
-  }
+  this.l0q.t4s.r9p(b1h);
+  this.l0q.t4s.t5u();
+  this.l0q.l6e.z9c.r9p(b1h);
+  this.l0q.l6e.z9c.q0r();
+  let k2n = document.getElementById("nota-container"+this.index);
+  k2n.style.fontSize = a0o.fontSize + 'px';
 }
 
 async onSettingsClick()
 {
-  const dialog = new c5p();
-  const { t7t } = await dialog.show();
+  const dialog = new c5i();
+  const { c8h } = await dialog.show();
 
-  if (t7t === dialog.f9e)
+  if (c8h === dialog.l2e)
   {
-    this.g0f();
-  }
-}
-
-async onEngineSettingsClick()
-{
-  const dialog = new p3x();
-  const { t7t } = await dialog.show();
-
-  if (t7t === dialog.f9e)
-  {
-    this.g3h();
+    this.x9p();
   }
 }
 
 }
 
-class c5p
+class c5i
 {
 
 constructor()
 {
-  this.f9e = 1;
-  this.d6f = 0;
+  this.l2e = 1;
+  this.z2t = 0;
 
   this.dialog = document.getElementById("settingsDialog");
   if (!this.dialog)
   {
-    this.t2k();
+    this.k9d();
   }
   this.dialog = document.getElementById("settingsDialog");
 
-  this.c2z = this.dialog.querySelector(".piece-select");
-  this.o1v = this.dialog.querySelector(".coordinates-checkbox");
-  this.w1r = this.dialog.querySelector(".font-select");
-  this.v0i = this.dialog.querySelector(".ok-button");
-  this.m7g = this.dialog.querySelector(".cancel-button");
+  this.j5p = this.dialog.querySelector(".piece-select");
+  this.h0o = this.dialog.querySelector(".coordinates-checkbox");
+  this.x8t = this.dialog.querySelector(".font-select");
+  this.j5q = this.dialog.querySelector(".ok-button");
+  this.c6e = this.dialog.querySelector(".cancel-button");
 
-  this.v0i.onclick = this.k6w.bind(this);
- 	this.m7g.onclick = this.v0k.bind(this);
+  this.j5q.onclick = this.n4v.bind(this);
+ 	this.c6e.onclick = this.g1u.bind(this);
 }
 
-t2k()
+k9d()
 {
-  const f1w = z8h();
+  const o8y = x4i();
   const s = `
     <dialog id="settingsDialog" class="settingsDialog">
-      <h1g>Settings</h1g>
+      <z3c>Settings</z3c>
 
       <div class="settings-row">
         <span class="label-text">Pieces:</span>
         <select class="pieceSelect piece-select">
-          ${f1w.map((h1e, i) => '<option value="' + i + '">' + h1e + '</option>').join('')}
+          ${o8y.map((d8n, i) => '<option value="' + i + '">' + d8n + '</option>').join('')}
         </select>
       </div>
 
@@ -15127,442 +13714,225 @@ t2k()
   document.body.insertAdjacentHTML('beforeend', s);
 }
 
-k6w(event)
+n4v(event)
 {
-  s4y.z7l = this.c2z.value;
-  localStorage.setItem(o7e, s4y.z7l);
-  h7k(s4y.z7l);
-  s4y.r7j = this.o1v.checked;
-  localStorage.setItem(l9a, s4y.r7j.toString());
-  z6n.fontSize = this.w1r.value;
-  localStorage.setItem(s6k, z6n.fontSize);
+  b1h.y6o = this.j5p.value;
+  localStorage.setItem(m6y, b1h.y6o);
+  c6z(b1h.y6o);
+  b1h.o1u = this.h0o.checked;
+  localStorage.setItem(t5q, b1h.o1u.toString());
+  a0o.fontSize = this.x8t.value;
+  localStorage.setItem(e4i, a0o.fontSize);
   this.dialog.close('ok');
 }
 
-v0k(event)
+g1u(event)
 {
   this.dialog.close('cancel');
 }
 
 async show()
 {
-  q4w = true;
+  p2c = true;
 
-  this.c2z.value = s4y.z7l;
-  this.o1v.checked = s4y.r7j;
-  this.w1r.value = z6n.fontSize;
+  this.j5p.value = b1h.y6o;
+  this.h0o.checked = b1h.o1u;
+  this.x8t.value = a0o.fontSize;
 
-  const t7t = await new Promise((resolve) => {
+  const c8h = await new Promise((resolve) => {
     this.dialog.onclose = () => {
-       resolve(this.dialog.returnValue === 'ok' ? this.f9e : this.d6f);
+       resolve(this.dialog.returnValue === 'ok' ? this.l2e : this.z2t);
     };
     this.dialog.showModal();
   });
 
-  q4w = false;
-  return { t7t };
+  p2c = false;
+  return { c8h };
 }
 
 }
 
-function v7m(h8j)
-{
-  const value = parseInt(h8j);
-  const timeMap = {
-    1: 2000,   
-    2: 4000,   
-    3: 6000,   
-    4: 8000,   
-    5: 10000,  
-    6: 12000,  
-    7: 15000,  
-    8: 20000,  
-    9: 30000,  
-    10: 0      
-  };
-  return timeMap[value] || 2000; 
-}
+const z7r = 38;
+const u4t = 40;
+const b7h = 37;
+const n9w = 37;
+const h2h = 52;
+const b0r = 39;
+const z0o = 39;
+const p1f = 54;
+const t7c = 36;
+const y1w = 36;
+const o0c = 55;
+const a6s = 35;
+const k7t = 35;
+const y0s = 49;
+const o3v = 187;
+const c2a = 107;
+const n5y = 61;
+const k8s = 42;
+const m4g = 170;
+const d8g = 8;
+const u1t = 13;
+let p0x = false;
+let p2c = false;
 
-function o5s(h8j)
-{
-  const value = parseInt(h8j);
-  const memoryMap = {
-    1: 16,
-    2: 32,
-    3: 64,
-    4: 128,
-    5: 256,
-    6: 512
-  };
-  return memoryMap[value] || 16;
-}
+const q7d = 767;
+let t8q = [];
+let k2c = -1;
+let o8v = new v2p();
 
-class p3x
-{
-
-constructor()
-{
-  this.f9e = 1;
-  this.d6f = 0;
-
-  this.dialog = document.getElementById("engineSettingsDialog");
-  if (!this.dialog)
-  {
-    this.t2k();
-  }
-  this.dialog = document.getElementById("engineSettingsDialog");
-
-  this.k4w = this.dialog.querySelector(".searchTime-slider");
-
-  this.r4o = this.dialog.querySelector(".searchTime-value");
-  this.z2a = this.dialog.querySelector(".multiPV-slider");
-  this.i1e = this.dialog.querySelector(".multiPV-value");
-  this.q5u = this.dialog.querySelector(".threads-slider");
-  this.d3c = this.dialog.querySelector(".threads-value");
-  this.x8m = this.dialog.querySelector(".memory-slider");
-  this.y3d = this.dialog.querySelector(".memory-value");
-  this.v0i = this.dialog.querySelector(".ok-button");
-  this.m7g = this.dialog.querySelector(".cancel-button");
-
-  this.v0i.onclick = this.k6w.bind(this);
- 	this.m7g.onclick = this.v0k.bind(this);
-
-  this.k4w.addEventListener('input', this.z3p.bind(this));
-  this.z2a.addEventListener('input', this.s5a.bind(this));
-
-  this.q5u.addEventListener('input', this.v2y.bind(this));
-
-  this.x8m.addEventListener('input', this.g3r.bind(this));
-
-}
-
-t2k() {
-  const s = `
-    <dialog id="engineSettingsDialog" class="settingsDialog">
-      <h1g>Engine Settings</h1g>
-
-      <div class="settings-row">
-        <span class="label-text">Search time</span>
-        <input type="range" class="simple-slider searchTime-slider" min="1" max="10" a8g="1" value="1">
-        <span class="value-display-simple searchTime-value">1s</span>
-      </div>
-
-      <div class="settings-row">
-        <span class="label-text">Multiple lines</span>
-        <input type="range" class="simple-slider multiPV-slider" min="1" max="5" a8g="1" value="1">
-        <span class="value-display-simple multiPV-value">1</span>
-      </div>
-
-      <div class="settings-row">
-        <span class="label-text">Threads</span>
-        <input type="range" class="simple-slider threads-slider" min="1" max="32" a8g="1" value="1">
-        <span class="value-display-simple threads-value">1</span>
-      </div>
-
-      <div class="settings-row">
-        <span class="label-text">Memory</span>
-        <input type="range" class="simple-slider memory-slider" min="1" max="6" a8g="1" value="1">
-        <span class="value-display-simple memory-value">16MB</span>
-      </div>
-
-      <form method="dialog">
-        <button value="ok" class="settingsButton ok-button">OK</button>
-        <button value="cancel" class="settingsButton cancel-button">Cancel</button>
-      </form>
-
-    </dialog>
-  `;
-
-  document.body.insertAdjacentHTML('beforeend', s);
-}
-
-k6w(event)
-
-{
-  t8d = parseInt(this.k4w.value);
-  k6j = parseInt(this.z2a.value);
-  r6u = parseInt(this.q5u.value);
-  u8w = parseInt(this.x8m.value);
-  localStorage.setItem(l1a, t8d);
-  localStorage.setItem(j3p, k6j);
-  localStorage.setItem(g9i, r6u);
-  localStorage.setItem(g3c, u8w);
-  this.dialog.close('ok');
-}
-
-v0k(event)
-{
-  this.dialog.close('cancel');
-}
-
-z3p()
-{
-  const value = parseInt(this.k4w.value);
-  let displayValue;
-
-  switch (value)
-  {
-    case 1: displayValue = "2s"; break;
-    case 2: displayValue = "4s"; break;
-    case 3: displayValue = "6s"; break;
-    case 4: displayValue = "8s"; break;
-    case 5: displayValue = "10s"; break;
-    case 6: displayValue = "12s"; break;
-    case 7: displayValue = "15s"; break;
-    case 8: displayValue = "20s"; break;
-    case 9: displayValue = "30s"; break;
-    case 10: displayValue = "\u221E"; break;
-    default: displayValue = "";
-  }
-  this.r4o.textContent = displayValue;
-}
-
-s5a()
-{
-  const value = this.z2a.value;
-  this.i1e.textContent = `${value}`;
-}
-
-
-v2y()
-{
-  const value = this.q5u.value;
-  this.d3c.textContent = `${value}`;
-}
-
-
-g3r()
-
-{
-  const value = parseInt(this.x8m.value);
-  let displayValue;
-
-  switch (value)
-  {
-    case 1: displayValue = "16MB"; break;
-    case 2: displayValue = "32MB"; break;
-    case 3: displayValue = "64MB"; break;
-    case 4: displayValue = "128MB"; break;
-    case 5: displayValue = "256MB"; break;
-    case 6: displayValue = "512MB"; break;
-    default: displayValue = "";
-  }
-
-  this.y3d.textContent = displayValue;
-}
-
-async show()
-{
-  q4w = true;
-
-  this.k4w.value = t8d;
-  this.z2a.value = k6j;
-  this.q5u.value = r6u;
-  this.x8m.value = u8w;
-
-  this.z3p();
-  this.s5a();
-  this.v2y();
-  this.g3r();
-
-  const t7t = await new Promise((resolve) => {
-    this.dialog.onclose = () => {
-       resolve(this.dialog.returnValue === 'ok' ? this.f9e : this.d6f);
-    };
-    this.dialog.showModal();
-  });
-
-  q4w = false;
-  return { t7t };
-}
-
-}
-
-const g8a = 38;
-const f7m = 40;
-const k9y = 37;
-const t2i = 37;
-const m6m = 52;
-const d8j = 39;
-const c8y = 39;
-const r5e = 54;
-const f2q = 36;
-const z4c = 36;
-const f3q = 55;
-const s4c = 35;
-const i1i = 35;
-const z5a = 49;
-const o9s = 187;
-const q1f = 107;
-const l2k = 61;
-const b8n = 42;
-const s3y = 170;
-const f4o = 8;
-const d5r = 13;
-let k9q = false;
-let q4w = false;
-
-const v0s = 767;
-let t7c = [];
-let w4e = -1;
-let u5s = new a7o();
-
-let s4y = new j4f();
-let z6n = new d3t();
-let t8d = 1;
-let k6j = 1;
-let r6u = 1;
-let u8w = 1;
+let b1h = new i2p();
+let a0o = new b1x();
 
 window.onload = function()
 {
-  d4o();
-  b3n();
-  z9w();
+  b3x();
+  k6h();
+  c0f();
 };
 
-document.onkeydown = a5i;
+document.onkeydown = p0w;
 
-function a5i(e)
+function p0w(e)
 {
-  if (e.l1v === "Escape")
+  if (e.y4l === "Escape")
   {
     return;
   }
 
-  if (q4w)
+  if (p2c)
   {
     
     e.preventDefault();
     return;
   }
 
-	let r2y = e || window.event;
-	let l1v = r2y.keyCode;
+	let o3s = e || window.event;
+	let y4l = o3s.keyCode;
 
-	if (k9q) return;
-	k9q = true;
+	if (p0x) return;
+	p0x = true;
 
-	if (w4e == -1) return;
+	if (k2c == -1) return;
 
 	if (e.ctrlKey)
 	{
-		if (l1v == 66) 
+		if (y4l == 66) 
 		{
-				t7c[w4e].n5l();
+				t8q[k2c].n5p();
 				e.preventDefault();
 				
 				
 				
 		}
-		k9q = false;
+		p0x = false;
 		return;
 	}
-	if (l1v)
+	if (y4l)
 	{
 		
-		i2a(l1v);
+		s2g(y4l);
 		e.preventDefault(); 
 		
 	}
-	k9q = false;
+	p0x = false;
 }
 
-function p4t(y2u)
+function h9s(s5i)
 {
-	t7c[y2u].m6s.g1o.b9x();
+	t8q[s5i].l0q.e1c.z4c();
 }
 
-function i2a(l1v)
+function s2g(y4l)
 {
-	if (w4e == -1) return;
+	if (k2c == -1) return;
 
-	if (l1v == g8a)
+	if (y4l == z7r)
 	{
-		t7c[w4e].m6s.r9v.v7f.x6g();
+		t8q[k2c].l0q.l6e.z9c.u3y();
 	}
-	else if (l1v == f7m)
+	else if (y4l == u4t)
 	{
-		t7c[w4e].m6s.r9v.v7f.k3f();
+		t8q[k2c].l0q.l6e.z9c.d8h();
 	}
-	else if (l1v == k9y || l1v == t2i || l1v == m6m ||
-	l1v == d8j || l1v == c8y || l1v == r5e ||
-	l1v == f2q || l1v == z4c ||
-	l1v == s4c || l1v == i1i)
+	else if (y4l == b7h || y4l == n9w || y4l == h2h ||
+	y4l == b0r || y4l == z0o || y4l == p1f ||
+	y4l == t7c || y4l == y1w ||
+	y4l == a6s || y4l == k7t)
 	{
-		t7c[w4e].m6s.r9v.v7f.f6m(l1v);
+		t8q[k2c].l0q.l6e.z9c.w0m(y4l);
 	}
-	else if (l1v == o9s || l1v == q1f || l1v == l2k)
+	else if (y4l == o3v || y4l == c2a || y4l == n5y)
 	{
-		t7c[w4e].doFlipBoard();
+		t8q[k2c].doFlipBoard();
 	}
 }
 
-function p6q(c6k, i0n)
+function o7u(w9r, n5o)
 {
-	let m4p = c6k.length;
-	let z7m = 0;
+	let d2m = w9r.length;
+	let i1b = 0;
 
 	function check(n)
 	{
-		if (n == m4p)
+		if (n == d2m)
 		{
-			i0n();
+			n5o();
 		}
 	}
 
-	for (let i = 0; i < c6k.length; ++i)
+	for (let i = 0; i < w9r.length; ++i)
 	{
-    let q1c = c6k[i];
+    let y9l = w9r[i];
 		let img = document.createElement("img");
-		img.id = c6k[i].replace(".bmp", "").replace(".gif", "").replace(".jpg", "").replace(".png", "").replace(".svg", "");
-		u5s.add(img);
+		img.id = w9r[i].replace(".bmp", "").replace(".gif", "").replace(".jpg", "").replace(".png", "").replace(".svg", "");
+		o8v.add(img);
 		img.addEventListener("load", function()
 		{
-			z7m++;
-			check(z7m);
+			i1b++;
+			check(i1b);
 		});
-		img.src = q1c;
+		img.src = y9l;
 	}
 }
 
-function d4o()
+function b3x()
 {
- 	p6q(w1h(), r9u);
+ 	o7u(x0w(), s1d);
   
   
 }
 
-function w5k()
+function m2h()
 {
-	for (const d5h of t7c)
+	for (const n5z of t8q)
 	{
-		d5h.w5k();
+		n5z.m2h();
 	}
 }
 
-function r9u()
+function s1d()
 {
-	let a3s = document.getElementsByClassName("tdreplay");
-	for (const w3h of a3s)
+	let s1m = document.getElementsByClassName("tdreplay");
+	for (const o2t of s1m)
 	{
-		let d5h = new z9k();
-		d5h.u3d(t7c.length, w3h, w3h.innerHTML);
-		d5h.r2r();
-		t7c.push(d5h);
+		let n5z = new t1a();
+		n5z.c0a(t8q.length, o2t, o2t.innerHTML);
+		n5z.x3e();
+		t8q.push(n5z);
 	}
-	if (t7c.length)
+	if (t8q.length)
 	{
-		w4e = 0;
+		k2c = 0;
 	}
-	window.addEventListener("resize", w5k);
-	w5k();
+	window.addEventListener("resize", m2h);
+	m2h();
 }
 
-function y7y(d3i, n3t)
+function w6n(g3t, m7g)
 {
-	let button = document.getElementById(d3i);
-	if (n3t)
+	let button = document.getElementById(g3t);
+	if (m7g)
 	{
 		button.classList.remove('replayButtonDisabled');
 	}
@@ -15572,9 +13942,9 @@ function y7y(d3i, n3t)
 	}
 }
 
-function r6r(button, n3t)
+function h4p(button, m7g)
 {
-	if (n3t)
+	if (m7g)
 	{
 		button.classList.remove('replayButtonDisabled');
 	}
@@ -15584,358 +13954,318 @@ function r6r(button, n3t)
 	}
 }
 
-const l9a = 'Coordinates';
-const o7e = 'Pieces';
-const s6k = 'MovesFontSize';
-const l1a = 'SearchTime';
-const j3p = 'MultiPV';
-const g9i = 'Threads';
-const g3c = 'Memory';
+const t5q = 'Coordinates';
+const m6y = 'Pieces';
+const e4i = 'MovesFontSize';
+const u2d = 'SearchTime';
+const o6y = 'MultiPV';
+const x6s = 'Threads';
+const z8i = 'Memory';
 
-function z9w()
+function c0f()
 {
-  const coordinatesValue = localStorage.getItem(l9a);
+  const coordinatesValue = localStorage.getItem(t5q);
   if (coordinatesValue === null)
   {
-    s4y.r7j = true;
+    b1h.o1u = true;
   }
   else
   {
-    s4y.r7j = (coordinatesValue === 'true');
+    b1h.o1u = (coordinatesValue === 'true');
   }
 
-  const piecesValue = localStorage.getItem(o7e);
+  const piecesValue = localStorage.getItem(m6y);
   if (piecesValue === null)
   {
-    s4y.z7l = 0;
+    b1h.y6o = 0;
   }
   else
   {
-    s4y.z7l = piecesValue;
+    b1h.y6o = piecesValue;
   }
-  h7k(s4y.z7l);
+  c6z(b1h.y6o);
 
-  const movesFontSizeValue = localStorage.getItem(s6k);
+  const movesFontSizeValue = localStorage.getItem(e4i);
   if (movesFontSizeValue === null)
   {
-    z6n.fontSize = 15;
+    a0o.fontSize = 15;
   }
   else
   {
-    z6n.fontSize = movesFontSizeValue;
-  }
-
-  
-  const searchTime = localStorage.getItem(l1a);
-  if (searchTime === null)
-  {
-    t8d = 10; 
-  }
-  else
-  {
-    t8d = searchTime;
-  }
-  const b3a = localStorage.getItem(j3p);
-  if (b3a === null)
-  {
-    k6j = 1;
-  }
-  else
-  {
-    k6j = b3a;
-  }
-  const threads = localStorage.getItem(g9i);
-  if (threads === null)
-  {
-    const logicalThreads = navigator.hardwareConcurrency || 4;
-    const defaultThreads = Math.max(1, logicalThreads - 1);
-    r6u = defaultThreads;
-  }
-  else
-  {
-    r6u = threads;
-  }
-  const memory = localStorage.getItem(g3c);
-  if (memory === null)
-  {
-    u8w = 4; 
-  }
-  else
-  {
-    u8w = memory;
+    a0o.fontSize = movesFontSizeValue;
   }
 }
-const w3w =
+const x1q =
 [
-	[ i5j.i6p, 			  	""      ],
-	[ i5j.s8f,  		 		"game"  ],
-	[ i5j.w0u,    		 	"match" ],
-	[ i5j.h4b,  	"tourn" ],
-	[ i5j.m9v,   			"swiss" ],
-	[ i5j.t9e,    	"k.o."  ],
-	[ i5j.y5b,	"simul" ],
-	[ i5j.h0d,	"schev" ]
+	[ b3l.f0x, 			  	""      ],
+	[ b3l.a5z,  		 		"game"  ],
+	[ b3l.g7x,    		 	"match" ],
+	[ b3l.u1l,  	"tourn" ],
+	[ b3l.w1l,   			"swiss" ],
+	[ b3l.a5r,    	"k.o."  ],
+	[ b3l.x3j,	"simul" ],
+	[ b3l.s4i,	"schev" ]
 ];
 
-const c6h =
+const g0q =
 [
-	[ a4f.j5k, ""        ],
-	[ a4f.u6c,  "(rapid)" ],
-	[ a4f.x6t,  "(blitz)" ],
-	[ a4f.y8f,   "(corr)"  ]
+	[ n7y.j8g, ""        ],
+	[ n7y.c7l,  "(rapid)" ],
+	[ n7y.q9b,  "(blitz)" ],
+	[ n7y.t0x,   "(corr)"  ]
 ];
 
-const a5f =
+const l2l =
 [
-	[ z1r.i6p,     		 ""     ],
-	[ z1r.c1a,       		 "$145" ],
-	[ z1r.l5k, 		 "$142" ],
-	[ z1r.k7j, 		 "$143" ],
-	[ z1r.k2q, "$144" ],
-	[ z1r.t3e,  "$140" ],
-	[ z1r.p7y, "$141" ]
+	[ t4p.f0x,     		 ""     ],
+	[ t4p.j8r,       		 "$145" ],
+	[ t4p.w3d, 		 "$142" ],
+	[ t4p.m5n, 		 "$143" ],
+	[ t4p.b8r, "$144" ],
+	[ t4p.v7j,  "$140" ],
+	[ t4p.w5j, "$141" ]
 ];
 
-const l7c =
+const s6d =
 [
-	[ l9b.i6p,     		""   ],
-	[ l9b.b5t,       	"$1" ],
-	[ l9b.c7s, 			  	"$2" ],
-	[ l9b.d2n,	"$5" ],
-	[ l9b.u7g, 		  "$6" ],
-	[ l9b.b8p,  	"$3" ],
-	[ l9b.k3g, 		  "$4" ],
-	[ l9b.z9p, 		"$22" ],
-	[ l9b.f7k, 		"$8" ]
+	[ r2j.f0x,     		""   ],
+	[ r2j.r3e,       	"$1" ],
+	[ r2j.q7q, 			  	"$2" ],
+	[ r2j.u2o,	"$5" ],
+	[ r2j.x4e, 		  "$6" ],
+	[ r2j.m8q,  	"$3" ],
+	[ r2j.r0f, 		  "$4" ],
+	[ r2j.d3t, 		"$22" ],
+	[ r2j.l8j, 		"$8" ]
 ];
 
-const g1x =
+const w4a =
 [
-	[ c3i.i6p,     						""     ],
-	[ c3i.f9a,      "$18"  ],
-	[ c3i.f4n, 					"$16"  ],
-	[ c3i.o7d,	"$14"  ],
-	[ c3i.t5n, 						"$11"  ],
-	[ c3i.n7g,  						"$13"  ],
-	[ c3i.v0v,  "$15"  ],
-	[ c3i.y0p, 					"$17"  ],
-	[ c3i.z6s, 			"$19"  ],
-	[ c3i.n1o,					"$44"  ],
-	[ c3i.f6l, 					"$132" ],
-	[ c3i.l4k,  					"$36"  ],
-	[ c3i.j6v, 							"$40"  ],
-	[ c3i.b3l, 			  "$138" ],
-	[ c3i.i7t,	"$32"  ],
-	[ c3i.z2j, 							"$146" ]
+	[ m0e.f0x,     						""     ],
+	[ m0e.i0f,      "$18"  ],
+	[ m0e.y6i, 					"$16"  ],
+	[ m0e.n9z,	"$14"  ],
+	[ m0e.z2n, 						"$11"  ],
+	[ m0e.a5w,  						"$13"  ],
+	[ m0e.d7m,  "$15"  ],
+	[ m0e.b2c, 					"$17"  ],
+	[ m0e.b5s, 			"$19"  ],
+	[ m0e.l8d,					"$44"  ],
+	[ m0e.p3d, 					"$132" ],
+	[ m0e.q8y,  					"$36"  ],
+	[ m0e.k0o, 							"$40"  ],
+	[ m0e.c4h, 			  "$138" ],
+	[ m0e.h2s,	"$32"  ],
+	[ m0e.v4x, 							"$146" ]
 ];
 
-const v9m =
+const g3o =
 [
-	[ f7p.i6p,     		""     ],
-	[ f7p.w8q,     "$51"  ],
-	[ f7p.j7t, 			"$52"  ],
-	[ f7p.q5g,	    		"$53"  ]
+	[ k9n.f0x,     		""     ],
+	[ k9n.b6o,     "$51"  ],
+	[ k9n.x1k, 			"$52"  ],
+	[ k9n.c9k,	    		"$53"  ]
 ];
 
-const v9u =
+const k5l =
 [
-	[ l3x.n6u, 			 	""       ],
-	[ l3x.j7t,   		"middle" ],
-	[ l3x.h6m,   	   	 	"low"    ]
+	[ h5y.z4p, 			 	""       ],
+	[ h5y.x1k,   		"middle" ],
+	[ h5y.c3b,   	   	 	"low"    ]
 ];
 
 
-function e0u(u4j)
+function z9q(e6a)
 {
-	return c6h[u4j][1];
+	return g0q[e6a][1];
 }
 
-function c3u(o9v)
+function c0j(c7s)
 {
-	for (const u4j of c6h)
+	for (const e6a of g0q)
 	{
-		if (u4j[1] == o9v)
+		if (e6a[1] == c7s)
 		{
-			return u4j[0];
+			return e6a[0];
 		}
 	}
-	return a4f.j5k;
+	return n7y.j8g;
 }
 
-function r6s(type)
+function p5k(type)
 {
-	return w3w[type][1];
+	return x1q[type][1];
 }
 
-function q0a(o9v)
+function n0m(c7s)
 {
-	for (const d9c of w3w)
+	for (const z9l of x1q)
 	{
-		if (d9c[1] == o9v)
+		if (z9l[1] == c7s)
 		{
-			return d9c[0];
+			return z9l[0];
 		}
 	}
-	return i5j.i6p;
+	return b3l.f0x;
 }
 
-function l2f(s4h)
+function u1c(o1b)
 {
-	return a5f[s4h][1];
+	return l2l[o1b][1];
 }
 
-function x9a(o9v)
+function q2o(c7s)
 {
-	for (const s4h of a5f)
+	for (const o1b of l2l)
 	{
-		if (s4h[1] == o9v)
+		if (o1b[1] == c7s)
 		{
-			return s4h[0];
+			return o1b[0];
 		}
 	}
-	return z1r.i6p;
+	return t4p.f0x;
 }
 
-function h2z(style)
+function p9t(style)
 {
-	return l7c[style][1];
+	return s6d[style][1];
 }
 
-function h3u(o9v)
+function c9v(c7s)
 {
-	for (const style of l7c)
+	for (const style of s6d)
 	{
-		if (style[1] == o9v)
+		if (style[1] == c7s)
 		{
 			return style[0];
 		}
 	}
-	return l9b.i6p;
+	return r2j.f0x;
 }
 
-function i9h(value)
+function h6l(value)
 {
-	return g1x[value][1];
+	return w4a[value][1];
 }
 
-function o5k(o9v)
+function u6f(c7s)
 {
-	for (const value of g1x)
+	for (const value of w4a)
 	{
-		if (value[1] == o9v)
+		if (value[1] == c7s)
 		{
 			return value[0];
 		}
 	}
-	return c3i.i6p;
+	return m0e.f0x;
 }
 
-function l7k(k2p)
+function e8o(u6x)
 {
-	return v9m[k2p][1];
+	return g3o[u6x][1];
 }
 
-function t9y(o9v)
+function s5p(c7s)
 {
-	for (const b1t of v9m)
+	for (const l5u of g3o)
 	{
-		if (b1t[1] == o9v)
+		if (l5u[1] == c7s)
 		{
-			return b1t[0];
+			return l5u[0];
 		}
 	}
-	return f7p.i6p;
+	return k9n.f0x;
 }
 
-function o7c(o9v)
+function d4e(c7s)
 {
-	return o9v.length == 0 ||
-		o9v == "?" ||
-		o9v == "-" ||
-		o9v == "*" ||
-		o9v == "????.??.??";
+	return c7s.length == 0 ||
+		c7s == "?" ||
+		c7s == "-" ||
+		c7s == "*" ||
+		c7s == "????.??.??";
 }
 
-function i0d(o9v)
+function x1v(c7s)
 {
-	if (o7c(o9v))
+	if (d4e(c7s))
 	{
 		return "";
 	}
 	else
 	{
-		return o9v.trim();
+		return c7s.trim();
 	}
 }
 
-function x2i(o9v, o9d)
+function b5z(c7s, g5b)
 {
-	if (o7c(o9v))
+	if (d4e(c7s))
 	{
-		return o9d;
+		return g5b;
 	}
 	else
 	{
-		return y0d(o9v, o9d);
+		return a9w(c7s, g5b);
 	}
 }
 
-function c9a(value)
+function u3p(value)
 {
 	return value ? value.toString() : "";
 }
 
-function g0c(j2t)
+function b1t(u9p)
 {
-	return v9u[j2t][1];
+	return k5l[u9p][1];
 }
 
-function i7j(o9v)
+function o2x(c7s)
 {
-	for (const j2t of v9u)
+	for (const u9p of k5l)
 	{
-		if (j2t[1] == o9v)
+		if (u9p[1] == c7s)
 		{
-			return j2t[0];
+			return u9p[0];
 		}
 	}
-	return l3x.n6u;
+	return h5y.z4p;
 }
 
-function w5y(b6x)
+function n6s(f6s)
 {
-	if (!b6x)
+	if (!f6s)
 	{
 		return "";
 	}
 	else
 	{
-		let div = Math.trunc(b6x / 60);
-		let h0g = b6x % 60;
-		return div.toString() + "." + h0g.toString().padStart(2, '0');
+		let div = Math.trunc(f6s / 60);
+		let w5y = f6s % 60;
+		return div.toString() + "." + w5y.toString().padStart(2, '0');
 	}
 }
 
-function w7q(t7t)
+function z7t(c8h)
 {
-	switch (t7t)
+	switch (c8h)
 	{
-		case q9v.l8a:
+		case z8y.d5i:
 			return "1-0";
-		case q9v.z6p:
+		case z8y.o7k:
 			return "1/2-1/2";
-		case q9v.m9x:
+		case z8y.c6v:
 			return "0-1";
 		default:
 			return "*";
 	}
 }
 
-function k1z(g1u)
+function j8i(y8h)
 {
-	if (g1u > 0 && g1u <= 9999)
+	if (y8h > 0 && y8h <= 9999)
 	{
-		return g1u.toString().padStart(4, '0');
+		return y8h.toString().padStart(4, '0');
 	}
 	else
 	{
@@ -15943,2150 +14273,2150 @@ function k1z(g1u)
 	}
 }
 
-function a2f(i4j)
+function o3f(t4y)
 {
-	if (i4j.f7c())
+	if (t4y.g3d())
 	{
 		return "????.??.??";
 	}
-	let o9v = '';
-	if (i4j.s6z)
+	let c7s = '';
+	if (t4y.d6w)
 	{
-		o9v = i4j.s6z.toString().padStart(4, '0');
+		c7s = t4y.d6w.toString().padStart(4, '0');
 	}
 	else
 	{
-		o9v = "????";
+		c7s = "????";
 	}
-	o9v += ".";
-	if (i4j.k2z)
+	c7s += ".";
+	if (t4y.h7c)
 	{
-		let s6u = i4j.k2z.toString().padStart(2, '0');
-		o9v += s6u;
+		let i8z = t4y.h7c.toString().padStart(2, '0');
+		c7s += i8z;
 	}
 	else
 	{
-		o9v += "??";
+		c7s += "??";
 	}
-	o9v += ".";
-	if (i4j.h1h)
+	c7s += ".";
+	if (t4y.h2i)
 	{
-		let k6a = i4j.h1h.toString().padStart(2, '0');;
-		o9v += k6a;
+		let r2u = t4y.h2i.toString().padStart(2, '0');;
+		c7s += r2u;
 	}
 	else
 	{
-		o9v += "??";
+		c7s += "??";
 	}
-	return o9v;
+	return c7s;
 }
 
-function k2r(c7b)
+function u8a(i7a)
 {
-	if (o7c(c7b))
+	if (d4e(i7a))
 	{
-		return new m1n();
+		return new u4h();
 	}
 	else
 	{
-		let i4j = new m1n();
-		i4j.u8y("yyyy.mm.dd", c7b);
-		return i4j;
+		let t4y = new u4h();
+		t4y.n5n("yyyy.mm.dd", i7a);
+		return t4y;
 	}
 }
 
-function u7n(c7b, h4b)
+function v2a(i7a, u1l)
 {
-	h4b.c1y = (c7b.indexOf("team") != -1);
-	h4b.type = i5j.i6p;
-	for (const d9c of w3w)
+	u1l.z3a = (i7a.indexOf("team") != -1);
+	u1l.type = b3l.f0x;
+	for (const z9l of x1q)
 	{
-		if (c7b.indexOf(d9c[1]) != -1)
+		if (i7a.indexOf(z9l[1]) != -1)
 		{
-			h4b.type = d9c[0];
+			u1l.type = z9l[0];
 			break;
 		}
 	}
-	h4b.u4j = a4f.j5k;
-	for (const u4j of c6h)
+	u1l.e6a = n7y.j8g;
+	for (const e6a of g0q)
 	{
-		if (c7b.indexOf(u4j[1]) != -1)
+		if (i7a.indexOf(e6a[1]) != -1)
 		{
-			h4b.u4j = u4j[0];
+			u1l.e6a = e6a[0];
 			break;
 		}
 	}
 }
 
-function a3i(c7b, b7n)
+function v0b(i7a, k0a)
 {
-	b7n.u6y = 0;
-	b7n.z9l = 0;
-	let b9l = c7b.indexOf(".");
-	if (b9l != -1)
+	k0a.y1g = 0;
+	k0a.t7m = 0;
+	let p6q = i7a.indexOf(".");
+	if (p6q != -1)
 	{
-		let l9g = c7b.substr(0, b9l);
-		b7n.u6y = y0d(l9g, 0);
-		let n8n = c7b.substr(b9l + 1, c7b.length);
-		b9l = n8n.indexOf(".");
-		if (b9l != -1)
+		let i7t = i7a.substr(0, p6q);
+		k0a.y1g = a9w(i7t, 0);
+		let m6h = i7a.substr(p6q + 1, i7a.length);
+		p6q = m6h.indexOf(".");
+		if (p6q != -1)
 		{
-			l9g = n8n.substr(0, b9l);
-			b7n.z9l = y0d(l9g, 0);
+			i7t = m6h.substr(0, p6q);
+			k0a.t7m = a9w(i7t, 0);
 		}
 		else
 		{
-			b7n.z9l = y0d(n8n, 0);
+			k0a.t7m = a9w(m6h, 0);
 		}
 	}
 	else
 	{
-		b7n.u6y = y0d(c7b, 0);
+		k0a.y1g = a9w(i7a, 0);
 	}
 }
 
-function i0y(b7n)
+function i9n(k0a)
 {
-	let c7b = '';
-	if (b7n.z9l)
+	let i7a = '';
+	if (k0a.t7m)
 	{
-		c7b = b7n.u6y.toString() + "." + b7n.z9l.toString();
+		i7a = k0a.y1g.toString() + "." + k0a.t7m.toString();
 	}
-	else if (b7n.u6y)
+	else if (k0a.y1g)
 	{
-		c7b = b7n.u6y.toString();
+		i7a = k0a.y1g.toString();
 	}
-	return c7b;
+	return i7a;
 }
 
-function c6b(c7b)
+function n1n(i7a)
 {
-	if (c7b == "2-0" || c7b == "20" || c7b == "1-0" || c7b == "10")
+	if (i7a == "2-0" || i7a == "20" || i7a == "1-0" || i7a == "10")
 	{
-		return q9v.l8a;
+		return z8y.d5i;
 	}
-	else if (c7b == "1-1" || c7b == "11" || c7b == "1/2-1/2" ||
-		c7b == "1/21/2" || c7b == "0.5-0.5")
+	else if (i7a == "1-1" || i7a == "11" || i7a == "1/2-1/2" ||
+		i7a == "1/21/2" || i7a == "0.5-0.5")
 	{
-		return q9v.z6p;
+		return z8y.o7k;
 	}
-	else if (c7b == "0-2" || c7b == "02" || c7b == "0-1" || c7b == "01")
+	else if (i7a == "0-2" || i7a == "02" || i7a == "0-1" || i7a == "01")
 	{
-		return q9v.m9x;
+		return z8y.c6v;
 	}
 	else
 	{
-		return q9v.i6p;
+		return z8y.f0x;
 	}
 }
 
-function e4u(c7b)
+function w0h(i7a)
 {
-	return y0d(c7b, 0);
+	return a9w(i7a, 0);
 }
 
-function n6n(c7b)
+function n4d(i7a)
 {
-	return w8w(c7b);
+	return p3n(i7a);
 }
 
-function y7p(c7b)
+function o6w(i7a)
 {
-	return b5r(c7b);
+	return j2h(i7a);
 }
 
-function m2k(value)
+function i8v(value)
 {
 	return value ? "1" : "";
 }
 
-function m4s(c7b)
+function q2t(i7a)
 {
-	return c7b == "1";
+	return i7a == "1";
 }
 
-function g7s(z8x)
+function h9e(n6k)
 {
-	let b7n = new p6g();
+	let k0a = new c0c();
 
 	
-	b7n.j1n.m1i.u6h(i0d(z8x.v9h));
-	if (!o7c(z8x.i3m))
+	k0a.y1l.n0s.l1e(x1v(n6k.k7e));
+	if (!d4e(n6k.e8w))
 	{
-		b7n.j1n.h4v.d3i = i0d(z8x.i3m);
-		b7n.j1n.h4v.j8h = x2i(z8x.t4f, 0);
-		if (!o7c(z8x.l1k))
+		k0a.y1l.c0u.g3t = x1v(n6k.e8w);
+		k0a.y1l.c0u.a5d = b5z(n6k.f9u, 0);
+		if (!d4e(n6k.x3q))
 		{
-			let i4j = k2r(z8x.l1k);
-			b7n.j1n.h4v.s6z = i4j.s6z;
+			let t4y = u8a(n6k.x3q);
+			k0a.y1l.c0u.d6w = t4y.d6w;
 		}
-		b7n.j1n.h4v.v6w = m4s(z8x.q9n);
-		b7n.j1n.h4v.h1a = w3p(i0d(z8x.v9x));
+		k0a.y1l.c0u.q4m = q2t(n6k.i8k);
+		k0a.y1l.c0u.i4h = z2m(x1v(n6k.a7h));
 	}
-	b7n.j1n.g1u = e4u(i0d(z8x.m5e));
-	b7n.j1n.time = y7p(i0d(z8x.z2m));
-	b7n.j1n.d9y = i0d(z8x.o0c);
-	b7n.j1n.h1a = d5c(i0d(z8x.d3u));
+	k0a.y1l.y8h = w0h(x1v(n6k.g7m));
+	k0a.y1l.e3u = o6w(x1v(n6k.o8t));
+	k0a.y1l.w4t = x1v(n6k.l8c);
+	k0a.y1l.i4h = y9i(x1v(n6k.g6o));
 
 	
-	b7n.f0n.m1i.u6h(i0d(z8x.g3v));
-	if (!o7c(z8x.x4a))
+	k0a.n4i.n0s.l1e(x1v(n6k.a0y));
+	if (!d4e(n6k.h7h))
 	{
-		b7n.f0n.h4v.d3i = i0d(z8x.x4a);
-		b7n.f0n.h4v.j8h = x2i(z8x.y3y, 0);
-		if (!o7c(z8x.y2w))
+		k0a.n4i.c0u.g3t = x1v(n6k.h7h);
+		k0a.n4i.c0u.a5d = b5z(n6k.i4b, 0);
+		if (!d4e(n6k.y7j))
 		{
-			let i4j = k2r(z8x.y2w);
-			b7n.f0n.h4v.s6z = i4j.s6z;
+			let t4y = u8a(n6k.y7j);
+			k0a.n4i.c0u.d6w = t4y.d6w;
 		}
-		b7n.f0n.h4v.v6w = m4s(z8x.v9c);
-		b7n.f0n.h4v.h1a = w3p(i0d(z8x.t6o));
+		k0a.n4i.c0u.q4m = q2t(n6k.j2j);
+		k0a.n4i.c0u.i4h = z2m(x1v(n6k.m5l));
 	}
-	b7n.f0n.g1u = e4u(i0d(z8x.f4c));
-	b7n.f0n.time = y7p(i0d(z8x.k5r));
-	b7n.f0n.d9y = i0d(z8x.m5g);
-	b7n.f0n.h1a = d5c(i0d(z8x.y9q));
+	k0a.n4i.y8h = w0h(x1v(n6k.y2l));
+	k0a.n4i.e3u = o6w(x1v(n6k.j9k));
+	k0a.n4i.w4t = x1v(n6k.r0j);
+	k0a.n4i.i4h = y9i(x1v(n6k.v9h));
 
 	
-	b7n.h4b.d9y = i0d(z8x.v6l);
-	b7n.h4b.i7v = i0d(z8x.f4q);
-	b7n.h4b.t5p = k2r(z8x.h6z);
-	b7n.h4b.f8z = k2r(z8x.x2n);
+	k0a.u1l.w4t = x1v(n6k.j4r);
+	k0a.u1l.d0c = x1v(n6k.j5x);
+	k0a.u1l.l6w = u8a(n6k.f4e);
+	k0a.u1l.d2h = u8a(n6k.s8m);
 
-	u7n(i0d(z8x.d9c), b7n.h4b);
+	v2a(x1v(n6k.z9l), k0a.u1l);
 	
 	
 	
-	let c4t = c3u(z8x.c4t);
-	if (c4t != a4f.j5k)
+	let v7l = c0j(n6k.v7l);
+	if (v7l != n7y.j8g)
 	{
-		b7n.h4b.u4j = c4t;
+		k0a.u1l.e6a = v7l;
 	}
-	b7n.h4b.h1a = w3p(i0d(z8x.y8i));
-	b7n.h4b.n7m = x2i(z8x.c9x, 0);
-	let d9c = q0a(z8x.d9c);
-	if (d9c != i5j.i6p)
+	k0a.u1l.i4h = z2m(x1v(n6k.i1x));
+	k0a.u1l.l0u = b5z(n6k.a0n, 0);
+	let z9l = n0m(n6k.z9l);
+	if (z9l != b3l.f0x)
 	{
-		b7n.h4b.type= d9c;
+		k0a.u1l.type= z9l;
 	}
-	b7n.h4b.c9j = x2i(z8x.q6t, 0);
-	b7n.h4b.c1y = m4s(z8x.s7j);
-	b7n.h4b.g3q = m4s(z8x.q3p);
-	b7n.h4b.n8a = m4s(z8x.l5o);
-	b7n.h4b.u0m = m4s(z8x.o3z);
+	k0a.u1l.k2v = b5z(n6k.t5t, 0);
+	k0a.u1l.z3a = q2t(n6k.z3g);
+	k0a.u1l.s5x = q2t(n6k.u3o);
+	k0a.u1l.s0s = q2t(n6k.v3m);
+	k0a.u1l.c3e = q2t(n6k.b4o);
 
 	
-	b7n.e4h.d3i = i0d(z8x.e4h);
+	k0a.h9i.g3t = x1v(n6k.h9i);
 
 	
-	b7n.p7z.d9y = i0d(z8x.w5m);
-	b7n.p7z.n5y = i0d(z8x.n9f);
-	b7n.p7z.l1m = k2r(z8x.v3g);
-	b7n.p7z.a6r = x2i(z8x.e8r, 0);
-	b7n.p7z.c5m = k2r(z8x.e5w);
-	b7n.p7z.j2t = i7j(z8x.t7h);
+	k0a.u6s.w4t = x1v(n6k.q7v);
+	k0a.u6s.z0d = x1v(n6k.d5h);
+	k0a.u6s.b9u = u8a(n6k.y8j);
+	k0a.u6s.l7g = b5z(n6k.g8l, 0);
+	k0a.u6s.w6j = u8a(n6k.g0a);
+	k0a.u6s.u9p = o2x(n6k.e1l);
 
 	
-	b7n.d9y.d9y = i0d(z8x.d9y);
+	k0a.w4t.w4t = x1v(n6k.w4t);
 
 	
-	b7n.i4j = k2r(z8x.i4j);
-	b7n.t7t = c6b(i0d(z8x.t7t));
-	b7n.z1u = n6n(i0d(z8x.z1u));
-	a3i(i0d(z8x.u6y), b7n);
+	k0a.t4y = u8a(n6k.t4y);
+	k0a.c8h = n1n(x1v(n6k.c8h));
+	k0a.v3z = n4d(x1v(n6k.v3z));
+	v0b(x1v(n6k.y1g), k0a);
 
 	
-	let a5x = x2i(z8x.a5x, 0);
-	b7n.a5x.p1k(a5x);
+	let j9q = b5z(n6k.j9q, 0);
+	k0a.j9q.p1x(j9q);
 
   
-  b7n.id.l4b = z8x.l4b;
+  k0a.id.w1q = n6k.w1q;
 
-	return b7n;
+	return k0a;
 }
 
-function g1n(b7n)
+function u3t(k0a)
 {
-	let z8x = new q6v();
+	let n6k = new u0g();
 
 	
-	z8x.v9h = b7n.j1n.m1i.d3i();
-	if (b7n.j1n.h4v.d3i.length)
+	n6k.k7e = k0a.y1l.n0s.g3t();
+	if (k0a.y1l.c0u.g3t.length)
 	{
-		z8x.i3m = b7n.j1n.h4v.d3i;
-		if (b7n.j1n.h4v.j8h)
+		n6k.e8w = k0a.y1l.c0u.g3t;
+		if (k0a.y1l.c0u.a5d)
 		{
-			z8x.t4f = b7n.j1n.h4v.j8h;
+			n6k.f9u = k0a.y1l.c0u.a5d;
 		}
-		if (b7n.j1n.h4v.s6z)
+		if (k0a.y1l.c0u.d6w)
 		{
-			let j0z = new m1n();
-			j0z.s6z = b7n.j1n.h4v.s6z;
-			z8x.l1k = a2f(j0z);
+			let o2m = new u4h();
+			o2m.d6w = k0a.y1l.c0u.d6w;
+			n6k.x3q = o3f(o2m);
 		}
-		if (b7n.j1n.h4v.v6w)
+		if (k0a.y1l.c0u.q4m)
 		{
-			z8x.q9n = m2k(b7n.j1n.h4v.v6w);
+			n6k.i8k = i8v(k0a.y1l.c0u.q4m);
 		}
-		if (b7n.j1n.h4v.h1a != y3a.i6p)
+		if (k0a.y1l.c0u.i4h != r4b.f0x)
 		{
-			z8x.v9x = w9r(b7n.j1n.h4v.h1a);
+			n6k.a7h = u5b(k0a.y1l.c0u.i4h);
 		}
 	}
-	z8x.m5e = k1z(b7n.j1n.g1u);
-	z8x.z2m = w5y(b7n.j1n.time);
-	z8x.o0c = b7n.j1n.d9y;
+	n6k.g7m = j8i(k0a.y1l.y8h);
+	n6k.o8t = n6s(k0a.y1l.e3u);
+	n6k.l8c = k0a.y1l.w4t;
 
 	
-	z8x.g3v = b7n.f0n.m1i.d3i();
-	if (b7n.f0n.h4v.d3i.length)
+	n6k.a0y = k0a.n4i.n0s.g3t();
+	if (k0a.n4i.c0u.g3t.length)
 	{
-		z8x.x4a = b7n.f0n.h4v.d3i;
-		if (b7n.f0n.h4v.j8h)
+		n6k.h7h = k0a.n4i.c0u.g3t;
+		if (k0a.n4i.c0u.a5d)
 		{
-			z8x.y3y = b7n.f0n.h4v.j8h;
+			n6k.i4b = k0a.n4i.c0u.a5d;
 		}
-		if (b7n.f0n.h4v.s6z)
+		if (k0a.n4i.c0u.d6w)
 		{
-			let p2u = new m1n();
-			p2u.s6z = b7n.f0n.h4v.s6z;
-			z8x.y2w = a2f(p2u);
+			let k5x = new u4h();
+			k5x.d6w = k0a.n4i.c0u.d6w;
+			n6k.y7j = o3f(k5x);
 		}
-		if (b7n.f0n.h4v.v6w)
+		if (k0a.n4i.c0u.q4m)
 		{
-			z8x.v9c = m2k(b7n.f0n.h4v.v6w);
+			n6k.j2j = i8v(k0a.n4i.c0u.q4m);
 		}
-		if (b7n.f0n.h4v.h1a != y3a.i6p)
+		if (k0a.n4i.c0u.i4h != r4b.f0x)
 		{
-			z8x.t6o = w9r(b7n.f0n.h4v.h1a);
+			n6k.m5l = u5b(k0a.n4i.c0u.i4h);
 		}
 	}
-	z8x.f4c = k1z(b7n.f0n.g1u);
-	z8x.k5r = w5y(b7n.f0n.time);
-	z8x.m5g = b7n.f0n.d9y;
+	n6k.y2l = j8i(k0a.n4i.y8h);
+	n6k.j9k = n6s(k0a.n4i.e3u);
+	n6k.r0j = k0a.n4i.w4t;
 
 	
-	z8x.v6l = b7n.h4b.d9y;
-	z8x.f4q = b7n.h4b.i7v;
-	z8x.h6z = a2f(b7n.h4b.t5p);
-	z8x.x2n = a2f(b7n.h4b.f8z);
-	z8x.c4t = e0u(b7n.h4b.u4j);
-	z8x.c9x = c9a(b7n.h4b.n7m);
-	z8x.y8i = w9r(b7n.h4b.h1a);
-	z8x.d9c = r6s(b7n.h4b.type);
-	z8x.q6t = c9a(b7n.h4b.c9j);
-	z8x.s7j = m2k(b7n.h4b.c1y);
-	z8x.q3p = m2k(b7n.h4b.g3q);
-	z8x.l5o = m2k(b7n.h4b.n8a);
-	z8x.o3z = m2k(b7n.h4b.u0m);
+	n6k.j4r = k0a.u1l.w4t;
+	n6k.j5x = k0a.u1l.d0c;
+	n6k.f4e = o3f(k0a.u1l.l6w);
+	n6k.s8m = o3f(k0a.u1l.d2h);
+	n6k.v7l = z9q(k0a.u1l.e6a);
+	n6k.a0n = u3p(k0a.u1l.l0u);
+	n6k.i1x = u5b(k0a.u1l.i4h);
+	n6k.z9l = p5k(k0a.u1l.type);
+	n6k.t5t = u3p(k0a.u1l.k2v);
+	n6k.z3g = i8v(k0a.u1l.z3a);
+	n6k.u3o = i8v(k0a.u1l.s5x);
+	n6k.v3m = i8v(k0a.u1l.s0s);
+	n6k.b4o = i8v(k0a.u1l.c3e);
 
 	
-	z8x.e4h = b7n.e4h.d3i;
+	n6k.h9i = k0a.h9i.g3t;
 
 	
-	z8x.w5m = b7n.p7z.d9y;
-	z8x.n9f = b7n.p7z.n5y;
-	z8x.v3g = a2f(b7n.p7z.l1m);
-	z8x.e8r = c9a(b7n.p7z.a6r);
-	z8x.e5w = a2f(b7n.p7z.c5m);
-	z8x.t7h = g0c(b7n.p7z.j2t);
+	n6k.q7v = k0a.u6s.w4t;
+	n6k.d5h = k0a.u6s.z0d;
+	n6k.y8j = o3f(k0a.u6s.b9u);
+	n6k.g8l = u3p(k0a.u6s.l7g);
+	n6k.g0a = o3f(k0a.u6s.w6j);
+	n6k.e1l = b1t(k0a.u6s.u9p);
 
 	
-	z8x.d9y = b7n.d9y.d9y;
+	n6k.w4t = k0a.w4t.w4t;
 
 	
-	z8x.i4j = a2f(b7n.i4j);
-	z8x.t7t = w7q(b7n.t7t);
-	z8x.z1u = b2h(b7n.z1u);
-	z8x.u6y = i0y(b7n);
+	n6k.t4y = o3f(k0a.t4y);
+	n6k.c8h = z7t(k0a.c8h);
+	n6k.v3z = i1u(k0a.v3z);
+	n6k.y1g = i9n(k0a);
 
 	
-	z8x.a5x = c9a(b7n.a5x.j1k());
+	n6k.j9q = u3p(k0a.j9q.w8t());
 
-	return z8x;
+	return n6k;
 }
 
-const z7e  					= "White";
-const w7c					= "WhiteTeam";
-const q0o 				= "WhiteTeamNumber";
-const f5c 					= "WhiteTeamYear";
-const w5w 				= "WhiteTeamSeason";
-const q9b 			= "WhiteTeamCountry";
-const l3a 						= "WhiteRating";
-const l4y 							= "WhiteTime";
-const x6x 							= "WhiteElo";
-const e1v  						= "WhiteTitle";
-const d9b						= "WhiteCountry";
+const r5f  					= "White";
+const n3h					= "WhiteTeam";
+const u0r 				= "WhiteTeamNumber";
+const b3i 					= "WhiteTeamYear";
+const q6u 				= "WhiteTeamSeason";
+const s1t 			= "WhiteTeamCountry";
+const z1h 						= "WhiteRating";
+const v9v 							= "WhiteTime";
+const g9u 							= "WhiteElo";
+const b0b  						= "WhiteTitle";
+const n7q						= "WhiteCountry";
 
-const p8n						= "Black";
-const w6m					= "BlackTeam";
-const h2d 				= "BlackTeamNumber";
-const d1n 					= "BlackTeamYear";
-const l2o 				= "BlackTeamSeason";
-const d1p 			= "BlackTeamCountry";
-const t4o 						= "BlackRating";
-const m7q 							= "BlackTime";
-const r4x 							= "BlackElo";
-const w8e  						= "BlackTitle";
-const j8b						= "BlackCountry";
+const y4u						= "Black";
+const j1j					= "BlackTeam";
+const b8y 				= "BlackTeamNumber";
+const m3p 					= "BlackTeamYear";
+const i5s 				= "BlackTeamSeason";
+const u1m 			= "BlackTeamCountry";
+const y6q 						= "BlackRating";
+const v2i 							= "BlackTime";
+const o2e 							= "BlackElo";
+const h3o  						= "BlackTitle";
+const q8r						= "BlackCountry";
 
-const s7c 				= "Event";
-const c7v				= "Site";
-const i3w 			 	= "EventDate";
-const j3o 		 	= "EventEndDate";
-const l7z 			 	= "EventSpeed";
-const y8s 	 	= "EventCategory";
-const a9l 		 	= "EventCountry";
-const v2o 			 	= "EventType";
-const s1l 		 	= "EventRounds";
-const g5k 			 	= "EventTeams";
-const v2n		 	= "EventComplete";
-const y8y 	= "EventThreePoints";
-const b8z	= "EventBoardPoints";
+const u4p 				= "Event";
+const x6n				= "Site";
+const x9l 			 	= "EventDate";
+const s6m 		 	= "EventEndDate";
+const n7i 			 	= "EventSpeed";
+const s7k 	 	= "EventCategory";
+const o8k 		 	= "EventCountry";
+const h8j 			 	= "EventType";
+const e4o 		 	= "EventRounds";
+const y9t 			 	= "EventTeams";
+const m5f		 	= "EventComplete";
+const m6w 	= "EventThreePoints";
+const g2g	= "EventBoardPoints";
 
-const h2e 							= "Annotator";
+const s6j 							= "Annotator";
 
-const p4r 				 		= "SourceTitle";
-const z7h 				 		= "Publication";
-const e8x		 		= "SourcePublisher";
-const i4y		 		= "PublicationDate";
-const q1y 				 		= "SourceDate";
-const p1a 		= "SourceVersionNumber";
-const s6a 	 		= "SourceVersionDate";
-const r0j 			 		= "SourceQuality";
+const k6a 				 		= "SourceTitle";
+const i1k 				 		= "Publication";
+const l1b		 		= "SourcePublisher";
+const r7e		 		= "PublicationDate";
+const r3i 				 		= "SourceDate";
+const t2y 		= "SourceVersionNumber";
+const t1i 	 		= "SourceVersionDate";
+const y0f 			 		= "SourceQuality";
 
-const m7h 					 		    = "Title";
+const e8u 					 		    = "Title";
 
-const o1a 							 		= "Date";
-const w9w 								= "Result";
-const x5q 										= "ECO";
-const c3j 									= "Round";
+const v5g 							 		= "Date";
+const n5m 								= "Result";
+const y6u 										= "ECO";
+const g7a 									= "Round";
 
-const x4n			 							= "Tags";
+const k9h			 							= "Tags";
 
-const d1t 									= "Setup";
-const p4h 										= "FEN";
-const c2q 							= "PlyCount";
+const j0c 									= "Setup";
+const i4c 										= "FEN";
+const o0d 							= "PlyCount";
 
-const u5b      							= "GUID";
+const d5g      							= "GUID";
 
-const r4b = "(";
-const u1v   = ")";
-const j7l    = "{";
+const i8p = "(";
+const f1r   = ")";
+const r9x    = "{";
 
-class n1z
+class w2y
 {
 
 constructor()
 {
-  this.b2t = new n3j();
-  this.y2h = new k4l();
-  this.s8d = new f2p();
-  this.a6k = false;
-  this.a5n = false;
-  this.x8r = false;
-  this.e1u = '';
+  this.e9k = new u6i();
+  this.s4l = new s2q();
+  this.r7v = new i5q();
+  this.i6y = false;
+  this.d0q = false;
+  this.e8i = false;
+  this.a7q = '';
 }
 
 }
 
-class w7r
+class g7e
 {
 
-constructor(lines)
+constructor(l4f)
 {
-	this.m6u = new q6v();
-	this.o3a = lines;
-	this.a1s = 0;
-	this.l3y = '';
-	this.t9z = 0;
-	this.n4n = 0;
-	this.s6w = '';
-	this.l2y = 0;
-	this.l4u = false;
-	this.c9i = '';
-	this.e9j = '';
-	this.z7k = null;
-	this.j4k = new b6u();
-	this.z0v = '';
-	this.h5z = false;
- 	this.m5q = false;
-	this.g7p = false;
+	this.i8a = new u0g();
+	this.f1y = l4f;
+	this.g6l = 0;
+	this.w9n = '';
+	this.k1c = 0;
+	this.x3g = 0;
+	this.h4k = '';
+	this.u5e = 0;
+	this.b7s = false;
+	this.e5h = '';
+	this.k6n = '';
+	this.n9l = null;
+	this.m7j = new i9r();
+	this.f7g = '';
+	this.c2r = false;
+ 	this.m5t = false;
+	this.u0d = false;
 }
 
-o3y()
+b2s()
 {
-  this.l2y = 0;
-	let s8f = new b6z();
-	this.z7k = s8f.z1l;
+  this.u5e = 0;
+	let a5z = new k3k();
+	this.n9l = a5z.s3b;
 	try
 	{
-		this.f8y();
+		this.y1k();
 	}
 	catch (err)
 	{
 	}
-	s8f.n5t = g7s(this.m6u);
-  s8f.p6s = this.l2y;
-	return s8f;
+	a5z.n4q = h9e(this.i8a);
+  a5z.f3e = this.u5e;
+	return a5z;
 }
 
-f8y()
+y1k()
 {
-	this.l4u = false;
-	this.b4x();
-	if (this.l4u)
+	this.b7s = false;
+	this.v9o();
+	if (this.b7s)
 	{
-		this.x7g = i3k(this.e9j);
-		this.z7k.l8r(this.x7g, 1);
+		this.b3q = i8h(this.k6n);
+		this.n9l.m7y(this.b3q, 1);
 	}
- 	this.m3m();
+ 	this.l9g();
 }
 
-k8c()
+w4r()
 {
-	if (this.o3a.length == 0)
+	if (this.f1y.length == 0)
 	{
 		return false;
 	}
-	if (this.a1s >= this.o3a.length)
+	if (this.g6l >= this.f1y.length)
 	{
 		return false;
 	}
 	else
 	{
-		this.l3y = this.o3a[this.a1s];
-		this.t9z = this.l3y.length;
-		this.n4n = 0;
-		this.a1s++;
+		this.w9n = this.f1y[this.g6l];
+		this.k1c = this.w9n.length;
+		this.x3g = 0;
+		this.g6l++;
 		return true;
 	}
 }
 
-b4x()
+v9o()
 {
-	this.g7p = false;
-	this.m5q = false;
+	this.u0d = false;
+	this.m5t = false;
 	while (true)
 	{
-		if (!this.k8c())
+		if (!this.w4r())
 		{
 			return;
 		}
-		this.w4w();
-		if (!this.p7f())
+		this.e2j();
+		if (!this.u0c())
 		{
 			return;
 		}
-		this.e7p();
+		this.i8u();
 	}
 }
 
 
-x7h(s9q)
+q2h(z8j)
 {
-	let c7b = this.s6w.substr(1, this.s6w.length - 1);
-	return c7b.toUpperCase() === s9q.toUpperCase();
+	let i7a = this.h4k.substr(1, this.h4k.length - 1);
+	return i7a.toUpperCase() === z8j.toUpperCase();
 }
 
-m3m()
+l9g()
 {
- 	if (this.s6w.length == 0) return;
-	this.h5z = false;
+ 	if (this.h4k.length == 0) return;
+	this.c2r = false;
 
-	while (this.s6w[0] == '{')
+	while (this.h4k[0] == '{')
 	{
-		let m3t = this.c2h();
-    let f2g = new n1z();
-		this.s5d(m3t, f2g);
-    if (!f2g.b2t.f7c())
+		let m7i = this.b4u();
+    let f2x = new w2y();
+		this.e0p(m7i, f2x);
+    if (!f2x.e9k.g3d())
 		{
-			this.z7k.b0w(f2g.b2t);
+			this.n9l.m7m(f2x.e9k);
 		}
- 		if (!f2g.y2h.f7c())
+ 		if (!f2x.s4l.g3d())
 		{
-			this.z7k.y1g(f2g.y2h);
+			this.n9l.e6z(f2x.s4l);
 		}
-		if (!f2g.s8d.f7c())
+		if (!f2x.r7v.g3d())
 		{
-			this.z7k.z4q(f2g.s8d);
+			this.n9l.j6s(f2x.r7v);
 		}
- 		m3t = f2g.e1u.trim();
-    if (m3t.length)
+ 		m7i = f2x.a7q.trim();
+    if (m7i.length)
     {
       
       
-      if (m3t.startsWith("[%a") && m3t.length > 7)
+      if (m7i.startsWith("[%a") && m7i.length > 7)
       {
-        m3t = m3t.substr(7, m3t.length).trim();
+        m7i = m7i.substr(7, m7i.length).trim();
       }
-      let j8c = this.z7k.j8c();
-      if (j8c.length)
+      let g4t = this.n9l.g4t();
+      if (g4t.length)
       {
-        j8c += ' ';
+        g4t += ' ';
       }
-      j8c += m3t;
-      this.z7k.z3j(j8c);
+      g4t += m7i;
+      this.n9l.t9q(g4t);
 		}
-		this.w4w();
-		if (this.s6w.length == 0)
+		this.e2j();
+		if (this.h4k.length == 0)
 		{
 			return;
 		}
 	}
-	this.n1d(this.z7k.u4v(), this.z7k.x7g());
+	this.j0l(this.n9l.s0m(), this.n9l.b3q());
 }
 
-n1d(m8t, d3d)
+j0l(a3w, y2g)
 {
-  let b9l = m8t.z4e();
-  let e3i = d3d.z4e();
+  let p6q = a3w.r0c();
+  let n2t = y2g.r0c();
 
-	let c4v = null;
- 	let m7e = new m8h();
+	let h6f = null;
+ 	let s5z = new l2d();
 
 	do
 	{
-		if (this.s6w == r4b)
+		if (this.h4k == i8p)
 		{
-			if (!c4v)
+			if (!h6f)
 			{
 				throw "error";
 			}
-			if (!this.w4w())
+			if (!this.e2j())
 			{
 				throw "error";
 			}
 
- 			e3i.o1f(b9l.c7j.x2v());
-			e3i.r9h(m7e);
-			this.z7k.o1f(b9l); 
-      this.n1d(b9l, e3i);
-			this.z7k.i8p(b9l); 
-			e3i.i8p(b9l.c7j.x2v());
+ 			n2t.k4f(p6q.z1e.i1j());
+			n2t.m5x(s5z);
+			this.n9l.k4f(p6q); 
+      this.j0l(p6q, n2t);
+			this.n9l.m4i(p6q); 
+			n2t.m4i(p6q.z1e.i1j());
 
-			while (this.w4w())
+			while (this.e2j())
 			{
-				if (this.s6w != r4b)
+				if (this.h4k != i8p)
 				{
 					break;
 				}
-				if (!this.w4w())
+				if (!this.e2j())
 				{
 					throw "error";
 				}
-        e3i.o1f(b9l.c7j.x2v());
-				e3i.r9h(m7e);
-				this.z7k.o1f(b9l); 
-				this.n1d(b9l, e3i);
-				this.z7k.i8p(b9l);  
-				e3i.i8p(b9l.c7j.x2v());
+        n2t.k4f(p6q.z1e.i1j());
+				n2t.m5x(s5z);
+				this.n9l.k4f(p6q); 
+				this.j0l(p6q, n2t);
+				this.n9l.m4i(p6q);  
+				n2t.m4i(p6q.z1e.i1j());
 			}
 		}
 
-		if (this.s6w == u1v)
+		if (this.h4k == f1r)
 		{
 			break;
 		}
 
 		if (
-			this.s6w == "1-0" ||
-			this.s6w == "2-0" ||
-			this.s6w == "0-1" ||
-			this.s6w == "0-2" ||
-			this.s6w == "1/2-1/2" ||
-			this.s6w == "1-1" ||
-			this.s6w == "*" ||
-			this.s6w == "**" ||
-			this.s6w == "-*" ||
-			this.s6w == "1-0*" ||
-			this.s6w == "2-0*" ||
-			this.s6w == "0-1*" ||
-			this.s6w == "0-2*" ||
-			this.s6w == "1/2-1/2*" ||
-			this.s6w == "1-1*" ||
-			this.s6w == "2-00*" ||
-			this.s6w == "00-2*")
+			this.h4k == "1-0" ||
+			this.h4k == "2-0" ||
+			this.h4k == "0-1" ||
+			this.h4k == "0-2" ||
+			this.h4k == "1/2-1/2" ||
+			this.h4k == "1-1" ||
+			this.h4k == "*" ||
+			this.h4k == "**" ||
+			this.h4k == "-*" ||
+			this.h4k == "1-0*" ||
+			this.h4k == "2-0*" ||
+			this.h4k == "0-1*" ||
+			this.h4k == "0-2*" ||
+			this.h4k == "1/2-1/2*" ||
+			this.h4k == "1-1*" ||
+			this.h4k == "2-00*" ||
+			this.h4k == "00-2*")
 			break;
 
-		if (this.s6w[0] == '$')
+		if (this.h4k[0] == '$')
 		{
-			if (!c4v)
+			if (!h6f)
 			{
 				throw "error";
 			}
-			let s4h = x9a(this.s6w);
-			if (s4h != z1r.i6p)
+			let o1b = q2o(this.h4k);
+			if (o1b != t4p.f0x)
 			{
-				c4v.d0w(s4h);
+				h6f.f2f(o1b);
 				continue;
 			}
-			let style = h3u(this.s6w);
-			if (style != l9b.i6p)
+			let style = c9v(this.h4k);
+			if (style != r2j.f0x)
 			{
-				c4v.d7g(style);
+				h6f.c4p(style);
 				continue;
 			}
-			let value = o5k(this.s6w);
-			if (value != c3i.i6p)
+			let value = u6f(this.h4k);
+			if (value != m0e.f0x)
 			{
-				c4v.s0b(value);
+				h6f.a0e(value);
 				continue;
 			}
-			let k2p = t9y(this.s6w);
-			if (k2p != f7p.i6p)
+			let u6x = s5p(this.h4k);
+			if (u6x != k9n.f0x)
 			{
-				c4v.h9r(k2p);
+				h6f.b6k(u6x);
 				continue;
 			}
 			continue;
 		}
-		if (this.s6w[0] == '{')
+		if (this.h4k[0] == '{')
 		{
-			let m3t = this.c2h();
-      let f2g = new n1z();
-  		this.s5d(m3t, f2g);
-      if (!f2g.b2t.f7c())
+			let m7i = this.b4u();
+      let f2x = new w2y();
+  		this.e0p(m7i, f2x);
+      if (!f2x.e9k.g3d())
       {
-		  	if (c4v)
+		  	if (h6f)
 			  {
-				  c4v.f4h(f2g.b2t);
+				  h6f.r8y(f2x.e9k);
 				}
 			}
-   		if (!f2g.y2h.f7c())
+   		if (!f2x.s4l.g3d())
       {
-				if (c4v)
+				if (h6f)
 				{
-					c4v.j9q(f2g.y2h);
+					h6f.v7d(f2x.s4l);
 				}
 			}
-   		if (!f2g.s8d.f7c())
+   		if (!f2x.r7v.g3d())
       {
-				if (c4v)
+				if (h6f)
 				{
-					c4v.n3q(f2g.s8d);
+					h6f.v2r(f2x.r7v);
 				}
 			}
-      if (f2g.a5n)
+      if (f2x.d0q)
       {
-				if (c4v)
+				if (h6f)
 				{
-					c4v.l9f();
+					h6f.p7u();
 				}
 			}
-      if (f2g.x8r)
+      if (f2x.e8i)
       {
-				if (c4v)
+				if (h6f)
 				{
-					c4v.s6r();
+					h6f.j3x();
 				}
 			}
-   		m3t = f2g.e1u.trim();
-      if (!m3t.length)
+   		m7i = f2x.a7q.trim();
+      if (!m7i.length)
       {
         continue;
       }
-			if (c4v)
+			if (h6f)
 			{
-        let u4n = c4v.u4n();
-        if (u4n.length)
+        let f2r = h6f.f2r();
+        if (f2r.length)
         {
-          u4n += ' ';
+          f2r += ' ';
         }
-        u4n += m3t;
-				c4v.q0s(u4n);
+        f2r += m7i;
+				h6f.l6q(f2r);
 			}
 			else
 			{
-        if (this.z0v.length)
+        if (this.f7g.length)
         {
-   				this.z0v += ' ';
+   				this.f7g += ' ';
         }
-				this.z0v += m3t;
-				this.h5z = true;
+				this.f7g += m7i;
+				this.c2r = true;
 			}
 			continue;
 		}
-		if (!this.n0n())
+		if (!this.v4p())
 		{
 			continue;
 		}
-		let w9j = false;
-		if (this.s6w[this.s6w.length] == '*')
+		let y5q = false;
+		if (this.h4k[this.h4k.length] == '*')
 		{
-			this.s6w = this.s6w.substr(0, this.s6w.length - 1);
-			w9j = true;
+			this.h4k = this.h4k.substr(0, this.h4k.length - 1);
+			y5q = true;
 		}
- 		let i8w = this.i3p(this.s6w);
-    let x2v = r9w(e3i, this.s6w);
- 		m7e = e3i.m7e();
-		e3i.i8p(x2v);
-		let c7j = a7k(x2v);
-    c7j.d7g(i8w);
-    this.z7k.d4y(b9l, c7j);
-		c4v = b9l.c7j;
-		if (this.h5z)
+ 		let r7t = this.k3w(this.h4k);
+    let i1j = c4m(n2t, this.h4k);
+ 		s5z = n2t.s5z();
+		n2t.m4i(i1j);
+		let z1e = h6w(i1j);
+    z1e.c4p(r7t);
+    this.n9l.z7v(p6q, z1e);
+		h6f = p6q.z1e;
+		if (this.c2r)
 		{
-			c4v.g9m(this.z0v);
-			this.h5z = false;
-      this.z0v = '';
+			h6f.p8c(this.f7g);
+			this.c2r = false;
+      this.f7g = '';
 		}
-		if (w9j)
+		if (y5q)
 		{
 			break;
 		}
-	} while (this.w4w());
+	} while (this.e2j());
 }
 
-i3p(c7b)
+k3w(i7a)
 {
-	if (c7b.endsWith("??"))
+	if (i7a.endsWith("??"))
 	{
-		c7b = c7b.subString(0, c7b.length-2);
-		return l9b.k3g;
+		i7a = i7a.subString(0, i7a.length-2);
+		return r2j.r0f;
 	}
-	else if (c7b.endsWith("!!"))
+	else if (i7a.endsWith("!!"))
 	{
-		c7b = c7b.subString(0, c7b.length-2);
-		return l9b.b8p;
+		i7a = i7a.subString(0, i7a.length-2);
+		return r2j.m8q;
 	}
-	else if (c7b.endsWith("?!"))
+	else if (i7a.endsWith("?!"))
 	{
-		c7b = c7b.subString(0, c7b.length-2);
-		return l9b.u7g;
+		i7a = i7a.subString(0, i7a.length-2);
+		return r2j.x4e;
 	}
-	else if (c7b.endsWith("!?"))
+	else if (i7a.endsWith("!?"))
 	{
-		c7b = c7b.subString(0, c7b.length-2);
-		return l9b.d2n;
+		i7a = i7a.subString(0, i7a.length-2);
+		return r2j.u2o;
 	}
-	else if (c7b.endsWith("?"))
+	else if (i7a.endsWith("?"))
 	{
-		c7b = c7b.subString(0, c7b.length-1);
-		return l9b.c7s;
+		i7a = i7a.subString(0, i7a.length-1);
+		return r2j.q7q;
 	}
-	else if (c7b.endsWith("!"))
+	else if (i7a.endsWith("!"))
 	{
-		c7b = c7b.subString(0, c7b.length-1);
-		return l9b.b5t;
+		i7a = i7a.subString(0, i7a.length-1);
+		return r2j.r3e;
 	}
 	else
 	{
-		return l9b.i6p;
+		return r2j.f0x;
 	}
 }
 
-n0n()
+v4p()
 {
-	let h1q = this.s6w.length;
-	let b9l = -1;
-	for (let i = 0; i < h1q; i++)
+	let r2g = this.h4k.length;
+	let p6q = -1;
+	for (let i = 0; i < r2g; i++)
 	{
-		if (this.s6w[i] == '.')
+		if (this.h4k[i] == '.')
 		{
-			b9l = i;
+			p6q = i;
 		}
 	}
-	if (b9l != -1)
+	if (p6q != -1)
 	{
-		this.s6w = this.s6w.substr(b9l + 1 , h1q);
+		this.h4k = this.h4k.substr(p6q + 1 , r2g);
 	}
-	return this.s6w.length != 0;
+	return this.h4k.length != 0;
 }
 
-w4w()
+e2j()
 {
-	this.s6w = "";
-	let i1u = '';
+	this.h4k = "";
+	let k9c = '';
 	let index = 0;
-	let h1q = 0;
+	let r2g = 0;
 	while (true)
 	{
-		let u1s = 0;
-		if (this.n4n < this.t9z)
+		let p7i = 0;
+		if (this.x3g < this.k1c)
 		{
-			u1s = this.l3y[this.n4n];
+			p7i = this.w9n[this.x3g];
 		}
 		else
 		{
-			u1s = 0;
+			p7i = 0;
 		}
-		if (!u1s)
+		if (!p7i)
 		{
-			if (h1q)
+			if (r2g)
 			{
 				break;
 			}
-			if (!this.k8c())
+			if (!this.w4r())
 			{
 				return false;
 			}
 			continue;
 		}
-		if (u1s == ';')
+		if (p7i == ';')
 		{
-			if (!this.k8c())
+			if (!this.w4r())
 			{
 				return false;
 			}
 			continue;
 		}
-		if (u1s == '(')
+		if (p7i == '(')
 		{
-			if (h1q)
+			if (r2g)
 			{
 				break;
 			}
 			else
 			{
-				this.n4n++;
-				this.s6w = r4b;
+				this.x3g++;
+				this.h4k = i8p;
 				return true;
 			}
 		}
-		if (u1s == ')')
+		if (p7i == ')')
 		{
-			if (h1q)
+			if (r2g)
 			{
 				break;
 			}
 			else
 			{
-				this.n4n++;
-				this.s6w = u1v;
+				this.x3g++;
+				this.h4k = f1r;
 				return true;
 			}
 		}
-		if (u1s == '{')
+		if (p7i == '{')
 		{
-			if (h1q)
+			if (r2g)
 			{
 				break;
 			}
 			else
 			{
-				this.n4n++;
-				this.s6w = j7l;
+				this.x3g++;
+				this.h4k = r9x;
 				return true;
 			}
 		}
-		if (u1s == ' ' || u1s == '\r' || u1s == '\n')
+		if (p7i == ' ' || p7i == '\r' || p7i == '\n')
 		{
-			if (h1q)
+			if (r2g)
 			{
-				this.n4n++;
+				this.x3g++;
 				break;
 			}
 			else
 			{
-				this.n4n++;
+				this.x3g++;
 				continue;
 			}
 		}
-		i1u += u1s;
+		k9c += p7i;
 		index++;
-		h1q++;
-		this.n4n++;
+		r2g++;
+		this.x3g++;
 	}
 	if (index)
 	{
-		this.s6w += i1u;
+		this.h4k += k9c;
 	}
-	return this.s6w.length != 0;
+	return this.h4k.length != 0;
 }
 
-c2h()
+b4u()
 {
-	let c7b = '';
-	let i1u = '';
+	let i7a = '';
+	let k9c = '';
 	let index = 0;
-	let n1y = 0;
+	let q8a = 0;
 	while (true)
 	{
-		let u1s = 0;
-		if (this.n4n < this.t9z)
+		let p7i = 0;
+		if (this.x3g < this.k1c)
 		{
-			u1s = this.l3y[this.n4n];
+			p7i = this.w9n[this.x3g];
 		}
 		else
 		{
-			u1s = 0;
+			p7i = 0;
 		}
-		if (!u1s)
+		if (!p7i)
 		{
-			if (!this.k8c())
+			if (!this.w4r())
 			{
 				break;
 			}
 			if (index > 0)
 			{
-				i1u += ' '; 
+				k9c += ' '; 
 				index++;
 			}
 			continue;
 		}
-		if (u1s == '{')
+		if (p7i == '{')
 		{
-			n1y++;
+			q8a++;
 		}
-		if (u1s == '}')
+		if (p7i == '}')
 		{
-			if (n1y)
+			if (q8a)
 			{
-				n1y--;
+				q8a--;
 			}
 			else
 			{
-				this.n4n++;
+				this.x3g++;
 				break;
 			}
 		}
-		i1u += u1s;
+		k9c += p7i;
 		index++;
-		this.n4n++;
+		this.x3g++;
 	}
 	if (index)
 	{
-		c7b += i1u;
+		i7a += k9c;
 	}
-	return c7b.trim();
+	return i7a.trim();
 }
 
-w4v()
+p8t()
 {
-	this.c9i = "";
+	this.e5h = "";
 
-	let f5y = 0;
-	let h1q = this.l3y.length;
-	for (let i = h1q - 1; i >= 0; i--)
+	let h2n = 0;
+	let r2g = this.w9n.length;
+	for (let i = r2g - 1; i >= 0; i--)
 	{
-		if (this.l3y[i] == ']')
+		if (this.w9n[i] == ']')
 		{
-			f5y = i;
+			h2n = i;
 			break;
 		}
 	}
 	let index = 0;
-	let p3p = false;
-	let i1u = '';
+	let w4n = false;
+	let k9c = '';
 	while (true)
 	{
-		let u1s = 0;
-		if (this.n4n < this.t9z)
+		let p7i = 0;
+		if (this.x3g < this.k1c)
 		{
-			u1s = this.l3y[this.n4n];
+			p7i = this.w9n[this.x3g];
 		}
 		else
 		{
-			u1s = 0;
+			p7i = 0;
 		}
-		if (!u1s)
+		if (!p7i)
 		{
-			if (!this.k8c())
+			if (!this.w4r())
 			{
 				break;
 			}
 			continue;
 		}
-		if (u1s == '\"')
+		if (p7i == '\"')
 		{
-			p3p = true;
-			this.n4n++;
+			w4n = true;
+			this.x3g++;
 			continue;
 		}
-		if (u1s == ']')
+		if (p7i == ']')
 		{
-			if (this.n4n == f5y)
+			if (this.x3g == h2n)
 			{
-				this.n4n++;
+				this.x3g++;
 				break;
 			}
 		}
-		if (p3p)
+		if (w4n)
 		{
-			i1u += u1s;
+			k9c += p7i;
 			index++;
 		}
-		this.n4n++;
+		this.x3g++;
 	}
 	if (index)
 	{
-		this.c9i += i1u;
+		this.e5h += k9c;
 	}
 }
 
-p7f()
+u0c()
 {
-	if (this.s6w.length == 0)
+	if (this.h4k.length == 0)
 	{
 		return false;
 	}
-	if (this.s6w[0] != '[')
+	if (this.h4k[0] != '[')
 	{
 		return false;
 	}
 	
-	let index = this.n4n;
-	let b9d = false;
-	while (index < this.t9z)
+	let index = this.x3g;
+	let e8d = false;
+	while (index < this.k1c)
 	{
-		let u1s = this.l3y[index++];
-		if (u1s == '\"' && this.l3y[index] == ']')
+		let p7i = this.w9n[index++];
+		if (p7i == '\"' && this.w9n[index] == ']')
 		{
 			index++;
-			b9d = true;
+			e8d = true;
 			continue;
 		}
-		if (u1s == '\r' || u1s == '\n')
+		if (p7i == '\r' || p7i == '\n')
 		{
 			break;
 		}
-		if (b9d)
+		if (e8d)
 		{
-			b9d = false;
+			e8d = false;
 			break;
 		}
 	}
-	return b9d;
+	return e8d;
 }
 
-e7p()
+i8u()
 {
 	
-	if (this.x7h(z7e))
+	if (this.q2h(r5f))
 	{
-		this.w4v();
-		this.m6u.v9h = this.c9i;
+		this.p8t();
+		this.i8a.k7e = this.e5h;
 		return;
 	}
-	if (this.x7h(w7c))
+	if (this.q2h(n3h))
 	{
-		this.w4v();
-		this.m6u.i3m = this.c9i;
+		this.p8t();
+		this.i8a.e8w = this.e5h;
 		return;
 	}
-	if (this.x7h(q0o))
+	if (this.q2h(u0r))
 	{
-		this.w4v();
-		this.m6u.t4f = this.c9i;
+		this.p8t();
+		this.i8a.f9u = this.e5h;
 		return;
 	}
-	if (this.x7h(f5c))
+	if (this.q2h(b3i))
 	{
-		this.w4v();
-		this.m6u.l1k = this.c9i;
+		this.p8t();
+		this.i8a.x3q = this.e5h;
 		return;
 	}
-	if (this.x7h(w5w))
+	if (this.q2h(q6u))
 	{
-		this.w4v();
-		this.m6u.q9n = this.c9i;
+		this.p8t();
+		this.i8a.i8k = this.e5h;
 		return;
 	}
-	if (this.x7h(q9b))
+	if (this.q2h(s1t))
 	{
-		this.w4v();
-		this.m6u.v9x = this.c9i;
+		this.p8t();
+		this.i8a.a7h = this.e5h;
 		return;
 	}
-	if (this.x7h(x6x) || this.x7h(l3a))
+	if (this.q2h(g9u) || this.q2h(z1h))
 	{
-		this.w4v();
-		this.m6u.m5e = this.c9i;
+		this.p8t();
+		this.i8a.g7m = this.e5h;
 		return;
 	}
-	if (this.x7h(l4y))
+	if (this.q2h(v9v))
 	{
-		this.w4v();
-		this.m6u.z2m = this.c9i;
+		this.p8t();
+		this.i8a.o8t = this.e5h;
 		return;
 	}
-	if (this.x7h(e1v))
+	if (this.q2h(b0b))
 	{
-		this.w4v();
-		this.m6u.o0c = this.c9i;
+		this.p8t();
+		this.i8a.l8c = this.e5h;
 		return;
 	}
-	if (this.x7h(d9b))
+	if (this.q2h(n7q))
 	{
-		this.w4v();
-		this.m6u.d3u = this.c9i;
-		return;
-	}
-
-	
-	if (this.x7h(p8n))
-	{
-		this.w4v();
-		this.m6u.g3v = this.c9i;
-		return;
-	}
-	if (this.x7h(w6m))
-	{
-		this.w4v();
-		this.m6u.x4a = this.c9i;
-		return;
-	}
-	if (this.x7h(h2d))
-	{
-		this.w4v();
-		this.m6u.y3y = this.c9i;
-		return;
-	}
-	if (this.x7h(d1n))
-	{
-		this.w4v();
-		this.m6u.y2w = this.c9i;
-		return;
-	}
-	if (this.x7h(l2o))
-	{
-		this.w4v();
-		this.m6u.v9c = this.c9i;
-		return;
-	}
-	if (this.x7h(d1p))
-	{
-		this.w4v();
-		this.m6u.t6o = this.c9i;
-		return;
-	}
-	if (this.x7h(r4x) || this.x7h(t4o))
-	{
-		this.w4v();
-		this.m6u.f4c = this.c9i;
-		return;
-	}
-	if (this.x7h(m7q))
-	{
-		this.w4v();
-		this.m6u.k5r = this.c9i;
-		return;
-	}
-	if (this.x7h(w8e))
-	{
-		this.w4v();
-		this.m6u.m5g = this.c9i;
-		return;
-	}
-	if (this.x7h(j8b))
-	{
-		this.w4v();
-		this.m6u.y9q = this.c9i;
+		this.p8t();
+		this.i8a.g6o = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(s7c))
+	if (this.q2h(y4u))
 	{
-		this.w4v();
-		this.m6u.v6l = this.c9i;
+		this.p8t();
+		this.i8a.a0y = this.e5h;
 		return;
 	}
-	if (this.x7h(c7v))
+	if (this.q2h(j1j))
 	{
-		this.w4v();
-		this.m6u.f4q = this.c9i;
+		this.p8t();
+		this.i8a.h7h = this.e5h;
 		return;
 	}
-	if (this.x7h(i3w))
+	if (this.q2h(b8y))
 	{
-		this.w4v();
-		this.m6u.h6z = this.c9i;
+		this.p8t();
+		this.i8a.i4b = this.e5h;
 		return;
 	}
-	if (this.x7h(j3o))
+	if (this.q2h(m3p))
 	{
-		this.w4v();
-		this.m6u.x2n = this.c9i;
+		this.p8t();
+		this.i8a.y7j = this.e5h;
 		return;
 	}
-	if (this.x7h(l7z))
+	if (this.q2h(i5s))
 	{
-		this.w4v();
-		this.m6u.c4t = this.c9i;
+		this.p8t();
+		this.i8a.j2j = this.e5h;
 		return;
 	}
-	if (this.x7h(y8s))
+	if (this.q2h(u1m))
 	{
-		this.w4v();
-		this.m6u.c9x = this.c9i;
+		this.p8t();
+		this.i8a.m5l = this.e5h;
 		return;
 	}
-	if (this.x7h(a9l))
+	if (this.q2h(o2e) || this.q2h(y6q))
 	{
-		this.w4v();
-		this.m6u.y8i = this.c9i;
+		this.p8t();
+		this.i8a.y2l = this.e5h;
 		return;
 	}
-	if (this.x7h(v2o))
+	if (this.q2h(v2i))
 	{
-		this.w4v();
-		this.m6u.d9c = this.c9i;
+		this.p8t();
+		this.i8a.j9k = this.e5h;
 		return;
 	}
-	if (this.x7h(s1l))
+	if (this.q2h(h3o))
 	{
-		this.w4v();
-		this.m6u.q6t = this.c9i;
+		this.p8t();
+		this.i8a.r0j = this.e5h;
 		return;
 	}
-	if (this.x7h(g5k))
+	if (this.q2h(q8r))
 	{
-		this.w4v();
-		this.m6u.s7j = this.c9i;
-		return;
-	}
-	if (this.x7h(v2n))
-	{
-		this.w4v();
-		this.m6u.q3p = this.c9i;
-		return;
-	}
-	if (this.x7h(y8y))
-	{
-		this.w4v();
-		this.m6u.l5o = this.c9i;
-		return;
-	}
-	if (this.x7h(b8z))
-	{
-		this.w4v();
-		this.m6u.o3z = this.c9i;
+		this.p8t();
+		this.i8a.v9h = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(h2e))
+	if (this.q2h(u4p))
 	{
-		this.w4v();
-		this.m6u.e4h = this.c9i;
+		this.p8t();
+		this.i8a.j4r = this.e5h;
+		return;
+	}
+	if (this.q2h(x6n))
+	{
+		this.p8t();
+		this.i8a.j5x = this.e5h;
+		return;
+	}
+	if (this.q2h(x9l))
+	{
+		this.p8t();
+		this.i8a.f4e = this.e5h;
+		return;
+	}
+	if (this.q2h(s6m))
+	{
+		this.p8t();
+		this.i8a.s8m = this.e5h;
+		return;
+	}
+	if (this.q2h(n7i))
+	{
+		this.p8t();
+		this.i8a.v7l = this.e5h;
+		return;
+	}
+	if (this.q2h(s7k))
+	{
+		this.p8t();
+		this.i8a.a0n = this.e5h;
+		return;
+	}
+	if (this.q2h(o8k))
+	{
+		this.p8t();
+		this.i8a.i1x = this.e5h;
+		return;
+	}
+	if (this.q2h(h8j))
+	{
+		this.p8t();
+		this.i8a.z9l = this.e5h;
+		return;
+	}
+	if (this.q2h(e4o))
+	{
+		this.p8t();
+		this.i8a.t5t = this.e5h;
+		return;
+	}
+	if (this.q2h(y9t))
+	{
+		this.p8t();
+		this.i8a.z3g = this.e5h;
+		return;
+	}
+	if (this.q2h(m5f))
+	{
+		this.p8t();
+		this.i8a.u3o = this.e5h;
+		return;
+	}
+	if (this.q2h(m6w))
+	{
+		this.p8t();
+		this.i8a.v3m = this.e5h;
+		return;
+	}
+	if (this.q2h(g2g))
+	{
+		this.p8t();
+		this.i8a.b4o = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(p4r))
+	if (this.q2h(s6j))
 	{
-		this.w4v();
-		this.m6u.w5m = this.c9i;
-		return;
-	}
-	if (this.x7h(z7h))
-	{
-		this.w4v();
-		this.m6u.w5m = this.c9i;
-		return;
-	}
-	if (this.x7h(e8x))
-	{
-		this.w4v();
-		this.m6u.n9f = this.c9i;
-		return;
-	}
-	if (this.x7h(q1y))
-	{
-		this.w4v();
-		this.m6u.v3g = this.c9i;
-		return;
-	}
-	if (this.x7h(i4y))
-	{
-		this.w4v();
-		this.m6u.v3g = this.c9i;
-		return;
-	}
-	if (this.x7h(p1a))
-	{
-		this.w4v();
-		this.m6u.e8r = this.c9i;
-		return;
-	}
-	if (this.x7h(s6a))
-	{
-		this.w4v();
-		this.m6u.e5w = this.c9i;
-		return;
-	}
-	if (this.x7h(r0j))
-	{
-		this.w4v();
-		this.m6u.t7h = this.c9i;
+		this.p8t();
+		this.i8a.h9i = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(m7h))
+	if (this.q2h(k6a))
 	{
-		this.w4v();
-		this.m6u.d9y = this.c9i;
+		this.p8t();
+		this.i8a.q7v = this.e5h;
+		return;
+	}
+	if (this.q2h(i1k))
+	{
+		this.p8t();
+		this.i8a.q7v = this.e5h;
+		return;
+	}
+	if (this.q2h(l1b))
+	{
+		this.p8t();
+		this.i8a.d5h = this.e5h;
+		return;
+	}
+	if (this.q2h(r3i))
+	{
+		this.p8t();
+		this.i8a.y8j = this.e5h;
+		return;
+	}
+	if (this.q2h(r7e))
+	{
+		this.p8t();
+		this.i8a.y8j = this.e5h;
+		return;
+	}
+	if (this.q2h(t2y))
+	{
+		this.p8t();
+		this.i8a.g8l = this.e5h;
+		return;
+	}
+	if (this.q2h(t1i))
+	{
+		this.p8t();
+		this.i8a.g0a = this.e5h;
+		return;
+	}
+	if (this.q2h(y0f))
+	{
+		this.p8t();
+		this.i8a.e1l = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(o1a))
+	if (this.q2h(e8u))
 	{
-		this.w4v();
-		this.m6u.i4j = this.c9i;
-		return;
-	}
-	if (this.x7h(w9w))
-	{
-		this.w4v();
-		this.m6u.t7t = this.c9i;
-		return;
-	}
-	if (this.x7h(x5q))
-	{
-		this.w4v();
-		this.m6u.z1u = this.c9i;
-		return;
-	}
-	if (this.x7h(c3j))
-	{
-		this.w4v();
-		this.m6u.u6y = this.c9i;
+		this.p8t();
+		this.i8a.w4t = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(x4n))
+	if (this.q2h(v5g))
 	{
-		this.w4v();
-		this.m6u.a5x = this.c9i;
+		this.p8t();
+		this.i8a.t4y = this.e5h;
+		return;
+	}
+	if (this.q2h(n5m))
+	{
+		this.p8t();
+		this.i8a.c8h = this.e5h;
+		return;
+	}
+	if (this.q2h(y6u))
+	{
+		this.p8t();
+		this.i8a.v3z = this.e5h;
+		return;
+	}
+	if (this.q2h(g7a))
+	{
+		this.p8t();
+		this.i8a.y1g = this.e5h;
 		return;
 	}
 
 	
-	if (this.x7h(d1t))
+	if (this.q2h(k9h))
 	{
-		this.w4v();
+		this.p8t();
+		this.i8a.j9q = this.e5h;
 		return;
 	}
-	if (this.x7h(p4h))
+
+	
+	if (this.q2h(j0c))
 	{
-		this.w4v();
-		if (this.c9i.length == 0 || this.c9i == "?")
+		this.p8t();
+		return;
+	}
+	if (this.q2h(i4c))
+	{
+		this.p8t();
+		if (this.e5h.length == 0 || this.e5h == "?")
 		{
 			return;
 		}
-		this.l4u = true;
-		this.e9j = this.c9i;
+		this.b7s = true;
+		this.k6n = this.e5h;
 		return;
 	}
-	if (this.x7h(c2q))
+	if (this.q2h(o0d))
 	{
-		this.w4v();
-		this.l2y = y0d(this.c9i, 0);
+		this.p8t();
+		this.u5e = a9w(this.e5h, 0);
 		return;
 	}
   
- 	if (this.x7h(u5b))
+ 	if (this.q2h(d5g))
 	{
-		this.w4v();
-		this.m6u.l4b = this.c9i;
+		this.p8t();
+		this.i8a.w1q = this.e5h;
 		return;
 	}
 
 }
 
-h8y(m3t)
+r1u(m7i)
 {
-	let c6n = new n3j();
-	let c7b = m3t.substr(6, m3t.length - 6);
-	let y8o = c7b.split(",");
-	for (const s of y8o)
+	let u5a = new u6i();
+	let i7a = m7i.substr(6, m7i.length - 6);
+	let f4f = i7a.split(",");
+	for (const s of f4f)
 	{
 		if (s.length < 5)
 		{
 			continue;
 		}
-		let d4d = z0q(s.substr(1, 2));
-		let z4d = z0q(s.substr(3, 2));
+		let i1o = t2h(s.substr(1, 2));
+		let p2v = t2h(s.substr(3, 2));
 		if (s[0] == 'R')
 		{
-			let l1c = r5l(d4d, z4d, y3m.j6v);
-			c6n.add(l1c);
+			let f6u = m5s(i1o, p2v, n6q.k0o);
+			u5a.add(f6u);
 		}
 		else if (s[0] == 'G')
 		{
-			let l1c = r5l(d4d, z4d, y3m.m0i);
-			c6n.add(l1c);
+			let f6u = m5s(i1o, p2v, n6q.a9a);
+			u5a.add(f6u);
 		}
 		else if (s[0] == 'Y')
 		{
-			let l1c = r5l(d4d, z4d, y3m.o2m);
-			c6n.add(l1c);
+			let f6u = m5s(i1o, p2v, n6q.b1m);
+			u5a.add(f6u);
 		}
 	}
-	return c6n;
+	return u5a;
 }
 
-a4t(m3t)
+v3q(m7i)
 {
-	let q7k = new k4l();
-	let c7b = m3t.substr(6, m3t.length - 6);
-	let y8o = c7b.split(",");
-	for (const s of y8o)
+	let z2x = new s2q();
+	let i7a = m7i.substr(6, m7i.length - 6);
+	let f4f = i7a.split(",");
+	for (const s of f4f)
 	{
 		if (s.length < 3)
 		{
 			continue;
 		}
- 		let k2d = z0q(s.substr(1, 2));
+ 		let t0h = t2h(s.substr(1, 2));
 		if (s[0] == 'R')
 		{
-      let n7v = s3v(k2d, f6d.a8z);
-			q7k.add(n7v);
+      let z0y = u0n(t0h, o3t.b8j);
+			z2x.add(z0y);
 		}
 		else if (s[0] == 'G')
 		{
-      let n7v = s3v(k2d, f6d.f7s);
-			q7k.add(n7v);
+      let z0y = u0n(t0h, o3t.m9q);
+			z2x.add(z0y);
 		}
 		else if (s[0] == 'Y')
 		{
-      let n7v = s3v(k2d, f6d.r4p);
-			q7k.add(n7v);
+      let z0y = u0n(t0h, o3t.t2o);
+			z2x.add(z0y);
 		}
 	}
-	return q7k;
+	return z2x;
 }
 
-o0j(m3t)
+t1k(m7i)
 {
-	let c7b = m3t.substr(6, m3t.length - 6);
-	let b9l = c7b.indexOf("]");
-	if (b9l != -1)
+	let i7a = m7i.substr(6, m7i.length - 6);
+	let p6q = i7a.indexOf("]");
+	if (p6q != -1)
 	{
-		let s8d = new f2p();
-		let value = y0d(c7b.substr(0, b9l), 0);
-		s8d.p1k(value);
-		return s8d;
+		let r7v = new i5q();
+		let value = a9w(i7a.substr(0, p6q), 0);
+		r7v.p1x(value);
+		return r7v;
 	}
 	else
 	{
-		return new f2p();
+		return new i5q();
 	}
 }
 
 
-s5d(m3t, f2g)
+e0p(m7i, f2x)
 {
 	if (
-		m3t.startsWith("[%cal") ||
-    m3t.startsWith("[%csb") ||
-		m3t.startsWith("[%csl") ||
-		m3t.startsWith("[%mdl") ||
-		m3t.startsWith("[%evp") ||
-		m3t.startsWith("[%eval") ||
-		m3t.startsWith("[%emt") ||
-		m3t.startsWith("[%tqu") ||
-		m3t.startsWith("[%tqu") ||
-		m3t.startsWith("[%pws") ||
-		m3t.startsWith("[%pth") ||
-		m3t.startsWith("[%eog"))
+		m7i.startsWith("[%cal") ||
+    m7i.startsWith("[%csb") ||
+		m7i.startsWith("[%csl") ||
+		m7i.startsWith("[%mdl") ||
+		m7i.startsWith("[%evp") ||
+		m7i.startsWith("[%eval") ||
+		m7i.startsWith("[%emt") ||
+		m7i.startsWith("[%tqu") ||
+		m7i.startsWith("[%tqu") ||
+		m7i.startsWith("[%pws") ||
+		m7i.startsWith("[%pth") ||
+		m7i.startsWith("[%eog"))
 	{
-		let t7s = 0;
+		let c4n = 0;
 		{
-     	let d3q = m3t.indexOf("[%cal");
-			if (d3q != -1)
+     	let k4u = m7i.indexOf("[%cal");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-     			let g2w = m3t.substring(d3q, k8l + 1);
-					f2g.b2t = this.h8y(g2w).z4e();
-					if (k8l > t7s) t7s = k8l;
+     			let f6f = m7i.substring(k4u, e4m + 1);
+					f2x.e9k = this.r1u(f6f).r0c();
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-     	let d3q = m3t.indexOf("[%csb");
-   		if (d3q != -1)
+     	let k4u = m7i.indexOf("[%csb");
+   		if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-          let s3d = m3t.substring(d3q, k8l + 1);
-					f2g.y2h = this.a4t(s3d).z4e();
-					if (k8l > t7s) t7s = k8l;
+          let m8h = m7i.substring(k4u, e4m + 1);
+					f2x.s4l = this.v3q(m8h).r0c();
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%csl");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%csl");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-          let s3d = m3t.substring(d3q, k8l + 1);
-					f2g.y2h = this.a4t(s3d).z4e();
-					if (k8l > t7s) t7s = k8l;
+          let m8h = m7i.substring(k4u, e4m + 1);
+					f2x.s4l = this.v3q(m8h).r0c();
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%mdl");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%mdl");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-          let d9k = m3t.substring(d3q, k8l + 1);
-					f2g.s8d = this.o0j(d9k).z4e();
-					if (k8l > t7s) t7s = k8l;
+          let z9g = m7i.substring(k4u, e4m + 1);
+					f2x.r7v = this.t1k(z9g).r0c();
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%evp");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%evp");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-					if (k8l > t7s) t7s = k8l;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%eval");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%eval");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-					if (k8l > t7s) t7s = k8l;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%emt");
-			if (d3q = -1)
+      let k4u = m7i.indexOf("[%emt");
+			if (k4u = -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-					if (k8l > t7s) t7s = k8l;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%tqu");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%tqu");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-					if (k8l > t7s) t7s = k8l;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%pws");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%pws");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-          f2g.a6k = true;
-					if (k8l > t7s) t7s = k8l;
+          f2x.i6y = true;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%pth");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%pth");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-          f2g.a5n = true;
-					if (k8l > t7s) t7s = k8l;
+          f2x.d0q = true;
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
 		{
-      let d3q = m3t.indexOf("[%eog");
-			if (d3q != -1)
+      let k4u = m7i.indexOf("[%eog");
+			if (k4u != -1)
 			{
-        let k8l = m3t.indexOf("]", d3q);
-				if (k8l != -1)
+        let e4m = m7i.indexOf("]", k4u);
+				if (e4m != -1)
 				{
-					f2g.x8r = true; 
-					if (k8l > t7s) t7s = k8l;
+					f2x.e8i = true; 
+					if (e4m > c4n) c4n = e4m;
 				}
 			}
 		}
-    f2g.e1u = m3t.substring(t7s + 1);
+    f2x.a7q = m7i.substring(c4n + 1);
 	}
 	else
 	{
-		f2g.e1u = m3t;
+		f2x.a7q = m7i;
 	}
 }
 
 }
 
-class u1z
+class v3x
 {
 
 constructor()
 {
-  this.p6s = 0;
-	this.n5t = new q6v();
-	this.z1l = new l1j();
+  this.f3e = 0;
+	this.n4q = new u0g();
+	this.s3b = new e1t();
 }
 
-z4e()
+r0c()
 {
-	let x7j = new u1z();
-  x7j.p6s = this.p6s;
-	x7j.n5t = this.n5t.z4e();
-	x7j.z1l = this.z1l.z4e();
-	return x7j;
+	let d3h = new v3x();
+  d3h.f3e = this.f3e;
+	d3h.n4q = this.n4q.r0c();
+	d3h.s3b = this.s3b.r0c();
+	return d3h;
 }
 
 }
 
-class q6v
+class u0g
 {
 
 constructor()
 {
-	this.v9h = '';
-	this.i3m = '';
-	this.t4f = '';
-	this.l1k = '';
-	this.q9n = '';
-	this.v9x = '';
-	this.m5e = '';
-	this.z2m = '';
-	this.o0c = '';
-  this.d3u = '';
-	this.g3v = '';
-	this.x4a = '';
-	this.y3y = '';
-	this.y2w = '';
-	this.v9c = '';
-	this.t6o = '';
-	this.f4c = '';
-	this.k5r = '';
-	this.m5g = '';
-  this.y9q = '';
-	this.v6l = '';
-	this.f4q = '';
-	this.h6z = '';
-	this.x2n = '';
-	this.c4t = '';
-	this.c9x = '';
-	this.y8i = '';
-	this.d9c = '';
-	this.q6t = '';
-	this.s7j = '';
-	this.q3p = '';
-	this.l5o = '';
-	this.o3z = '';
-	this.e4h = '';
-	this.w5m = '';
-	this.n9f = '';
-	this.v3g = '';
-	this.e8r = '';
-	this.e5w = '';
-	this.t7h = '';
-	this.d9y = '';
-	this.i4j = '';
-	this.t7t = '';
-	this.z1u = '';
-	this.u6y = '';
-	this.a5x = '';
-  this.l4b = '';
+	this.k7e = '';
+	this.e8w = '';
+	this.f9u = '';
+	this.x3q = '';
+	this.i8k = '';
+	this.a7h = '';
+	this.g7m = '';
+	this.o8t = '';
+	this.l8c = '';
+  this.g6o = '';
+	this.a0y = '';
+	this.h7h = '';
+	this.i4b = '';
+	this.y7j = '';
+	this.j2j = '';
+	this.m5l = '';
+	this.y2l = '';
+	this.j9k = '';
+	this.r0j = '';
+  this.v9h = '';
+	this.j4r = '';
+	this.j5x = '';
+	this.f4e = '';
+	this.s8m = '';
+	this.v7l = '';
+	this.a0n = '';
+	this.i1x = '';
+	this.z9l = '';
+	this.t5t = '';
+	this.z3g = '';
+	this.u3o = '';
+	this.v3m = '';
+	this.b4o = '';
+	this.h9i = '';
+	this.q7v = '';
+	this.d5h = '';
+	this.y8j = '';
+	this.g8l = '';
+	this.g0a = '';
+	this.e1l = '';
+	this.w4t = '';
+	this.t4y = '';
+	this.c8h = '';
+	this.v3z = '';
+	this.y1g = '';
+	this.j9q = '';
+  this.w1q = '';
 }
 
-z4e()
+r0c()
 {
-	let z6o = new q6v();
+	let b4n = new u0g();
 
-	z6o.v9h = this.v9h;
-	z6o.i3m = this.i3m;
-	z6o.t4f = this.t4f;
-	z6o.l1k = this.l1k;
-	z6o.q9n = this.q9n;
-	z6o.v9x = this.v9x;
-	z6o.m5e = this.m5e;
-	z6o.z2m = this.z2m;
-	z6o.o0c = this.o0c;
-	z6o.d3u = this.d3u;
+	b4n.k7e = this.k7e;
+	b4n.e8w = this.e8w;
+	b4n.f9u = this.f9u;
+	b4n.x3q = this.x3q;
+	b4n.i8k = this.i8k;
+	b4n.a7h = this.a7h;
+	b4n.g7m = this.g7m;
+	b4n.o8t = this.o8t;
+	b4n.l8c = this.l8c;
+	b4n.g6o = this.g6o;
 
-	z6o.g3v = this.g3v;
-	z6o.x4a = this.x4a;
-	z6o.y3y = this.y3y;
-	z6o.y2w = this.y2w;
-	z6o.v9c = this.v9c;
-	z6o.t6o = this.t6o;
-	z6o.f4c = this.f4c;
-	z6o.k5r = this.k5r;
-	z6o.m5g = this.m5g;
-	z6o.y9q = this.y9q;
+	b4n.a0y = this.a0y;
+	b4n.h7h = this.h7h;
+	b4n.i4b = this.i4b;
+	b4n.y7j = this.y7j;
+	b4n.j2j = this.j2j;
+	b4n.m5l = this.m5l;
+	b4n.y2l = this.y2l;
+	b4n.j9k = this.j9k;
+	b4n.r0j = this.r0j;
+	b4n.v9h = this.v9h;
 
-	z6o.v6l = this.v6l;
-	z6o.f4q = this.f4q;
-	z6o.h6z = this.h6z;
-	z6o.x2n = this.x2n;
-	z6o.c4t = this.c4t;
-	z6o.c9x = this.c9x;
-	z6o.y8i = this.y8i;
-	z6o.d9c = this.d9c;
-	z6o.q6t = this.q6t;
-	z6o.s7j = this.s7j;
-	z6o.q3p = this.q3p;
-	z6o.l5o = this.l5o;
-	z6o.o3z = this.o3z;
+	b4n.j4r = this.j4r;
+	b4n.j5x = this.j5x;
+	b4n.f4e = this.f4e;
+	b4n.s8m = this.s8m;
+	b4n.v7l = this.v7l;
+	b4n.a0n = this.a0n;
+	b4n.i1x = this.i1x;
+	b4n.z9l = this.z9l;
+	b4n.t5t = this.t5t;
+	b4n.z3g = this.z3g;
+	b4n.u3o = this.u3o;
+	b4n.v3m = this.v3m;
+	b4n.b4o = this.b4o;
 
-	z6o.e4h = this.e4h;
+	b4n.h9i = this.h9i;
 
-	z6o.w5m = this.w5m;
-	z6o.n9f = this.n9f;
-	z6o.v3g = this.v3g;
-	z6o.e8r = this.e8r;
-	z6o.e5w = this.e5w;
-	z6o.t7h = this.t7h;
+	b4n.q7v = this.q7v;
+	b4n.d5h = this.d5h;
+	b4n.y8j = this.y8j;
+	b4n.g8l = this.g8l;
+	b4n.g0a = this.g0a;
+	b4n.e1l = this.e1l;
 
-	z6o.d9y = this.d9y;
+	b4n.w4t = this.w4t;
 
-	z6o.i4j = this.i4j;
-	z6o.t7t = this.t7t;
-	z6o.z1u = this.z1u;
-	z6o.u6y = this.u6y;
+	b4n.t4y = this.t4y;
+	b4n.c8h = this.c8h;
+	b4n.v3z = this.v3z;
+	b4n.y1g = this.y1g;
 
-	z6o.a5x = this.a5x;
- 	z6o.l4b = this.l4b;
+	b4n.j9q = this.j9q;
+ 	b4n.w1q = this.w1q;
 
-	return z6o;
+	return b4n;
 }
 
 }
 
 
-const x8p =
+const g9v =
 [
-		[ y3a.i6p, 				  									"",											            "", 																	"",   ""    ],
-		[ y3a.l8g, 										  "Afghanistan",											"Afghanistan", 												"af", "AFG" ],
-		[ y3a.j0r, 									 	"AlandIslands",										  "Aland", 															"ax", "ALA" ],
-		[ y3a.v7o,  											 	"Albania",													"Albania", 														"al", "ALB" ],
-		[ y3a.x6e,  											 	"Algeria",													"Algeria", 														"dz", "DZA" ],
-		[ y3a.a8x,  								 	"AmericanSamoa",										"American Samoa", 										"as", "ASM" ],
-		[ y3a.e7c,  											 	"Andorra",													"Andorra", 														"ad", "AND" ],
-		[ y3a.a7m,                           "Angola",													  "Angola", 														"ao", "AGO" ],
-		[ y3a.e2j,  											  "Anguilla",												  "Anguilla", 													"ai", "AIA" ],
-		[ y3a.q5j,  										  "Antarctica",											  "Antarctica", 												"aq", "ATA" ],
-		[ y3a.m9u,  								  "AntiguaBarbuda",									  "Antigua & Barbuda", 									"ag", "ATG" ],
-		[ y3a.i4z,  										 	"Argentina",												"Argentina", 													"ar", "ARG" ],
-		[ y3a.s8a,  											 	"Armenia",													"Armenia",														"am", "ARM" ],
-		[ y3a.p8z,  												 	"Aruba",														"Aruba",															"aw", "ABW" ],
-		[ y3a.g1i,  										 	"Australia",												"Australia",													"au", "AUS" ],
-		[ y3a.e9h,  											 	"Austria",													"Austria",											 			"at", "AUT" ],
-		[ y3a.l9z,  										  "Azerbaijan",											  "Azerbaijan",													"az", "AZE" ],
-		[ y3a.g3a,  											 	"Bahamas",													"Bahamas",														"bs", "BHS" ],
-		[ y3a.h2p,  											 	"Bahrain",													"Bahrain",														"bh", "BHR" ],
-		[ y3a.d2b,  										  "Bangladesh",											  "Bangladesh",													"bd", "BGD" ],
-		[ y3a.t3m,  											  "Barbados",												  "Barbados",														"bb", "BRB" ],
-		[ y3a.h0c,  								 	"BasqueCountry",	 									"Basque Country",     								"x1", "XX1" ], 
-		[ y3a.l0d,  											 	"Belarus",													"Belarus",														"by", "BLR" ],
-		[ y3a.h0k,  											 	"Belgium",													"Belgium",														"be", "BEL" ],
-		[ y3a.u0i,  												  "Belize",													  "Belize",															"bz", "BLZ" ],
-		[ y3a.y0i,  												 	"Benin",														"Benin",															"bj", "BEN" ],
-		[ y3a.c4q,  											 	"Bermuda",													"Bermuda",														"bm", "BMU" ],
-		[ y3a.j2q,  												  "Bhutan",													  "Bhutan",															"bt", "BTN" ],
-		[ y3a.g6a,  												"Bolivia",													"Bolivia",														"bo", "BOL" ],
-		[ y3a.b1r,  						  "BosniaHerzegovina",       				  "Bosnia & Herzegovina", 							"ba", "BIH" ], 
-		[ y3a.s7r,  											  "Botswana",                      	  "Botswana",														"bw", "BWA" ],
-		[ y3a.u4c,  									  "BouvetIsland",                 		"Bouvet",															"bv", "BVT" ],
-		[ y3a.d5w,  												  "Brazil",                        	  "Brazil",															"br", "BRA" ],
-		[ y3a.o6n,  	 	"BritishIndianOceanTerritory",			"British Indian Ocean Territory", 		"io", "IOT" ],
-		[ y3a.e8m, 							 	"BruneiDarussalam",								  "Brunei",															"bn", "BRN" ], 
-		[ y3a.i8a,  											  "Bulgaria",												  "Bulgaria", 													"bg", "BGR" ],
-		[ y3a.s9g, 										  "BurkinaFaso",											"Burkina Faso",												"bf", "BFA" ],
-		[ y3a.i7q,  											 	"Burundi",													"Burundi",														"bi", "BDI" ],
-		[ y3a.z6u,  											  "Cambodia",												  "Cambodja",														"kh", "KHM" ],
-		[ y3a.e8i,  											  "Cameroon",												  "Cameroon",														"cm", "CMR" ],
-		[ y3a.g6b,  												  "Canada",													  "Canada",															"ca", "CAN" ],
-		[ y3a.d0q,  										  "CapeVerde",												"Cape Verde",													"cv", "CPV" ], 
-		[ y3a.r3s,  										  "Catalonia",												"Catalonia",													"x2", "XX2" ], 
-		[ y3a.x7y,  								  "CaymanIslands",										"Cayman Islands",											"ky", "CYM" ],
-		[ y3a.g5l,  				  "CentralAfricanRepublic",					  "Central African Republic",						"cf", "CAF" ],
-		[ y3a.f7i,  													  "Chad",														  "Chad",																"td", "TCD" ],
-		[ y3a.r6g,  												 	"Chile",														"Chile",															"cl", "CHL" ],
-		[ y3a.p4i,  												 	"China",														"China",															"cn", "CHN" ],
-		[ y3a.u8z,  							 	"ChristmasIsland",									"Christmas",													"cx", "CXR" ],
-		[ y3a.h3e,  					 	"CocosKeelingIslands",							"Cocos (Keeling)",										"cc", "CCK" ], 
-		[ y3a.d3f,  											  "Colombia",												  "Colombia",														"co", "COL" ],
-		[ y3a.s2l,  											 	"Comoros",													"Comoros",														"km", "COM" ],
-		[ y3a.m2s,  												 	"Congo",														"Congo-Brazzaville", 						    	"cg", "COG" ],
-		[ y3a.u6l,  			 	"CongoDemocraticRepublic",					"Congo-Kinshasa(Zaire)",						  "cd", "COD" ],
-		[ y3a.y5s,  									 	"CookIslands",											"Cook Islands",											 	"ck", "COK" ],
-		[ y3a.q2n,  											"CostaRica",												"Costa Rica",												 	"cr", "CRI" ],
-		[ y3a.f7t,  												"Croatia",													"Croatia",														"hr", "HRV" ],
-		[ y3a.i9w,  													  "Cuba",														  "Cuba",															 	"cu", "CUB" ],
-		[ y3a.g3w,  												"Curacao",													"Curacao",											  		"cw", "CUW" ],
-		[ y3a.f7u,  												  "Cyprus",													  "Cyprus",														 	"cy", "CYP" ],
-		[ y3a.l1n,  									      "Czechia",										      "Czech Republic", 										"cz", "CZE" ],
-		[ y3a.h1m,  										  "CoteIvoire",	   					 				  "Cote d'Ivoire",											"ci", "CIV" ],
-		[ y3a.u4x,  												"Denmark",													"Denmark",													  "dk", "DNK" ],
-		[ y3a.i1o,  											  "Djibouti",												  "Djibouti",													 	"dj", "DJI" ],
-		[ y3a.d2i,  											  "Dominica",												  "Dominica",													 	"dm", "DMA" ],
-		[ y3a.t3c,  							"DominicanRepublic",								"Dominican Republic",								 	"do", "DOM" ],
-		[ y3a.f3c,  												"Ecuador",													"Ecuador",													 	"ec", "ECU" ],
-		[ y3a.l2e,  													"Egypt",														"Egypt", 														 	"eg", "EGY" ],
-		[ y3a.p4y,  										  "ElSalvador",											  "El Salvador",												"sv", "SLV" ],
-		[ y3a.t8e,  												"England",													"England",														"x3", "GBR" ],
-		[ y3a.d8b,  							  "EquatorialGuinea",								  "Equatorial Guinea",									"gq", "GNQ" ], 
-		[ y3a.z3o,  												"Eritrea",													"Eritrea",														"er", "ERI" ],
-		[ y3a.i1w,  												"Estonia",													"Estonia",														"ee", "EST" ],
-		[ y3a.m1r,  											  "Ethiopia",												  "Ethiopia",													 	"et", "ETH" ],
-		[ y3a.x8c,  								"FalklandIslands",									"England",														"fk", "FLK" ], 
-		[ y3a.r3c,  									  "FaroeIslands",										  "Faroes",														 	"fo", "FRO" ],
-		[ y3a.g4v,  													  "Fiji",														  "Fiji",															 	"fj", "FJI" ],
-		[ y3a.d9s,  												"Finland",													"Finland",														"fi", "FIN" ],
-		[ y3a.z0b,  												  "France",													  "France",														 	"fr", "FRA" ],
-		[ y3a.s9s,  									  "FrenchGuiana",										  "Guyana", 														"gf", "GUF" ], 
-		[ y3a.e3b,  								"FrenchPolynesia",									"Tahiti(French Polinesia)", 					"pf", "PYF" ], 
-		[ y3a.h8x,  			"FrenchSouthernTerritories",				"French Southern and Antarctic Lands","tf", "ATF" ],
-		[ y3a.l3p,  													"Gabon",														"Gabon",															"ga", "GAB" ], 
-		[ y3a.b3e,  												  "Gambia",													  "Gambia",															"gm", "GMB" ],
-		[ y3a.c6q,  												"Georgia",													"Georgia",														"ge", "GEO" ],
-		[ y3a.r4e,  												"Germany",													"Germany",														"de", "DEU" ],
-		[ y3a.n1p, 													  "Ghana",														"Ghana",															"gh", "GHA" ],
-		[ y3a.r9g,  											"Gibraltar",												"Gibraltar",													"gi", "GIB" ],
-		[ y3a.e7m,  												  "Greece",													  "Greece",															"gr", "GRC" ],
-		[ y3a.e4z,  											"Greenland",												"Greenland",													"gl", "GRL" ],
-		[ y3a.m0q,  												"Grenada",													"Grenada",														"gd", "GRD" ],
-		[ y3a.t9x,  										  "Guadeloupe",											  "Guadeloupe",													"gp", "GLP" ],
-		[ y3a.t8f,  													  "Guam",														  "Guam",																"gu", "GUM" ],
-		[ y3a.c3r,  											"Guatemala",												"Guatemala",													"gt", "GTM" ],
-		[ y3a.n0h,  											  "Guernsey",												  "Guernsey",														"gg", "GGY" ], 
-		[ y3a.r7x,  												  "Guinea",													  "Guinea",															"gn", "GIN" ],
-		[ y3a.i4r,  									  "GuineaBissau",										  "Guinea-Bissau",											"gw", "GNB" ],
-		[ y3a.l3g,  												  "Guyana",													  "Guyana",															"gy", "GUY" ],
-		[ y3a.n8j,  													"Haiti",														"Haiti",															"ht", "HTI" ],
-		[ y3a.s5y, 			"HeardIslandMcDonaldIslands", 			"Australia",   									  		"hm", "HMD" ],
-		[ y3a.d0y,  			 	                "Vatican",	  			                "Vatican City", 											"va", "VAT" ],
-		[ y3a.y8n,  											  "Honduras",												  "Honduras",														"hn", "HND" ],
-		[ y3a.x4z,  											  "HongKong",												  "Hong Kong",													"hk", "HKG" ],
-		[ y3a.j1l,  											 	"Hungary",													"Hungary",														"hu", "HUN" ],
-		[ y3a.g7k,  											 	"Iceland",													"Iceland",														"is", "ISL" ],
-		[ y3a.c8l,  												 	"India",														"India",															"in", "IND" ],
-		[ y3a.l7i,  										 	"Indonesia",												"Indonesia",													"id", "IDN" ],
-		[ y3a.u7w,  													  "Iran",														  "Iran",																"ir", "IRN" ],
-		[ y3a.g7z,  													  "Iraq",														  "Iraq",																"iq", "IRQ" ],
-		[ y3a.s8c,  											 	"Ireland",													"Ireland",														"ie", "IRL" ],
-		[ y3a.o8s,  										 	"IsleOfMan",												"Isle of Man",												"im", "IMN" ],
-		[ y3a.l4a,  												  "Israel",													  "Israel",															"il", "ISR" ],
-		[ y3a.i3u,  												 	"Italy",														"Italy",															"it", "ITA" ],
-		[ y3a.k7f,  											 	"Jamaica",													"Jamaica",														"jm", "JAM" ],
-		[ y3a.y5n,  											  "JanMayen",								  			  "Norway", 														"x4", "XX4" ], 
-		[ y3a.i6r,  												 	"Japan",														"Japan",															"jp", "JPN" ],
-		[ y3a.f0t,  												  "Jersey",													  "Jersey",															"je", "JEY" ],
-		[ y3a.w0k,  												  "Jordan",													  "Jordan",															"jo", "JOR" ],
-		[ y3a.p3w,  										  "Kazakhstan",											  "Kazakhstan",													"kz", "KAZ" ],
-		[ y3a.j5p,  												 	"Kenya",														"Kenya",															"ke", "KEN" ],
-		[ y3a.s1h,  											  "Kiribati",												  "Kiribati",														"ki", "KIR" ],
-		[ y3a.x6z,  										  "KoreaNorth",											  "North Korea",												"kp", "PRK" ], 
-		[ y3a.m6a,  										  "KoreaSouth",	 	  								  "South Korea", 												"kr", "KOR" ], 
-		[ y3a.z2z,  												  "Kosovo",													  "Kosovo",															"x5", "RKS" ],
-		[ y3a.u5a,  												  "Kuwait",													  "Kuwait",															"kw", "KWT" ],
-		[ y3a.y2m,  										  "Kyrgyzstan",											  "Kyrgyzstan",													"kg", "KGZ" ],
-		[ y3a.r4j,  													  "Laos",														  "Laos",																"la", "LAO" ],
-		[ y3a.r6m, 	 											 	"Latvia",													  "Latvia",															"lv", "LVA" ],
-		[ y3a.g8y,  											 	"Lebanon",													"Lebanon",														"lb", "LBN" ],
-		[ y3a.t4q, 												  "Lesotho",													"Lesotho",														"ls", "LSO" ],
-		[ y3a.f6b,  											 	"Liberia",													"Liberia",														"lr", "LBR" ],
-		[ y3a.j8j,  												 	"Libya",														"Libya",															"ly", "LBY" ],
-		[ y3a.y8h,  								 	"Liechtenstein",										"Liechtenstein",											"li", "LIE" ],
-		[ y3a.l6g,  										 	"Lithuania",												"Lithuania",													"lt", "LTU" ],
-		[ y3a.w1a,  										  "Luxembourg",											  "Luxembourg",													"lu", "LUX" ],
-		[ y3a.macau,  												 	"Macau",														"Macau",															"mo", "MAC" ],
-		[ y3a.c6w,  	  					 	  "NorthMacedonia",	   							  "Macedonia",													"mk", "MKD" ],
-		[ y3a.y0w,  										  "Madagascar",											  "Madagascar",													"mg", "MDG" ],
-		[ y3a.u2g,  												  "Malawi",													  "Malawi",															"mw", "MWI" ],
-		[ y3a.t5z,  											  "Malaysia",												  "Malaysia",														"my", "MYS" ],
-		[ y3a.q1u,  											  "Maldives",												  "Maldives",														"mv", "MDV" ],
-		[ y3a.y1k, 													 	"Mali",														  "Mali",																"ml", "MLI" ],
-		[ y3a.k3c,  												 	"Malta",														"Malta",															"mt", "MLT" ],
-		[ y3a.s6x,  							 	"MarshallIslands",									"Marshall Islands",										"mh", "MHL" ],
-		[ y3a.w1v,  										  "Martinique",											  "Martinique",													"mq", "MTQ" ],
-		[ y3a.n0p,  										  "Mauritania",											  "Mauritania",													"mr", "MRT" ],
-		[ y3a.d6d,  										 	"Mauritius",												"Mauritius",													"mu", "MUS" ],
-		[ y3a.l8t,  											  "Mayotte",													"Mayotte",														"yt", "MYT" ],
-		[ y3a.k9n,  												  "Mexico",													  "Mexico",															"mx", "MEX" ],
-		[ y3a.e0o,  										  "Micronesia",											  "Micronesia",													"fm", "FSM" ],
-		[ y3a.d0o,  											 	"Moldova",													"Moldova",														"md", "MDA" ],
-		[ y3a.b2q,  												  "Monaco",													  "Monaco",															"mc", "MCO" ],
-		[ y3a.t7q,  											  "Mongolia",												  "Mongolia",														"mn", "MNG" ],
-		[ y3a.i8i,  										  "Montenegro",											  "Montenegro",													"me", "MNE" ],
-		[ y3a.u3t,  										  "Montserrat",											  "Montserrat",													"ms", "MSR" ],
-		[ y3a.z8g,  												"Morocco",													"Morocco",														"ma", "MAR" ],
-		[ y3a.e4c,  										  "Mozambique",											  "Mozambique",													"mz", "MOZ" ],
-		[ y3a.i5g, 												  "Myanmar",													"Myanmar(Burma)", 										"mm", "MMR" ],
-		[ y3a.j6s,  												"Namibia",													"Namibia",														"na", "NAM" ],
-		[ y3a.v6e,  													"Nauru",														"Nauru",															"nr", "NRU" ],
-		[ y3a.u7i,  													"Nepal",														"Nepal",															"np", "NPL" ],
-		[ y3a.l7p,  										"TheNetherlands",	  							  "Netherlands",												"nl", "NLD" ],
-		[ y3a.l1s, 						  "NetherlandsAntilles",							"Netherlands Antilles",								"an", "ANT" ],
-		[ y3a.e8j,  									  "NewCaledonia",										  "New Caledonia",											"nc", "NCL" ],
-		[ y3a.p7q,  										  "NewZealand",											  "New Zealand",												"nz", "NZL" ],
-		[ y3a.k1f,  											"Nicaragua",												"Nicaragua",													"ni", "NIC" ],
-		[ y3a.s6j,  													"Niger",														"Niger",															"ne", "NER" ],
-		[ y3a.y4b,  												"Nigeria",													"Nigeria",														"ng", "NGA" ],
-		[ y3a.x4j,  													  "Niue",														  "Niue",																"nu", "NIU" ],
-		[ y3a.h8n,  									"NorfolkIsland",										"Norfolk", 														"nf", "NFK" ],
-		[ y3a.s7m,  								"NorthernIreland",									"Northern Ireland",										"x6", "GBR" ], 
-		[ y3a.j1u,  				  "NorthernMarianaIslands",					  "Northern Mariana",										"mp", "MNP" ],
-		[ y3a.a3h,  												  "Norway",													  "Norway",															"no", "NOR" ],
-		[ y3a.r5p,  													  "Oman",														  "Oman",																"om", "OMN" ],
-		[ y3a.a0e,  											  "Pakistan",												  "Pakistan",														"pk", "PAK" ],
-		[ y3a.r1h,  													"Palau",														"Palau",															"pw", "PLW" ],
-		[ y3a.m2f,  											"Palestine",												"Palestine",													"ps", "PSE" ],
-		[ y3a.b7v,  												  "Panama",													  "Panama",															"pa", "PAN" ],
-		[ y3a.z4a,  								  "PapuaNewGuinea",									  "Papua New Guinea",										"pg", "PNG" ],
-		[ y3a.g2j,  											  "Paraguay",												  "Paraguay",														"py", "PRY" ],
-		[ y3a.q1h,  													  "Peru",														  "Peru",																"pe", "PER" ],
-		[ y3a.o9p,  										"Philippines",											"Philippines",												"ph", "PHL" ],
-		[ y3a.q9p,  											  "Pitcairn",												  "Pitcairn",														"pn", "PCN" ],
-		[ y3a.z6q,  												  "Poland",													  "Poland",															"pl", "POL" ],
-		[ y3a.t4s,  											  "Portugal",												  "Portugal",														"pt", "PRT" ],
-		[ y3a.q5d,  										  "PuertoRico",											  "Puerto Rico",												"pr", "PRI" ],
-		[ y3a.e3a,  													"Qatar",														"Qatar",															"qa", "QAT" ],
-		[ y3a.p6y,  												"Reunion",													"Reunion",														"re", "REU" ],
-		[ y3a.k5c,  												"Romania",													"Romania",														"ro", "ROU" ],
-		[ y3a.h1i,  												  "Russia",													  "Russian Federation", 								"ru", "RUS" ],
-		[ y3a.v1e,  												  "Rwanda",													  "Rwanda",															"rw", "RWA" ],
-		[ y3a.c7t,  								"SaintBarthelemy",									"Saint Barthelemy", 									"bl", "BLM" ],
-		[ y3a.v3m,  										"SaintHelena",											"Saint Helena", 											"sh", "SHN" ], 
-		[ y3a.q6j,  								"SaintKittsNevis",									"St Kitts & Nevis", 									"kn", "KNA" ], 
-		[ y3a.n6m, 											"SaintLucia",											  "Saint Lucia", 												"lc", "LCA" ], 
-		[ y3a.g8e,  					"SaintMartinFrenchPart",  					"Saint Martin", 											"mf", "MAF" ],
-		[ y3a.m5k,  						"SaintPierreMiquelon",							"Saint Pierre and Miquelon", 					"pm", "SPM" ], 
-		[ y3a.c0d,  				  "SaintVincentGrenadines",					  "St Vincent & the Grenadines", 				"vc", "VCT" ], 
-		[ y3a.l6e,  													"Samoa",														"Samoa",															"ws", "WSM" ],
-		[ y3a.r7h,  											"SanMarino",												"San Marino",													"sm", "SMR" ],
-		[ y3a.f2v,  								"SaoTomePrincipe",									"Sao Tome & Principe", 								"st", "STP" ],
-		[ y3a.k3j,  										"SaudiArabia",											"Saudi Arabia", 											"sa", "SAU" ],
-		[ y3a.f0z,  											  "Scotland",												  "Scotland",														"x7", "GBR" ],
-		[ y3a.r2s,  												"Senegal",													"Senegal",														"sn", "SEN" ],
-		[ y3a.v0o,  												  "Serbia",													  "Serbia(Yugoslavia)", 								"rs", "SRB" ],
-		[ y3a.g9k,  										  "Seychelles",											  "Seychelles",													"sc", "SYC" ],
-		[ y3a.a8o,  									  "SierraLeone",											"Sierra Leone",												"sl", "SLE" ],
-		[ y3a.e7k,  										 	"Singapore",												"Singapore",													"sg", "SGP" ],
-		[ y3a.l5d,						  "SintMaartenDutchPart",  					  "Sint Maarten",												"sx", "SXM" ],
-		[ y3a.h8i,  											  "Slovakia",												  "Slovakia",														"sk", "SVK" ],
-		[ y3a.j2u,  											  "Slovenia",												  "Slovenia",														"si", "SVN" ],
-		[ y3a.s5m,  								  "SolomonIslands",									  "Solomon Islands", 										"sb", "SLB" ],
-		[ y3a.d5t,  											 	"Somalia",													"Somalia",														"so", "SOM" ],
-		[ y3a.g0n,  									 	"SouthAfrica",											"South Africa",												"za", "ZAF" ],
-		[ y3a.c2j, "SouthGeorgiaSouthSandwichIslands", "South Georgia and South Sandwich", 	"gs", "SGS" ],
-		[ y3a.d7v,  										  "SouthSudan",											  "Southern Sudan", 										"ss", "SSD" ],
-		[ y3a.b1z,  									 	"SovietUnion",											"Soviet Union", 			 								"su", "URS" ],
-		[ y3a.s1q, 	 												  "Spain",														"Spain",															"es", "ESP" ],
-		[ y3a.h0h,  											  "SriLanka",												  "Sri Lanka",													"lk", "LKA" ],
-		[ y3a.e3f,  												 	"Sudan",														"Sudan",															"sd", "SDN" ],
-		[ y3a.m2c,  											  "Suriname",												  "Suriname",														"sr", "SUR" ], 
-		[ y3a.c7o,  											  "Svalbard",												  "Norway", 														"sj", "SJM" ], 
-		[ y3a.i9j,  										 	"Swaziland",												"Swaziland",													"sz", "SWZ" ],
-		[ y3a.r7p,  												  "Sweden",													  "Sweden",															"se", "SWE" ],
-		[ y3a.s4d,  									 	"Switzerland",											"Switzerland",												"ch", "CHE" ],
-		[ y3a.z5o,  												 	"Syria",														"Syria",															"sy", "SYR" ],
-		[ y3a.c5u,  												  "Taiwan",													  "Taiwan",															"tw", "TWN" ],
-		[ y3a.t1e,  										  "Tajikistan",											  "Tajikistan",													"tj", "TJK" ],
-		[ y3a.d3w,  											  "Tanzania",												  "Tanzania",														"tz", "TZA" ],
-		[ y3a.r9l, 											  "Thailand",												  "Thailand",														"th", "THA" ],
-		[ y3a.d7d,  										  "TimorLeste",	  									  "Timor-Leste", 												"tl", "TLS" ], 
-		[ y3a.w8m, 													 	"Togo",														  "Togo",																"tg", "TGO" ],
-		[ y3a.c1o,  											 	"Tokelau",													"Tokelau",														"tk", "TKL" ], 
-		[ y3a.o3d,  												 	"Tonga",														"Tonga",															"to", "TON" ],
-		[ y3a.p9l,  								  "TrinidadTobago",									  "Trinidad & Tobago", 									"tt", "TTO" ],
-		[ y3a.k4j,  												"Tunisia",													"Tunisia",														"tn", "TUN" ],
-		[ y3a.x0h,  												  "Turkey",													  "Turkey",															"tr", "TUR" ],
-		[ y3a.z1e,  									  "Turkmenistan",										  "Turkmenistan",												"tm", "TKM" ],
-		[ y3a.h9s,  						  "TurksCaicosIslands",							  "Turks and Caicos Islands", 					"tc", "TCA" ],
-		[ y3a.t1w,  												  "Tuvalu",													  "Tuvalu", 														"tv", "TUV" ],
-		[ y3a.v1u,  												  "Uganda",													  "Uganda",															"ug", "UGA" ],
-		[ y3a.q3r,  											  "Ukraine",													"Ukraine",														"ua", "UKR" ],
-		[ y3a.i9c,  						  "UnitedArabEmirates",							  "United Arab Emirates",								"ae", "ARE" ],
-		[ y3a.v9y,  									"UnitedKingdom",										"United Kingdom(Great Britain)", 			"gb", "GBR" ], 
-		[ y3a.d6s,  									  "UnitedStates",										  "United States of America", 					"us", "USA" ],
-		[ y3a.h5f, "UnitedStatesMinorOutlyingIslands", "United States of America",						"um", "UMI" ],
-		[ y3a.f5k,  										 		"Uruguay",													"Uruguay",														"uy", "URY" ],
-		[ y3a.z4y,  									 	  "Uzbekistan",											  "Uzbekistan",													"uz", "UZB" ],
-		[ y3a.e5s,  										 		"Vanuatu",													"Vanuatu",														"vu", "VUT" ],
-		[ y3a.t2z,  											"Venezuela",												"Venezuela",													"ve", "VEN" ],
-		[ y3a.l0b,  												"Vietnam",													"Viet Nam",														"vn", "VNM" ],
-		[ y3a.b4j,  					  "VirginIslandsBritish",       			"Virgin Islands British", 						"vg", "VGB" ],
-		[ y3a.v1b,  								"VirginIslandsUS",	  							"Virgin Islands US", 									"vi", "VIR" ],
-		[ y3a.k8h,  													"Wales",														"Wales",															"x8", "GBR" ],
-		[ y3a.v5j,  									  "WallisFutuna",										  "Wallis and Futuna",									"wf", "WLF" ],
-		[ y3a.i9i,  									"WesternSahara",										"Western Sahara",											"eh", "ESH" ],
-		[ y3a.r6d,  											 		"Yemen",														"Yemen",															"ye", "YEM" ],
-		[ y3a.y4a,  											 		"Zaire",														"",																		"zr", "ZRN" ], 
-		[ y3a.m2r,  											 	  "Zambia",													  "Zambia",															"zm", "ZMB" ],
-		[ y3a.h7z,  										 	  "Zimbabwe",												  "Zimbabwe",														"zw", "ZWE" ],
+		[ r4b.f0x, 				  									"",											            "", 																	"",   ""    ],
+		[ r4b.y2f, 										  "Afghanistan",											"Afghanistan", 												"af", "AFG" ],
+		[ r4b.f9g, 									 	"AlandIslands",										  "Aland", 															"ax", "ALA" ],
+		[ r4b.x4h,  											 	"Albania",													"Albania", 														"al", "ALB" ],
+		[ r4b.h3z,  											 	"Algeria",													"Algeria", 														"dz", "DZA" ],
+		[ r4b.k6x,  								 	"AmericanSamoa",										"American Samoa", 										"as", "ASM" ],
+		[ r4b.r3p,  											 	"Andorra",													"Andorra", 														"ad", "AND" ],
+		[ r4b.i5a,                           "Angola",													  "Angola", 														"ao", "AGO" ],
+		[ r4b.j7d,  											  "Anguilla",												  "Anguilla", 													"ai", "AIA" ],
+		[ r4b.o7h,  										  "Antarctica",											  "Antarctica", 												"aq", "ATA" ],
+		[ r4b.z0a,  								  "AntiguaBarbuda",									  "Antigua & Barbuda", 									"ag", "ATG" ],
+		[ r4b.c9q,  										 	"Argentina",												"Argentina", 													"ar", "ARG" ],
+		[ r4b.b9l,  											 	"Armenia",													"Armenia",														"am", "ARM" ],
+		[ r4b.j6q,  												 	"Aruba",														"Aruba",															"aw", "ABW" ],
+		[ r4b.z5i,  										 	"Australia",												"Australia",													"au", "AUS" ],
+		[ r4b.s0l,  											 	"Austria",													"Austria",											 			"at", "AUT" ],
+		[ r4b.f1i,  										  "Azerbaijan",											  "Azerbaijan",													"az", "AZE" ],
+		[ r4b.g7r,  											 	"Bahamas",													"Bahamas",														"bs", "BHS" ],
+		[ r4b.j9y,  											 	"Bahrain",													"Bahrain",														"bh", "BHR" ],
+		[ r4b.t8w,  										  "Bangladesh",											  "Bangladesh",													"bd", "BGD" ],
+		[ r4b.u3m,  											  "Barbados",												  "Barbados",														"bb", "BRB" ],
+		[ r4b.t7o,  								 	"BasqueCountry",	 									"Basque Country",     								"x1", "XX1" ], 
+		[ r4b.f5g,  											 	"Belarus",													"Belarus",														"by", "BLR" ],
+		[ r4b.u1r,  											 	"Belgium",													"Belgium",														"be", "BEL" ],
+		[ r4b.a9z,  												  "Belize",													  "Belize",															"bz", "BLZ" ],
+		[ r4b.c4y,  												 	"Benin",														"Benin",															"bj", "BEN" ],
+		[ r4b.x8q,  											 	"Bermuda",													"Bermuda",														"bm", "BMU" ],
+		[ r4b.m8g,  												  "Bhutan",													  "Bhutan",															"bt", "BTN" ],
+		[ r4b.z6u,  												"Bolivia",													"Bolivia",														"bo", "BOL" ],
+		[ r4b.t1u,  						  "BosniaHerzegovina",       				  "Bosnia & Herzegovina", 							"ba", "BIH" ], 
+		[ r4b.l5d,  											  "Botswana",                      	  "Botswana",														"bw", "BWA" ],
+		[ r4b.b6g,  									  "BouvetIsland",                 		"Bouvet",															"bv", "BVT" ],
+		[ r4b.o3j,  												  "Brazil",                        	  "Brazil",															"br", "BRA" ],
+		[ r4b.m0n,  	 	"BritishIndianOceanTerritory",			"British Indian Ocean Territory", 		"io", "IOT" ],
+		[ r4b.f0i, 							 	"BruneiDarussalam",								  "Brunei",															"bn", "BRN" ], 
+		[ r4b.v3g,  											  "Bulgaria",												  "Bulgaria", 													"bg", "BGR" ],
+		[ r4b.f7c, 										  "BurkinaFaso",											"Burkina Faso",												"bf", "BFA" ],
+		[ r4b.x7g,  											 	"Burundi",													"Burundi",														"bi", "BDI" ],
+		[ r4b.v1x,  											  "Cambodia",												  "Cambodja",														"kh", "KHM" ],
+		[ r4b.u4l,  											  "Cameroon",												  "Cameroon",														"cm", "CMR" ],
+		[ r4b.i1i,  												  "Canada",													  "Canada",															"ca", "CAN" ],
+		[ r4b.w5k,  										  "CapeVerde",												"Cape Verde",													"cv", "CPV" ], 
+		[ r4b.c9n,  										  "Catalonia",												"Catalonia",													"x2", "XX2" ], 
+		[ r4b.x4a,  								  "CaymanIslands",										"Cayman Islands",											"ky", "CYM" ],
+		[ r4b.h5f,  				  "CentralAfricanRepublic",					  "Central African Republic",						"cf", "CAF" ],
+		[ r4b.h2t,  													  "Chad",														  "Chad",																"td", "TCD" ],
+		[ r4b.j0b,  												 	"Chile",														"Chile",															"cl", "CHL" ],
+		[ r4b.e0a,  												 	"China",														"China",															"cn", "CHN" ],
+		[ r4b.v6o,  							 	"ChristmasIsland",									"Christmas",													"cx", "CXR" ],
+		[ r4b.j1r,  					 	"CocosKeelingIslands",							"Cocos (Keeling)",										"cc", "CCK" ], 
+		[ r4b.y7h,  											  "Colombia",												  "Colombia",														"co", "COL" ],
+		[ r4b.s5e,  											 	"Comoros",													"Comoros",														"km", "COM" ],
+		[ r4b.o1f,  												 	"Congo",														"Congo-Brazzaville", 						    	"cg", "COG" ],
+		[ r4b.t4c,  			 	"CongoDemocraticRepublic",					"Congo-Kinshasa(Zaire)",						  "cd", "COD" ],
+		[ r4b.g6x,  									 	"CookIslands",											"Cook Islands",											 	"ck", "COK" ],
+		[ r4b.k1z,  											"CostaRica",												"Costa Rica",												 	"cr", "CRI" ],
+		[ r4b.x5n,  												"Croatia",													"Croatia",														"hr", "HRV" ],
+		[ r4b.j2v,  													  "Cuba",														  "Cuba",															 	"cu", "CUB" ],
+		[ r4b.x4m,  												"Curacao",													"Curacao",											  		"cw", "CUW" ],
+		[ r4b.e3y,  												  "Cyprus",													  "Cyprus",														 	"cy", "CYP" ],
+		[ r4b.i0x,  									      "Czechia",										      "Czech Republic", 										"cz", "CZE" ],
+		[ r4b.g5r,  										  "CoteIvoire",	   					 				  "Cote d'Ivoire",											"ci", "CIV" ],
+		[ r4b.i5l,  												"Denmark",													"Denmark",													  "dk", "DNK" ],
+		[ r4b.t3d,  											  "Djibouti",												  "Djibouti",													 	"dj", "DJI" ],
+		[ r4b.c9f,  											  "Dominica",												  "Dominica",													 	"dm", "DMA" ],
+		[ r4b.i5x,  							"DominicanRepublic",								"Dominican Republic",								 	"do", "DOM" ],
+		[ r4b.p1b,  												"Ecuador",													"Ecuador",													 	"ec", "ECU" ],
+		[ r4b.s2n,  													"Egypt",														"Egypt", 														 	"eg", "EGY" ],
+		[ r4b.m5y,  										  "ElSalvador",											  "El Salvador",												"sv", "SLV" ],
+		[ r4b.y8q,  												"England",													"England",														"x3", "GBR" ],
+		[ r4b.t0p,  							  "EquatorialGuinea",								  "Equatorial Guinea",									"gq", "GNQ" ], 
+		[ r4b.k1r,  												"Eritrea",													"Eritrea",														"er", "ERI" ],
+		[ r4b.v0m,  												"Estonia",													"Estonia",														"ee", "EST" ],
+		[ r4b.j7l,  											  "Ethiopia",												  "Ethiopia",													 	"et", "ETH" ],
+		[ r4b.j2p,  								"FalklandIslands",									"England",														"fk", "FLK" ], 
+		[ r4b.r1d,  									  "FaroeIslands",										  "Faroes",														 	"fo", "FRO" ],
+		[ r4b.c2m,  													  "Fiji",														  "Fiji",															 	"fj", "FJI" ],
+		[ r4b.d8r,  												"Finland",													"Finland",														"fi", "FIN" ],
+		[ r4b.d5n,  												  "France",													  "France",														 	"fr", "FRA" ],
+		[ r4b.q5a,  									  "FrenchGuiana",										  "Guyana", 														"gf", "GUF" ], 
+		[ r4b.u9u,  								"FrenchPolynesia",									"Tahiti(French Polinesia)", 					"pf", "PYF" ], 
+		[ r4b.u5d,  			"FrenchSouthernTerritories",				"French Southern and Antarctic Lands","tf", "ATF" ],
+		[ r4b.c7b,  													"Gabon",														"Gabon",															"ga", "GAB" ], 
+		[ r4b.o7g,  												  "Gambia",													  "Gambia",															"gm", "GMB" ],
+		[ r4b.h1b,  												"Georgia",													"Georgia",														"ge", "GEO" ],
+		[ r4b.m6v,  												"Germany",													"Germany",														"de", "DEU" ],
+		[ r4b.p2g, 													  "Ghana",														"Ghana",															"gh", "GHA" ],
+		[ r4b.x0v,  											"Gibraltar",												"Gibraltar",													"gi", "GIB" ],
+		[ r4b.w5b,  												  "Greece",													  "Greece",															"gr", "GRC" ],
+		[ r4b.x6m,  											"Greenland",												"Greenland",													"gl", "GRL" ],
+		[ r4b.o1w,  												"Grenada",													"Grenada",														"gd", "GRD" ],
+		[ r4b.z9o,  										  "Guadeloupe",											  "Guadeloupe",													"gp", "GLP" ],
+		[ r4b.j3h,  													  "Guam",														  "Guam",																"gu", "GUM" ],
+		[ r4b.n3i,  											"Guatemala",												"Guatemala",													"gt", "GTM" ],
+		[ r4b.r9l,  											  "Guernsey",												  "Guernsey",														"gg", "GGY" ], 
+		[ r4b.y0a,  												  "Guinea",													  "Guinea",															"gn", "GIN" ],
+		[ r4b.w7v,  									  "GuineaBissau",										  "Guinea-Bissau",											"gw", "GNB" ],
+		[ r4b.b9w,  												  "Guyana",													  "Guyana",															"gy", "GUY" ],
+		[ r4b.a0j,  													"Haiti",														"Haiti",															"ht", "HTI" ],
+		[ r4b.v3s, 			"HeardIslandMcDonaldIslands", 			"Australia",   									  		"hm", "HMD" ],
+		[ r4b.k2a,  			 	                "Vatican",	  			                "Vatican City", 											"va", "VAT" ],
+		[ r4b.u8g,  											  "Honduras",												  "Honduras",														"hn", "HND" ],
+		[ r4b.b6n,  											  "HongKong",												  "Hong Kong",													"hk", "HKG" ],
+		[ r4b.q2k,  											 	"Hungary",													"Hungary",														"hu", "HUN" ],
+		[ r4b.w0b,  											 	"Iceland",													"Iceland",														"is", "ISL" ],
+		[ r4b.i1g,  												 	"India",														"India",															"in", "IND" ],
+		[ r4b.p3v,  										 	"Indonesia",												"Indonesia",													"id", "IDN" ],
+		[ r4b.t4d,  													  "Iran",														  "Iran",																"ir", "IRN" ],
+		[ r4b.q5e,  													  "Iraq",														  "Iraq",																"iq", "IRQ" ],
+		[ r4b.v3r,  											 	"Ireland",													"Ireland",														"ie", "IRL" ],
+		[ r4b.i4r,  										 	"IsleOfMan",												"Isle of Man",												"im", "IMN" ],
+		[ r4b.h7w,  												  "Israel",													  "Israel",															"il", "ISR" ],
+		[ r4b.h1d,  												 	"Italy",														"Italy",															"it", "ITA" ],
+		[ r4b.z0x,  											 	"Jamaica",													"Jamaica",														"jm", "JAM" ],
+		[ r4b.j8h,  											  "JanMayen",								  			  "Norway", 														"x4", "XX4" ], 
+		[ r4b.x7o,  												 	"Japan",														"Japan",															"jp", "JPN" ],
+		[ r4b.m4q,  												  "Jersey",													  "Jersey",															"je", "JEY" ],
+		[ r4b.q0n,  												  "Jordan",													  "Jordan",															"jo", "JOR" ],
+		[ r4b.a3k,  										  "Kazakhstan",											  "Kazakhstan",													"kz", "KAZ" ],
+		[ r4b.c0x,  												 	"Kenya",														"Kenya",															"ke", "KEN" ],
+		[ r4b.i0n,  											  "Kiribati",												  "Kiribati",														"ki", "KIR" ],
+		[ r4b.x5f,  										  "KoreaNorth",											  "North Korea",												"kp", "PRK" ], 
+		[ r4b.h5t,  										  "KoreaSouth",	 	  								  "South Korea", 												"kr", "KOR" ], 
+		[ r4b.c0n,  												  "Kosovo",													  "Kosovo",															"x5", "RKS" ],
+		[ r4b.a6k,  												  "Kuwait",													  "Kuwait",															"kw", "KWT" ],
+		[ r4b.x8l,  										  "Kyrgyzstan",											  "Kyrgyzstan",													"kg", "KGZ" ],
+		[ r4b.r1o,  													  "Laos",														  "Laos",																"la", "LAO" ],
+		[ r4b.t7x, 	 											 	"Latvia",													  "Latvia",															"lv", "LVA" ],
+		[ r4b.j8y,  											 	"Lebanon",													"Lebanon",														"lb", "LBN" ],
+		[ r4b.y3t, 												  "Lesotho",													"Lesotho",														"ls", "LSO" ],
+		[ r4b.j7f,  											 	"Liberia",													"Liberia",														"lr", "LBR" ],
+		[ r4b.k0l,  												 	"Libya",														"Libya",															"ly", "LBY" ],
+		[ r4b.w7x,  								 	"Liechtenstein",										"Liechtenstein",											"li", "LIE" ],
+		[ r4b.m1k,  										 	"Lithuania",												"Lithuania",													"lt", "LTU" ],
+		[ r4b.r7n,  										  "Luxembourg",											  "Luxembourg",													"lu", "LUX" ],
+		[ r4b.macau,  												 	"Macau",														"Macau",															"mo", "MAC" ],
+		[ r4b.w6z,  	  					 	  "NorthMacedonia",	   							  "Macedonia",													"mk", "MKD" ],
+		[ r4b.r2c,  										  "Madagascar",											  "Madagascar",													"mg", "MDG" ],
+		[ r4b.z8w,  												  "Malawi",													  "Malawi",															"mw", "MWI" ],
+		[ r4b.i8w,  											  "Malaysia",												  "Malaysia",														"my", "MYS" ],
+		[ r4b.u6r,  											  "Maldives",												  "Maldives",														"mv", "MDV" ],
+		[ r4b.m8f, 													 	"Mali",														  "Mali",																"ml", "MLI" ],
+		[ r4b.c5z,  												 	"Malta",														"Malta",															"mt", "MLT" ],
+		[ r4b.m9g,  							 	"MarshallIslands",									"Marshall Islands",										"mh", "MHL" ],
+		[ r4b.b8i,  										  "Martinique",											  "Martinique",													"mq", "MTQ" ],
+		[ r4b.a3g,  										  "Mauritania",											  "Mauritania",													"mr", "MRT" ],
+		[ r4b.v0j,  										 	"Mauritius",												"Mauritius",													"mu", "MUS" ],
+		[ r4b.c6i,  											  "Mayotte",													"Mayotte",														"yt", "MYT" ],
+		[ r4b.p5u,  												  "Mexico",													  "Mexico",															"mx", "MEX" ],
+		[ r4b.b5a,  										  "Micronesia",											  "Micronesia",													"fm", "FSM" ],
+		[ r4b.z4x,  											 	"Moldova",													"Moldova",														"md", "MDA" ],
+		[ r4b.a8j,  												  "Monaco",													  "Monaco",															"mc", "MCO" ],
+		[ r4b.x6l,  											  "Mongolia",												  "Mongolia",														"mn", "MNG" ],
+		[ r4b.h1i,  										  "Montenegro",											  "Montenegro",													"me", "MNE" ],
+		[ r4b.m4s,  										  "Montserrat",											  "Montserrat",													"ms", "MSR" ],
+		[ r4b.w2a,  												"Morocco",													"Morocco",														"ma", "MAR" ],
+		[ r4b.u7q,  										  "Mozambique",											  "Mozambique",													"mz", "MOZ" ],
+		[ r4b.k6e, 												  "Myanmar",													"Myanmar(Burma)", 										"mm", "MMR" ],
+		[ r4b.d3j,  												"Namibia",													"Namibia",														"na", "NAM" ],
+		[ r4b.o6s,  													"Nauru",														"Nauru",															"nr", "NRU" ],
+		[ r4b.i3y,  													"Nepal",														"Nepal",															"np", "NPL" ],
+		[ r4b.h5c,  										"TheNetherlands",	  							  "Netherlands",												"nl", "NLD" ],
+		[ r4b.f9m, 						  "NetherlandsAntilles",							"Netherlands Antilles",								"an", "ANT" ],
+		[ r4b.j8f,  									  "NewCaledonia",										  "New Caledonia",											"nc", "NCL" ],
+		[ r4b.g9p,  										  "NewZealand",											  "New Zealand",												"nz", "NZL" ],
+		[ r4b.h0y,  											"Nicaragua",												"Nicaragua",													"ni", "NIC" ],
+		[ r4b.h3q,  													"Niger",														"Niger",															"ne", "NER" ],
+		[ r4b.t6x,  												"Nigeria",													"Nigeria",														"ng", "NGA" ],
+		[ r4b.a0k,  													  "Niue",														  "Niue",																"nu", "NIU" ],
+		[ r4b.c7u,  									"NorfolkIsland",										"Norfolk", 														"nf", "NFK" ],
+		[ r4b.u8w,  								"NorthernIreland",									"Northern Ireland",										"x6", "GBR" ], 
+		[ r4b.x7j,  				  "NorthernMarianaIslands",					  "Northern Mariana",										"mp", "MNP" ],
+		[ r4b.m2c,  												  "Norway",													  "Norway",															"no", "NOR" ],
+		[ r4b.l0i,  													  "Oman",														  "Oman",																"om", "OMN" ],
+		[ r4b.o4v,  											  "Pakistan",												  "Pakistan",														"pk", "PAK" ],
+		[ r4b.r6w,  													"Palau",														"Palau",															"pw", "PLW" ],
+		[ r4b.b4t,  											"Palestine",												"Palestine",													"ps", "PSE" ],
+		[ r4b.n2k,  												  "Panama",													  "Panama",															"pa", "PAN" ],
+		[ r4b.h3r,  								  "PapuaNewGuinea",									  "Papua New Guinea",										"pg", "PNG" ],
+		[ r4b.d9v,  											  "Paraguay",												  "Paraguay",														"py", "PRY" ],
+		[ r4b.l6k,  													  "Peru",														  "Peru",																"pe", "PER" ],
+		[ r4b.d9u,  										"Philippines",											"Philippines",												"ph", "PHL" ],
+		[ r4b.o9c,  											  "Pitcairn",												  "Pitcairn",														"pn", "PCN" ],
+		[ r4b.y1x,  												  "Poland",													  "Poland",															"pl", "POL" ],
+		[ r4b.c9u,  											  "Portugal",												  "Portugal",														"pt", "PRT" ],
+		[ r4b.h6m,  										  "PuertoRico",											  "Puerto Rico",												"pr", "PRI" ],
+		[ r4b.d9j,  													"Qatar",														"Qatar",															"qa", "QAT" ],
+		[ r4b.t1b,  												"Reunion",													"Reunion",														"re", "REU" ],
+		[ r4b.h8d,  												"Romania",													"Romania",														"ro", "ROU" ],
+		[ r4b.l0c,  												  "Russia",													  "Russian Federation", 								"ru", "RUS" ],
+		[ r4b.v6e,  												  "Rwanda",													  "Rwanda",															"rw", "RWA" ],
+		[ r4b.y6b,  								"SaintBarthelemy",									"Saint Barthelemy", 									"bl", "BLM" ],
+		[ r4b.s9o,  										"SaintHelena",											"Saint Helena", 											"sh", "SHN" ], 
+		[ r4b.i9b,  								"SaintKittsNevis",									"St Kitts & Nevis", 									"kn", "KNA" ], 
+		[ r4b.o2w, 											"SaintLucia",											  "Saint Lucia", 												"lc", "LCA" ], 
+		[ r4b.i9l,  					"SaintMartinFrenchPart",  					"Saint Martin", 											"mf", "MAF" ],
+		[ r4b.l4m,  						"SaintPierreMiquelon",							"Saint Pierre and Miquelon", 					"pm", "SPM" ], 
+		[ r4b.x4z,  				  "SaintVincentGrenadines",					  "St Vincent & the Grenadines", 				"vc", "VCT" ], 
+		[ r4b.m9d,  													"Samoa",														"Samoa",															"ws", "WSM" ],
+		[ r4b.g6h,  											"SanMarino",												"San Marino",													"sm", "SMR" ],
+		[ r4b.l2a,  								"SaoTomePrincipe",									"Sao Tome & Principe", 								"st", "STP" ],
+		[ r4b.x0s,  										"SaudiArabia",											"Saudi Arabia", 											"sa", "SAU" ],
+		[ r4b.j1u,  											  "Scotland",												  "Scotland",														"x7", "GBR" ],
+		[ r4b.y7y,  												"Senegal",													"Senegal",														"sn", "SEN" ],
+		[ r4b.y1v,  												  "Serbia",													  "Serbia(Yugoslavia)", 								"rs", "SRB" ],
+		[ r4b.j3b,  										  "Seychelles",											  "Seychelles",													"sc", "SYC" ],
+		[ r4b.q3z,  									  "SierraLeone",											"Sierra Leone",												"sl", "SLE" ],
+		[ r4b.g3c,  										 	"Singapore",												"Singapore",													"sg", "SGP" ],
+		[ r4b.s1b,						  "SintMaartenDutchPart",  					  "Sint Maarten",												"sx", "SXM" ],
+		[ r4b.j7s,  											  "Slovakia",												  "Slovakia",														"sk", "SVK" ],
+		[ r4b.k2z,  											  "Slovenia",												  "Slovenia",														"si", "SVN" ],
+		[ r4b.y8t,  								  "SolomonIslands",									  "Solomon Islands", 										"sb", "SLB" ],
+		[ r4b.k1l,  											 	"Somalia",													"Somalia",														"so", "SOM" ],
+		[ r4b.j0a,  									 	"SouthAfrica",											"South Africa",												"za", "ZAF" ],
+		[ r4b.j7k, "SouthGeorgiaSouthSandwichIslands", "South Georgia and South Sandwich", 	"gs", "SGS" ],
+		[ r4b.q0v,  										  "SouthSudan",											  "Southern Sudan", 										"ss", "SSD" ],
+		[ r4b.h0p,  									 	"SovietUnion",											"Soviet Union", 			 								"su", "URS" ],
+		[ r4b.m4b, 	 												  "Spain",														"Spain",															"es", "ESP" ],
+		[ r4b.r8c,  											  "SriLanka",												  "Sri Lanka",													"lk", "LKA" ],
+		[ r4b.m2k,  												 	"Sudan",														"Sudan",															"sd", "SDN" ],
+		[ r4b.h3v,  											  "Suriname",												  "Suriname",														"sr", "SUR" ], 
+		[ r4b.g5y,  											  "Svalbard",												  "Norway", 														"sj", "SJM" ], 
+		[ r4b.a4e,  										 	"Swaziland",												"Swaziland",													"sz", "SWZ" ],
+		[ r4b.o7n,  												  "Sweden",													  "Sweden",															"se", "SWE" ],
+		[ r4b.p7o,  									 	"Switzerland",											"Switzerland",												"ch", "CHE" ],
+		[ r4b.j2m,  												 	"Syria",														"Syria",															"sy", "SYR" ],
+		[ r4b.f8e,  												  "Taiwan",													  "Taiwan",															"tw", "TWN" ],
+		[ r4b.q1y,  										  "Tajikistan",											  "Tajikistan",													"tj", "TJK" ],
+		[ r4b.v5l,  											  "Tanzania",												  "Tanzania",														"tz", "TZA" ],
+		[ r4b.b4e, 											  "Thailand",												  "Thailand",														"th", "THA" ],
+		[ r4b.d2u,  										  "TimorLeste",	  									  "Timor-Leste", 												"tl", "TLS" ], 
+		[ r4b.v9q, 													 	"Togo",														  "Togo",																"tg", "TGO" ],
+		[ r4b.g2e,  											 	"Tokelau",													"Tokelau",														"tk", "TKL" ], 
+		[ r4b.k7g,  												 	"Tonga",														"Tonga",															"to", "TON" ],
+		[ r4b.j8j,  								  "TrinidadTobago",									  "Trinidad & Tobago", 									"tt", "TTO" ],
+		[ r4b.a7v,  												"Tunisia",													"Tunisia",														"tn", "TUN" ],
+		[ r4b.v4y,  												  "Turkey",													  "Turkey",															"tr", "TUR" ],
+		[ r4b.q1l,  									  "Turkmenistan",										  "Turkmenistan",												"tm", "TKM" ],
+		[ r4b.g8k,  						  "TurksCaicosIslands",							  "Turks and Caicos Islands", 					"tc", "TCA" ],
+		[ r4b.i3d,  												  "Tuvalu",													  "Tuvalu", 														"tv", "TUV" ],
+		[ r4b.j9a,  												  "Uganda",													  "Uganda",															"ug", "UGA" ],
+		[ r4b.e1q,  											  "Ukraine",													"Ukraine",														"ua", "UKR" ],
+		[ r4b.q4f,  						  "UnitedArabEmirates",							  "United Arab Emirates",								"ae", "ARE" ],
+		[ r4b.v8h,  									"UnitedKingdom",										"United Kingdom(Great Britain)", 			"gb", "GBR" ], 
+		[ r4b.b8z,  									  "UnitedStates",										  "United States of America", 					"us", "USA" ],
+		[ r4b.s3y, "UnitedStatesMinorOutlyingIslands", "United States of America",						"um", "UMI" ],
+		[ r4b.q3x,  										 		"Uruguay",													"Uruguay",														"uy", "URY" ],
+		[ r4b.b9y,  									 	  "Uzbekistan",											  "Uzbekistan",													"uz", "UZB" ],
+		[ r4b.b4w,  										 		"Vanuatu",													"Vanuatu",														"vu", "VUT" ],
+		[ r4b.o9y,  											"Venezuela",												"Venezuela",													"ve", "VEN" ],
+		[ r4b.u9x,  												"Vietnam",													"Viet Nam",														"vn", "VNM" ],
+		[ r4b.y0n,  					  "VirginIslandsBritish",       			"Virgin Islands British", 						"vg", "VGB" ],
+		[ r4b.g5s,  								"VirginIslandsUS",	  							"Virgin Islands US", 									"vi", "VIR" ],
+		[ r4b.t6n,  													"Wales",														"Wales",															"x8", "GBR" ],
+		[ r4b.q4g,  									  "WallisFutuna",										  "Wallis and Futuna",									"wf", "WLF" ],
+		[ r4b.y1j,  									"WesternSahara",										"Western Sahara",											"eh", "ESH" ],
+		[ r4b.k1x,  											 		"Yemen",														"Yemen",															"ye", "YEM" ],
+		[ r4b.m2j,  											 		"Zaire",														"",																		"zr", "ZRN" ], 
+		[ r4b.h9r,  											 	  "Zambia",													  "Zambia",															"zm", "ZMB" ],
+		[ r4b.t9k,  										 	  "Zimbabwe",												  "Zimbabwe",														"zw", "ZWE" ],
 ];
 
-function r1m(h1a)
+function r1h(i4h)
 {
-	return x8p[h1a][2];
+	return g9v[i4h][2];
 }
 
-function w9r(h1a)
+function u5b(i4h)
 {
-	return x8p[h1a][4];
+	return g9v[i4h][4];
 }
 
-function w3p(r2g)
+function z2m(x3m)
 {
-	for (const h1a of x8p)
+	for (const i4h of g9v)
 	{
-		if (h1a[4] == r2g)
+		if (i4h[4] == x3m)
 		{
-			return h1a[0];
+			return i4h[0];
 		}
 	}
-	return y3a.i6p;
+	return r4b.f0x;
 }
 
-function d5c(s3a)
+function y9i(j8a)
 {
-	for (const h1a of x8p)
+	for (const i4h of g9v)
 	{
-		if (h1a[3] == s3a)
+		if (i4h[3] == j8a)
 		{
-			return h1a[0];
+			return i4h[0];
 		}
 	}
-	return y3a.i6p;
+	return r4b.f0x;
 }
-class k0d
+class q6l
 {
 
 constructor()
 {
-	this.m3t = '';
+	this.m7i = '';
 }
 
-j5j(c7b)
+p3z(i7a)
 {
-	this.m3t += c7b;
+	this.m7i += i7a;
 }
 
-l0w(c7b)
+q6d(i7a)
 {
-	this.m3t += c7b + '\n';
+	this.m7i += i7a + '\n';
 }
 
-u9w()
+m7p()
 {
-	this.m3t += '\n';
+	this.m7i += '\n';
 }
 
 }
@@ -18094,12 +16424,12 @@ u9w()
 
 
 
-function y0d(r2u, l6o)
+function a9w(n6y, s9f)
 {
-	let value = Number(r2u);
+	let value = Number(n6y);
 	if (isNaN(value))
 	{
-		return l6o;
+		return s9f;
 	}
 	else
 	{
