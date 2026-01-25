@@ -1135,74 +1135,74 @@ span.tdprefix
 
 .playBackward
 {
-  background-image: url("images/replay/PlayBackward.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/PlayBackward.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .playForward
 {
-  background-image: url("images/replay/PlayForward.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/PlayForward.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .autoPlay
 {
-  background-image: url("images/replay/AutoPlay.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/AutoPlay.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .autoStop
 {
-  background-image: url("images/replay/Stop.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/Stop.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .playSlower
 {
-  background-image: url("images/replay/Minus.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/Minus.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .playFaster
 {
-  background-image: url("images/replay/Plus.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/Plus.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .goToBegin
 {
-  background-image: url("images/replay/GoBegin.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/GoBegin.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .goToEnd
 {
-  background-image: url("images/replay/GoEnd.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/GoEnd.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .flipBoard
 {
-  background-image: url("images/replay/FlipBoard.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/FlipBoard.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .loadPrevious
 {
   margin-left: 20px;
-  background-image: url("images/replay/LoadPrevious.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/LoadPrevious.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .loadNext
 {
-  background-image: url("images/replay/LoadNext.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/LoadNext.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .gameList
 {
-  background-image: url("images/replay/GameList.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/GameList.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .download
 {
   margin-left: 20px;
-  background-image: url("images/replay/Download.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/Download.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .settings
 {
-  background-image: url("images/replay/Settings.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
+  background-image: url("https://kb5963.github.io/replay/images/replay/Settings.png"), linear-gradient(to bottom, #d9d9d9 0%,#d9d9d9 50%,#cacaca 50%,#dddddd 100%);
 }
 
 .toolBarSep
@@ -1453,7 +1453,7 @@ span.tdmedal
 
 span.tdcolors
 {
-  background-image: url("images/replay/NotaColors.png");
+  background-image: url("https://kb5963.github.io/replay/images/replay/NotaColors.png");
   background-repeat: no-repeat;
   vertical-align: middle;
   width: 16px;
