@@ -11513,6 +11513,12 @@ g3o(l2s, p8a)
         {
           c1g += ' ';
         }
+        
+        
+        if (p2p.startsWith("[%a") && p2p.length > 7)
+        {
+          p2p = p2p.substr(7, p2p.length).trim();
+        }
         c1g += p2p;
 				y0q.x3c(c1g);
 			}
@@ -11521,6 +11527,12 @@ g3o(l2s, p8a)
         if (this.s3e.length)
         {
    				this.s3e += ' ';
+        }
+        
+        
+        if (p2p.startsWith("[%b") && p2p.length > 7)
+        {
+          p2p = p2p.substr(7, p2p.length).trim();
         }
 				this.s3e += p2p;
 				this.l3k = true;
